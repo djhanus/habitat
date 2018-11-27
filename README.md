@@ -1,2 +1,2 @@
 # habitat
-theme for monroe county habitat humanity
+custom wp theme for monroe county habitat for humanity - bloomington
