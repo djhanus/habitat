@@ -1,7 +1,7 @@
 /*
  Theme Name:   Habitat for Humanity
  Theme URI:    local
- Description:  2019 Theme for Habitat for Humanity Bloomington, IN
+ Description:  2019 Theme for Habitat for Humanity - Bloomington, IN
  Author:       BLUELINE
  Author URI:   https://thisisblueline.com
  Version:      1.0.0
@@ -31,26 +31,63 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 
 // SCSS
 
 html,
 body {
-  background: #333;
+  background: #000;
   height: 100%;
 }
 
 .container {
   width: 1200px;
   margin: 0 auto;
+  border: 3px dotted #000;
+  padding: 15px;
 }
 
-// Typography
+
+// TYPOGRAPHY
 
 h1 {
 	font-family: 'Arial', sans-serif;
-	font-size: 48px;
+	font-size: 72px;
 	color: #000;
+}
+
+h1 {
+	font-family: 'Arial', sans-serif;
+	font-size: 24px;
+	color: red;
 }
 
 p {
@@ -58,3 +95,5 @@ p {
 	font-size: 14px;
 	color: #000;
 }
+
+

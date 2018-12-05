@@ -4,4 +4,13 @@ function enqueue_parent_styles() {
 }
 add_action('wp_enqueue_scripts', 'enqueue_parent_styles');
 
+function register_menus() {
+  register_nav_menus(
+    array(
+      'header-menu' => __('Header'),
+    )
+  );
+}
+add_action('init', 'register_menus');
+
 ?>
