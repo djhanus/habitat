@@ -63,7 +63,12 @@ table {
 
 // Helpers
 
-$font-sans:     'Helvetica', sans-serif;
+$font-sans:         'Helvetica', sans-serif;
+
+$primary-blue:      #149CCD;
+$primary-green:     #B6D00A;
+
+
 
 // SCSS
 
@@ -72,19 +77,19 @@ main {
   background: white;
   min-height: 300px;
   top: 80px;
-  border: 5px solid orange;
+  border: 5px dashed #999;
 }
 
 html,
 body {
-  background: white;
+  background: #EDEDED;
   height: 100%;
 }
 
 .container {
-  width: 1200px;
+  width: 100%;
   margin: 0 auto;
-  border: 2px dotted #000;
+  border: 5px dashed #000;
   padding: 15px;
 }
 
@@ -103,10 +108,19 @@ h2 {
 	color: #000;
 }
 
+strong {
+  font-weight: bold;
+}
+
+em {
+  font-style: italic;
+}
+
 p {
 	font-family: $font-sans;
 	font-size: 14px;
 	color: #000;
+  padding-bottom: 20px;
 }
 
 
@@ -119,7 +133,7 @@ header {
   display: flex;
   flex-wrap: wrap;
   background: white;
-  border: 5px solid black;
+  border: 5px dashed blue;
   width: 100%;
   height: 100px;
 
@@ -187,7 +201,65 @@ header {
 } // END header
 
 
-// Footer
+/* -----  Template: Page Standard ----- */
+
+
+// PAGE Standard
+
+
+#page-standard {
+  width: 100%;
+  border: 3px dashed orange;
+  padding: 40px;
+
+  p {
+    font-size: 16px;
+    text-align: left;
+    line-height: 1.5;
+  }
+
+  h1 {
+    line-height: 2;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin: 20px 0px;
+  }
+
+  ul {
+      padding-left: 50px;
+      list-style-type: disc;
+      margin: 15px 0px;
+
+      li {
+
+        font-size: 21px;
+        line-height: 1.6;
+
+      }
+    }
+
+    .featured-wrapper {
+  background-color: $primary-blue;
+  width: 100%;
+  height: 500px;
+
+    h1 {
+      font-size: 28px;
+      font-weight: bold;
+      color: white;
+      background-color: $primary-green;
+      padding: 10px 20px;
+      display: inline-block;
+    }
+  }
+}
+
+
+
+
+
+
+// FOOTER
 footer {
   position: relative;
   background: white;
