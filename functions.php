@@ -4,4 +4,14 @@ function enqueue_parent_styles() {
 }
 add_action('wp_enqueue_scripts', 'enqueue_parent_styles');
 
+function register_menus() {
+  register_nav_menus(
+    array(
+      'primary-menu' => __('Primary'),
+      'top-menu' => __('Top Menu')
+    )
+  );
+}
+add_action('init', 'register_menus');
+
 ?>

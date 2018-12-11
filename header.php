@@ -17,10 +17,16 @@
 
 <body <?php body_class(); ?>>
   <header>
+
+      <div class="top-menu">
+        <?php wp_nav_menu( array( 'theme_location' => 'top-menu' ) ); ?>
+     </div>
+
     <div class="container">
+
       <a href="<?php echo get_home_url(); ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo.png"></a>
         <div class="menu-header-container">
-          <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
+          <?php wp_nav_menu( array( 'theme_location' => 'primary-menu' ) ); ?>
         </div>
     </div>
   </header>
