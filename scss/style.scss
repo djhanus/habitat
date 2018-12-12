@@ -258,7 +258,14 @@ header {
   } // END ONE
 
   .two {
-    border: 5px solid red;
+    min-height: 500px;
+    background-color: $primary-green;
+
+    p {
+      font-size: 24px;
+      color: white;
+      line-height: 1.4;
+    }
   }
 }
 

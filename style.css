@@ -212,7 +212,13 @@ header .main-menu-container ul li:last-of-type a:hover:after {
   font-size: 14px;
 }
 .page-home .two {
-  border: 5px solid red;
+  min-height: 500px;
+  background-color: #B6D00A;
+}
+.page-home .two p {
+  font-size: 24px;
+  color: white;
+  line-height: 1.4;
 }
 
 #page-standard {

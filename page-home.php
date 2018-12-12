@@ -18,9 +18,7 @@
 
       <div class="row two">
 
-        <h1> ROW 2 </h1>
-
-        <p>paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph</p>
+        <p>Habitat for Humanity sully dolom ipsum fador dolom ipsum fador dolom ipsum fador dolom ipsum fador </p>
 
       </div>
 
