@@ -54,60 +54,33 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-
 * {
   box-sizing: border-box;
 }
 
 
-// Helpers
+// VARIABLES
 
 $font-sans:         'Helvetica', sans-serif;
 
 $primary-blue:      #149CCD;
 $primary-green:     #B6D00A;
 $primary-gray:      #777679;
-
-
-
-/* -----  Main Body Framework ----- */
-
-
-main {
-  position: relative;
-  background: white;
-  min-height: 300px;
-  top: 80px;
-  border: 5px dashed #999;
-}
-
-html,
-body {
-  background: #EDEDED;
-  height: 100%;
-}
-
-.container {
-  width: 100%;
-  margin: 0 auto;
-}
-
-
-
+$primary-orange:    #F37E43;
 
 
 // TYPOGRAPHY
 
 h1 {
-	font-family: $font-sans;
-	font-size: 48px;
-	color: #000;
+  font-family: $font-sans;
+  font-size: 48px;
+  color: #000;
 }
 
 h2 {
-	font-family: $font-sans;
-	font-size: 24px;
-	color: #000;
+  font-family: $font-sans;
+  font-size: 24px;
+  color: #000;
 }
 
 strong {
@@ -119,10 +92,30 @@ em {
 }
 
 p {
-	font-family: $font-sans;
-	font-size: 14px;
-	color: #000;
+  font-family: $font-sans;
+  font-size: 14px;
+  color: #000;
   padding-bottom: 20px;
+}
+
+
+
+// HEADER, BODY, FOOTER
+
+html,
+body {
+  background: #FFFFFF;
+  height: auto;
+}
+
+main {
+  position: relative;
+  background: white;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
 }
 
 
@@ -131,12 +124,12 @@ p {
 
 header {
   z-index: 1000;
-  position: fixed;
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   background: white;
   width: 100%;
-  height: 100px;
+  height: 140px;
 
   .container {
     position: relative;
@@ -149,12 +142,10 @@ header {
     height: auto;
   }
 
-
   .top-menu {
     background-color: $primary-blue;
-    height: auto;
+    height: 35px;
     padding: 10px;
-    margin-bottom: 20px;
     width: 100%;
 
     ul {
@@ -169,7 +160,7 @@ header {
             font-family: $font-sans;
             text-decoration: none;
             color: white;
-            padding: 5px 10px;
+            padding: 0px 10px;
 
             &:hover {
               text-decoration: underline;
@@ -179,8 +170,7 @@ header {
       }
     }
 
-
-  .menu-header-container {
+  .main-menu-container {
     margin-left: auto;
 
     ul {
@@ -200,11 +190,7 @@ header {
           margin: 0px 5px;
 
           &:hover {
-            &:after {
-              position: absolute;
-              margin: 0 auto;
-              color: #000000;
-            }
+            color: black;
           }
         }
 
@@ -228,11 +214,58 @@ header {
 } // END header
 
 
-/* -----  Template: Page Standard ----- */
+// PAGE - HOME
+
+.page-home {
+  position: relative;
+
+  .featured-wrapper {
+      background-color: $primary-blue;
+      width: 100%;
+      height: 500px;
+
+    h1 {
+      font-size: 26px;
+      font-weight: bold;
+      line-height: 1.2;
+      letter-spacing: 2px;
+      color: white;
+      background-color: $primary-green;
+      padding: 35px 40px;
+      margin: 25px 0px;
+      max-width: 425px;
+      display: inline-block;
+    }
+  }
 
 
-// PAGE Standard
+  .row {}
 
+  .one {
+    border-top: 15px solid $primary-gray;
+    min-height: 300px;
+
+      h2 {
+        color: $primary-orange;;
+        font-size: 22px;
+        line-height: 2;
+      }
+
+      p {
+        color: $primary-gray;
+        font-size: 14px;
+      }
+  } // END ONE
+
+  .two {
+    border: 5px solid red;
+  }
+}
+
+
+
+
+// PAGE - STANDARD
 
 #page-standard {
   width: 100%;
@@ -266,9 +299,9 @@ header {
     }
 
     .featured-wrapper {
-  background-color: $primary-blue;
-  width: 100%;
-  height: 500px;
+      background-color: $primary-blue;
+      width: 100%;
+      height: 500px;
 
     h1 {
       font-size: 28px;
@@ -285,69 +318,10 @@ header {
 
 
 
-
 // FOOTER
 footer {
   position: relative;
   background: white;
   padding: 40px 0 20px 0;
   margin: 80px 0 0 0;
-
-  img {
-    display: block;
-    margin: 0 auto 20px auto;
-  }
-  }
-
-  .menu-footer-menu-container {
-    margin: 20px 0;
-
-    ul {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-
-      li {
-        padding: 0 20px;
-
-        &:first-of-type {
-          padding: 0 20px 0 0;
-        }
-
-        &:last-of-type {
-          padding: 0 0 0 20px;
-        }
-
-        a {
-          position: relative;
-          color: black;
-          text-decoration: none;
-          font-family: black;
-          font-size: 18px;
-          line-height: 18px;
-
-          &:hover {
-            &:after {
-              position: absolute;
-              content: '';
-              width: 75%;
-              height: 2px;
-              bottom: 0;
-              left: 0%;
-              right: 0%;
-              margin: 0 auto;
-              background: black;
-            }
-          }
-        }
-      }
-    }
-  }
-
-  p {
-    font-family: $font-sans;
-    text-align: center;
-    font-weight: 300;
-    color: black;
-  }
-// END footer
+}
