@@ -244,30 +244,148 @@ header {
   .one {
     border-top: 15px solid $primary-gray;
     min-height: 300px;
+    margin: 0 auto;
+
+    .content-wrapper {
+      border: 1px dotted gray;
+      width: 300px;
+      height: auto;
+      min-height: 150px;
+      padding: 0px;
+      margin: 10px 35px;
+      text-align: center;
+      display: inline-block;
+
+      img {
+        width: 100%;
+        height: auto;
+      }
 
       h2 {
-        color: $primary-orange;;
+        color: $primary-orange;
         font-size: 22px;
         line-height: 2;
+        letter-spacing: 1px;
       }
 
       p {
         color: $primary-gray;
         font-size: 14px;
+        padding-bottom: 25px;
       }
+
+      .orange-line {
+        height: 1px;
+        width: 75px;
+        margin: 0 auto;
+        background-color: $primary-orange;
+      }
+    }
   } // END ONE
 
   .two {
     min-height: 500px;
     background-color: $primary-green;
 
-    p {
-      font-size: 24px;
-      color: white;
-      line-height: 1.4;
+    .content-wrapper {
+      margin: 100px 75px;
+      height: auto;
+      width: 425px;
+      float: right;
+
+      p {
+        font-size: 18px;
+        font-weight: bold;
+        color: white;
+        line-height: 1.4;
+      }
+
+      p.second {
+        font-weight: normal;
+      }
     }
-  }
-}
+  } // END TWO
+
+
+  .donate-btn {
+    background-color: $primary-blue;
+    padding: 50px;
+    margin: 0 auto;
+    text-align: center;
+
+    a {
+      font-family: $font-sans;
+      color: white;
+      padding: 15px 25px;
+      text-decoration: none;
+      font-size: 16px;
+      border: 1px solid white;
+      letter-spacing: 2px;
+      text-align: center;
+      background-color: none;
+
+        &:hover {
+          background-color: white;
+          color: $primary-blue;
+        }
+    }
+  } // END DONATE BUTTON
+
+    .families-btn {
+    background-color: $primary-orange;
+    padding: 50px;
+    margin: 0 auto;
+    text-align: center;
+
+    a {
+      font-family: $font-sans;
+      color: white;
+      padding: 15px 25px;
+      text-decoration: none;
+      font-size: 16px;
+      border: 1px solid white;
+      letter-spacing: 2px;
+      text-align: center;
+      background-color: none;
+
+        &:hover {
+          background-color: white;
+          color: $primary-orange;
+        }
+    }
+  } // END FAMILIES BUTTON
+
+
+  .families-section {
+    height: 600px;
+    background: white;
+    padding: 50px;
+    margin: 0 auto;
+    text-align: center;
+
+      p {
+        font-size: 18px;
+        color: black;
+      }
+
+  } // END FAMILIES SECTION
+
+
+  .sponsors {
+    background-color: $primary-blue;
+    height: 400px;
+
+      p {
+        color: white;
+        font-size: 18px;
+      }
+
+  } // END SPONSORS
+
+} // END PAGE HOME
+
+
+
 
 
 
@@ -328,7 +446,7 @@ header {
 // FOOTER
 footer {
   position: relative;
-  background: white;
+  background: $primary-gray;
   padding: 40px 0 20px 0;
   margin: 80px 0 0 0;
 }
