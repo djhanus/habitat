@@ -1060,16 +1060,198 @@ header .main-menu-container ul li:last-of-type a:hover:after {
   padding: 100px 0;
   background-color: #eaeaeb;
 }
-#page-volunteer .gallery-wrapper .carousel .contained {
+
+#page-who-are-we {
+  font-family: "Helvetica", sans-serif;
+}
+#page-who-are-we h1 {
+  font-weight: 600;
+  font-size: 32px;
+  margin: 0 0 40px 0;
+}
+#page-who-are-we p {
+  font-size: 20px;
+  line-height: 26px;
+}
+#page-who-are-we .text {
+  column-count: 2;
+  column-gap: 40px;
+}
+#page-who-are-we .section-one {
+  padding: 60px 0;
+}
+#page-who-are-we .section-one h1 {
+  color: #F37E43;
+}
+#page-who-are-we .section-one h2, #page-who-are-we .section-one h3, #page-who-are-we .section-one h4, #page-who-are-we .section-one ul, #page-who-are-we .section-one ol, #page-who-are-we .section-one li, #page-who-are-we .section-one a, #page-who-are-we .section-one p {
+  color: #777679;
+}
+#page-who-are-we .section-two {
+  padding: 60px 0;
+  background-color: #149CCD;
+}
+#page-who-are-we .section-two h1, #page-who-are-we .section-two h2, #page-who-are-we .section-two h3, #page-who-are-we .section-two h4, #page-who-are-we .section-two ul, #page-who-are-we .section-two ol, #page-who-are-we .section-two li, #page-who-are-we .section-two a, #page-who-are-we .section-two p {
+  color: white;
+}
+#page-who-are-we .section-three {
+  padding: 50px 0;
+  background-image: url("./images/page-banner-placeholder.jpg");
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+}
+#page-who-are-we .section-three .contained {
+  width: 600px;
+}
+#page-who-are-we .section-three h1 {
+  text-align: center;
+  color: white;
+  font-size: 24px;
+  line-height: 32px;
+  margin: 0 auto;
+}
+#page-who-are-we .section-four {
+  padding: 50px 0;
+}
+#page-who-are-we .section-four button {
+  margin-left: auto;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+#page-who-are-we .section-four button svg {
+  width: 50px;
+  height: 50px;
+  transition: all 0.3s;
+}
+#page-who-are-we .section-four details {
+  color: #777679;
+  user-select: none;
+  margin: 0 0 10px 0;
+}
+#page-who-are-we .section-four details:nth-child(1) {
+  background-color: #F37E43;
+}
+#page-who-are-we .section-four details:nth-child(2) {
+  background-color: #149CCD;
+}
+#page-who-are-we .section-four details:last-child {
+  margin: 0;
+}
+#page-who-are-we .section-four details p {
+  color: #777679;
+  font-size: 20px;
+  line-height: 26px;
+}
+#page-who-are-we .section-four details:focus {
+  outline: none;
+}
+#page-who-are-we .section-four details[open] {
+  padding: 0 30px 60px 30px;
+}
+#page-who-are-we .section-four details[open] summary {
+  border-bottom: 2px solid white;
+  margin: 0 0 40px 0;
+  padding: 30px 0;
+}
+#page-who-are-we .section-four details[open] summary svg, #page-who-are-we .section-four details:hover summary svg {
+  transform: rotate(90deg);
+}
+#page-who-are-we .section-four details summary {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  font-size: 28px;
+  font-weight: 600;
+  color: white;
+  cursor: pointer;
+  padding: 30px;
+}
+#page-who-are-we .section-four details summary:focus {
+  outline: none;
+}
+#page-who-are-we .section-four details summary::-webkit-details-marker {
+  display: none;
+}
+#page-who-are-we .section-four details .text-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: 900px;
+}
+#page-who-are-we .section-four details .text-wrapper h2 {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 26px;
+  margin: 0 0 20px 0;
+}
+#page-who-are-we .section-four details .text-wrapper h2:nth-child(n+2) {
+  margin: 40px 0 0 0;
+}
+#page-who-are-we .section-four details .text-wrapper ul, #page-who-are-we .section-four details .text-wrapper ol, #page-who-are-we .section-four details .text-wrapper li, #page-who-are-we .section-four details .text-wrapper a, #page-who-are-we .section-four details .text-wrapper p {
+  font-size: 16px;
+  line-height: 24px;
+}
+#page-who-are-we .section-four details .text-wrapper ul li,
+#page-who-are-we .section-four details .text-wrapper ol li {
+  margin: 0 0 10px 0;
+}
+#page-who-are-we .section-four details .text-wrapper .left {
+  width: calc(50% - 40px);
+}
+#page-who-are-we .section-four details .text-wrapper .left h1, #page-who-are-we .section-four details .text-wrapper .left h2, #page-who-are-we .section-four details .text-wrapper .left h3, #page-who-are-we .section-four details .text-wrapper .left h5, #page-who-are-we .section-four details .text-wrapper .left p, #page-who-are-we .section-four details .text-wrapper .left ul, #page-who-are-we .section-four details .text-wrapper .left ol, #page-who-are-we .section-four details .text-wrapper .left li, #page-who-are-we .section-four details .text-wrapper .left a {
+  color: white;
+}
+#page-who-are-we .section-four details .text-wrapper .right {
+  margin-left: auto;
+  padding: 0 0 0 40px;
+  margin: 0 0 0 40px;
+  width: calc(50% - 40px);
+  border-left: 2px solid #B6D00A;
+}
+#page-who-are-we .section-four details .text-wrapper .right h1, #page-who-are-we .section-four details .text-wrapper .right h2, #page-who-are-we .section-four details .text-wrapper .right h3, #page-who-are-we .section-four details .text-wrapper .right h5, #page-who-are-we .section-four details .text-wrapper .right p, #page-who-are-we .section-four details .text-wrapper .right ul, #page-who-are-we .section-four details .text-wrapper .right ol, #page-who-are-we .section-four details .text-wrapper .right li, #page-who-are-we .section-four details .text-wrapper .right a {
+  color: #B6D00A;
+}
+#page-who-are-we .section-four details .socials {
+  display: flex;
+  margin: 40px auto 0 auto;
+}
+#page-who-are-we .section-four details .socials div {
+  display: flex;
+  margin: 0 auto;
+}
+#page-who-are-we .section-four details .socials a {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #B6D00A;
+}
+#page-who-are-we .section-four details .socials a:nth-child(2) {
+  margin: 0 10px 0 20px;
+}
+#page-who-are-we .section-four details .socials a:nth-child(3) {
+  margin: 0 20px 0 10px;
+}
+#page-who-are-we .section-four details .socials a svg {
+  display: block;
+  margin: auto;
+  width: 20px;
+  height: 20px;
+  fill: #149CCD;
+}
+
+.gallery-wrapper .carousel .contained {
   width: 500px;
   margin: 0 auto;
 }
-#page-volunteer .gallery-wrapper .carousel blockquote {
+.gallery-wrapper .carousel blockquote {
   color: #149CCD;
   font-size: 24px;
   line-height: 32px;
 }
-#page-volunteer .gallery-wrapper .carousel blockquote:before {
+.gallery-wrapper .carousel blockquote:before {
   position: absolute;
   content: "";
   top: 0;
@@ -1078,7 +1260,7 @@ header .main-menu-container ul li:last-of-type a:hover:after {
   height: 75px;
   background-color: red;
 }
-#page-volunteer .gallery-wrapper .carousel blockquote:after {
+.gallery-wrapper .carousel blockquote:after {
   position: absolute;
   content: "";
   bottom: 0;
@@ -1087,7 +1269,7 @@ header .main-menu-container ul li:last-of-type a:hover:after {
   height: 75px;
   background-color: red;
 }
-#page-volunteer .gallery-wrapper .carousel blockquote cite {
+.gallery-wrapper .carousel blockquote cite {
   display: block;
   margin: 20px 0 0 0;
   width: 100;
@@ -1096,7 +1278,7 @@ header .main-menu-container ul li:last-of-type a:hover:after {
   font-weight: 600;
   text-transform: uppercase;
 }
-#page-volunteer .gallery-wrapper .carousel .carousel-inner img {
+.gallery-wrapper .carousel .carousel-inner img {
   width: 100%;
   height: 100%;
 }
