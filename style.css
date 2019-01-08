@@ -188,35 +188,43 @@ header .main-menu-container ul li:last-of-type a:hover:after {
 .page-home {
   position: relative;
 }
-.page-home .featured-wrapper {
-  background-color: #149CCD;
+.page-home .page-banner {
+  position: relative;
   width: 100%;
-  height: 500px;
+  height: 800px;
+  max-height: 800px;
+  margin: 0;
+  border-bottom: 15px solid #777679;
+  background-size: cover;
+  background-position: center;
 }
-.page-home .featured-wrapper h1 {
-  font-size: 26px;
-  font-weight: bold;
-  line-height: 1.2;
-  letter-spacing: 2px;
+.page-home .page-banner .title {
+  position: absolute;
+  left: 0;
+  bottom: 75px;
+  padding: 30px 50px;
+  background: #B6D00A;
   color: white;
-  background-color: #B6D00A;
-  padding: 35px 40px;
-  margin: 25px 0px;
+  font-family: "Helvetica", sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  letter-spacing: 1px;
+  line-height: 1.2;
   max-width: 425px;
-  display: inline-block;
 }
 .page-home .one {
-  border-top: 15px solid #777679;
   min-height: 300px;
   margin: 0 auto;
+  padding: 0 0 50px 0;
+  display: flex;
+  max-width: 1080px;
 }
 .page-home .one .content-wrapper {
-  border: 1px dotted gray;
   width: 300px;
   height: auto;
   min-height: 150px;
   padding: 0px;
-  margin: 10px 35px;
+  margin: 0px 25px;
   text-align: center;
   display: inline-block;
 }
@@ -242,11 +250,13 @@ header .main-menu-container ul li:last-of-type a:hover:after {
   background-color: #F37E43;
 }
 .page-home .two {
-  min-height: 500px;
+  min-height: 400px;
+  background-size: cover;
+  background-position: center;
   background-color: #B6D00A;
 }
 .page-home .two .content-wrapper {
-  margin: 100px 75px;
+  margin: 75px;
   height: auto;
   width: 425px;
   float: right;
@@ -313,13 +323,48 @@ header .main-menu-container ul li:last-of-type a:hover:after {
   font-size: 18px;
   color: black;
 }
-.page-home .sponsors {
-  background-color: #149CCD;
-  height: 400px;
+.page-home .events-news-section {
+  height: 900px;
 }
-.page-home .sponsors p {
+.page-home .events-news-section .title {
+  background-color: #666;
+  padding: 10px;
   color: white;
   font-size: 18px;
+  width: 125px;
+  font-family: "Helvetica", sans-serif;
+}
+.page-home .events-news-section .events-container {
+  background-color: #B6D00A;
+  width: 35%;
+  height: 100%;
+  padding: 25px 0;
+  float: left;
+}
+.page-home .events-news-section .news-container {
+  background-color: #777679;
+  width: 65%;
+  height: 100%;
+  padding: 25px 0;
+  float: left;
+}
+.page-home .sponsors-section {
+  background-color: #149CCD;
+  height: 400px;
+  padding: 50px;
+}
+.page-home .sponsors-section p {
+  color: white;
+  font-size: 24px;
+}
+.page-home .sponsors-section ul {
+  margin: 0px;
+  padding: 0px;
+}
+.page-home .sponsors-section ul li {
+  display: inline-flex;
+  padding: 5px 15px 5px 0px;
+  margin: 0;
 }
 
 #page-standard {
@@ -381,6 +426,8 @@ header .main-menu-container ul li:last-of-type a:hover:after {
   font-weight: 600;
   font-size: 32px;
   letter-spacing: 1px;
+  line-height: 1.2;
+  max-width: 425px;
 }
 
 .contained {
@@ -1287,7 +1334,8 @@ footer {
   position: relative;
   background: #777679;
   padding: 40px 0 20px 0;
-  margin: 80px 0 0 0;
+  margin: 0;
+  border-top: 15px solid #B6D00A;
 }
 
 .carousel {

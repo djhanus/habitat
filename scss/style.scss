@@ -230,40 +230,47 @@ header {
 .page-home {
   position: relative;
 
-  .featured-wrapper {
-      background-color: $primary-blue;
-      width: 100%;
-      height: 500px;
+  .page-banner {
+    position: relative;
+    width: 100%;
+    height: 800px;
+    max-height: 800px;
+    margin: 0;
+    border-bottom: 15px solid $primary-gray;
+    background-size: cover;
+    background-position: center;
 
-    h1 {
-      font-size: 26px;
-      font-weight: bold;
-      line-height: 1.2;
-      letter-spacing: 2px;
+    .title {
+      position: absolute;
+      left: 0;
+      bottom: 75px;
+      padding: 30px 50px;
+      background: $primary-green;
       color: white;
-      background-color: $primary-green;
-      padding: 35px 40px;
-      margin: 25px 0px;
+      font-family: $font-sans;
+      font-weight: 600;
+      font-size: 32px;
+      letter-spacing: 1px;
+      line-height: 1.2;
       max-width: 425px;
-      display: inline-block;
     }
   }
-
 
   .row {}
 
   .one {
-    border-top: 15px solid $primary-gray;
     min-height: 300px;
     margin: 0 auto;
+    padding: 0 0 50px 0;
+    display: flex;
+    max-width: 1080px;
 
     .content-wrapper {
-      border: 1px dotted gray;
       width: 300px;
       height: auto;
       min-height: 150px;
       padding: 0px;
-      margin: 10px 35px;
+      margin: 0px 25px;
       text-align: center;
       display: inline-block;
 
@@ -295,11 +302,13 @@ header {
   } // END ONE
 
   .two {
-    min-height: 500px;
+    min-height: 400px;
+    background-size: cover;
+    background-position: center;
     background-color: $primary-green;
 
     .content-wrapper {
-      margin: 100px 75px;
+      margin: 75px;
       height: auto;
       width: 425px;
       float: right;
@@ -316,7 +325,6 @@ header {
       }
     }
   } // END TWO
-
 
   .donate-btn {
     background-color: $primary-blue;
@@ -381,19 +389,61 @@ header {
 
   } // END FAMILIES SECTION
 
+  .events-news-section {
+    height: 900px;
 
-  .sponsors {
-    background-color: $primary-blue;
-    height: 400px;
-
-      p {
+    .title {
+        background-color: #666;
+        padding: 10px;
         color: white;
         font-size: 18px;
-      }
+        width: 125px;
+        font-family: $font-sans;
+    }
 
+    .events-container {
+      background-color: $primary-green;
+      width: 35%;
+      height: 100%;
+      padding: 25px 0;
+      float: left;
+    }
+
+    .news-container {
+      background-color: $primary-gray;
+      width: 65%;
+      height: 100%;
+      padding: 25px 0;
+      float: left;
+    }
+  } // END EVENTS NEWS SECTION
+
+
+  .sponsors-section {
+    background-color: $primary-blue;
+    height: 400px;
+    padding: 50px;
+
+    p {
+      color: white;
+      font-size: 24px;
+    }
+
+    ul {
+      margin: 0px;
+      padding: 0px;
+
+      li {
+        display: inline-flex;
+        padding: 5px 15px 5px 0px;
+        margin: 0;
+      }
+    }
   } // END SPONSORS
 
 } // END PAGE HOME
+
+
 
 // PAGE - STANDARD
 #page-standard {
@@ -464,6 +514,8 @@ header {
     font-weight: 600;
     font-size: 32px;
     letter-spacing: 1px;
+    line-height: 1.2;
+    max-width: 425px;
   }
 }
 
@@ -1610,7 +1662,8 @@ footer {
   position: relative;
   background: $primary-gray;
   padding: 40px 0 20px 0;
-  margin: 80px 0 0 0;
+  margin: 0;
+  border-top: 15px solid $primary-green;
 }
 
 @import 'carousel';
