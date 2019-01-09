@@ -68,10 +68,36 @@ table {
   box-sizing: border-box;
 }
 
+// FONT IMPORT
+
+@font-face {
+  font-family: 'Neue Haas Grotesk';
+  font-weight: 400;
+  src: url("wp-content/themes/habitat/fonts/NHaasGroteskTXPro-55Rg.otf") format("opentype");
+}
+
+@font-face {
+  font-family: 'Neue Haas Grotesk';
+  font-weight: 500;
+  src: url("wp-content/themes/habitat/fonts/NHaasGroteskDSPro-65Md.otf") format("opentype");
+}
+
+@font-face {
+  font-family: 'Neue Haas Grotesk';
+  font-style: italic;
+  font-weight: 400;
+  src: url("wp-content/themes/habitat/fonts/NHaasGroteskTXPro-56It.otf") format("opentype");
+}
+
+@font-face {
+  font-family: 'Neue Haas Grotesk';
+  font-weight: 700;
+  src: url("wp-content/themes/habitat/fonts/NHaasGroteskTXPro-75Bd.otf") format("opentype");
+}
 
 // VARIABLES
 
-$font-sans:         'Helvetica', sans-serif;
+$primary-sans:      'Neue Haas Grotesk', Arial, sans-serif;
 
 $primary-blue:      #00AFD7;
 $primary-green:     #C4D600;
@@ -85,15 +111,8 @@ $secondary-red:     #A4343A;
 
 // TYPOGRAPHY
 
-h1 {
-  font-family: $font-sans;
-  font-size: 48px;
-  color: #000;
-}
-
-h2 {
-  font-family: $font-sans;
-  font-size: 24px;
+h1, h2, h3, h4, h5, h6 {
+  font-family: $primary-sans;
   color: #000;
 }
 
@@ -106,7 +125,7 @@ em {
 }
 
 p, ul, ol {
-  font-family: $font-sans;
+  font-family: $primary-sans;
   font-size: 14px;
   color: #000;
   padding-bottom: 20px;
@@ -118,6 +137,7 @@ p, ul, ol {
 
 html,
 body {
+  font-family: $primary-sans;
   background: #FFFFFF;
   height: auto;
 }
@@ -170,7 +190,7 @@ header {
           a {
             position: relative;
             font-size: 14px;
-            font-family: $font-sans;
+            font-family: $primary-sans;
             text-decoration: none;
             color: #FFFFFF;
             padding: 0px 10px;
@@ -194,7 +214,7 @@ header {
         a {
           position: relative;
           font-size: 18px;
-          font-family: $font-sans;
+          font-family: $primary-sans;
           font-weight: 500;
           color: $primary-gray;
           letter-spacing: 1px;
@@ -316,7 +336,7 @@ header {
     text-align: center;
 
     a {
-      font-family: $font-sans;
+      font-family: $primary-sans;
       color: white;
       padding: 15px 25px;
       text-decoration: none;
@@ -336,33 +356,33 @@ header {
 
   // families section
   .three {
-    height: 600px;
     background: white;
     padding: 0;
     margin: 0 auto;
     text-align: center;
 
     .family-container {
-      border: 5px dashed black;
-      height: auto;
+      height: 400px;
 
       .description {
-        border: 2px dashed red;
         padding: 60px 30px;
         float: left;
-        width: 40%;
+        width: calc(100% - 700px);
+        height: auto;
         text-align: left;
 
         .title {
           color: #000;
           font-size: 16px;
-          margin: 20px 0px;
-          font-weight: bold;
+          font-weight: 700;
+          margin: 15px 0px;
         }
 
         p {
           font-size: 14px;
           color: $primary-gray;
+          line-height: 1.3;
+          padding-bottom: 25px;
 
         }
 
@@ -378,15 +398,11 @@ header {
       }
 
       .photo {
-        border: 2px dashed blue;
-        width: 60%;
+        width: 700px;
         float: right;
-
-        img {
-        max-height: 300px;
-        width: auto;
-        display: block;
-        }
+        background-size: cover;
+        background-position: center;
+        height: 100%;
       }
     }
   } // END families section
@@ -399,7 +415,7 @@ header {
   text-align: center;
 
     a {
-      font-family: $font-sans;
+      font-family: $primary-sans;
       color: white;
       padding: 15px 25px;
       text-decoration: none;
@@ -422,11 +438,11 @@ header {
 
     .title {
         background-color: #666;
-        padding: 10px;
+        padding: 10px 25px 10px 35px;
         color: white;
-        font-size: 18px;
+        font-size: 21px;
         width: 125px;
-        font-family: $font-sans;
+        font-family: $primary-sans;
     }
 
     .events-container {
@@ -538,7 +554,7 @@ header {
     padding: 30px 50px;
     background: $primary-green;
     color: white;
-    font-family: $font-sans;
+    font-family: $primary-sans;
     font-weight: 600;
     font-size: 32px;
     letter-spacing: 1px;
@@ -638,7 +654,7 @@ header {
       width: 50%;
       text-align: left;
       padding: 35px 25px 35px 35px;
-      font-family: $font-sans;
+      font-family: $primary-sans;
       font-size: 28px;
       color: white;
       text-decoration: none;
@@ -708,7 +724,7 @@ header {
   } // END .section-three
 
   .section-four {
-    font-family: $font-sans;
+    font-family: $primary-sans;
 
     div {
       &:nth-child(2) {
@@ -793,7 +809,7 @@ header {
 
 // PAGE - VOLUNTEER
 #page-volunteer {
-  font-family: $font-sans;
+  font-family: $primary-sans;
 
   .section-one {
     position: relative;
@@ -946,7 +962,7 @@ header {
 
   .section-four {
     padding: 50px 0;
-    font-family: $font-sans;
+    font-family: $primary-sans;
 
     div {
       &:nth-child(2) {
@@ -1408,7 +1424,7 @@ header {
 
 // PAGE - Who Are We
 #page-who-are-we {
-  font-family: $font-sans;
+  font-family: $primary-sans;
 
   h1 {
     font-weight: 600;
@@ -1689,9 +1705,31 @@ header {
 footer {
   position: relative;
   background: $primary-gray;
-  padding: 40px 0 20px 0;
+  padding: 20px 0 0 0;
   margin: 0;
   border-top: 15px solid $primary-green;
+  color: white;
+  font-family: $primary-sans;
+  font-size: 14px;
+  line-height: 1.2;
+
+  .title {
+    color: $secondary-orange;
+    font-weight: bold;
+    padding-top: 20px;
+  }
+
+  .copyright {
+    text-align: center;
+    background-color: #3D3E40;
+    margin: 0;
+    padding: 10px 5px;
+
+    p {
+      color: $primary-gray;
+      font-size: 10px;
+    }
+  }
 }
 
 @import 'carousel';

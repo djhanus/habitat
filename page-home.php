@@ -66,8 +66,7 @@
             </div>
           </div>
 
-          <div class="photo">
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/placeholder-family.jpg" />
+          <div class="photo" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/images/placeholder-family.jpg');">
           </div>
 
         </div>
