@@ -73,12 +73,15 @@ table {
 
 $font-sans:         'Helvetica', sans-serif;
 
-$primary-blue:      #149CCD;
-$color-east-bay:    #3E5784;
-$primary-green:     #B6D00A;
-$primary-gray:      #777679;
-$primary-orange:    #F37E43;
-$color-sanguine:    #9B3D3D;
+$primary-blue:      #00AFD7;
+$primary-green:     #C4D600;
+$primary-gray:      #888B8D;
+
+$primary-orange:    #FF671F;    // secondary orange
+$secondary-green:   #43B02A;
+
+$color-east-bay:    #385988;  // secondary blue
+$color-sanguine:    #A4343A;  // secondary red
 
 // TYPOGRAPHY
 
@@ -112,10 +115,6 @@ p, ul, ol {
     padding-bottom: 0;
   }
 }
-
-
-
-// HEADER, BODY, FOOTER
 
 html,
 body {
@@ -232,33 +231,12 @@ header {
   position: relative;
 
   .page-banner {
-    position: relative;
-    width: 100%;
-    height: 800px;
-    max-height: 800px;
-    margin: 0;
     border-bottom: 15px solid $primary-gray;
-    background-size: cover;
-    background-position: center;
-
-    .title {
-      position: absolute;
-      left: 0;
-      bottom: 75px;
-      padding: 30px 50px;
-      background: $primary-green;
-      color: white;
-      font-family: $font-sans;
-      font-weight: 600;
-      font-size: 32px;
-      letter-spacing: 1px;
-      line-height: 1.2;
-      max-width: 425px;
-    }
   }
 
   .row {}
 
+  // 3 topic modules
   .one {
     min-height: 300px;
     margin: 0 auto;
@@ -300,8 +278,9 @@ header {
         background-color: $primary-orange;
       }
     }
-  } // END ONE
+  } // END
 
+  // image overlay and text
   .two {
     min-height: 400px;
     background-size: cover;
@@ -325,7 +304,7 @@ header {
         font-weight: normal;
       }
     }
-  } // END TWO
+  } // END
 
   .donate-btn {
     background-color: $primary-blue;
@@ -348,8 +327,8 @@ header {
           background-color: white;
           color: $primary-blue;
         }
+      }
     }
-  } // END DONATE BUTTON
 
     .families-btn {
     background-color: $primary-orange;
