@@ -77,11 +77,11 @@ $primary-blue:      #00AFD7;
 $primary-green:     #C4D600;
 $primary-gray:      #888B8D;
 
-$primary-orange:    #FF671F;    // secondary orange
+$secondary-orange:  #FF671F;
 $secondary-green:   #43B02A;
+$secondary-blue:    #385988;
+$secondary-red:     #A4343A;
 
-$color-east-bay:    #385988;  // secondary blue
-$color-sanguine:    #A4343A;  // secondary red
 
 // TYPOGRAPHY
 
@@ -259,7 +259,7 @@ header {
       }
 
       h2 {
-        color: $primary-orange;
+        color: $secondary-orange;
         font-size: 22px;
         line-height: 2;
         letter-spacing: 1px;
@@ -275,7 +275,7 @@ header {
         height: 1px;
         width: 75px;
         margin: 0 auto;
-        background-color: $primary-orange;
+        background-color: $secondary-orange;
       }
     }
   } // END
@@ -331,7 +331,7 @@ header {
     }
 
     .families-btn {
-    background-color: $primary-orange;
+    background-color: $secondary-orange;
     padding: 50px;
     margin: 0 auto;
     text-align: center;
@@ -349,7 +349,7 @@ header {
 
         &:hover {
           background-color: white;
-          color: $primary-orange;
+          color: $secondary-orange;
         }
     }
   } // END FAMILIES BUTTON
@@ -544,7 +544,7 @@ header {
 
     h1 {
       width: 50%;
-      color: $primary-orange;
+      color: $secondary-orange;
       font-weight: 600;
       font-size: 40px;
       margin: 0 0 25px 0;
@@ -570,10 +570,10 @@ header {
       &:nth-child(3) {
         margin: 25px 0 0 0;
         padding: 25px 0 0 0;
-        border-top: 2px solid $primary-orange;
+        border-top: 2px solid $secondary-orange;
 
         p {
-          color: $primary-orange;
+          color: $secondary-orange;
           font-style: italic;
         }
       }
@@ -622,19 +622,19 @@ header {
       &:nth-child(1) {
         width: calc(50% - 40px);
         margin: 0 40px 40px 0;
-        background: $primary-orange;
+        background: $secondary-orange;
 
         &:hover {
-          background: darken($primary-orange, 5%);
+          background: darken($secondary-orange, 5%);
         }
       }
 
       &:nth-child(2) {
         margin: 0 0 40px 0;
-        background: $color-east-bay;
+        background: $secondary-blue;
 
         &:hover {
-          background: darken($color-east-bay, 5%);
+          background: darken($secondary-blue, 5%);
         }
       }
 
@@ -650,10 +650,10 @@ header {
 
       &:nth-child(4) {
         margin: 0;
-        background: $color-sanguine;
+        background: $secondary-red;
 
         &:hover {
-          background: darken($color-sanguine, 5%);
+          background: darken($secondary-red, 5%);
         }
       }
     }
@@ -907,7 +907,7 @@ header {
     }
 
     h1 {
-      color: $primary-orange;
+      color: $secondary-orange;
       font-weight: 600;
       font-size: 40px;
       margin: 0 0 25px 0;
@@ -927,7 +927,7 @@ header {
     }
 
     details {
-      border-bottom: 1px solid $primary-orange;
+      border-bottom: 1px solid $secondary-orange;
       color: $primary-gray;
       user-select: none;
       margin: 0 0 10px 0;
@@ -992,7 +992,7 @@ header {
         display: flex;
         flex-wrap: wrap;
         width: 66%;
-        background-color: $primary-orange;
+        background-color: $secondary-orange;
 
         h1 {
           display: block;
@@ -1055,10 +1055,10 @@ header {
       &.right {
         width: 34%;
         background-color: white;
-        color: $primary-orange;
+        color: $secondary-orange;
 
         h1, h2, h3, h4, ol, li, a {
-          color: $primary-orange;
+          color: $secondary-orange;
         }
 
         h3, ul, ol, li, a {
@@ -1210,7 +1210,7 @@ header {
       margin: 0 0 10px 0;
 
       &:nth-child(1) {
-        background-color: $primary-orange;
+        background-color: $secondary-orange;
       }
 
       &:nth-child(2) {
@@ -1382,7 +1382,7 @@ header {
     padding: 60px 0;
 
     h1 {
-      color: $primary-orange;
+      color: $secondary-orange;
     }
 
     h2, h3, h4, ul, ol, li, a, p {
@@ -1442,7 +1442,7 @@ header {
       margin: 0 0 10px 0;
 
       &:nth-child(1) {
-        background-color: $primary-orange;
+        background-color: $secondary-orange;
       }
 
       &:nth-child(2) {
