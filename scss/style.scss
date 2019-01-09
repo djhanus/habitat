@@ -149,8 +149,9 @@ header {
   }
 
   img {
-    width: 250px;
+    width: 320px;
     height: auto;
+    padding: 5px 20px;
   }
 
   .top-menu {
@@ -160,10 +161,10 @@ header {
     width: 100%;
 
     ul {
-      position: relative;
+      position: absolute;
+      right: 0px;
       display: inline-flex;
-      margin-right: 0px;
-      border: 1px dashed black;
+      margin-right: 25px;
 
         li {
           a {
@@ -171,7 +172,7 @@ header {
             font-size: 14px;
             font-family: $font-sans;
             text-decoration: none;
-            color: white;
+            color: #FFFFFF;
             padding: 0px 10px;
 
             &:hover {
@@ -187,6 +188,7 @@ header {
 
     ul {
       display: inline-flex;
+      margin-right: 25px;
 
       li {
         a {
@@ -198,11 +200,11 @@ header {
           letter-spacing: 1px;
           text-transform: uppercase;
           text-decoration: none;
-          padding: 5px 20px;
+          padding: 5px 15px;
           margin: 0px 5px;
 
           &:hover {
-            color: black;
+            color: $primary-blue;
           }
         }
 
@@ -210,9 +212,10 @@ header {
           a {
             color: white;
             background: $primary-green;
+            padding: 9px 15px 7px 15px;
 
             &:hover {
-              background: darken($primary-green, 10%);
+              background: $primary-blue;
 
               &:after {
                 display: none;
@@ -323,18 +326,77 @@ header {
       text-align: center;
       background-color: none;
 
-        &:hover {
-          background-color: white;
-          color: $primary-blue;
+      &:hover {
+        background-color: white;
+        color: $primary-blue;
+      }
+    }
+  }
+
+
+  // families section
+  .three {
+    height: 600px;
+    background: white;
+    padding: 0;
+    margin: 0 auto;
+    text-align: center;
+
+    .family-container {
+      border: 5px dashed black;
+      height: auto;
+
+      .description {
+        border: 2px dashed red;
+        padding: 60px 30px;
+        float: left;
+        width: 40%;
+        text-align: left;
+
+        .title {
+          color: #000;
+          font-size: 16px;
+          margin: 20px 0px;
+          font-weight: bold;
+        }
+
+        p {
+          font-size: 14px;
+          color: $primary-gray;
+
+        }
+
+        .button {
+
+          a {
+            color: white;
+            background-color: $secondary-orange;
+            padding: 5px 15px;
+            text-decoration: none;
+          }
+        }
+      }
+
+      .photo {
+        border: 2px dashed blue;
+        width: 60%;
+        float: right;
+
+        img {
+        max-height: 300px;
+        width: auto;
+        display: block;
         }
       }
     }
+  } // END families section
 
-    .families-btn {
-    background-color: $secondary-orange;
-    padding: 50px;
-    margin: 0 auto;
-    text-align: center;
+
+  .families-btn {
+  background-color: $secondary-orange;
+  padding: 50px;
+  margin: 0 auto;
+  text-align: center;
 
     a {
       font-family: $font-sans;
@@ -347,29 +409,15 @@ header {
       text-align: center;
       background-color: none;
 
-        &:hover {
-          background-color: white;
-          color: $secondary-orange;
-        }
-    }
-  } // END FAMILIES BUTTON
-
-
-  .families-section {
-    height: 600px;
-    background: white;
-    padding: 50px;
-    margin: 0 auto;
-    text-align: center;
-
-      p {
-        font-size: 18px;
-        color: black;
+      &:hover {
+        background-color: white;
+        color: $secondary-orange;
       }
+    }
+  }
 
-  } // END FAMILIES SECTION
-
-  .events-news-section {
+  // events and news
+  .four {
     height: 900px;
 
     .title {

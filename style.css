@@ -128,8 +128,9 @@ header .container {
   align-items: center;
 }
 header img {
-  width: 250px;
+  width: 320px;
   height: auto;
+  padding: 5px 20px;
 }
 header .top-menu {
   background-color: #00AFD7;
@@ -138,17 +139,17 @@ header .top-menu {
   width: 100%;
 }
 header .top-menu ul {
-  position: relative;
+  position: absolute;
+  right: 0px;
   display: inline-flex;
-  margin-right: 0px;
-  border: 1px dashed black;
+  margin-right: 25px;
 }
 header .top-menu ul li a {
   position: relative;
   font-size: 14px;
   font-family: "Helvetica", sans-serif;
   text-decoration: none;
-  color: white;
+  color: #FFFFFF;
   padding: 0px 10px;
 }
 header .top-menu ul li a:hover {
@@ -159,6 +160,7 @@ header .main-menu-container {
 }
 header .main-menu-container ul {
   display: inline-flex;
+  margin-right: 25px;
 }
 header .main-menu-container ul li a {
   position: relative;
@@ -169,18 +171,19 @@ header .main-menu-container ul li a {
   letter-spacing: 1px;
   text-transform: uppercase;
   text-decoration: none;
-  padding: 5px 20px;
+  padding: 5px 15px;
   margin: 0px 5px;
 }
 header .main-menu-container ul li a:hover {
-  color: black;
+  color: #00AFD7;
 }
 header .main-menu-container ul li:last-of-type a {
   color: white;
   background: #C4D600;
+  padding: 9px 15px 7px 15px;
 }
 header .main-menu-container ul li:last-of-type a:hover {
-  background: #95a300;
+  background: #00AFD7;
 }
 header .main-menu-container ul li:last-of-type a:hover:after {
   display: none;
@@ -271,6 +274,50 @@ header .main-menu-container ul li:last-of-type a:hover:after {
   background-color: white;
   color: #00AFD7;
 }
+.page-home .three {
+  height: 600px;
+  background: white;
+  padding: 0;
+  margin: 0 auto;
+  text-align: center;
+}
+.page-home .three .family-container {
+  border: 5px dashed black;
+  height: auto;
+}
+.page-home .three .family-container .description {
+  border: 2px dashed red;
+  padding: 60px 30px;
+  float: left;
+  width: 40%;
+  text-align: left;
+}
+.page-home .three .family-container .description .title {
+  color: #000;
+  font-size: 16px;
+  margin: 20px 0px;
+  font-weight: bold;
+}
+.page-home .three .family-container .description p {
+  font-size: 14px;
+  color: #888B8D;
+}
+.page-home .three .family-container .description .button a {
+  color: white;
+  background-color: #FF671F;
+  padding: 5px 15px;
+  text-decoration: none;
+}
+.page-home .three .family-container .photo {
+  border: 2px dashed blue;
+  width: 60%;
+  float: right;
+}
+.page-home .three .family-container .photo img {
+  max-height: 300px;
+  width: auto;
+  display: block;
+}
 .page-home .families-btn {
   background-color: #FF671F;
   padding: 50px;
@@ -292,21 +339,10 @@ header .main-menu-container ul li:last-of-type a:hover:after {
   background-color: white;
   color: #FF671F;
 }
-.page-home .families-section {
-  height: 600px;
-  background: white;
-  padding: 50px;
-  margin: 0 auto;
-  text-align: center;
-}
-.page-home .families-section p {
-  font-size: 18px;
-  color: black;
-}
-.page-home .events-news-section {
+.page-home .four {
   height: 900px;
 }
-.page-home .events-news-section .title {
+.page-home .four .title {
   background-color: #666;
   padding: 10px;
   color: white;
@@ -314,14 +350,14 @@ header .main-menu-container ul li:last-of-type a:hover:after {
   width: 125px;
   font-family: "Helvetica", sans-serif;
 }
-.page-home .events-news-section .events-container {
+.page-home .four .events-container {
   background-color: #C4D600;
   width: 35%;
   height: 100%;
   padding: 25px 0;
   float: left;
 }
-.page-home .events-news-section .news-container {
+.page-home .four .news-container {
   background-color: #888B8D;
   width: 65%;
   height: 100%;

@@ -43,17 +43,37 @@
 
       </div> <!-- END ROW -->
 
+
       <div class="row donate-btn">
 
           <a href="#" target="_blank">DONATE TODAY</a>
 
       </div>
 
-      <div class="row families-section">
 
-        <p> families output </p>
+      <div class="row three">
 
-      </div>
+        <div class="family-container">
+          <div class="description">
+            <div class="title">
+              The Perez Family
+            </div>
+
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat.</p>
+
+            <div class="button">
+              <a href="#">READ MORE</a>
+            </div>
+          </div>
+
+          <div class="photo">
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/placeholder-family.jpg" />
+          </div>
+
+        </div>
+
+      </div> <!-- END ROW -->
+
 
       <div class="row families-btn">
 
@@ -61,7 +81,9 @@
 
       </div>
 
-      <div class="row events-news-section">
+
+
+      <div class="row four">
 
         <div class="events-container">
           <div class="title">Events</div>

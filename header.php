@@ -20,7 +20,7 @@
 
       <div class="top-menu">
         <?php wp_nav_menu( array( 'theme_location' => 'top-menu' ) ); ?>
-     </div>
+      </div>
 
     <div class="container">
 
