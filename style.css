@@ -157,7 +157,7 @@ header .top-menu ul {
   position: absolute;
   right: 0px;
   display: inline-flex;
-  margin-right: 25px;
+  margin-right: 160px;
 }
 header .top-menu ul li a {
   position: relative;
@@ -195,10 +195,10 @@ header .main-menu-container ul li a:hover {
 header .main-menu-container ul li:last-of-type a {
   color: white;
   background: #C4D600;
-  padding: 9px 15px 7px 15px;
+  padding: 100px 15px 7px 15px;
 }
 header .main-menu-container ul li:last-of-type a:hover {
-  background: #00AFD7;
+  background: #C4D600;
 }
 header .main-menu-container ul li:last-of-type a:hover:after {
   display: none;
@@ -209,6 +209,7 @@ header .main-menu-container ul li:last-of-type a:hover:after {
 }
 .page-home .page-banner {
   border-bottom: 15px solid #888B8D;
+  margin: 0;
 }
 .page-home .one {
   min-height: 300px;
@@ -370,7 +371,7 @@ header .main-menu-container ul li:last-of-type a:hover:after {
   float: left;
 }
 .page-home .four .news-container {
-  background-color: #888B8D;
+  background-color: #E8E8E8;
   width: 65%;
   height: 100%;
   padding: 25px 0;
@@ -1369,20 +1370,74 @@ footer {
   font-size: 14px;
   line-height: 1.2;
 }
-footer .title {
+footer .footer-container {
+  margin: 0 auto;
+  max-width: 960px;
+  height: 500px;
+}
+footer .footer-container .title {
   color: #FF671F;
   font-weight: bold;
-  padding-top: 20px;
+  padding: 15px 0px;
+}
+footer .footer-container p {
+  color: #888B8D;
+  font-size: 10px;
+}
+footer .footer-container .horizontal-line {
+  height: 2px;
+  width: 95%;
+  background-color: #C4D600;
+  margin: 30px 0px 10px;
+}
+footer .footer-container .column-one {
+  width: 300px;
+  height: 450px;
+  padding: 20px;
+  float: left;
+  border-right: 2px solid #C4D600;
+}
+footer .footer-container .column-two {
+  width: 350px;
+  height: 450px;
+  padding: 20px;
+  float: left;
+  border-right: 2px solid #C4D600;
+}
+footer .footer-container .column-two ul {
+  margin: 0 0 25px 0;
+  padding: 0;
+  text-align: left;
+}
+footer .footer-container .column-two ul li a {
+  color: white;
+  text-decoration: none;
+  line-height: 1.8;
+}
+footer .footer-container .column-two ul li a:hover {
+  text-decoration: underline;
+}
+footer .footer-container .column-three {
+  width: 300px;
+  height: 450px;
+  padding: 20px;
+  float: left;
+}
+footer .footer-container .column-three .button a {
+  color: white;
+  background-color: #FF671F;
+  padding: 7px 0px;
+  margin: 5px 0px;
+  width: 200px;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
 }
 footer .copyright {
   text-align: center;
   background-color: #3D3E40;
   margin: 0;
   padding: 10px 5px;
-}
-footer .copyright p {
-  color: #888B8D;
-  font-size: 10px;
 }
 
 .carousel {
