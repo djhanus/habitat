@@ -2,8 +2,8 @@
   	<div class="page-home">
 
       <div class="page-banner"
-         style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/images/page-banner-placeholder.jpg')">
-      <div class="title">Last year you helped us divert 1.1 million pounds to land fills.</div>
+         style="background-image: url('<?php echo get_field('featured_banner')?>">
+      <div class="title"><?php echo get_field('featured_banner_text')?></div>
       </div><!-- /.page-banner -->
 
 
@@ -68,8 +68,24 @@
 
           <div class="photo" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/images/placeholder-family.jpg');">
           </div>
+        </div> <!-- END family container -->
 
-        </div>
+        <div class="family-container">
+          <div class="photo" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/images/placeholder-family.jpg');">
+          </div>
+
+          <div class="description">
+            <div class="title">
+              The Perez Family
+            </div>
+
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat.</p>
+
+            <div class="button">
+              <a href="#">READ MORE</a>
+            </div>
+          </div>
+        </div> <!-- END family container -->
 
       </div> <!-- END ROW -->
 
