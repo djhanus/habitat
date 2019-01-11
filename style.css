@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*
  Theme Name:   Habitat for Humanity
  Theme URI:    local
@@ -1458,7 +1459,7 @@ footer .copyright {
   background-color: #3D3E40;
   margin: 0;
   padding: 10px 5px;
-  color: #FFFFFF;
+  color: #FFFFFF˜;
 }
 
 .carousel {
