@@ -8,7 +8,11 @@ function register_menus() {
   register_nav_menus(
     array(
       'primary-menu' => __('Primary'),
-      'top-menu' => __('Top Menu')
+      'top-menu' => __('Top Menu'),
+      'footer-whoweare' => __('Footer - Who We Are'),
+      'footer-waystogive' => __('Footer - Ways to Give'),
+      'footer-volunteer' => __('Footer - Volunteer'),
+      'footer-apply' => __('Footer - Apply')
     )
   );
 }

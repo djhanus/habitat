@@ -3,6 +3,9 @@
   	<div class="footer-container">
 
   		<div class="column-one">
+
+  			<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo-small-white.png">
+
 	  		<div class="title">Habitat Office</div>
 
 			213 E. Kirkwood Avenue<br />
@@ -14,6 +17,8 @@
 			Monday-Friday: 8am-Noon, 1pm-5pm
 
 			<div class="horizontal-line"></div>
+
+  			<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo-restore-small.png">
 
 			<div class="title">ReStore</div>
 
@@ -27,26 +32,19 @@
   		</div> <!-- END column -->
 
   		<div class="column-two">
-  			<ul>
-  				<li><a href="#">Menu Item</a></li>
-  				<li><a href="#">Menu Item</a></li>
-  				<li><a href="#">Menu Item</a></li>
-  				<li><a href="#">Menu Item</a></li>
-  				<li><a href="#">Menu Item</a></li>
-			</ul>
 
-			<ul>
-				<li><a href="#">Menu Item</a></li>
-				<li><a href="#">Menu Item</a></li>
-				<li><a href="#">Menu Item</a></li>
-				<li><a href="#">Menu Item</a></li>
-				<li><a href="#">Menu Item</a></li>
-				<li><a href="#">Menu Item</a></li>
-				<li><a href="#">Menu Item</a></li>
-				<li><a href="#">Menu Item</a></li>
-				<li><a href="#">Menu Item</a></li>
-				<li><a href="#">Menu Item</a></li>
-			</ul>
+  			<div class="menu-column">
+  			<?php wp_nav_menu( array( 'theme_location' => 'footer-whoweare' ) ); ?>
+
+			<?php wp_nav_menu( array( 'theme_location' => 'footer-waystogive' ) ); ?>
+			</div>
+
+			<div class="menu-column">
+			<?php wp_nav_menu( array( 'theme_location' => 'footer-volunteer' ) ); ?>
+
+			<?php wp_nav_menu( array( 'theme_location' => 'footer-apply' ) ); ?>
+			</div>
+			
   		</div> <!-- END column -->
 
   		 <div class="column-three">

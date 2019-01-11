@@ -24,7 +24,7 @@
 
     <div class="container">
 
-      <a href="<?php echo get_home_url(); ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo.png"></a>
+      <a href="<?php echo get_home_url(); ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo-horizontal-black.png"></a>
         <div class="main-menu-container">
           <?php wp_nav_menu( array( 'theme_location' => 'primary-menu' ) ); ?>
         </div>
