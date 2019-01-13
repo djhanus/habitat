@@ -2,31 +2,31 @@
   	<div class="page-home">
 
       <div class="page-banner"
-         style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/images/page-banner-placeholder.jpg')">
-      <div class="title">Last year you helped us divert 1.1 million pounds to land fills.</div>
+         style="background-image: url('<?php echo get_field('featured_banner')?>">
+      <div class="title"><?php echo get_field('featured_banner_text')?></div>
       </div><!-- /.page-banner -->
 
 
   		<div class="row one">
 
         <div class="content-wrapper">
-          <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/home-module-icon.png" />
+          <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/home-module-key.png" />
           <h2>Become a Homeowner</h2>
-          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+          <p><?php echo get_field('homeowner_text')?></p>
           <div class="orange-line"></div>
         </div>
 
         <div class="content-wrapper">
-          <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/home-module-icon.png" />
-          <h2>Become a Homeowner</h2>
-          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+          <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/home-module-hammer.png" />
+          <h2>Volunteer</h2>
+          <p><?php echo get_field('volunteer_text')?></p>
           <div class="orange-line"></div>
         </div>
 
         <div class="content-wrapper">
-          <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/home-module-icon.png" />
-          <h2>Become a Homeowner</h2>
-          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+          <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/home-module-restore.png" />
+          <h2>ReStore</h2>
+          <p><?php echo get_field('restore_text')?></p>
           <div class="orange-line"></div>
         </div>
 
@@ -35,9 +35,9 @@
       <div class="row two">
 
         <div class="content-wrapper">
-          <p>Habitat for Humanity sully dolom ipsum fador dolom ipsum fador dolom ipsum fador dolom ipsum fador fador dolom ipsum fador dolom ipsum fador fador dolom ipsum fador dolom ipsum fador fador dolom ipsum fador dolom ipsum fador fador dolom ipsum fador dolom ipsum fador.</p>
+          <p><?php echo get_field('mission_statement')?></p>
 
-          <p class="second">The only ipsum fador dolom ipsum fador dolom ipsum fador dolom ipsum fador.</p>
+          <p class="second"><?php echo get_field('mission_statement_subtext')?></p>
 
         </div>
 
@@ -46,7 +46,7 @@
 
       <div class="row donate-btn">
 
-          <a href="#" target="_blank">DONATE TODAY</a>
+          <a href="<?php echo get_field('donate_button_url')?>" target="_blank"><?php echo get_field('donate_button_text')?></a>
 
       </div>
 
@@ -68,15 +68,14 @@
 
           <div class="photo" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/images/placeholder-family.jpg');">
           </div>
-
-        </div>
+        </div> <!-- END family container -->
 
       </div> <!-- END ROW -->
 
 
       <div class="row families-btn">
 
-          <a href="#" target="_blank">MEET ALL OF OUR FAMILIES</a>
+          <a href="<?php echo get_field('families_button_url')?>" target="_blank"><?php echo get_field('families_button_text')?></a>
 
       </div>
 

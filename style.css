@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*
  Theme Name:   Habitat for Humanity
  Theme URI:    local
@@ -135,7 +136,7 @@ header {
   flex-wrap: wrap;
   background: white;
   width: 100%;
-  height: 140px;
+  height: 130px;
 }
 header .container {
   position: relative;
@@ -143,9 +144,10 @@ header .container {
   align-items: center;
 }
 header img {
-  width: 320px;
+  width: 300px;
   height: auto;
-  padding: 5px 20px;
+  padding: 15px 10px;
+  margin: 0 0 0 25px;
 }
 header .top-menu {
   background-color: #00AFD7;
@@ -157,7 +159,7 @@ header .top-menu ul {
   position: absolute;
   right: 0px;
   display: inline-flex;
-  margin-right: 25px;
+  margin-right: 160px;
 }
 header .top-menu ul li a {
   position: relative;
@@ -195,10 +197,10 @@ header .main-menu-container ul li a:hover {
 header .main-menu-container ul li:last-of-type a {
   color: white;
   background: #C4D600;
-  padding: 9px 15px 7px 15px;
+  padding: 100px 15px 7px 15px;
 }
 header .main-menu-container ul li:last-of-type a:hover {
-  background: #00AFD7;
+  background: #C4D600;
 }
 header .main-menu-container ul li:last-of-type a:hover:after {
   display: none;
@@ -209,20 +211,21 @@ header .main-menu-container ul li:last-of-type a:hover:after {
 }
 .page-home .page-banner {
   border-bottom: 15px solid #888B8D;
+  margin: 0;
 }
 .page-home .one {
-  min-height: 300px;
+  min-height: 250px;
   margin: 0 auto;
   padding: 0 0 50px 0;
   display: flex;
-  max-width: 1080px;
+  max-width: 1200px;
 }
 .page-home .one .content-wrapper {
-  width: 300px;
+  width: 350px;
   height: auto;
   min-height: 150px;
   padding: 0px;
-  margin: 0px 25px;
+  margin: 0px 30px;
   text-align: center;
   display: inline-block;
 }
@@ -232,13 +235,15 @@ header .main-menu-container ul li:last-of-type a:hover:after {
 }
 .page-home .one .content-wrapper h2 {
   color: #FF671F;
-  font-size: 22px;
-  line-height: 2;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1.5;
   letter-spacing: 1px;
 }
 .page-home .one .content-wrapper p {
   color: #888B8D;
-  font-size: 14px;
+  font-size: 16px;
+  line-height: 1.5;
   padding-bottom: 25px;
 }
 .page-home .one .content-wrapper .orange-line {
@@ -260,7 +265,7 @@ header .main-menu-container ul li:last-of-type a:hover:after {
   float: right;
 }
 .page-home .two .content-wrapper p {
-  font-size: 18px;
+  font-size: 22px;
   font-weight: bold;
   color: white;
   line-height: 1.4;
@@ -370,7 +375,7 @@ header .main-menu-container ul li:last-of-type a:hover:after {
   float: left;
 }
 .page-home .four .news-container {
-  background-color: #888B8D;
+  background-color: #E8E8E8;
   width: 65%;
   height: 100%;
   padding: 25px 0;
@@ -1369,20 +1374,92 @@ footer {
   font-size: 14px;
   line-height: 1.2;
 }
-footer .title {
+footer .footer-container {
+  margin: 0 auto;
+  max-width: 960px;
+  height: 550px;
+}
+footer .footer-container .title {
   color: #FF671F;
   font-weight: bold;
-  padding-top: 20px;
+  padding: 15px 0px;
+}
+footer .footer-container p {
+  color: #888B8D;
+  font-size: 10px;
+}
+footer .footer-container .horizontal-line {
+  height: 2px;
+  width: 95%;
+  background-color: #C4D600;
+  margin: 30px 0px 10px;
+}
+footer .footer-container .column-one {
+  width: 300px;
+  height: 525px;
+  padding: 20px;
+  float: left;
+  border-right: 2px solid #C4D600;
+}
+footer .footer-container .column-one img {
+  width: 100px;
+  height: auto;
+}
+footer .footer-container .column-two {
+  width: 350px;
+  height: 525px;
+  padding: 20px;
+  float: left;
+  border-right: 2px solid #C4D600;
+  display: flex;
+}
+footer .footer-container .column-two .menu-column {
+  width: 50%;
+}
+footer .footer-container .column-two ul {
+  margin: 0 0 25px 0;
+  padding: 0;
+  text-align: left;
+}
+footer .footer-container .column-two ul li a {
+  color: white;
+  text-decoration: none;
+  line-height: 1.8;
+}
+footer .footer-container .column-two ul li a:hover {
+  text-decoration: underline;
+}
+footer .footer-container .column-two ul li:nth-child(1) {
+  font-weight: bold;
+  text-decoration: none;
+  color: #FF671F;
+}
+footer .footer-container .column-three {
+  width: 300px;
+  height: 525px;
+  padding: 20px;
+  float: left;
+}
+footer .footer-container .column-three .button a {
+  color: white;
+  background-color: #FF671F;
+  padding: 7px 0px;
+  margin: 5px 0px;
+  width: 200px;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+}
+footer .footer-container .column-three .button a:hover {
+  color: #FF671F;
+  background-color: white;
 }
 footer .copyright {
   text-align: center;
   background-color: #3D3E40;
   margin: 0;
   padding: 10px 5px;
-}
-footer .copyright p {
-  color: #888B8D;
-  font-size: 10px;
+  color: #FFFFFF˜;
 }
 
 .carousel {
