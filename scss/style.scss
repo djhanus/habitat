@@ -614,7 +614,8 @@ header {
       width: 50%;
       color: $secondary-orange;
       font-weight: 600;
-      font-size: 40px;
+      font-size: 32px;
+      line-height: 38px;
       margin: 0 0 25px 0;
     }
 
@@ -650,93 +651,218 @@ header {
 
   .section-three {
     padding: 25px 40px;
-    display: flex;
-    flex-wrap: wrap;
 
-    a {
-      position: relative;
-      width: 50%;
-      text-align: left;
-      padding: 35px 25px 35px 35px;
-      font-family: $primary-sans;
-      font-size: 28px;
-      color: white;
-      text-decoration: none;
-      -webkit-transform: perspective(1px) translateZ(0);
-          transform: perspective(1px) translateZ(0);
-          box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-          -webkit-transition-duration: 0.1s;
-          transition-duration: 0.1s;
+    .contained {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+    }
 
-      &:hover {
-        &:after {
+    button {
+      margin-left: auto;
+      cursor: pointer;
+      border: none;
+      background-color: transparent;
 
-          transform: scale(1.1);
-        }
-      }
-
-      &:after {
-        position: absolute;
-        content: '';
-        top: 25px;
-        right: 25px;
-        display: block;
+      svg {
         width: 50px;
         height: 50px;
-        background-image: url('./images/circle-carrot.svg');
-        background-size: cover;
+        transition: all 0.3s;
       }
+    }
+
+    details {
+      height: fit-content;
+      width: calc(50% - 10px);
+      color: $primary-gray;
+      user-select: none;
+      margin: 0 10px 10px 0;
 
       &:nth-child(1) {
-        width: calc(50% - 40px);
-        margin: 0 40px 40px 0;
-        background: $secondary-orange;
-
-        &:hover {
-          background: darken($secondary-orange, 5%);
-        }
+        background-color: $secondary-orange;
       }
 
       &:nth-child(2) {
-        margin: 0 0 40px 0;
-        background: $secondary-blue;
-
-        &:hover {
-          background: darken($secondary-blue, 5%);
-        }
+        margin: 0 0 10px 0;
+        background-color: $primary-blue;
       }
 
       &:nth-child(3) {
-        width: calc(50% - 40px);
-        margin: 0 40px 0 0;
-        background: $primary-green;
-
-        &:hover {
-          background: darken($primary-green, 5%);
-        }
+        margin: 0 10px 0 0;
+        background-color: $primary-gray;
       }
 
       &:nth-child(4) {
         margin: 0;
-        background: $secondary-red;
+        background-color: $primary-green;
+      }
 
-        &:hover {
-          background: darken($secondary-red, 5%);
+      p {
+        color: white;
+        font-size: 20px;
+        line-height: 26px;
+      }
+
+      &:focus {
+        outline: none;
+      }
+
+      &[open] {
+        padding: 0 30px 60px 30px;
+
+        summary {
+          border-bottom: 2px solid white;
+          margin: 0 0 40px 0;
+          padding: 30px 0;
+        }
+      }
+
+      &[open],
+      &:hover {
+        & summary svg {
+          transform: rotate(90deg);
+        }
+      }
+
+      summary {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        font-size: 28px;
+        font-weight: 600;
+        color: white;
+        cursor: pointer;
+        padding: 30px;
+
+        &:focus {
+          outline: none;
+        }
+
+        &::-webkit-details-marker {
+          display: none;
+        }
+      }
+
+      .text-wrapper {
+
+        h1, h2, h3, h4, h5, ul, ol, li, a, p {
+          color: white;
+        }
+
+        h2 {
+          text-transform: uppercase;
+          font-weight: 600;
+          font-size: 18px;
+          line-height: 26px;
+          margin: 0 0 20px 0;
+
+          &:nth-child(n+2) {
+            margin: 40px 0 0 0;
+          }
+        }
+
+        ul, ol, li, a, p {
+          color: white;
+          font-size: 16px;
+          line-height: 24px;
+        }
+
+        ul li,
+        ol li {
+          margin: 0 0 10px 0;
         }
       }
     }
+
+    // a {
+    //   position: relative;
+    //   width: 50%;
+    //   text-align: left;
+    //   padding: 35px 25px 35px 35px;
+    //   font-family: $primary-sans;
+    //   font-size: 28px;
+    //   color: white;
+    //   text-decoration: none;
+    //   -webkit-transform: perspective(1px) translateZ(0);
+    //       transform: perspective(1px) translateZ(0);
+    //       box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    //       -webkit-transition-duration: 0.1s;
+    //       transition-duration: 0.1s;
+
+    //   &:hover {
+    //     &:after {
+
+    //       transform: scale(1.1);
+    //     }
+    //   }
+
+    //   &:after {
+    //     position: absolute;
+    //     content: '';
+    //     top: 25px;
+    //     right: 25px;
+    //     display: block;
+    //     width: 50px;
+    //     height: 50px;
+    //     background-image: url('./images/circle-carrot.svg');
+    //     background-size: cover;
+    //   }
+
+    //   &:nth-child(1) {
+    //     width: calc(50% - 40px);
+    //     margin: 0 40px 40px 0;
+    //     background: $secondary-orange;
+
+    //     &:hover {
+    //       background: darken($secondary-orange, 5%);
+    //     }
+    //   }
+
+    //   &:nth-child(2) {
+    //     margin: 0 0 40px 0;
+    //     background: $secondary-blue;
+
+    //     &:hover {
+    //       background: darken($secondary-blue, 5%);
+    //     }
+    //   }
+
+    //   &:nth-child(3) {
+    //     width: calc(50% - 40px);
+    //     margin: 0 40px 0 0;
+    //     background: $primary-green;
+
+    //     &:hover {
+    //       background: darken($primary-green, 5%);
+    //     }
+    //   }
+
+    //   &:nth-child(4) {
+    //     margin: 0;
+    //     background: $secondary-red;
+
+    //     &:hover {
+    //       background: darken($secondary-red, 5%);
+    //     }
+    //   }
+    // }
   } // END .section-three
 
   .section-four {
     font-family: $primary-sans;
+    background-image: url('./images/bg-pattern.svg');
+    background-size: 15px 15px;
+    background-repeat: repeat;
 
     div {
       &:nth-child(2) {
-        padding: 50px 0 0 0;
+        padding: 50px 0 20px 0;
       }
     }
 
     h1 {
+      font-size: 32px;
+      line-height: 38px;
       color: white;
       background: $primary-blue;
       padding: 50px;

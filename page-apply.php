@@ -52,10 +52,115 @@
     </div><!-- /.section-two -->
 
     <div class="section-three">
-      <a href="#" title="Test">How to Qualify</a>
-      <a href="#" title="Test">Scholarships</a>
-      <a href="#" title="Test">Homeowner Meetings</a>
-      <a href="#" title="Test">Warranty Request Form</a>
+      <div class="contained">
+        <details>
+          <summary><span>Women Build</span>
+            <button>
+              <svg width="67px" height="67px" viewBox="0 0 67 67" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <defs>
+                      <polyline id="path-1" points="25.9003906 18.4350586 43.2832031 33.4455566 25.9003906 48.3596191"></polyline>
+                  </defs>
+                  <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                      <circle id="Oval" stroke="#FFFFFF" stroke-width="2" fill-rule="nonzero" cx="33.4731445" cy="33.5268555" r="32.4731445"></circle>
+                      <g id="Path-2" stroke-linecap="round" fill-rule="nonzero" stroke="#FFFFFF">
+                          <use stroke-width="2" xlink:href="#path-1"></use>
+                          <use stroke-width="1" xlink:href="#path-1"></use>
+                      </g>
+                  </g>
+              </svg>
+            </button>
+          </summary>
+          <div class="text-wrapper">
+            <div class="text">
+              <h2>Background</h2>
+              <p>The Bloomington High School North (BHSN) chapter of Habitat for Humanity was founded in 1998 by students Josh Girvin and Joe Aamidor. It received official independent campus chapter status in 2000 and works in partnership with our affiliate.</p>
+
+              <p>One of the strongest chapters in the nation, they have co-sponsored a house every year since 2000. In 2017–2018 their 75 members raised nearly $40,000.</p>
+            </div>
+          </div>
+        </details>
+
+        <details>
+          <summary><span>Women Build Two</span>
+            <button>
+              <svg width="67px" height="67px" viewBox="0 0 67 67" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <defs>
+                      <polyline id="path-1" points="25.9003906 18.4350586 43.2832031 33.4455566 25.9003906 48.3596191"></polyline>
+                  </defs>
+                  <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                      <circle id="Oval" stroke="#FFFFFF" stroke-width="2" fill-rule="nonzero" cx="33.4731445" cy="33.5268555" r="32.4731445"></circle>
+                      <g id="Path-2" stroke-linecap="round" fill-rule="nonzero" stroke="#FFFFFF">
+                          <use stroke-width="2" xlink:href="#path-1"></use>
+                          <use stroke-width="1" xlink:href="#path-1"></use>
+                      </g>
+                  </g>
+              </svg>
+            </button>
+          </summary>
+          <div class="text-wrapper">
+            <div class="text">
+              <h2>Background</h2>
+              <p>The Bloomington High School North (BHSN) chapter of Habitat for Humanity was founded in 1998 by students Josh Girvin and Joe Aamidor. It received official independent campus chapter status in 2000 and works in partnership with our affiliate.</p>
+
+              <p>One of the strongest chapters in the nation, they have co-sponsored a house every year since 2000. In 2017–2018 their 75 members raised nearly $40,000.</p>
+            </div>
+          </div>
+        </details>
+
+        <details>
+          <summary><span>Women Build Three</span>
+            <button>
+              <svg width="67px" height="67px" viewBox="0 0 67 67" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <defs>
+                      <polyline id="path-1" points="25.9003906 18.4350586 43.2832031 33.4455566 25.9003906 48.3596191"></polyline>
+                  </defs>
+                  <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                      <circle id="Oval" stroke="#FFFFFF" stroke-width="2" fill-rule="nonzero" cx="33.4731445" cy="33.5268555" r="32.4731445"></circle>
+                      <g id="Path-2" stroke-linecap="round" fill-rule="nonzero" stroke="#FFFFFF">
+                          <use stroke-width="2" xlink:href="#path-1"></use>
+                          <use stroke-width="1" xlink:href="#path-1"></use>
+                      </g>
+                  </g>
+              </svg>
+            </button>
+          </summary>
+          <div class="text-wrapper">
+            <div class="text">
+              <h2>Background</h2>
+              <p>The Bloomington High School North (BHSN) chapter of Habitat for Humanity was founded in 1998 by students Josh Girvin and Joe Aamidor. It received official independent campus chapter status in 2000 and works in partnership with our affiliate.</p>
+
+              <p>One of the strongest chapters in the nation, they have co-sponsored a house every year since 2000. In 2017–2018 their 75 members raised nearly $40,000.</p>
+            </div>
+          </div>
+        </details>
+
+        <details>
+          <summary><span>Women Build Four</span>
+            <button>
+              <svg width="67px" height="67px" viewBox="0 0 67 67" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <defs>
+                      <polyline id="path-1" points="25.9003906 18.4350586 43.2832031 33.4455566 25.9003906 48.3596191"></polyline>
+                  </defs>
+                  <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                      <circle id="Oval" stroke="#FFFFFF" stroke-width="2" fill-rule="nonzero" cx="33.4731445" cy="33.5268555" r="32.4731445"></circle>
+                      <g id="Path-2" stroke-linecap="round" fill-rule="nonzero" stroke="#FFFFFF">
+                          <use stroke-width="2" xlink:href="#path-1"></use>
+                          <use stroke-width="1" xlink:href="#path-1"></use>
+                      </g>
+                  </g>
+              </svg>
+            </button>
+          </summary>
+          <div class="text-wrapper">
+            <div class="text">
+              <h2>Background</h2>
+              <p>The Bloomington High School North (BHSN) chapter of Habitat for Humanity was founded in 1998 by students Josh Girvin and Joe Aamidor. It received official independent campus chapter status in 2000 and works in partnership with our affiliate.</p>
+
+              <p>One of the strongest chapters in the nation, they have co-sponsored a house every year since 2000. In 2017–2018 their 75 members raised nearly $40,000.</p>
+            </div>
+          </div>
+        </details>
+      </div>
     </div><!-- /.section-three -->
 
     <div class="section-four">

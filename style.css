@@ -501,7 +501,8 @@ header .main-menu-container ul li:last-of-type a:hover:after {
   width: 50%;
   color: #FF671F;
   font-weight: 600;
-  font-size: 40px;
+  font-size: 32px;
+  line-height: 38px;
   margin: 0 0 25px 0;
 }
 #page-apply .section-two div p {
@@ -528,75 +529,114 @@ header .main-menu-container ul li:last-of-type a:hover:after {
 }
 #page-apply .section-three {
   padding: 25px 40px;
+}
+#page-apply .section-three .contained {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
 }
-#page-apply .section-three a {
-  position: relative;
-  width: 50%;
-  text-align: left;
-  padding: 35px 25px 35px 35px;
-  font-family: "Neue Haas Grotesk", Arial, sans-serif;
-  font-size: 28px;
-  color: white;
-  text-decoration: none;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  -webkit-transition-duration: 0.1s;
-  transition-duration: 0.1s;
+#page-apply .section-three button {
+  margin-left: auto;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
 }
-#page-apply .section-three a:hover:after {
-  transform: scale(1.1);
-}
-#page-apply .section-three a:after {
-  position: absolute;
-  content: "";
-  top: 25px;
-  right: 25px;
-  display: block;
+#page-apply .section-three button svg {
   width: 50px;
   height: 50px;
-  background-image: url("./images/circle-carrot.svg");
-  background-size: cover;
+  transition: all 0.3s;
 }
-#page-apply .section-three a:nth-child(1) {
-  width: calc(50% - 40px);
-  margin: 0 40px 40px 0;
-  background: #FF671F;
+#page-apply .section-three details {
+  height: fit-content;
+  width: calc(50% - 10px);
+  color: #888B8D;
+  user-select: none;
+  margin: 0 10px 10px 0;
 }
-#page-apply .section-three a:nth-child(1):hover {
-  background: #ff5606;
+#page-apply .section-three details:nth-child(1) {
+  background-color: #FF671F;
 }
-#page-apply .section-three a:nth-child(2) {
-  margin: 0 0 40px 0;
-  background: #385988;
+#page-apply .section-three details:nth-child(2) {
+  margin: 0 0 10px 0;
+  background-color: #00AFD7;
 }
-#page-apply .section-three a:nth-child(2):hover {
-  background: #314d76;
+#page-apply .section-three details:nth-child(3) {
+  margin: 0 10px 0 0;
+  background-color: #888B8D;
 }
-#page-apply .section-three a:nth-child(3) {
-  width: calc(50% - 40px);
-  margin: 0 40px 0 0;
-  background: #C4D600;
-}
-#page-apply .section-three a:nth-child(3):hover {
-  background: #adbd00;
-}
-#page-apply .section-three a:nth-child(4) {
+#page-apply .section-three details:nth-child(4) {
   margin: 0;
-  background: #A4343A;
+  background-color: #C4D600;
 }
-#page-apply .section-three a:nth-child(4):hover {
-  background: #912e33;
+#page-apply .section-three details p {
+  color: white;
+  font-size: 20px;
+  line-height: 26px;
+}
+#page-apply .section-three details:focus {
+  outline: none;
+}
+#page-apply .section-three details[open] {
+  padding: 0 30px 60px 30px;
+}
+#page-apply .section-three details[open] summary {
+  border-bottom: 2px solid white;
+  margin: 0 0 40px 0;
+  padding: 30px 0;
+}
+#page-apply .section-three details[open] summary svg, #page-apply .section-three details:hover summary svg {
+  transform: rotate(90deg);
+}
+#page-apply .section-three details summary {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  font-size: 28px;
+  font-weight: 600;
+  color: white;
+  cursor: pointer;
+  padding: 30px;
+}
+#page-apply .section-three details summary:focus {
+  outline: none;
+}
+#page-apply .section-three details summary::-webkit-details-marker {
+  display: none;
+}
+#page-apply .section-three details .text-wrapper h1, #page-apply .section-three details .text-wrapper h2, #page-apply .section-three details .text-wrapper h3, #page-apply .section-three details .text-wrapper h4, #page-apply .section-three details .text-wrapper h5, #page-apply .section-three details .text-wrapper ul, #page-apply .section-three details .text-wrapper ol, #page-apply .section-three details .text-wrapper li, #page-apply .section-three details .text-wrapper a, #page-apply .section-three details .text-wrapper p {
+  color: white;
+}
+#page-apply .section-three details .text-wrapper h2 {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 26px;
+  margin: 0 0 20px 0;
+}
+#page-apply .section-three details .text-wrapper h2:nth-child(n+2) {
+  margin: 40px 0 0 0;
+}
+#page-apply .section-three details .text-wrapper ul, #page-apply .section-three details .text-wrapper ol, #page-apply .section-three details .text-wrapper li, #page-apply .section-three details .text-wrapper a, #page-apply .section-three details .text-wrapper p {
+  color: white;
+  font-size: 16px;
+  line-height: 24px;
+}
+#page-apply .section-three details .text-wrapper ul li,
+#page-apply .section-three details .text-wrapper ol li {
+  margin: 0 0 10px 0;
 }
 #page-apply .section-four {
   font-family: "Neue Haas Grotesk", Arial, sans-serif;
+  background-image: url("./images/bg-pattern.svg");
+  background-size: 15px 15px;
+  background-repeat: repeat;
 }
 #page-apply .section-four div:nth-child(2) {
-  padding: 50px 0 0 0;
+  padding: 50px 0 20px 0;
 }
 #page-apply .section-four h1 {
+  font-size: 32px;
+  line-height: 38px;
   color: white;
   background: #00AFD7;
   padding: 50px;
