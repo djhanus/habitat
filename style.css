@@ -1321,6 +1321,96 @@ header .main-menu-container ul li:last-of-type a:hover:after {
   height: 20px;
   fill: #00AFD7;
 }
+#page-who-are-we .section-five {
+  padding: 100px 0;
+  background-image: url("./images/bg-pattern.svg");
+  background-size: 15px 15px;
+  background-repeat: repeat;
+}
+#page-who-are-we .section-six {
+  margin: 100px 0 0 0;
+  padding: 50px 0;
+}
+#page-who-are-we .section-six h1 {
+  color: #C4D600;
+}
+#page-who-are-we .section-six .events-slider-wrapper .carousel-indicators {
+  display: none;
+}
+#page-who-are-we .section-six .events-slider-wrapper .carousel-control-prev {
+  left: -120px;
+}
+#page-who-are-we .section-six .events-slider-wrapper .carousel-control-next {
+  right: -120px;
+}
+#page-who-are-we .section-six .events-slider-wrapper .carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23565859' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+#page-who-are-we .section-six .events-slider-wrapper .carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23565859' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+#page-who-are-we .section-six .events-slider-wrapper .carousel-inner .carousel-item .item-wrapper {
+  display: flex;
+  flex-direction: row;
+  min-height: 200px;
+}
+#page-who-are-we .section-six .events-slider-wrapper .carousel-inner .carousel-item .item-wrapper .item {
+  background-color: #C4D600;
+  width: 25%;
+  margin: 0 20px;
+  padding: 20px;
+  text-align: center;
+}
+#page-who-are-we .section-six .events-slider-wrapper .carousel-inner .carousel-item .item-wrapper .item:first-child {
+  margin: 0 20px 0 0;
+}
+#page-who-are-we .section-six .events-slider-wrapper .carousel-inner .carousel-item .item-wrapper .item:last-child {
+  margin: 0 0 0 20px;
+}
+#page-who-are-we .section-six .events-slider-wrapper .carousel-inner .carousel-item .item-wrapper .item h1, #page-who-are-we .section-six .events-slider-wrapper .carousel-inner .carousel-item .item-wrapper .item h2 {
+  color: white;
+}
+#page-who-are-we .section-six .events-slider-wrapper .carousel-inner .carousel-item .item-wrapper .item h1 {
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin: 0;
+}
+#page-who-are-we .section-six .events-slider-wrapper .carousel-inner .carousel-item .item-wrapper .item h2 {
+  position: relative;
+  margin: 0 0 40px 0;
+  font-weight: 600;
+  font-size: 70px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+#page-who-are-we .section-six .events-slider-wrapper .carousel-inner .carousel-item .item-wrapper .item h2:after {
+  position: absolute;
+  content: "";
+  transform: translateX(-50%);
+  left: 50%;
+  bottom: -20px;
+  width: 50px;
+  border-bottom: 3px solid #565859;
+}
+#page-who-are-we .section-six .events-slider-wrapper .carousel-inner .carousel-item .item-wrapper .item h3 {
+  font-size: 18px;
+  font-weight: 600;
+  text-align: left;
+  color: white;
+  margin: 0 0 10px 0;
+}
+#page-who-are-we .section-six .events-slider-wrapper .carousel-inner .carousel-item .item-wrapper .item p, #page-who-are-we .section-six .events-slider-wrapper .carousel-inner .carousel-item .item-wrapper .item ol, #page-who-are-we .section-six .events-slider-wrapper .carousel-inner .carousel-item .item-wrapper .item ul, #page-who-are-we .section-six .events-slider-wrapper .carousel-inner .carousel-item .item-wrapper .item li {
+  font-size: 18px;
+  text-align: left;
+  color: white;
+}
+#page-who-are-we .section-six .events-slider-wrapper .carousel-inner .carousel-item .item-wrapper .item a {
+  display: block;
+  font-weight: 600;
+  text-align: left !important;
+  text-decoration: none;
+  color: #565859;
+}
 
 .gallery-wrapper .carousel .contained {
   width: 500px;
@@ -1336,18 +1426,22 @@ header .main-menu-container ul li:last-of-type a:hover:after {
   content: "";
   top: 0;
   left: 0;
-  width: 75px;
-  height: 75px;
-  background-color: red;
+  display: block;
+  width: 76px;
+  height: 70px;
+  background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg width='76px' height='70px' viewBox='0 0 76 70' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cg id='Page-1' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cg id='blockquote-left' fill='%233C893A' fill-rule='nonzero'%3E%3Cg id='Group'%3E%3Crect id='Rectangle' x='0.0409574341' y='37.2497617' width='30.2521008' height='32.2502383'%3E%3C/rect%3E%3Cpath d='M30.6531704,0 L30.6531704,13.2268827 C22.1161192,16.7302193 15.6540208,26.9542421 15.6540208,37.5714967 L0.0409574341,37.5714967 C0.0409574341,26.0021635 7.84950344,4.28979981 30.6531704,0 Z' id='Oval'%3E%3C/path%3E%3C/g%3E%3Cg id='Group' transform='translate(44.334296, 0.000000)'%3E%3Cpolygon id='Rectangle' points='0.0409574341 37.2497617 30.2930582 37.2497617 30.2930582 69.5 0.0409574341 69.5'%3E%3C/polygon%3E%3Cpath d='M30.6531704,0 L30.6531704,13.2268827 C22.1161192,16.7302193 15.6540208,26.9542421 15.6540208,37.5714967 L0.0409574341,37.5714967 C0.0409574341,26.0021635 7.84950344,4.28979981 30.6531704,0 Z' id='Oval'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }
 .gallery-wrapper .carousel blockquote:after {
   position: absolute;
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
   content: "";
   bottom: 0;
   right: 0;
-  width: 75px;
-  height: 75px;
-  background-color: red;
+  display: block;
+  width: 76px;
+  height: 70px;
+  background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg width='76px' height='70px' viewBox='0 0 76 70' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cg id='Page-1' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cg id='blockquote-left' fill='%233C893A' fill-rule='nonzero'%3E%3Cg id='Group'%3E%3Crect id='Rectangle' x='0.0409574341' y='37.2497617' width='30.2521008' height='32.2502383'%3E%3C/rect%3E%3Cpath d='M30.6531704,0 L30.6531704,13.2268827 C22.1161192,16.7302193 15.6540208,26.9542421 15.6540208,37.5714967 L0.0409574341,37.5714967 C0.0409574341,26.0021635 7.84950344,4.28979981 30.6531704,0 Z' id='Oval'%3E%3C/path%3E%3C/g%3E%3Cg id='Group' transform='translate(44.334296, 0.000000)'%3E%3Cpolygon id='Rectangle' points='0.0409574341 37.2497617 30.2930582 37.2497617 30.2930582 69.5 0.0409574341 69.5'%3E%3C/polygon%3E%3Cpath d='M30.6531704,0 L30.6531704,13.2268827 C22.1161192,16.7302193 15.6540208,26.9542421 15.6540208,37.5714967 L0.0409574341,37.5714967 C0.0409574341,26.0021635 7.84950344,4.28979981 30.6531704,0 Z' id='Oval'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }
 .gallery-wrapper .carousel blockquote cite {
   display: block;

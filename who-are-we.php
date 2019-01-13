@@ -180,10 +180,7 @@
     <div class="section-five">
       <div class="contained">
         <div class="gallery-wrapper">
-          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-          <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-          <div id="volunteer-gallery" class="carousel slide" data-ride="carousel">
+          <div id="volunteer-gallery" class="carousel slide" data-ride="carousel" data-interval="false">
             <ul class="carousel-indicators">
               <li data-target="#volunteer-gallery" data-slide-to="0" class="active"></li>
               <li data-target="#volunteer-gallery" data-slide-to="1"></li>
@@ -219,5 +216,97 @@
         </div><!-- /.gallery-wrapper -->
       </div>
     </div><!-- /.section-five -->
+
+    <div class="section-six">
+      <div class="contained">
+        <h1>Upcoming Events</h1>
+
+        <div class="events-slider-wrapper">
+          <div id="events-gallery" class="carousel slide" data-ride="carousel" data-interval="false">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="item-wrapper">
+                  <div class="item">
+                    <h1>nov</h1>
+                    <h2>08</h2>
+                    <h3>Event Name</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.</p>
+                    <a href="#" title="">Read More >></a>
+                  </div>
+
+                  <div class="item">
+                    <h1>nov</h1>
+                    <h2>11</h2>
+                    <h3>Event Name</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.</p>
+                    <a href="#" title="">Read More >></a>
+                  </div>
+
+                  <div class="item">
+                    <h1>nov</h1>
+                    <h2>15</h2>
+                    <h3>Event Name</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.</p>
+                    <a href="#" title="">Read More >></a>
+                  </div>
+
+                  <div class="item">
+                    <h1>nov</h1>
+                    <h2>16</h2>
+                    <h3>Event Name</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.</p>
+                    <a href="#" title="">Read More >></a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="item-wrapper">
+                  <div class="item">
+                    <h1>nov</h1>
+                    <h2>08</h2>
+                    <h3>Event Name</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.</p>
+                    <a href="#" title="">Read More >></a>
+                  </div>
+
+                  <div class="item">
+                    <h1>nov</h1>
+                    <h2>11</h2>
+                    <h3>Event Name</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.</p>
+                    <a href="#" title="">Read More >></a>
+                  </div>
+
+                  <div class="item">
+                    <h1>nov</h1>
+                    <h2>15</h2>
+                    <h3>Event Name</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.</p>
+                    <a href="#" title="">Read More >></a>
+                  </div>
+
+                  <div class="item">
+                    <h1>nov</h1>
+                    <h2>16</h2>
+                    <h3>Event Name</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.</p>
+                    <a href="#" title="">Read More >></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <a class="carousel-control-prev" href="#events-gallery" data-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </a>
+
+            <a class="carousel-control-next" href="#events-gallery" data-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </a>
+          </div>
+        </div><!-- /.events-slider-wrappe -->
+      </div>
+    </div><!-- /.section-six -->
   </div><!-- /#page-who-are-we -->
 <?php get_footer(); ?>
