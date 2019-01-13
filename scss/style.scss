@@ -2044,9 +2044,21 @@ footer {
           }
 
           &:nth-child(1) {
-             font-weight: bold;
-             text-decoration: none;
-             color: $secondary-orange;    // Adam how do I make this work?
+            a {
+              // Adam how do I make this work?
+              //
+              // AB: you were only inside the <li> element,
+              // since <a> are white above, we actually
+              // want to change that color and not that of
+              // the <li>.
+              // You were pretty much there 99%, just
+              // pay attention to where you're located in
+              // the DOM specifically in this nested scss.
+              // :] nice nice!
+              font-weight: bold;
+              text-decoration: none;
+              color: $secondary-orange;
+            }
           }
         }
       }
