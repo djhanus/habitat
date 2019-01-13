@@ -10,13 +10,13 @@
         <h1>Since our founding in 1988, our affiliate has</h1>
         <div>
           <h2>built nearly</h2>
-          <h3>200</h3>
+          <h3 class="count-animation">200</h3>
           <h4>homes</h4>
         </div>
 
         <div>
           <h2>served more than</h2>
-          <h3>700</h3>
+          <h3 class="count-animation">700</h3>
           <h4>people</h4>
         </div>
       </div>

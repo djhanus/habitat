@@ -868,6 +868,11 @@ header {
         padding: 75px 0;
         text-align: center;
 
+        h2 {
+          font-size: 24px;
+          margin: 0;
+        }
+
         h2, h3, h4 {
           color: $primary-green;
         }
@@ -944,6 +949,11 @@ header {
         padding: 75px 0;
         text-align: center;
 
+        h2 {
+          font-size: 24px;
+          margin: 0;
+        }
+
         h2, h3, h4 {
           color: darken($primary-gray, 10%);
         }
@@ -967,6 +977,9 @@ header {
   .section-four {
     padding: 50px 0;
     font-family: $primary-sans;
+    background-image: url('./images/bg-pattern.svg');
+    background-size: 15px 15px;
+    background-repeat: repeat;
 
     div {
       &:nth-child(2) {
@@ -1422,7 +1435,9 @@ header {
 
   .section-nine {
     padding: 100px 0;
-    background-color: lighten($primary-gray, 45%);
+    background-image: url('./images/bg-pattern.svg');
+    background-size: 15px 15px;
+    background-repeat: repeat;
   } // END .section-nine
 }
 
