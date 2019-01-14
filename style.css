@@ -91,7 +91,26 @@ table {
 }
 h1, h2, h3, h4, h5, h6 {
   font-family: "Neue Haas Grotesk", Arial, sans-serif;
-  color: #000;
+}
+
+p {
+  font-family: "Neue Haas Grotesk", Arial, sans-serif;
+  font-size: 14px;
+  color: #888B8D;
+  padding-bottom: 25px;
+}
+
+ul, ol {
+  margin: 10px 25px;
+}
+ul li, ol li {
+  padding-bottom: 10px;
+}
+
+blockquote {
+  padding: 25px 30px;
+  margin: 15px;
+  font-style: italic;
 }
 
 strong {
@@ -102,21 +121,12 @@ em {
   font-style: italic;
 }
 
-p, ul, ol {
-  font-family: "Neue Haas Grotesk", Arial, sans-serif;
-  font-size: 14px;
-  color: #000;
-  padding-bottom: 20px;
-}
-p:last-child, ul:last-child, ol:last-child {
-  padding-bottom: 0;
-}
-
 html,
 body {
   font-family: "Neue Haas Grotesk", Arial, sans-serif;
   background: #FFFFFF;
   height: auto;
+  line-height: 1.2;
 }
 
 main {
@@ -159,7 +169,7 @@ header .top-menu ul {
   position: absolute;
   right: 0px;
   display: inline-flex;
-  margin-right: 160px;
+  margin: 0 160px 0 0;
 }
 header .top-menu ul li a {
   position: relative;
@@ -400,43 +410,57 @@ header .main-menu-container ul li:last-of-type a:hover:after {
   margin: 0;
 }
 
-#page-standard {
-  width: 100%;
-  border: 3px dashed orange;
-  padding: 40px;
+.page-standard {
+  background-image: url("./images/bg-pattern.svg");
+  background-size: 15px 15px;
+  background-repeat: repeat;
+  padding-bottom: 20px;
 }
-#page-standard p {
+.page-standard .main-container {
+  margin: 0 auto;
+  background-color: #FFFFFF;
+  max-width: 960px;
+  width: 100%;
+  padding: 30px 70px;
+}
+.page-standard .main-container p {
   font-size: 16px;
   text-align: left;
   line-height: 1.5;
 }
-#page-standard h1 {
-  line-height: 2;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  margin: 20px 0px;
-}
-#page-standard ul {
-  padding-left: 50px;
-  list-style-type: disc;
-  margin: 15px 0px;
-}
-#page-standard ul li {
-  font-size: 21px;
-  line-height: 1.6;
-}
-#page-standard .featured-wrapper {
-  background-color: #00AFD7;
-  width: 100%;
-  height: 500px;
-}
-#page-standard .featured-wrapper h1 {
+.page-standard .main-container h1 {
   font-size: 28px;
+  margin: 15px 0px;
+  color: #FF671F;
   font-weight: bold;
-  color: white;
-  background-color: #C4D600;
-  padding: 10px 20px;
-  display: inline-block;
+}
+.page-standard .main-container h2 {
+  font-size: 20px;
+  margin: 15px 0px;
+  color: #888B8D;
+  font-weight: normal;
+}
+.page-standard .main-container img.alignright {
+  margin-left: 1.5em;
+  display: inline;
+  float: right;
+  height: auto;
+  max-width: 350px;
+}
+.page-standard .main-container img.alignleft {
+  margin-right: 1.5em;
+  display: inline;
+  float: left;
+  height: auto;
+  max-width: 350px;
+}
+.page-standard .main-container img.aligncenter {
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+  clear: both;
+  height: auto;
+  max-width: 550px;
 }
 
 .page-banner {
@@ -1567,6 +1591,9 @@ footer .footer-container .column-two ul {
   margin: 0 0 25px 0;
   padding: 0;
   text-align: left;
+}
+footer .footer-container .column-two ul li {
+  padding: 0;
 }
 footer .footer-container .column-two ul li a {
   color: white;

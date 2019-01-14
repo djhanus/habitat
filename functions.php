@@ -26,4 +26,21 @@ function register_menus() {
 }
 add_action('init', 'register_menus');
 
+function create_posttype() {
+ 
+    register_post_type( 'families',
+    // CPT Options
+        array(
+            'labels' => array(
+                'name' => __( 'Families' ),
+                'singular_name' => __( 'Family' )
+            ),
+            'public' => true,
+            'has_archive' => true,
+            'rewrite' => array('slug' => 'families'),
+        )
+    );
+}
+add_action( 'init', 'create_posttype' );
+
 ?>
