@@ -31,12 +31,11 @@
 
 @media screen and (prefers-reduced-motion: reduce) {
   .carousel-item.active,
-  .carousel-item-next,
-  .carousel-item-prev {
+.carousel-item-next,
+.carousel-item-prev {
     transition: none;
   }
 }
-
 .carousel-item-next,
 .carousel-item-prev {
   position: absolute;
@@ -49,45 +48,42 @@
   transform: translateX(0);
 }
 
-@supports ((-webkit-transform-style: preserve-3d) or (transform-style: preserve-3d)) {
+@supports (-webkit-transform-style: preserve-3d) or (transform-style: preserve-3d) {
   .carousel-item-next.carousel-item-left,
-  .carousel-item-prev.carousel-item-right {
+.carousel-item-prev.carousel-item-right {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
   }
 }
-
 .carousel-item-next,
 .active.carousel-item-right {
   -webkit-transform: translateX(100%);
   transform: translateX(100%);
 }
 
-@supports ((-webkit-transform-style: preserve-3d) or (transform-style: preserve-3d)) {
+@supports (-webkit-transform-style: preserve-3d) or (transform-style: preserve-3d) {
   .carousel-item-next,
-  .active.carousel-item-right {
+.active.carousel-item-right {
     -webkit-transform: translate3d(100%, 0, 0);
     transform: translate3d(100%, 0, 0);
   }
 }
-
 .carousel-item-prev,
 .active.carousel-item-left {
   -webkit-transform: translateX(-100%);
   transform: translateX(-100%);
 }
 
-@supports ((-webkit-transform-style: preserve-3d) or (transform-style: preserve-3d)) {
+@supports (-webkit-transform-style: preserve-3d) or (transform-style: preserve-3d) {
   .carousel-item-prev,
-  .active.carousel-item-left {
+.active.carousel-item-left {
     -webkit-transform: translate3d(-100%, 0, 0);
     transform: translate3d(-100%, 0, 0);
   }
 }
-
 .carousel-fade .carousel-item {
   opacity: 0;
-  transition-duration: .6s;
+  transition-duration: 0.6s;
   transition-property: opacity;
 }
 
@@ -111,17 +107,16 @@
   transform: translateX(0);
 }
 
-@supports ((-webkit-transform-style: preserve-3d) or (transform-style: preserve-3d)) {
+@supports (-webkit-transform-style: preserve-3d) or (transform-style: preserve-3d) {
   .carousel-fade .carousel-item-next,
-  .carousel-fade .carousel-item-prev,
-  .carousel-fade .carousel-item.active,
-  .carousel-fade .active.carousel-item-left,
-  .carousel-fade .active.carousel-item-prev {
+.carousel-fade .carousel-item-prev,
+.carousel-fade .carousel-item.active,
+.carousel-fade .active.carousel-item-left,
+.carousel-fade .active.carousel-item-prev {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
   }
 }
-
 .carousel-control-prev,
 .carousel-control-next {
   position: absolute;
@@ -145,7 +140,7 @@
   color: #fff;
   text-decoration: none;
   outline: 0;
-  opacity: .9;
+  opacity: 0.9;
 }
 
 .carousel-control-prev {
@@ -238,3 +233,5 @@
   color: #fff;
   text-align: center;
 }
+
+/*# sourceMappingURL=carousel.css.map */

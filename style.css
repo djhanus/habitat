@@ -89,44 +89,51 @@ table {
   font-weight: 700;
   src: url("wp-content/themes/habitat/fonts/NHaasGroteskTXPro-75Bd.otf") format("opentype");
 }
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Neue Haas Grotesk", Arial, sans-serif;
-}
-
-p {
-  font-family: "Neue Haas Grotesk", Arial, sans-serif;
-  font-size: 14px;
-  color: #888B8D;
-  padding-bottom: 25px;
-}
-
-ul, ol {
-  margin: 10px 25px;
-}
-ul li, ol li {
-  padding-bottom: 10px;
-}
-
-blockquote {
-  padding: 25px 30px;
-  margin: 15px;
-  font-style: italic;
-}
-
-strong {
-  font-weight: bold;
-}
-
-em {
-  font-style: italic;
-}
-
 html,
 body {
   font-family: "Neue Haas Grotesk", Arial, sans-serif;
   background: #FFFFFF;
   height: auto;
   line-height: 1.2;
+}
+html h1, html h2, html h3, html h4, html h5, html h6,
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6 {
+  font-family: "Neue Haas Grotesk", Arial, sans-serif;
+}
+html p,
+body p {
+  font-size: 14px;
+  color: #888B8D;
+  padding-bottom: 25px;
+}
+html ul, html ol,
+body ul,
+body ol {
+  margin: 10px 25px;
+}
+html ul li, html ol li,
+body ul li,
+body ol li {
+  padding-bottom: 10px;
+}
+html blockquote,
+body blockquote {
+  padding: 25px 30px;
+  margin: 15px;
+  font-style: italic;
+}
+html strong,
+body strong {
+  font-weight: bold;
+}
+html em,
+body em {
+  font-style: italic;
 }
 
 main {
@@ -1534,6 +1541,49 @@ header .main-menu-container ul li:last-of-type a:hover:after {
   height: 100%;
 }
 
+.single-families {
+  background-color: #00AFD7;
+}
+.single-families .page-banner {
+  border-bottom: 15px solid #FFFFFF;
+  margin: 0;
+}
+.single-families .main-container {
+  margin: 0 auto;
+  max-width: 800px;
+  width: 100%;
+  padding: 100px 20px 50px;
+}
+.single-families .main-container p {
+  color: #FFFFFF;
+  font-size: 16px;
+  text-align: left;
+  line-height: 1.5;
+}
+.single-families .families-button {
+  background-color: #FFFFFF;
+  padding: 50px;
+  margin: 0 auto;
+  text-align: center;
+}
+.single-families .families-button a {
+  font-family: "Neue Haas Grotesk", Arial, sans-serif;
+  color: #FF671F;
+  padding: 15px 25px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  border: 1px solid #FF671F;
+  letter-spacing: 2px;
+  text-align: center;
+  background-color: white;
+}
+.single-families .families-button a:hover {
+  background-color: #FF671F;
+  color: #FFFFFF;
+  border: 1px solid #FF671F;
+}
+
 footer {
   position: relative;
   background: #888B8D;
@@ -1630,9 +1680,10 @@ footer .footer-container .column-three .button a:hover {
 }
 footer .copyright {
   text-align: center;
+  font-size: 12px;
   background-color: #3D3E40;
   margin: 0;
-  padding: 10px 5px;
+  padding: 15px 5px;
   color: #FFFFFF˜;
 }
 

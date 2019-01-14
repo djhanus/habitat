@@ -59,7 +59,7 @@
 
 
   	<div class="copyright">
-    	<p>&copy; <?php echo date("Y"); ?> Habitat for Humanity of Monroe County</p>
+    	&copy; <?php echo date("Y"); ?> Habitat for Humanity of Monroe County
 	</div>
 
   </footer>

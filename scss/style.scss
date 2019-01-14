@@ -109,42 +109,8 @@ $secondary-blue:    #385988;
 $secondary-red:     #A4343A;
 
 
-// TYPOGRAPHY
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: $primary-sans;
-}
-
-p {
-  font-family: $primary-sans;
-  font-size: 14px;
-  color: $primary-gray;
-  padding-bottom: 25px;
-}
-
-ul, ol {
-  margin: 10px 25px;
-
-  li {
-    padding-bottom: 10px;
-  }
-}
-
-blockquote {
-  padding: 25px 30px;
-  margin: 15px;
-  font-style: italic;
-}
-
-strong {
-  font-weight: bold;
-}
-
-em {
-  font-style: italic;
-}
-
-// Global Container
+// GLOBAL
 
 html,
 body {
@@ -152,6 +118,38 @@ body {
   background: #FFFFFF;
   height: auto;
   line-height: 1.2;
+ 
+  h1, h2, h3, h4, h5, h6 {
+    font-family: $primary-sans;
+  }
+
+  p {
+    font-size: 14px;
+    color: $primary-gray;
+    padding-bottom: 25px;
+  }
+
+  ul, ol {
+    margin: 10px 25px;
+
+    li {
+      padding-bottom: 10px;
+    }
+  }
+
+  blockquote {
+    padding: 25px 30px;
+    margin: 15px;
+    font-style: italic;
+  }
+
+  strong {
+    font-weight: bold;
+  }
+
+  em {
+    font-style: italic;
+  }
 }
 
 main {
@@ -163,6 +161,7 @@ main {
   width: 100%;
   margin: 0 auto;
 }
+
 
 // HEADER
 header {
@@ -1992,6 +1991,57 @@ header {
   }
 }
 
+// Single Post - Families
+
+.single-families {
+  background-color: $primary-blue;
+
+  .page-banner {
+    border-bottom: 15px solid #FFFFFF;
+    margin: 0;
+  }
+
+  .main-container {
+    margin: 0 auto;
+    max-width: 800px;
+    width: 100%;
+    padding: 100px 20px 50px;
+
+    p {
+      color: #FFFFFF;
+      font-size: 16px;
+      text-align: left;
+      line-height: 1.5;
+    }
+  } // END main container
+
+  .families-button {
+    background-color: #FFFFFF;
+    padding: 50px;
+    margin: 0 auto;
+    text-align: center;
+
+    a {
+      font-family: $primary-sans;
+      color: $secondary-orange;
+      padding: 15px 25px;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: bold;
+      border: 1px solid $secondary-orange;
+      letter-spacing: 2px;
+      text-align: center;
+      background-color: white;
+
+      &:hover {
+        background-color: $secondary-orange;
+        color: #FFFFFF;
+        border: 1px solid $secondary-orange;
+      }
+    }
+  } 
+}
+
 // FOOTER
 footer {
   position: relative;
@@ -2110,9 +2160,10 @@ footer {
 
   .copyright {
     text-align: center;
+    font-size: 12px;
     background-color: #3D3E40;
     margin: 0;
-    padding: 10px 5px;
+    padding: 15px 5px;
     color: #FFFFFF˜;
   }
 } // END FOOTER
