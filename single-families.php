@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-  <div class="single-families">
+  <div class="post-families">
 
     <div class="page-banner"
       style="background-image: url('<?php echo get_field('family_photo')?>">
@@ -16,7 +16,7 @@
 
     <div class="families-button">
           <a href="#" target="_blank">MEET ALL OF OUR FAMILIES</a>
-      </div>
+    </div>
   
   </div>
 <?php get_footer(); ?>

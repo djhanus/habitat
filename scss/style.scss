@@ -119,14 +119,26 @@ body {
   height: auto;
   line-height: 1.2;
  
-  h1, h2, h3, h4, h5, h6 {
-    font-family: $primary-sans;
+  p {
+    font-size: 16px;
+    text-align: left;
+    line-height: 1.5;
+    color: $primary-gray;
+    padding-bottom: 20px;
   }
 
-  p {
-    font-size: 14px;
+  h1 {
+    font-size: 28px;
+    margin: 15px 0px;
+    color: $secondary-orange;
+    font-weight: bold;
+  }
+
+  h2 {
+    font-size: 20px;
+    margin: 15px 0px;
     color: $primary-gray;
-    padding-bottom: 25px;
+    font-weight: normal;
   }
 
   ul, ol {
@@ -135,6 +147,31 @@ body {
     li {
       padding-bottom: 10px;
     }
+  }
+
+  img.alignright {
+    margin-left: 1.5em;
+    display: inline;
+    float: right;
+    height: auto;
+    max-width: 350px
+  }
+
+  img.alignleft {
+    margin-right: 1.5em;
+    display: inline;
+    float: left;
+    height: auto;
+    max-width: 350px
+  }
+
+  img.aligncenter {
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    clear: both;
+    height: auto;
+    max-width: 550px;
   }
 
   blockquote {
@@ -514,64 +551,19 @@ header {
 
   .main-container {
     margin: 0 auto;
-    background-color: #FFFFFF;
-    max-width: 960px;
     width: 100%;
+    max-width: 960px;
+    background-color: #FFFFFF;
     padding: 30px 70px;
-
-    p {
-      font-size: 16px;
-      text-align: left;
-      line-height: 1.5;
-    }
-
-    h1 {
-      font-size: 28px;
-      margin: 15px 0px;
-      color: $secondary-orange;
-      font-weight: bold;
-    }
-
-    h2 {
-      font-size: 20px;
-      margin: 15px 0px;
-      color: $primary-gray;
-      font-weight: normal;
-    }
-
-    img.alignright {
-      margin-left: 1.5em;
-      display: inline;
-      float: right;
-      height: auto;
-      max-width: 350px
-    }
-
-    img.alignleft {
-      margin-right: 1.5em;
-      display: inline;
-      float: left;
-      height: auto;
-      max-width: 350px
-    }
-
-    img.aligncenter {
-      margin-right: auto;
-      margin-left: auto;
-      display: block;
-      clear: both;
-      height: auto;
-      max-width: 550px;
-    }
-  } // END main container
+  }
 }
 
 // PAGE - BANNER (Global)
 .page-banner {
   position: relative;
   width: 100%;
-  height: 800px;
-  max-height: 800px;
+  height: 600px;
+  max-height: 600px;
   margin: 0 0 20px 0;
   background-size: cover;
   background-position: center;
@@ -1991,9 +1983,45 @@ header {
   }
 }
 
-// Single Post - Families
+// Single Post - Standard
+.post-standard {
+  background-image: url('./images/bg-pattern.svg');
+  background-size: 15px 15px;
+  background-repeat: repeat;
+  padding-bottom: 20px;
 
-.single-families {
+  .banner {
+    color: white;
+    background-color: $secondary-orange;
+    width: 100%;
+    padding: 30px 20px;
+
+    .container {
+      max-width: 960px;
+
+      .date {
+        font-size: 12px;
+        text-transform: uppercase;
+      }
+
+      .title {
+        font-size: 32px;
+        line-height: 1.8;
+      }
+    }
+  }
+
+  .main-container {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 960px;
+    background-color: #FFFFFF;
+    padding: 50px;
+  }
+}
+
+// Single Post - Families
+.post-families {
   background-color: $primary-blue;
 
   .page-banner {
@@ -2003,17 +2031,14 @@ header {
 
   .main-container {
     margin: 0 auto;
-    max-width: 800px;
     width: 100%;
+    max-width: 800px;
     padding: 100px 20px 50px;
 
     p {
-      color: #FFFFFF;
-      font-size: 16px;
-      text-align: left;
-      line-height: 1.5;
+     color: white;
     }
-  } // END main container
+  }
 
   .families-button {
     background-color: #FFFFFF;

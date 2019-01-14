@@ -96,20 +96,27 @@ body {
   height: auto;
   line-height: 1.2;
 }
-html h1, html h2, html h3, html h4, html h5, html h6,
-body h1,
-body h2,
-body h3,
-body h4,
-body h5,
-body h6 {
-  font-family: "Neue Haas Grotesk", Arial, sans-serif;
-}
 html p,
 body p {
-  font-size: 14px;
+  font-size: 16px;
+  text-align: left;
+  line-height: 1.5;
   color: #888B8D;
-  padding-bottom: 25px;
+  padding-bottom: 20px;
+}
+html h1,
+body h1 {
+  font-size: 28px;
+  margin: 15px 0px;
+  color: #FF671F;
+  font-weight: bold;
+}
+html h2,
+body h2 {
+  font-size: 20px;
+  margin: 15px 0px;
+  color: #888B8D;
+  font-weight: normal;
 }
 html ul, html ol,
 body ul,
@@ -120,6 +127,31 @@ html ul li, html ol li,
 body ul li,
 body ol li {
   padding-bottom: 10px;
+}
+html img.alignright,
+body img.alignright {
+  margin-left: 1.5em;
+  display: inline;
+  float: right;
+  height: auto;
+  max-width: 350px;
+}
+html img.alignleft,
+body img.alignleft {
+  margin-right: 1.5em;
+  display: inline;
+  float: left;
+  height: auto;
+  max-width: 350px;
+}
+html img.aligncenter,
+body img.aligncenter {
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+  clear: both;
+  height: auto;
+  max-width: 550px;
 }
 html blockquote,
 body blockquote {
@@ -425,56 +457,17 @@ header .main-menu-container ul li:last-of-type a:hover:after {
 }
 .page-standard .main-container {
   margin: 0 auto;
-  background-color: #FFFFFF;
-  max-width: 960px;
   width: 100%;
+  max-width: 960px;
+  background-color: #FFFFFF;
   padding: 30px 70px;
-}
-.page-standard .main-container p {
-  font-size: 16px;
-  text-align: left;
-  line-height: 1.5;
-}
-.page-standard .main-container h1 {
-  font-size: 28px;
-  margin: 15px 0px;
-  color: #FF671F;
-  font-weight: bold;
-}
-.page-standard .main-container h2 {
-  font-size: 20px;
-  margin: 15px 0px;
-  color: #888B8D;
-  font-weight: normal;
-}
-.page-standard .main-container img.alignright {
-  margin-left: 1.5em;
-  display: inline;
-  float: right;
-  height: auto;
-  max-width: 350px;
-}
-.page-standard .main-container img.alignleft {
-  margin-right: 1.5em;
-  display: inline;
-  float: left;
-  height: auto;
-  max-width: 350px;
-}
-.page-standard .main-container img.aligncenter {
-  margin-right: auto;
-  margin-left: auto;
-  display: block;
-  clear: both;
-  height: auto;
-  max-width: 550px;
 }
 
 .page-banner {
   position: relative;
   width: 100%;
-  height: 800px;
-  max-height: 800px;
+  height: 600px;
+  max-height: 600px;
   margin: 0 0 20px 0;
   background-size: cover;
   background-position: center;
@@ -1541,32 +1534,60 @@ header .main-menu-container ul li:last-of-type a:hover:after {
   height: 100%;
 }
 
-.single-families {
+.post-standard {
+  background-image: url("./images/bg-pattern.svg");
+  background-size: 15px 15px;
+  background-repeat: repeat;
+  padding-bottom: 20px;
+}
+.post-standard .banner {
+  color: white;
+  background-color: #FF671F;
+  width: 100%;
+  padding: 30px 20px;
+}
+.post-standard .banner .container {
+  max-width: 960px;
+}
+.post-standard .banner .container .date {
+  font-size: 12px;
+  text-transform: uppercase;
+}
+.post-standard .banner .container .title {
+  font-size: 32px;
+  line-height: 1.8;
+}
+.post-standard .main-container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 960px;
+  background-color: #FFFFFF;
+  padding: 50px;
+}
+
+.post-families {
   background-color: #00AFD7;
 }
-.single-families .page-banner {
+.post-families .page-banner {
   border-bottom: 15px solid #FFFFFF;
   margin: 0;
 }
-.single-families .main-container {
+.post-families .main-container {
   margin: 0 auto;
-  max-width: 800px;
   width: 100%;
+  max-width: 800px;
   padding: 100px 20px 50px;
 }
-.single-families .main-container p {
-  color: #FFFFFF;
-  font-size: 16px;
-  text-align: left;
-  line-height: 1.5;
+.post-families .main-container p {
+  color: white;
 }
-.single-families .families-button {
+.post-families .families-button {
   background-color: #FFFFFF;
   padding: 50px;
   margin: 0 auto;
   text-align: center;
 }
-.single-families .families-button a {
+.post-families .families-button a {
   font-family: "Neue Haas Grotesk", Arial, sans-serif;
   color: #FF671F;
   padding: 15px 25px;
@@ -1578,7 +1599,7 @@ header .main-menu-container ul li:last-of-type a:hover:after {
   text-align: center;
   background-color: white;
 }
-.single-families .families-button a:hover {
+.post-families .families-button a:hover {
   background-color: #FF671F;
   color: #FFFFFF;
   border: 1px solid #FF671F;
