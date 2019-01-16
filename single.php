@@ -5,7 +5,7 @@
     <div class="banner">
       <div class="container">
         <div class="date">
-          November 31st, 2019
+          November 31, 2019
         </div>
 
         <div class="title">

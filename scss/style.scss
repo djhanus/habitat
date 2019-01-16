@@ -2000,13 +2000,14 @@ header {
       max-width: 960px;
 
       .date {
-        font-size: 12px;
+        font-size: 10px;
         text-transform: uppercase;
       }
 
       .title {
         font-size: 32px;
-        line-height: 1.8;
+        line-height: 1.5;
+        margin: 10px 0px;
       }
     }
   }
@@ -2017,6 +2018,32 @@ header {
     max-width: 960px;
     background-color: #FFFFFF;
     padding: 50px;
+
+    img {
+      max-width: 860px;
+      margin: 40px 0 0 0;
+    }
+
+    .wp-caption-text {
+      font-size: 14px;
+      font-weight: bold;
+      background-color: $primary-green;
+      padding: 5px 15px;
+      margin: 0 0 40px 0;
+      max-width: 860px;
+    }
+    
+    blockquote {
+        p {
+        padding: 10px;
+        margin: 0px;
+        font-style: normal;
+        font-size: 26px;
+        font-weight: bold;
+        color: $primary-blue;
+        line-height: 1.3;
+      }
+    }
   }
 }
 
