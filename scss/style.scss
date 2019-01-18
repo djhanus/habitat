@@ -118,7 +118,7 @@ body {
   background: #FFFFFF;
   height: auto;
   line-height: 1.2;
- 
+
   p {
     font-size: 16px;
     text-align: left;
@@ -487,31 +487,112 @@ header {
 
   // events and news
   .four {
+    display: flex;
     height: 900px;
 
     .title {
-        background-color: #666;
-        padding: 10px 25px 10px 35px;
-        color: white;
-        font-size: 21px;
-        width: 125px;
-        font-family: $primary-sans;
+      background-color: #666;
+      padding: 10px 25px 10px 35px;
+      color: white;
+      font-size: 21px;
+      width: 125px;
+      font-family: $primary-sans;
     }
 
     .events-container {
       background-color: $primary-green;
       width: 35%;
-      height: 100%;
       padding: 25px 0;
-      float: left;
+
+      a {
+        &.see-all {
+          font-family: "Neue Haas Grotesk", Arial, sans-serif;
+          display: block;
+          width: inherit;
+          margin: 0 auto;
+          padding: 15px 25px;
+          border: 1px solid $primary-gray;
+          background-color: transparent;
+          color: $primary-gray;
+          font-weight: 600;
+          text-decoration: none;
+          font-size: 16px;
+          letter-spacing: 2px;
+          text-align: center;
+
+        }
+      }
+
+      .events-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        width: calc(100% - 18px);
+        margin: 20px 0 0 0;
+        margin-left: auto;
+        background-color: red;
+
+        .event {
+          display: flex;
+          align-items: flex-start;
+          margin: 0 0 40px 0;
+
+          .date {
+            width: 100px;
+            height: auto;
+            padding: 0 20px;
+            border-right: 2px solid $primary-gray;
+            background-color: purple;
+
+            h1, h2 {
+              text-align: center;
+              color: white;
+            }
+
+            h1 {
+              font-size: 30px;
+              margin: 0;
+              padding: 0;
+            }
+
+            h2 {
+              font-size: 50px;
+              margin: 0;
+              padding: 0;
+            }
+          }
+
+          .text {
+            padding: 0 0 0 20px;
+            background-color: green;
+
+            h1 {
+              color: white;
+              font-size: 21px;
+              margin: 0 0 10px 0;
+              padding: 0;
+            }
+
+            p {
+              font-size: 18px;
+              padding: 0;
+              margin: 0 0 10px 0;
+              color: white;
+            }
+
+            a {
+              font-size: 18px;
+              text-decoration: none;
+              color: $primary-gray;
+            }
+          }
+        }
+      }
     }
 
     .news-container {
       background-color: #E8E8E8;
       width: 65%;
-      height: 100%;
       padding: 25px 0;
-      float: left;
     }
   } // END EVENTS NEWS SECTION
 
@@ -2032,7 +2113,7 @@ header {
       margin: 0 0 40px 0;
       max-width: 860px;
     }
-    
+
     blockquote {
         p {
         padding: 10px;
@@ -2091,7 +2172,7 @@ header {
         border: 1px solid $secondary-orange;
       }
     }
-  } 
+  }
 }
 
 // FOOTER

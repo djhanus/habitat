@@ -406,6 +406,7 @@ header .main-menu-container ul li:last-of-type a:hover:after {
   color: #FF671F;
 }
 .page-home .four {
+  display: flex;
   height: 900px;
 }
 .page-home .four .title {
@@ -419,16 +420,82 @@ header .main-menu-container ul li:last-of-type a:hover:after {
 .page-home .four .events-container {
   background-color: #C4D600;
   width: 35%;
-  height: 100%;
   padding: 25px 0;
-  float: left;
+}
+.page-home .four .events-container a.see-all {
+  font-family: "Neue Haas Grotesk", Arial, sans-serif;
+  display: block;
+  width: inherit;
+  margin: 0 auto;
+  padding: 15px 25px;
+  border: 1px solid #888B8D;
+  background-color: transparent;
+  color: #888B8D;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-align: center;
+}
+.page-home .four .events-container .events-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  width: calc(100% - 18px);
+  margin: 20px 0 0 0;
+  margin-left: auto;
+  background-color: red;
+}
+.page-home .four .events-container .events-wrapper .event {
+  display: flex;
+  align-items: flex-start;
+  margin: 0 0 40px 0;
+}
+.page-home .four .events-container .events-wrapper .event .date {
+  width: 100px;
+  height: auto;
+  padding: 0 20px;
+  border-right: 2px solid #888B8D;
+  background-color: purple;
+}
+.page-home .four .events-container .events-wrapper .event .date h1, .page-home .four .events-container .events-wrapper .event .date h2 {
+  text-align: center;
+  color: white;
+}
+.page-home .four .events-container .events-wrapper .event .date h1 {
+  font-size: 30px;
+  margin: 0;
+  padding: 0;
+}
+.page-home .four .events-container .events-wrapper .event .date h2 {
+  font-size: 50px;
+  margin: 0;
+  padding: 0;
+}
+.page-home .four .events-container .events-wrapper .event .text {
+  padding: 0 0 0 20px;
+  background-color: green;
+}
+.page-home .four .events-container .events-wrapper .event .text h1 {
+  color: white;
+  font-size: 21px;
+  margin: 0 0 10px 0;
+  padding: 0;
+}
+.page-home .four .events-container .events-wrapper .event .text p {
+  font-size: 18px;
+  padding: 0;
+  margin: 0 0 10px 0;
+  color: white;
+}
+.page-home .four .events-container .events-wrapper .event .text a {
+  font-size: 18px;
+  text-decoration: none;
+  color: #888B8D;
 }
 .page-home .four .news-container {
   background-color: #E8E8E8;
   width: 65%;
-  height: 100%;
   padding: 25px 0;
-  float: left;
 }
 .page-home .sponsors-section {
   background-color: #00AFD7;

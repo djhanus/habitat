@@ -85,6 +85,22 @@
 
         <div class="events-container">
           <div class="title">Events</div>
+          <div class="events-wrapper">
+            <div class="event">
+              <div class="date">
+                <h1>NOV</h1>
+                <h2>08</h2>
+              </div>
+
+              <div class="text">
+                <h1>Event Name</h1>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.</p>
+                <a href="#">Read More >></a>
+              </div>
+            </div>
+          </div>
+
+          <a href="#" class="see-all">See All Events</a>
         </div>
 
         <div class="news-container">
@@ -113,7 +129,7 @@
           <li><img src="https://placeholder.pics/svg/125x125/DEDEDE/555555/LOGO"></li>
           <li><img src="https://placeholder.pics/svg/125x125/DEDEDE/555555/LOGO"></li>
         </ul>
-        
+
       </div>
 
   	</div> <!-- END HOME PAGE -->
