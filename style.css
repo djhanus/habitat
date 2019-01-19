@@ -407,7 +407,6 @@ header .main-menu-container ul li:last-of-type a:hover:after {
 }
 .page-home .four {
   display: flex;
-  height: 900px;
 }
 .page-home .four .title {
   background-color: #666;
@@ -425,7 +424,7 @@ header .main-menu-container ul li:last-of-type a:hover:after {
 .page-home .four .events-container a.see-all {
   font-family: "Neue Haas Grotesk", Arial, sans-serif;
   display: block;
-  width: inherit;
+  width: 200px;
   margin: 0 auto;
   padding: 15px 25px;
   border: 1px solid #888B8D;
@@ -443,7 +442,6 @@ header .main-menu-container ul li:last-of-type a:hover:after {
   width: calc(100% - 18px);
   margin: 20px 0 0 0;
   margin-left: auto;
-  background-color: red;
 }
 .page-home .four .events-container .events-wrapper .event {
   display: flex;
@@ -451,11 +449,10 @@ header .main-menu-container ul li:last-of-type a:hover:after {
   margin: 0 0 40px 0;
 }
 .page-home .four .events-container .events-wrapper .event .date {
-  width: 100px;
+  position: relative;
   height: auto;
-  padding: 0 20px;
-  border-right: 2px solid #888B8D;
-  background-color: purple;
+  padding: 0 30px;
+  border-right: 3px solid #888B8D;
 }
 .page-home .four .events-container .events-wrapper .event .date h1, .page-home .four .events-container .events-wrapper .event .date h2 {
   text-align: center;
@@ -472,8 +469,7 @@ header .main-menu-container ul li:last-of-type a:hover:after {
   padding: 0;
 }
 .page-home .four .events-container .events-wrapper .event .text {
-  padding: 0 0 0 20px;
-  background-color: green;
+  padding: 0 15px 0 30px;
 }
 .page-home .four .events-container .events-wrapper .event .text h1 {
   color: white;
@@ -482,20 +478,60 @@ header .main-menu-container ul li:last-of-type a:hover:after {
   padding: 0;
 }
 .page-home .four .events-container .events-wrapper .event .text p {
-  font-size: 18px;
+  font-size: 16px;
   padding: 0;
   margin: 0 0 10px 0;
   color: white;
 }
 .page-home .four .events-container .events-wrapper .event .text a {
+  text-decoration: none;
+  color: #888B8D;
+  font-size: 18px;
+  font-weight: 600;
+}
+.page-home .four .news-container {
+  background-image: url("./images/bg-pattern.svg");
+  background-size: 15px 15px;
+  background-repeat: repeat;
+  width: 65%;
+  padding: 25px 0;
+}
+.page-home .four .news-container .news-wrapper {
+  column-count: 2;
+  column-gap: 20px;
+  padding: 20px 35px;
+}
+.page-home .four .news-container .news-wrapper .news {
+  background-color: white;
+  width: 100%;
+  margin: 0 0 20px 0;
+  padding: 0 0 20px 0;
+  -webkit-column-break-inside: avoid;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+.page-home .four .news-container .news-wrapper .news h2 {
+  display: inline-block;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  font-size: 12px;
+  color: white;
+  font-weight: 600;
+  letter-spacing: 2px;
+  background-color: #FF671F;
+}
+.page-home .four .news-container .news-wrapper .news h1, .page-home .four .news-container .news-wrapper .news p {
+  margin: 0 0 0 20px;
+}
+.page-home .four .news-container .news-wrapper .news h1 {
+  margin: 0 0 10px 20px;
+}
+.page-home .four .news-container .news-wrapper .news a {
   font-size: 18px;
   text-decoration: none;
   color: #888B8D;
-}
-.page-home .four .news-container {
-  background-color: #E8E8E8;
-  width: 65%;
-  padding: 25px 0;
+  font-weight: 600;
+  margin: 0 0 0 20px;
 }
 .page-home .sponsors-section {
   background-color: #00AFD7;
