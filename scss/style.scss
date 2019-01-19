@@ -507,17 +507,22 @@ header {
         &.see-all {
           font-family: "Neue Haas Grotesk", Arial, sans-serif;
           display: block;
-          width: 200px;
+          width: 250px;
           margin: 0 auto;
           padding: 15px 25px;
           border: 1px solid $primary-gray;
           background-color: transparent;
           color: $primary-gray;
-          font-weight: 600;
+          text-transform: uppercase;
           text-decoration: none;
           font-size: 16px;
           letter-spacing: 2px;
           text-align: center;
+
+          &:hover {
+            background-color: $primary-gray;
+            color: white;
+          }
         }
       }
 
@@ -601,7 +606,7 @@ header {
           background-color: white;
           width: 100%;
           margin: 0 0 20px 0;
-          padding: 0 0 20px 0;
+          padding: 0 20px 20px 0;
           -webkit-column-break-inside: avoid;
           page-break-inside: avoid;
           break-inside: avoid;
@@ -632,8 +637,6 @@ header {
             font-weight: 600;
             margin: 0 0 0 20px;
           }
-
-
         }
       }
     }

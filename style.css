@@ -424,17 +424,21 @@ header .main-menu-container ul li:last-of-type a:hover:after {
 .page-home .four .events-container a.see-all {
   font-family: "Neue Haas Grotesk", Arial, sans-serif;
   display: block;
-  width: 200px;
+  width: 250px;
   margin: 0 auto;
   padding: 15px 25px;
   border: 1px solid #888B8D;
   background-color: transparent;
   color: #888B8D;
-  font-weight: 600;
+  text-transform: uppercase;
   text-decoration: none;
   font-size: 16px;
   letter-spacing: 2px;
   text-align: center;
+}
+.page-home .four .events-container a.see-all:hover {
+  background-color: #888B8D;
+  color: white;
 }
 .page-home .four .events-container .events-wrapper {
   display: flex;
@@ -505,7 +509,7 @@ header .main-menu-container ul li:last-of-type a:hover:after {
   background-color: white;
   width: 100%;
   margin: 0 0 20px 0;
-  padding: 0 0 20px 0;
+  padding: 0 20px 20px 0;
   -webkit-column-break-inside: avoid;
   page-break-inside: avoid;
   break-inside: avoid;

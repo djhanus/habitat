@@ -86,18 +86,45 @@
         <div class="events-container">
           <div class="title">Events</div>
           <div class="events-wrapper">
-            <div class="event">
-              <div class="date">
-                <h1>NOV</h1>
-                <h2>08</h2>
-              </div>
 
-              <div class="text">
-                <h1>Event Name</h1>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.</p>
-                <a href="#">Read More >></a>
+           <?php
+              $event_args = array(
+
+                'post_type'       => 'Events',
+                'posts_per_page'  => '3',
+                'post_status'     => 'publish',
+                'orderby'         => 'meta_value_num',
+                'order'           => 'ASC',
+                'meta_key'        => 'event_date',
+                'meta_query'  => array(
+                  'relation'    => 'OR',
+                  array(
+                    'key'     => 'event_date',
+                    'value'   => date("Ymd"),
+                    'compare' => '>='
+                  )
+                )
+
+              );
+              $events_query  = new WP_Query( $event_args );
+              if($events_query->have_posts() ) : while ( $events_query->have_posts() ) : $events_query->the_post();
+              $event_date  = get_field('event_date');
+            ?>
+              <div class="event">
+                <div class="date">
+                  <h1><?php echo date("M", strtotime($event_date)); ?></h1>
+                  <h2><?php echo date("d", strtotime($event_date)); ?></h2>
+                </div>
+
+                <div class="text">
+                  <h1><?php the_title(); ?></h1>
+                  <?php the_excerpt(); ?>
+                  <a href="<?php echo get_permalink(); ?>">Read More >></a>
+                </div>
               </div>
-            </div>
+            <?php endwhile; endif; wp_reset_query(); ?>
+
+
           </div>
 
           <a href="#" class="see-all">See All Events</a>
@@ -105,41 +132,27 @@
 
         <div class="news-container">
           <div class="title">News</div>
-
           <div class="grid news-wrapper">
-            <div class="grid-item news">
-              <h2>NOVEMBER 14, 2018</h2>
-              <h1>Lorem ipsum dolor sit amet</h1>
-              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat.</p>
-               <a href="#">Read More >></a>
-            </div>
-
-            <div class="grid-item news">
-              <h2>NOVEMBER 15, 2018</h2>
-              <h1>Lorem ipsum dolor sit amet</h1>
-              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat.</p>
-               <a href="#">Read More >></a>
-            </div>
-
-            <div class="grid-item news">
-              <h2>NOVEMBER 16, 2018</h2>
-              <h1>Lorem ipsum dolor sit amet</h1>
-              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat.</p>
-               <a href="#">Read More >></a>
-            </div>
-
-            <div class="grid-item news">
-              <h2>NOVEMBER 17, 2018</h2>
-              <h1>Lorem ipsum dolor sit amet</h1>
-              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat.</p>
-               <a href="#">Read More >></a>
-            </div>
+            <?php
+              $news_args = array(
+                'post_type'       => 'post',
+                'order'           => 'DSC',
+                'post_status'     => 'publish',
+                'category_slug'   => 'news',
+              );
+              $news_query  = new WP_Query( $news_args );
+              if($news_query->have_posts() ) : while ( $news_query->have_posts() ) : $news_query->the_post();
+            ?>
+              <div class="grid-item news">
+                <h2><?php echo get_the_date(); ?></h2>
+                <h1><?php the_title(); ?></h1>
+                <?php the_excerpt(); ?>
+                <a href="<?php echo get_permalink(); ?>">Read More >></a>
+              </div>
+            <?php endwhile; endif; wp_reset_query(); ?>
           </div>
         </div>
-
       </div>
-
-
 
       <div class="sponsors-section">
 
