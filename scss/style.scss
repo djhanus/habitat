@@ -1137,7 +1137,7 @@ header {
       &:nth-child(2),
       &:nth-child(3) {
         width: 50%;
-        padding: 75px 0;
+        padding: 30px 0;
         text-align: center;
 
         h2 {
@@ -1167,7 +1167,6 @@ header {
 
   .section-two {
     padding: 50px 0;
-    background-image: url('./images/page-banner-placeholder.jpg');
     background-attachment: fixed;
     background-position: center center;
     background-size: cover;
@@ -1218,7 +1217,7 @@ header {
       &:nth-child(2),
       &:nth-child(3) {
         width: 50%;
-        padding: 75px 0;
+        padding: 30px 0;
         text-align: center;
 
         h2 {
@@ -1473,8 +1472,23 @@ header {
   } // END .section-six
 
   .section-seven {
+    position: relative;
     padding: 50px 0;
-    background-color: rgb(20,156,205);
+    background-image: url('./images/page-banner-placeholder.jpg');
+    background-size: cover;
+
+    &:before {
+      position: absolute;
+      content: '';
+      z-index: 1;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      height: 100%;
+      width: 100%;
+      background-color: rgba(0, 175, 215, 0.9);
+    }
 
     h1 {
       color: white;
@@ -1483,7 +1497,13 @@ header {
       margin: 0 0 25px 0;
     }
 
+    .contained {
+      position: relative;
+      z-index: 10;
+    }
+
     .text-wrapper {
+      position: relative;
       display: flex;
       flex-wrap: wrap;
 
