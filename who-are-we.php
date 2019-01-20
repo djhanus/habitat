@@ -1,4 +1,4 @@
-<?php get_header(); /* Template Name: Who Are We Page */ ?>
+<?php get_header(); /* Template Name: Who Are We */ ?>
   <div id="page-who-are-we">
     <div class="page-banner"
          style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/images/page-banner-placeholder.jpg')">

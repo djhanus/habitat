@@ -1410,13 +1410,9 @@ header .main-menu-container ul li:last-of-type a:hover:after {
 #page-who-are-we .section-four details:focus {
   outline: none;
 }
-#page-who-are-we .section-four details[open] {
-  padding: 0 30px 60px 30px;
-}
 #page-who-are-we .section-four details[open] summary {
   border-bottom: 2px solid white;
-  margin: 0 0 40px 0;
-  padding: 30px 0;
+  margin: 0;
 }
 #page-who-are-we .section-four details[open] summary svg, #page-who-are-we .section-four details:hover summary svg {
   transform: rotate(90deg);
@@ -1438,10 +1434,11 @@ header .main-menu-container ul li:last-of-type a:hover:after {
   display: none;
 }
 #page-who-are-we .section-four details .text-wrapper {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto;
-  width: 900px;
+  width: 100%;
 }
 #page-who-are-we .section-four details .text-wrapper h2 {
   text-transform: uppercase;
@@ -1462,48 +1459,24 @@ header .main-menu-container ul li:last-of-type a:hover:after {
   margin: 0 0 10px 0;
 }
 #page-who-are-we .section-four details .text-wrapper .left {
-  width: calc(50% - 40px);
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 40%;
+  background-size: cover;
+  max-height: 500px;
 }
 #page-who-are-we .section-four details .text-wrapper .left h1, #page-who-are-we .section-four details .text-wrapper .left h2, #page-who-are-we .section-four details .text-wrapper .left h3, #page-who-are-we .section-four details .text-wrapper .left h5, #page-who-are-we .section-four details .text-wrapper .left p, #page-who-are-we .section-four details .text-wrapper .left ul, #page-who-are-we .section-four details .text-wrapper .left ol, #page-who-are-we .section-four details .text-wrapper .left li, #page-who-are-we .section-four details .text-wrapper .left a {
   color: white;
 }
 #page-who-are-we .section-four details .text-wrapper .right {
   margin-left: auto;
-  padding: 0 0 0 40px;
+  padding: 30px;
   margin: 0 0 0 40px;
   width: calc(50% - 40px);
-  border-left: 2px solid #C4D600;
 }
 #page-who-are-we .section-four details .text-wrapper .right h1, #page-who-are-we .section-four details .text-wrapper .right h2, #page-who-are-we .section-four details .text-wrapper .right h3, #page-who-are-we .section-four details .text-wrapper .right h5, #page-who-are-we .section-four details .text-wrapper .right p, #page-who-are-we .section-four details .text-wrapper .right ul, #page-who-are-we .section-four details .text-wrapper .right ol, #page-who-are-we .section-four details .text-wrapper .right li, #page-who-are-we .section-four details .text-wrapper .right a {
-  color: #C4D600;
-}
-#page-who-are-we .section-four details .socials {
-  display: flex;
-  margin: 40px auto 0 auto;
-}
-#page-who-are-we .section-four details .socials div {
-  display: flex;
-  margin: 0 auto;
-}
-#page-who-are-we .section-four details .socials a {
-  display: flex;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background-color: #C4D600;
-}
-#page-who-are-we .section-four details .socials a:nth-child(2) {
-  margin: 0 10px 0 20px;
-}
-#page-who-are-we .section-four details .socials a:nth-child(3) {
-  margin: 0 20px 0 10px;
-}
-#page-who-are-we .section-four details .socials a svg {
-  display: block;
-  margin: auto;
-  width: 20px;
-  height: 20px;
-  fill: #00AFD7;
+  color: white;
 }
 #page-who-are-we .section-five {
   padding: 100px 0;
