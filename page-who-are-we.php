@@ -76,15 +76,20 @@
       <div class="contained">
         <?php if( get_field('page_who_slider') ): ?>
         <div class="gallery-wrapper">
-          <div id="who-gallery" class="carousel slide" data-ride="carousel">
+          <div id="who-gallery"
+               class="carousel slide"
+               data-ride="carousel">
             <?php if( have_rows('page_who_slider') ): ?>
               <ul class="carousel-indicators">
                 <?php
                   $slides = get_field_object('page_who_slider');
                   $slides_count = (count($slides['value']));
                   for ($i=0; $i<$slides_count; $i++) { ?>
-                    <li data-target="#who-gallery" data-slide-to="<?php echo $i; ?>"
-                      <?php if ($i == 0) { ?>class="active"<?php } ?>>
+                    <li data-target="#who-gallery"
+                        data-slide-to="<?php echo $i; ?>"
+                        <?php if ($i == 0) { ?>
+                          class="active"
+                        <?php } ?>>
                     </li>
                 <?php } ?>
               </ul>
@@ -125,75 +130,51 @@
         <div class="events-slider-wrapper">
           <div id="events-gallery" class="carousel slide" data-ride="carousel" data-interval="false">
             <div class="carousel-inner">
+              <?php $count = 0; ?>
+              <?php
+                $who_event_args = array(
+                'post_type'       => 'Events',
+                // 'posts_per_page'  => '4',
+                'post_status'     => 'publish',
+                'orderby'         => 'meta_value_num',
+                'order'           => 'ASC',
+                'meta_key'        => 'event_date',
+                'meta_query'  => array(
+                  'relation'    => 'OR',
+                  array(
+                    'key'     => 'event_date',
+                    'value'   => date("Ymd"),
+                    'compare' => '>='
+                  )
+                )
+              );
+              $who_events_query  = new WP_Query( $who_event_args );
+              $the_count = $who_events_query->post_count;
+              ?>
               <div class="carousel-item active">
                 <div class="item-wrapper">
-                  <div class="item">
-                    <h1>nov</h1>
-                    <h2>08</h2>
-                    <h3>Event Name</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.</p>
-                    <a href="#" title="">Read More >></a>
-                  </div>
-
-                  <div class="item">
-                    <h1>nov</h1>
-                    <h2>11</h2>
-                    <h3>Event Name</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.</p>
-                    <a href="#" title="">Read More >></a>
-                  </div>
-
-                  <div class="item">
-                    <h1>nov</h1>
-                    <h2>15</h2>
-                    <h3>Event Name</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.</p>
-                    <a href="#" title="">Read More >></a>
-                  </div>
-
-                  <div class="item">
-                    <h1>nov</h1>
-                    <h2>16</h2>
-                    <h3>Event Name</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.</p>
-                    <a href="#" title="">Read More >></a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="carousel-item">
-                <div class="item-wrapper">
-                  <div class="item">
-                    <h1>nov</h1>
-                    <h2>08</h2>
-                    <h3>Event Name</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.</p>
-                    <a href="#" title="">Read More >></a>
-                  </div>
-
-                  <div class="item">
-                    <h1>nov</h1>
-                    <h2>11</h2>
-                    <h3>Event Name</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.</p>
-                    <a href="#" title="">Read More >></a>
-                  </div>
-
-                  <div class="item">
-                    <h1>nov</h1>
-                    <h2>15</h2>
-                    <h3>Event Name</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.</p>
-                    <a href="#" title="">Read More >></a>
-                  </div>
-
-                  <div class="item">
-                    <h1>nov</h1>
-                    <h2>16</h2>
-                    <h3>Event Name</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.</p>
-                    <a href="#" title="">Read More >></a>
-                  </div>
+                  <?php
+                  if($who_events_query->have_posts() ) :
+                  while ( $who_events_query->have_posts() ) :
+                    $who_events_query->the_post();
+                    $event_date  = get_field('event_date');
+                    if ($count < 4){ ?>
+                      <div class="item">
+                        <h1><?php echo date("M", strtotime($event_date)); ?></h1>
+                        <h2><?php echo date("d", strtotime($event_date)); ?></h2>
+                        <h3><?php the_title(); ?></h3>
+                        <?php the_excerpt(); ?>
+                        <a href="<?php echo get_permalink(); ?>">Read More >></a>
+                      </div>
+                    <?php } else { echo '</div></div><div class="carousel-item"><div class="item-wrapper">'; ?>
+                      <div class="item">
+                        <h1><?php echo date("M", strtotime($event_date)); ?></h1>
+                        <h2><?php echo date("d", strtotime($event_date)); ?></h2>
+                        <h3><?php the_title(); ?></h3>
+                        <?php the_excerpt(); ?>
+                        <a href="<?php echo get_permalink(); ?>">Read More >></a>
+                      </div>
+                  <?php $count = 0; } $count = $count + 1; endwhile; endif; ?>
                 </div>
               </div>
             </div>

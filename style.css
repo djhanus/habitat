@@ -451,6 +451,8 @@ header .main-menu-container ul li:last-of-type a:hover:after {
   display: flex;
   align-items: flex-start;
   margin: 0 0 40px 0;
+  padding: 0 20px 0 0;
+  width: 100%;
 }
 .page-home .four .events-container .events-wrapper .event .date {
   position: relative;
