@@ -619,10 +619,10 @@ header .main-menu-container ul li:last-of-type a:hover:after {
   background: #00AFD7;
 }
 #page-apply .section-one div:nth-child(2) {
-  background: #888B8D;
+  background-size: cover;
 }
 #page-apply .section-one div:nth-child(3) {
-  background: #888B8D;
+  background-size: cover;
 }
 #page-apply .section-one div:nth-child(4) {
   background: #C4D600;
