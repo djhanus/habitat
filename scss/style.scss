@@ -1733,8 +1733,34 @@ header {
     column-gap: 40px;
   }
 
+  .page-banner {
+    margin: 0;
+    border-bottom: 20px solid $secondary-orange;
+  }
+
   .section-one {
+    position: relative;
     padding: 60px 0;
+    background-image: url('./images/page-banner-placeholder.jpg');
+    background-size: cover;
+
+    &:before {
+      position: absolute;
+      content: '';
+      z-index: 1;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      height: 100%;
+      width: 100%;
+      background-color: rgba(255,255,255,0.9);
+    }
+
+    .contained {
+      position: relative;
+      z-index: 10;
+    }
 
     h1 {
       color: $secondary-orange;
@@ -1743,7 +1769,6 @@ header {
     h2, h3, h4, ul, ol, li, a, p {
       color: $primary-gray;
     }
-
   } // END .section-one
 
   .section-two {

@@ -1343,8 +1343,31 @@ header .main-menu-container ul li:last-of-type a:hover:after {
   column-count: 2;
   column-gap: 40px;
 }
+#page-who-are-we .page-banner {
+  margin: 0;
+  border-bottom: 20px solid #FF671F;
+}
 #page-who-are-we .section-one {
+  position: relative;
   padding: 60px 0;
+  background-image: url("./images/page-banner-placeholder.jpg");
+  background-size: cover;
+}
+#page-who-are-we .section-one:before {
+  position: absolute;
+  content: "";
+  z-index: 1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+#page-who-are-we .section-one .contained {
+  position: relative;
+  z-index: 10;
 }
 #page-who-are-we .section-one h1 {
   color: #FF671F;
