@@ -51,8 +51,18 @@
   		 	<div class="button">
   		 		<a href="#">DONATE</a>
   		 		<a href="#">VOLUNTEER</a>
-  		 		<a href="#">EMAILS</a>
+  		 		<a href="#">SIGN UP FOR EMAILS</a>
 	 		</div>
+
+ 			<div class="social">
+ 				<ul>
+ 					<li><a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+		 			<li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
+		 			<li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+		 			<li><a href="#" target="_blank"><i class="fab fa-youtube"></i></a></li>
+	 			</ul>
+ 			</div>
+
   		</div> <!-- END column -->
 
 	</div> <!-- END footer container -->

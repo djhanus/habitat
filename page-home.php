@@ -32,13 +32,12 @@
 
   		</div> <!-- END ROW -->
 
-      <div class="row two">
+      <div class="row two" style="background-image: url('<?php echo get_field('background_image')?>">
 
         <div class="content-wrapper">
-          <p><?php echo get_field('mission_statement')?></p>
+            <p><?php echo get_field('mission_statement')?></p>
 
-          <p class="second"><?php echo get_field('mission_statement_subtext')?></p>
-
+            <p class="second"><?php echo get_field('mission_statement_subtext')?></p>
         </div>
 
       </div> <!-- END ROW -->

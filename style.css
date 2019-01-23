@@ -294,6 +294,7 @@ header .main-menu-container ul li:last-of-type a:hover:after {
   font-size: 16px;
   line-height: 1.5;
   padding-bottom: 25px;
+  text-align: center;
 }
 .page-home .one .content-wrapper .orange-line {
   height: 1px;
@@ -302,12 +303,26 @@ header .main-menu-container ul li:last-of-type a:hover:after {
   background-color: #FF671F;
 }
 .page-home .two {
+  position: relative;
   min-height: 400px;
   background-size: cover;
   background-position: center;
-  background-color: #C4D600;
+}
+.page-home .two:before {
+  position: absolute;
+  content: "";
+  z-index: 1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(196, 214, 0, 0.7);
 }
 .page-home .two .content-wrapper {
+  position: relative;
+  z-index: 10;
   margin: 75px;
   height: auto;
   width: 425px;
@@ -586,7 +601,7 @@ header .main-menu-container ul li:last-of-type a:hover:after {
   left: 0;
   bottom: 75px;
   padding: 30px 50px;
-  background: #C4D600;
+  background-color: rgba(196, 214, 0, 0.9);
   color: white;
   font-family: "Neue Haas Grotesk", Arial, sans-serif;
   font-weight: 600;
@@ -1368,7 +1383,6 @@ header .main-menu-container ul li:last-of-type a:hover:after {
 #page-who-are-we .section-one {
   position: relative;
   padding: 60px 0;
-  background-image: url("./images/page-banner-placeholder.jpg");
   background-size: cover;
 }
 #page-who-are-we .section-one:before {
@@ -1437,10 +1451,16 @@ header .main-menu-container ul li:last-of-type a:hover:after {
   margin: 0 0 10px 0;
 }
 #page-who-are-we .section-four details:nth-child(1) {
-  background-color: #FF671F;
+  background-color: #888B8D;
 }
 #page-who-are-we .section-four details:nth-child(2) {
   background-color: #00AFD7;
+}
+#page-who-are-we .section-four details:nth-child(3) {
+  background-color: #C4D600;
+}
+#page-who-are-we .section-four details:nth-child(4) {
+  background-color: #FF671F;
 }
 #page-who-are-we .section-four details:last-child {
   margin: 0;
@@ -1843,6 +1863,29 @@ footer .footer-container .column-three .button a {
 footer .footer-container .column-three .button a:hover {
   color: #FF671F;
   background-color: white;
+}
+footer .footer-container .column-three .social {
+  margin: 20px 0px;
+  width: 200px;
+  text-align: center;
+}
+footer .footer-container .column-three .social ul {
+  margin: 0;
+  padding: 0;
+}
+footer .footer-container .column-three .social ul li {
+  display: inline-block;
+  background-color: white;
+  padding: 7px;
+  border-radius: 50%;
+  height: 33px;
+  width: 33px;
+  margin: 0 4px;
+  text-align: center;
+}
+footer .footer-container .column-three .social ul li a {
+  color: #888B8D;
+  font-size: 16px;
 }
 footer .copyright {
   text-align: center;

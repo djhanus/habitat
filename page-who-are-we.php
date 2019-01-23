@@ -4,6 +4,7 @@
       $image_hero_banner       = get_field('image_hero_banner');
       $page_who_mission_title  = get_field('page_who_mission_title');
       $page_who_mission_body   = get_field('page_who_mission_body');
+      $page_who_mission_bg     = get_field('page_who_mission_bg');
       $page_who_history_title  = get_field('page_who_history_title');
       $page_who_history_body   = get_field('page_who_history_body');
       $page_who_divider_background_image  = get_field('page_who_divider_background_image');
@@ -14,7 +15,7 @@
       <div class="title"><?php the_title(); ?></div>
     </div><!-- /.page-banner -->
 
-    <div class="section-one">
+    <div class="section-one" style="background-image: url('<?php echo $page_who_mission_bg; ?>');">
       <div class="contained">
         <h1><?php echo $page_who_mission_title; ?></h1>
         <div class="text">

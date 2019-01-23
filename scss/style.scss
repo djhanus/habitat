@@ -345,6 +345,7 @@ header {
         font-size: 16px;
         line-height: 1.5;
         padding-bottom: 25px;
+        text-align: center;
       }
 
       .orange-line {
@@ -358,12 +359,27 @@ header {
 
   // image overlay and text
   .two {
+    position: relative;
     min-height: 400px;
     background-size: cover;
     background-position: center;
-    background-color: $primary-green;
+
+    &:before {
+      position: absolute;
+      content: '';
+      z-index: 1;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      height: 100%;
+      width: 100%;
+      background-color: rgba(196,214,0,.7);
+    }
 
     .content-wrapper {
+      position: relative;
+      z-index: 10;
       margin: 75px;
       height: auto;
       width: 425px;
@@ -702,7 +718,7 @@ header {
     left: 0;
     bottom: 75px;
     padding: 30px 50px;
-    background: $primary-green;
+    background-color: rgba(196,214,0,0.9);
     color: white;
     font-family: $primary-sans;
     font-weight: 600;
@@ -1761,7 +1777,6 @@ header {
   .section-one {
     position: relative;
     padding: 60px 0;
-    background-image: url('./images/page-banner-placeholder.jpg');
     background-size: cover;
 
     &:before {
@@ -1842,11 +1857,19 @@ header {
       margin: 0 0 10px 0;
 
       &:nth-child(1) {
-        background-color: $secondary-orange;
+        background-color: $primary-gray;
       }
 
       &:nth-child(2) {
         background-color: $primary-blue;
+      }
+
+      &:nth-child(3) {
+        background-color: $primary-green;
+      }
+
+      &:nth-child(4) {
+        background-color: $secondary-orange;
       }
 
       &:last-child {
@@ -2349,8 +2372,35 @@ footer {
           }
         }
       }
-    }
 
+      // social icons
+      .social {
+        margin: 20px 0px;
+        width: 200px;
+        text-align: center;
+
+        ul {
+          margin: 0;
+          padding: 0;
+
+          li {
+            display: inline-block;
+            background-color: white;
+            padding: 7px;
+            border-radius: 50%;
+            height: 33px;
+            width: 33px;
+            margin: 0 4px;
+            text-align: center;
+
+            a {
+              color: #888B8D;
+              font-size: 16px;
+            }
+          }
+        }
+      } // end social icons
+    }
   } // END footer container
 
   .copyright {
