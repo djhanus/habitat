@@ -16,6 +16,8 @@
 
       $volunteer_sseven_title     = get_field('volunteer_sseven_title');
       $volunteer_sseven_body     = get_field('volunteer_sseven_body');
+      $volunteer_sseven_bg       = get_field('volunteer_sseven_bg');
+
 
       $volunteer_sseven_certified_crew_lead_list_heading = get_field('volunteer_sseven_certified_crew_lead_list_heading');
       $volunteer_sseven_crew_lead_list_heading = get_field('volunteer_sseven_crew_lead_list_heading');
@@ -136,7 +138,7 @@
       <a href="#" title="Volunteer Registration Form">Volunteer Registration Form</a>
     </div><!-- /.section-six -->
 
-    <div class="section-seven">
+    <div class="section-seven" style="background-image: url('<?php echo $volunteer_sseven_bg; ?>');">
       <div class="contained">
         <h1><?php echo $volunteer_sseven_title; ?></h1>
         <div class="text-wrapper">

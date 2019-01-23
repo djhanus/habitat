@@ -706,15 +706,15 @@ header .main-menu-container ul li:last-of-type a:hover:after {
 }
 #page-apply .section-three details:nth-child(2) {
   margin: 0 0 10px 0;
-  background-color: #00AFD7;
+  background-color: #375888;
 }
 #page-apply .section-three details:nth-child(3) {
   margin: 0 10px 0 0;
-  background-color: #888B8D;
+  background-color: #C4D600;
 }
 #page-apply .section-three details:nth-child(4) {
   margin: 0;
-  background-color: #C4D600;
+  background-color: #A4343A;
 }
 #page-apply .section-three details p {
   color: white;
@@ -1245,7 +1245,19 @@ header .main-menu-container ul li:last-of-type a:hover:after {
   background-color: #FF671F;
 }
 #page-volunteer .section-eight details:nth-child(2) {
+  background-color: #888B8D;
+}
+#page-volunteer .section-eight details:nth-child(3) {
+  background-color: #375888;
+}
+#page-volunteer .section-eight details:nth-child(4) {
+  background-color: #C4D600;
+}
+#page-volunteer .section-eight details:nth-child(5) {
   background-color: #00AFD7;
+}
+#page-volunteer .section-eight details:nth-child(6) {
+  background-color: #A4343A;
 }
 #page-volunteer .section-eight details:last-child {
   margin: 0;

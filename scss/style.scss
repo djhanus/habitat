@@ -107,6 +107,7 @@ $secondary-orange:  #FF671F;
 $secondary-green:   #43B02A;
 $secondary-blue:    #385988;
 $secondary-red:     #A4343A;
+$secondary-purple:  #375888;
 
 
 
@@ -846,17 +847,17 @@ header {
 
       &:nth-child(2) {
         margin: 0 0 10px 0;
-        background-color: $primary-blue;
+        background-color: $secondary-purple;
       }
 
       &:nth-child(3) {
         margin: 0 10px 0 0;
-        background-color: $primary-gray;
+        background-color: $primary-green;
       }
 
       &:nth-child(4) {
         margin: 0;
-        background-color: $primary-green;
+        background-color: $secondary-red;
       }
 
       p {
@@ -1603,7 +1604,23 @@ header {
       }
 
       &:nth-child(2) {
+        background-color: $primary-gray;
+      }
+
+      &:nth-child(3) {
+        background-color: $secondary-purple;
+      }
+
+      &:nth-child(4) {
+        background-color: $primary-green;
+      }
+
+      &:nth-child(5) {
         background-color: $primary-blue;
+      }
+
+      &:nth-child(6) {
+        background-color: $secondary-red;
       }
 
       &:last-child {
