@@ -9,9 +9,18 @@
         </div>
 
         <div class="title">
-          Sample title name
+          Lorem ipsum dolor sit amet
         </div>
-      </div>
+      
+        <div class="social">
+          <ul>
+            <li><a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="#" target="_blank"><i class="fab fa-youtube"></i></a></li>
+          </ul>
+        </div>
+      </div> <!-- END conatiner -->
     </div> <!-- END banner -->
      
     <div class="main-container">
