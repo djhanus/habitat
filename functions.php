@@ -9,6 +9,7 @@ function enqueue_parent_styles() {
   wp_enqueue_script('bootstrap-script', 'https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js', false, null, true);
   wp_enqueue_script('count-animation-script',  get_stylesheet_directory_uri() .'/js/count.js', false, null, true);
   wp_enqueue_script('details-toggle-script',  get_stylesheet_directory_uri() .'/js/details-toggle.js', false, null, true);
+
 }
 add_action( 'wp_enqueue_scripts', 'enqueue_parent_styles' );
 

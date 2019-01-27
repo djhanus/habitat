@@ -3,7 +3,7 @@
 # Generated: Thursday 24. January 2019 18:51 UTC
 # Hostname: localhost
 # Database: `wp_habitat`
-# URL: //localhost:8888/habitat
+# URL: //localhost:8888
 # Path: /Users/bluelinedev/Development/habitat
 # Tables: wp_commentmeta, wp_comments, wp_links, wp_options, wp_postmeta, wp_posts, wp_term_relationships, wp_term_taxonomy, wp_termmeta, wp_terms, wp_usermeta, wp_users
 # Table Prefix: wp_
@@ -164,8 +164,8 @@ CREATE TABLE `wp_options` (
 # Data contents of table `wp_options`
 #
 INSERT INTO `wp_options` ( `option_id`, `option_name`, `option_value`, `autoload`) VALUES
-(1, 'siteurl', 'http://localhost:8888/habitat', 'yes'),
-(2, 'home', 'http://localhost:8888/habitat', 'yes'),
+(1, 'siteurl', 'http://localhost:8888', 'yes'),
+(2, 'home', 'http://localhost:8888', 'yes'),
 (3, 'blogname', 'Habitat for Humanity', 'yes'),
 (4, 'blogdescription', 'Just another WordPress site', 'yes'),
 (5, 'users_can_register', '0', 'yes'),

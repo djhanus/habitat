@@ -996,6 +996,19 @@ header .main-menu-container ul li:last-of-type a:hover:after {
 #page-volunteer .section-three div:nth-child(2) h4, #page-volunteer .section-three div:nth-child(3) h4 {
   font-size: 35px;
 }
+#page-volunteer .section-three div:nth-child(2) .h3-group, #page-volunteer .section-three div:nth-child(3) .h3-group {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  padding: 5px 0;
+  width: fit-content;
+}
+#page-volunteer .section-three div:nth-child(2) .h3-group h3, #page-volunteer .section-three div:nth-child(3) .h3-group h3 {
+  margin: 0 !important;
+}
+#page-volunteer .section-three div:nth-child(2) .h3-group h3:nth-child(2), #page-volunteer .section-three div:nth-child(3) .h3-group h3:nth-child(2) {
+  margin: 0 10px !important;
+}
 #page-volunteer .section-four {
   padding: 50px 0;
   font-family: "Neue Haas Grotesk", Arial, sans-serif;
