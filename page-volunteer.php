@@ -21,6 +21,10 @@
 
       $volunteer_sseven_certified_crew_lead_list_heading = get_field('volunteer_sseven_certified_crew_lead_list_heading');
       $volunteer_sseven_crew_lead_list_heading = get_field('volunteer_sseven_crew_lead_list_heading');
+
+      $count_min       = 1;
+      $count_delay     = 10;
+      $count_increment = 5;
     ?>
     <div class="page-banner"
          style="background-image: url('<?php echo $image_hero_banner; ?>')">
@@ -32,13 +36,25 @@
         <h1><?php echo $volunteer_sc_title; ?></h1>
         <div>
           <h2>built nearly</h2>
-          <h3 class="count-animation"><?php echo $volunteer_sc_built_count; ?></h3>
+          <h3 class="count-animation numscroller"
+              data-min="<?php echo $count_min; ?>"
+              data-max="<?php echo $volunteer_sc_built_count; ?>"
+              data-delay="<?php echo $count_delay; ?>"
+              data-increment="<?php echo $count_increment; ?>">
+            <?php echo $volunteer_sc_built_count; ?>
+          </h3>
           <h4>homes</h4>
         </div>
 
         <div>
           <h2>served more than</h2>
-          <h3 class="count-animation"><?php echo $volunteer_sc_served_count; ?></h3>
+          <h3 class="count-animation numscroller"
+              data-min="<?php echo $count_min; ?>"
+              data-max="<?php echo $volunteer_sc_served_count; ?>"
+              data-delay="<?php echo $count_delay; ?>"
+              data-increment="<?php echo $count_increment; ?>">
+              <?php echo $volunteer_sc_served_count; ?>
+          </h3>
           <h4>people</h4>
         </div>
       </div>
@@ -56,13 +72,28 @@
         <h1><?php echo $volunteer_sf_title; ?></h1>
         <div>
           <h2>almost</h2>
-          <h3><?php echo $volunteer_sf_hours_count; ?></h3>
+          <h3 class="count-animation numscroller"
+              data-min="<?php echo $count_min; ?>"
+              data-max="<?php echo $volunteer_sf_hours_count; ?>"
+              data-delay="<?php echo $count_delay; ?>"
+              data-increment="50">
+            <?php echo $volunteer_sf_hours_count; ?>
+          </h3>
           <h4>hours of time</h4>
         </div>
 
         <div>
           <h2>saving us about</h2>
-          <h3>$<?php echo $volunteer_sf_savings_count; ?> million</h3>
+          <div class="h3-group">
+            <h3>$</h3>
+            <h3 class="count-animation numscroller add-million"
+                data-min="<?php echo $count_min; ?>"
+                data-max="<?php echo $volunteer_sf_savings_count; ?>"
+                data-delay="1"
+                data-increment="1">
+              <?php echo $volunteer_sf_savings_count; ?>
+            </h3><h3>million</h3>
+          </div>
           <h4>annually</h4>
         </div>
       </div>
