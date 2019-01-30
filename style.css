@@ -378,7 +378,7 @@ header .main-menu-container ul li:last-of-type a:hover:after {
 .page-home .three .family-container .description {
   padding: 60px 30px;
   float: left;
-  width: calc(100% - 700px);
+  width: 40%;
   height: auto;
   text-align: left;
 }
@@ -401,7 +401,7 @@ header .main-menu-container ul li:last-of-type a:hover:after {
   text-decoration: none;
 }
 .page-home .three .family-container .photo {
-  width: 700px;
+  width: 60%;
   float: right;
   background-size: cover;
   background-position: center;
@@ -651,8 +651,8 @@ header .main-menu-container ul li:last-of-type a:hover:after {
   padding: 50px 80px;
 }
 #page-apply .section-one div p, #page-apply .section-one div ol, #page-apply .section-one div ul {
-  font-size: 28px;
-  line-height: 38px;
+  font-size: 18px;
+  line-height: 26px;
   color: white;
 }
 #page-apply .section-one div:nth-child(1) {
@@ -670,7 +670,11 @@ header .main-menu-container ul li:last-of-type a:hover:after {
 #page-apply .section-two {
   padding: 50px 0;
 }
-#page-apply .section-two h1 {
+#page-apply .section-two .contained {
+  width: 960px;
+  margin: 0 auto;
+}
+#page-apply .section-two .contained h1 {
   width: 50%;
   color: #FF671F;
   font-weight: 600;
@@ -678,25 +682,25 @@ header .main-menu-container ul li:last-of-type a:hover:after {
   line-height: 38px;
   margin: 0 0 25px 0;
 }
-#page-apply .section-two div p {
-  font-size: 20px;
-  line-height: 30px;
+#page-apply .section-two .contained div p {
+  font-size: 18px;
+  line-height: 28px;
   font-weight: 300;
 }
-#page-apply .section-two div:nth-child(2) {
+#page-apply .section-two .contained div:nth-child(2) {
   -webkit-column-count: 2;
   -moz-column-count: 2;
   column-count: 2;
 }
-#page-apply .section-two div:nth-child(2) p {
+#page-apply .section-two .contained div:nth-child(2) p {
   color: #636466;
 }
-#page-apply .section-two div:nth-child(3) {
+#page-apply .section-two .contained div:nth-child(3) {
   margin: 25px 0 0 0;
   padding: 25px 0 0 0;
   border-top: 2px solid #FF671F;
 }
-#page-apply .section-two div:nth-child(3) p {
+#page-apply .section-two .contained div:nth-child(3) p {
   color: #FF671F;
   font-style: italic;
 }
@@ -1095,12 +1099,12 @@ header .main-menu-container ul li:last-of-type a:hover:after {
   width: 100%;
   color: white;
   font-weight: 600;
-  font-size: 32px;
-  margin: 0 0 50px 0;
+  font-size: 28px;
+  margin: 0 0 10px 0;
 }
 #page-volunteer .section-five div.left h2 {
   color: #888B8D;
-  font-size: 28px;
+  font-size: 24px;
   font-weight: 600;
   margin: 0 0 25px 0;
 }
@@ -1111,8 +1115,8 @@ header .main-menu-container ul li:last-of-type a:hover:after {
 }
 #page-volunteer .section-five div.left div ol, #page-volunteer .section-five div.left div ul, #page-volunteer .section-five div.left div a, #page-volunteer .section-five div.left div p {
   color: white;
-  font-size: 20px;
-  line-height: 28px;
+  font-size: 16px;
+  line-height: 26px;
   font-weight: 300;
 }
 #page-volunteer .section-five div.left div ul, #page-volunteer .section-five div.left div ol {
@@ -1144,7 +1148,7 @@ header .main-menu-container ul li:last-of-type a:hover:after {
 }
 #page-volunteer .section-five div.right h3, #page-volunteer .section-five div.right ul, #page-volunteer .section-five div.right ol, #page-volunteer .section-five div.right li, #page-volunteer .section-five div.right a {
   font-weight: 600;
-  font-size: 18px;
+  font-size: 16px;
 }
 #page-volunteer .section-five div.right i {
   font-weight: 300;
@@ -1156,11 +1160,11 @@ header .main-menu-container ul li:last-of-type a:hover:after {
   margin: 0 0 0 20px;
 }
 #page-volunteer .section-five div.right ul li {
-  margin: 0 0 20px 0;
+  margin: 0 0 8px 0;
 }
 #page-volunteer .section-five div.right h2 {
   font-weight: 600;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 28px;
   border-bottom: 1px solid #888B8D;
   padding: 0 0 25px 0;
@@ -1215,6 +1219,7 @@ header .main-menu-container ul li:last-of-type a:hover:after {
 #page-volunteer .section-seven .contained {
   position: relative;
   z-index: 10;
+  width: 960px;
 }
 #page-volunteer .section-seven .text-wrapper {
   position: relative;
@@ -1223,8 +1228,8 @@ header .main-menu-container ul li:last-of-type a:hover:after {
 }
 #page-volunteer .section-seven .text-wrapper h1, #page-volunteer .section-seven .text-wrapper h2, #page-volunteer .section-seven .text-wrapper h3, #page-volunteer .section-seven .text-wrapper p, #page-volunteer .section-seven .text-wrapper ul, #page-volunteer .section-seven .text-wrapper ol, #page-volunteer .section-seven .text-wrapper li, #page-volunteer .section-seven .text-wrapper a {
   color: white;
-  font-size: 20px;
-  line-height: 28px;
+  font-size: 18px;
+  line-height: 24px;
   font-weight: 300;
 }
 #page-volunteer .section-seven .text-wrapper h2 {
@@ -1419,7 +1424,7 @@ header .main-menu-container ul li:last-of-type a:hover:after {
   margin: 0 0 40px 0;
 }
 #page-who-are-we p {
-  font-size: 20px;
+  font-size: 16px;
   line-height: 26px;
 }
 #page-who-are-we .text {
@@ -1622,20 +1627,20 @@ header .main-menu-container ul li:last-of-type a:hover:after {
 #page-who-are-we .section-six .events-slider-wrapper .carousel-inner .carousel-item .item-wrapper {
   display: flex;
   flex-direction: row;
-  min-height: 200px;
+  min-height: 250px;
 }
 #page-who-are-we .section-six .events-slider-wrapper .carousel-inner .carousel-item .item-wrapper .item {
   background-color: #C4D600;
-  width: 25%;
-  margin: 0 20px;
-  padding: 20px;
+  width: 22%;
+  margin: 0 10px;
+  padding: 20px 35px;
   text-align: center;
 }
 #page-who-are-we .section-six .events-slider-wrapper .carousel-inner .carousel-item .item-wrapper .item:first-child {
-  margin: 0 20px 0 0;
+  margin: 0 10px 0 0;
 }
 #page-who-are-we .section-six .events-slider-wrapper .carousel-inner .carousel-item .item-wrapper .item:last-child {
-  margin: 0 0 0 20px;
+  margin: 0 0 0 10px;
 }
 #page-who-are-we .section-six .events-slider-wrapper .carousel-inner .carousel-item .item-wrapper .item h1, #page-who-are-we .section-six .events-slider-wrapper .carousel-inner .carousel-item .item-wrapper .item h2 {
   color: white;
@@ -1644,6 +1649,7 @@ header .main-menu-container ul li:last-of-type a:hover:after {
   letter-spacing: 1px;
   text-transform: uppercase;
   margin: 0;
+  line-height: 1;
 }
 #page-who-are-we .section-six .events-slider-wrapper .carousel-inner .carousel-item .item-wrapper .item h2 {
   position: relative;
@@ -1651,6 +1657,7 @@ header .main-menu-container ul li:last-of-type a:hover:after {
   font-weight: 600;
   font-size: 70px;
   letter-spacing: 1px;
+  line-height: 1;
   text-transform: uppercase;
 }
 #page-who-are-we .section-six .events-slider-wrapper .carousel-inner .carousel-item .item-wrapper .item h2:after {
@@ -1658,8 +1665,8 @@ header .main-menu-container ul li:last-of-type a:hover:after {
   content: "";
   transform: translateX(-50%);
   left: 50%;
-  bottom: -20px;
-  width: 50px;
+  bottom: -10px;
+  width: 70px;
   border-bottom: 3px solid #565859;
 }
 #page-who-are-we .section-six .events-slider-wrapper .carousel-inner .carousel-item .item-wrapper .item h3 {
@@ -1670,7 +1677,8 @@ header .main-menu-container ul li:last-of-type a:hover:after {
   margin: 0 0 10px 0;
 }
 #page-who-are-we .section-six .events-slider-wrapper .carousel-inner .carousel-item .item-wrapper .item p, #page-who-are-we .section-six .events-slider-wrapper .carousel-inner .carousel-item .item-wrapper .item ol, #page-who-are-we .section-six .events-slider-wrapper .carousel-inner .carousel-item .item-wrapper .item ul, #page-who-are-we .section-six .events-slider-wrapper .carousel-inner .carousel-item .item-wrapper .item li {
-  font-size: 18px;
+  font-size: 14px;
+  line-height: 1.4;
   text-align: left;
   color: white;
 }

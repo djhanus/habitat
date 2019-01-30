@@ -52,24 +52,34 @@
 
       <div class="row three">
 
-        <div class="family-container">
-          <div class="description">
-            <div class="title">
-              The Perez Family
+          <!-- CALL FUNCTION -->
+          <?php
+            $families_args = array(
+              'post_type'       => 'Families',
+              'order'           => 'DSC',
+              'posts_per_page'  => '3',
+              'post_status'     => 'publish',
+            );
+            $families_query  = new WP_Query( $families_args );
+            if($families_query->have_posts() ) : while ( $families_query->have_posts() ) : $families_query->the_post();
+          ?>
+
+          <!-- OUTPUT CONTAINER -->
+          <div class="family-container">
+            <div class="description">
+              <div class="title"><?php the_title(); ?></div>
+              <p><?php the_excerpt(); ?></p>
+              <div class="button">
+                <a href="<?php echo get_permalink(); ?>">READ MORE</a>
+              </div>
             </div>
 
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat.</p>
-
-            <div class="button">
-              <a href="#">READ MORE</a>
+            <div class="photo" style="background-image: url('<?php echo get_field('family_photo')?>">
             </div>
           </div>
 
-          <div class="photo" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/images/placeholder-family.jpg');">
-          </div>
-        </div> <!-- END family container -->
-
-      </div> <!-- END ROW -->
+          <?php endwhile; endif; wp_reset_query(); ?>
+      </div> <!-- END FAMILIES ROW -->
 
 
       <div class="row families-btn">
@@ -90,7 +100,7 @@
               $event_args = array(
 
                 'post_type'       => 'Events',
-                'posts_per_page'  => '4',
+                'posts_per_page'  => '6',
                 'post_status'     => 'publish',
                 'orderby'         => 'meta_value_num',
                 'order'           => 'ASC',
@@ -136,6 +146,7 @@
               $news_args = array(
                 'post_type'       => 'post',
                 'order'           => 'DSC',
+                'posts_per_page'  => '6',
                 'post_status'     => 'publish',
                 'category_slug'   => 'news',
               );

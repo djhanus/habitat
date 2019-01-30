@@ -48,6 +48,7 @@ function create_posttypes() {
               'name' => __( 'Families' ),
               'singular_name' => __( 'Family' )
           ),
+          'supports' => array('title', 'editor', 'thumbnail', 'excerpt'),
           'public' => true,
           'has_archive' => true,
           'rewrite' => array('slug' => 'families'),
