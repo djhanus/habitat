@@ -2220,6 +2220,270 @@ header {
   }
 }
 
+
+// PAGE - Ways to Give
+#page-ways-to-give {
+
+  .section-one {
+    height: 400px;
+    background-color: $primary-blue;
+
+    .left {
+      width: 50%;
+      float: left;
+      p {
+        padding: 50px;
+        color: white;
+        font-size: 20px;
+      }
+    }
+
+    .right {
+      float: right;
+      height: 100%;
+      width: 50%;
+      background-position: center;
+      background-size: cover;
+    }
+  } // end section one
+
+  .section-two {
+    background-color: #EEEEEE;
+    padding: 30px 0;
+
+    .contained {
+      display: flex;
+      max-width: 1080px;
+
+      .content-wrapper {
+        width: 300px;
+        height: auto;
+        min-height: 120px;
+        padding: 0px;
+        margin: 0px 30px;
+        text-align: center;
+        display: inline-block;
+
+        img {
+          width: 100px;
+          height: auto;
+        }
+
+        h2 {
+          color: #636466;
+          font-size: 20px;
+          font-weight: bold;
+          line-height: 1;
+          margin: 10px 0 10px 0;
+        }
+
+        p {
+          color: $primary-gray;
+          font-size: 14px;
+          line-height: 1.4;
+          text-align: center;
+          padding-bottom: 0px;
+
+          a {
+            color: $primary-blue;
+            text-decoration: none;
+            font-weight: bold;
+            line-height: 2;
+          }
+        }
+      }
+    }
+  }
+
+  .expanding-section {
+    padding: 50px 0;
+
+    button {
+      margin-left: auto;
+      cursor: pointer;
+      border: none;
+      background-color: transparent;
+
+      svg {
+        width: 50px;
+        height: 50px;
+        transition: all 0.3s;
+      }
+    }
+
+    details {
+      color: $primary-gray;
+      user-select: none;
+      margin: 0 0 10px 0;
+
+      &:nth-child(1) {
+        background-color: $secondary-orange;
+      }
+
+      &:nth-child(2) {
+        background-color: $primary-gray;
+      }
+
+      &:nth-child(3) {
+        background-color: $secondary-purple;
+      }
+
+      &:nth-child(4) {
+        background-color: $primary-green;
+      }
+
+      &:nth-child(5) {
+        background-color: $primary-blue;
+      }
+
+      &:nth-child(6) {
+        background-color: $secondary-red;
+      }
+
+      &:last-child {
+        margin: 0;
+      }
+
+      p {
+        color: $primary-gray;
+        font-size: 20px;
+        line-height: 26px;
+      }
+
+      &:focus {
+        outline: none;
+      }
+
+      &[open] {
+        padding: 0 30px 60px 30px;
+
+        summary {
+          border-bottom: 2px solid white;
+          margin: 0 0 40px 0;
+          padding: 30px 0;
+        }
+      }
+
+      &[open],
+      &:hover {
+        & summary svg {
+          transform: rotate(90deg);
+        }
+      }
+
+      summary {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        font-size: 28px;
+        font-weight: 600;
+        color: white;
+        cursor: pointer;
+        padding: 30px;
+
+        &:focus {
+          outline: none;
+        }
+
+        &::-webkit-details-marker {
+          display: none;
+        }
+      }
+
+      .text-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        width: 900px;
+
+        h2 {
+          text-transform: uppercase;
+          font-weight: 600;
+          font-size: 18px;
+          line-height: 26px;
+          margin: 0 0 20px 0;
+
+          &:nth-child(n+2) {
+            margin: 40px 0 0 0;
+          }
+        }
+
+        ul, ol, li, a, p {
+          font-size: 16px;
+          line-height: 24px;
+        }
+
+        ul li,
+        ol li {
+          margin: 0 0 10px 0;
+        }
+
+        .left {
+          width: calc(50% - 40px);
+
+          h1, h2, h3, h5, p, ul, ol, li, a {
+            color: white;
+          }
+        }
+
+        .right {
+          margin-left: auto;
+          padding: 0 0 0 40px;
+          margin: 0 0 0 40px;
+          width: calc(50% - 40px);
+          border-left: 2px solid $primary-green;
+
+          h1, h2, h3, h5, p, ul, ol, li, a {
+            color: $primary-green;
+          }
+        }
+      }
+
+      .socials {
+        display: flex;
+        margin: 40px auto 0 auto;
+
+        div {
+          display: flex;
+          margin: 0 auto;
+        }
+
+        a {
+          display: flex;
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          background-color: $primary-green;
+
+          &:nth-child(2){
+            margin: 0 10px 0 20px;
+          }
+
+          &:nth-child(3) {
+            margin: 0 20px 0 10px;
+          }
+
+          svg {
+            display: block;
+            margin: auto;
+            width: 20px;
+            height: 20px;
+            fill: $primary-blue;
+          }
+        }
+      }
+    }
+  } // END expanding section
+
+  .testimonials {
+    padding: 100px 0;
+    background-image: url('./images/bg-pattern.svg');
+    background-size: 15px 15px;
+    background-repeat: repeat;
+  } // END .testimonials
+
+} // END page ways to give
+
 // Single Post - Standard
 .post-standard {
   background-image: url('./images/bg-pattern.svg');

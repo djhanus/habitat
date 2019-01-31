@@ -1735,6 +1735,217 @@ header .main-menu-container ul li:last-of-type a:hover:after {
   height: 100%;
 }
 
+#page-ways-to-give .section-one {
+  height: 400px;
+  background-color: #00AFD7;
+}
+#page-ways-to-give .section-one .left {
+  width: 50%;
+  float: left;
+}
+#page-ways-to-give .section-one .left p {
+  padding: 50px;
+  color: white;
+  font-size: 20px;
+}
+#page-ways-to-give .section-one .right {
+  float: right;
+  height: 100%;
+  width: 50%;
+  background-position: center;
+  background-size: cover;
+}
+#page-ways-to-give .section-two {
+  background-color: #EEEEEE;
+  padding: 30px 0;
+}
+#page-ways-to-give .section-two .contained {
+  display: flex;
+  max-width: 1080px;
+}
+#page-ways-to-give .section-two .contained .content-wrapper {
+  width: 300px;
+  height: auto;
+  min-height: 120px;
+  padding: 0px;
+  margin: 0px 30px;
+  text-align: center;
+  display: inline-block;
+}
+#page-ways-to-give .section-two .contained .content-wrapper img {
+  width: 100px;
+  height: auto;
+}
+#page-ways-to-give .section-two .contained .content-wrapper h2 {
+  color: #636466;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1;
+  margin: 10px 0 10px 0;
+}
+#page-ways-to-give .section-two .contained .content-wrapper p {
+  color: #888B8D;
+  font-size: 14px;
+  line-height: 1.4;
+  text-align: center;
+  padding-bottom: 0px;
+}
+#page-ways-to-give .section-two .contained .content-wrapper p a {
+  color: #00AFD7;
+  text-decoration: none;
+  font-weight: bold;
+  line-height: 2;
+}
+#page-ways-to-give .expanding-section {
+  padding: 50px 0;
+}
+#page-ways-to-give .expanding-section button {
+  margin-left: auto;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+#page-ways-to-give .expanding-section button svg {
+  width: 50px;
+  height: 50px;
+  transition: all 0.3s;
+}
+#page-ways-to-give .expanding-section details {
+  color: #888B8D;
+  user-select: none;
+  margin: 0 0 10px 0;
+}
+#page-ways-to-give .expanding-section details:nth-child(1) {
+  background-color: #FF671F;
+}
+#page-ways-to-give .expanding-section details:nth-child(2) {
+  background-color: #888B8D;
+}
+#page-ways-to-give .expanding-section details:nth-child(3) {
+  background-color: #375888;
+}
+#page-ways-to-give .expanding-section details:nth-child(4) {
+  background-color: #C4D600;
+}
+#page-ways-to-give .expanding-section details:nth-child(5) {
+  background-color: #00AFD7;
+}
+#page-ways-to-give .expanding-section details:nth-child(6) {
+  background-color: #A4343A;
+}
+#page-ways-to-give .expanding-section details:last-child {
+  margin: 0;
+}
+#page-ways-to-give .expanding-section details p {
+  color: #888B8D;
+  font-size: 20px;
+  line-height: 26px;
+}
+#page-ways-to-give .expanding-section details:focus {
+  outline: none;
+}
+#page-ways-to-give .expanding-section details[open] {
+  padding: 0 30px 60px 30px;
+}
+#page-ways-to-give .expanding-section details[open] summary {
+  border-bottom: 2px solid white;
+  margin: 0 0 40px 0;
+  padding: 30px 0;
+}
+#page-ways-to-give .expanding-section details[open] summary svg, #page-ways-to-give .expanding-section details:hover summary svg {
+  transform: rotate(90deg);
+}
+#page-ways-to-give .expanding-section details summary {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  font-size: 28px;
+  font-weight: 600;
+  color: white;
+  cursor: pointer;
+  padding: 30px;
+}
+#page-ways-to-give .expanding-section details summary:focus {
+  outline: none;
+}
+#page-ways-to-give .expanding-section details summary::-webkit-details-marker {
+  display: none;
+}
+#page-ways-to-give .expanding-section details .text-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: 900px;
+}
+#page-ways-to-give .expanding-section details .text-wrapper h2 {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 26px;
+  margin: 0 0 20px 0;
+}
+#page-ways-to-give .expanding-section details .text-wrapper h2:nth-child(n+2) {
+  margin: 40px 0 0 0;
+}
+#page-ways-to-give .expanding-section details .text-wrapper ul, #page-ways-to-give .expanding-section details .text-wrapper ol, #page-ways-to-give .expanding-section details .text-wrapper li, #page-ways-to-give .expanding-section details .text-wrapper a, #page-ways-to-give .expanding-section details .text-wrapper p {
+  font-size: 16px;
+  line-height: 24px;
+}
+#page-ways-to-give .expanding-section details .text-wrapper ul li,
+#page-ways-to-give .expanding-section details .text-wrapper ol li {
+  margin: 0 0 10px 0;
+}
+#page-ways-to-give .expanding-section details .text-wrapper .left {
+  width: calc(50% - 40px);
+}
+#page-ways-to-give .expanding-section details .text-wrapper .left h1, #page-ways-to-give .expanding-section details .text-wrapper .left h2, #page-ways-to-give .expanding-section details .text-wrapper .left h3, #page-ways-to-give .expanding-section details .text-wrapper .left h5, #page-ways-to-give .expanding-section details .text-wrapper .left p, #page-ways-to-give .expanding-section details .text-wrapper .left ul, #page-ways-to-give .expanding-section details .text-wrapper .left ol, #page-ways-to-give .expanding-section details .text-wrapper .left li, #page-ways-to-give .expanding-section details .text-wrapper .left a {
+  color: white;
+}
+#page-ways-to-give .expanding-section details .text-wrapper .right {
+  margin-left: auto;
+  padding: 0 0 0 40px;
+  margin: 0 0 0 40px;
+  width: calc(50% - 40px);
+  border-left: 2px solid #C4D600;
+}
+#page-ways-to-give .expanding-section details .text-wrapper .right h1, #page-ways-to-give .expanding-section details .text-wrapper .right h2, #page-ways-to-give .expanding-section details .text-wrapper .right h3, #page-ways-to-give .expanding-section details .text-wrapper .right h5, #page-ways-to-give .expanding-section details .text-wrapper .right p, #page-ways-to-give .expanding-section details .text-wrapper .right ul, #page-ways-to-give .expanding-section details .text-wrapper .right ol, #page-ways-to-give .expanding-section details .text-wrapper .right li, #page-ways-to-give .expanding-section details .text-wrapper .right a {
+  color: #C4D600;
+}
+#page-ways-to-give .expanding-section details .socials {
+  display: flex;
+  margin: 40px auto 0 auto;
+}
+#page-ways-to-give .expanding-section details .socials div {
+  display: flex;
+  margin: 0 auto;
+}
+#page-ways-to-give .expanding-section details .socials a {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #C4D600;
+}
+#page-ways-to-give .expanding-section details .socials a:nth-child(2) {
+  margin: 0 10px 0 20px;
+}
+#page-ways-to-give .expanding-section details .socials a:nth-child(3) {
+  margin: 0 20px 0 10px;
+}
+#page-ways-to-give .expanding-section details .socials a svg {
+  display: block;
+  margin: auto;
+  width: 20px;
+  height: 20px;
+  fill: #00AFD7;
+}
+#page-ways-to-give .testimonials {
+  padding: 100px 0;
+  background-image: url("./images/bg-pattern.svg");
+  background-size: 15px 15px;
+  background-repeat: repeat;
+}
+
 .post-standard {
   background-image: url("./images/bg-pattern.svg");
   background-size: 15px 15px;
