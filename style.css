@@ -479,6 +479,7 @@ header .main-menu-container ul li:last-of-type a:hover:after {
 }
 .page-home .four .events-container .events-wrapper .event .date {
   position: relative;
+  width: 120px;
   height: auto;
   padding: 0 30px;
   border-right: 3px solid #888B8D;
@@ -1280,33 +1281,16 @@ header .main-menu-container ul li:last-of-type a:hover:after {
   transition: all 0.3s;
 }
 #page-volunteer .section-eight details {
-  color: #888B8D;
+  color: #636466;
   user-select: none;
   margin: 0 0 10px 0;
-}
-#page-volunteer .section-eight details:nth-child(1) {
-  background-color: #FF671F;
-}
-#page-volunteer .section-eight details:nth-child(2) {
-  background-color: #888B8D;
-}
-#page-volunteer .section-eight details:nth-child(3) {
-  background-color: #375888;
-}
-#page-volunteer .section-eight details:nth-child(4) {
-  background-color: #C4D600;
-}
-#page-volunteer .section-eight details:nth-child(5) {
-  background-color: #00AFD7;
-}
-#page-volunteer .section-eight details:nth-child(6) {
-  background-color: #A4343A;
+  background-color: #EEEEEE;
 }
 #page-volunteer .section-eight details:last-child {
   margin: 0;
 }
 #page-volunteer .section-eight details p {
-  color: #888B8D;
+  color: #636466;
   font-size: 20px;
   line-height: 26px;
 }
@@ -1317,7 +1301,7 @@ header .main-menu-container ul li:last-of-type a:hover:after {
   padding: 0 30px 60px 30px;
 }
 #page-volunteer .section-eight details[open] summary {
-  border-bottom: 2px solid white;
+  border-bottom: 2px solid #636466;
   margin: 0 0 40px 0;
   padding: 30px 0;
 }
@@ -1330,7 +1314,7 @@ header .main-menu-container ul li:last-of-type a:hover:after {
   align-items: center;
   font-size: 28px;
   font-weight: 600;
-  color: white;
+  color: #636466;
   cursor: pointer;
   padding: 30px;
 }
@@ -1364,21 +1348,25 @@ header .main-menu-container ul li:last-of-type a:hover:after {
 #page-volunteer .section-eight details .text-wrapper ol li {
   margin: 0 0 10px 0;
 }
+#page-volunteer .section-eight details .text-wrapper img {
+  width: 100%;
+  height: auto;
+}
 #page-volunteer .section-eight details .text-wrapper .left {
   width: calc(50% - 40px);
 }
 #page-volunteer .section-eight details .text-wrapper .left h1, #page-volunteer .section-eight details .text-wrapper .left h2, #page-volunteer .section-eight details .text-wrapper .left h3, #page-volunteer .section-eight details .text-wrapper .left h5, #page-volunteer .section-eight details .text-wrapper .left p, #page-volunteer .section-eight details .text-wrapper .left ul, #page-volunteer .section-eight details .text-wrapper .left ol, #page-volunteer .section-eight details .text-wrapper .left li, #page-volunteer .section-eight details .text-wrapper .left a {
-  color: white;
+  color: #636466;
 }
 #page-volunteer .section-eight details .text-wrapper .right {
   margin-left: auto;
   padding: 0 0 0 40px;
   margin: 0 0 0 40px;
   width: calc(50% - 40px);
-  border-left: 2px solid #C4D600;
+  border-left: 2px solid #636466;
 }
 #page-volunteer .section-eight details .text-wrapper .right h1, #page-volunteer .section-eight details .text-wrapper .right h2, #page-volunteer .section-eight details .text-wrapper .right h3, #page-volunteer .section-eight details .text-wrapper .right h5, #page-volunteer .section-eight details .text-wrapper .right p, #page-volunteer .section-eight details .text-wrapper .right ul, #page-volunteer .section-eight details .text-wrapper .right ol, #page-volunteer .section-eight details .text-wrapper .right li, #page-volunteer .section-eight details .text-wrapper .right a {
-  color: #C4D600;
+  color: #636466;
 }
 #page-volunteer .section-eight details .socials {
   display: flex;
@@ -1393,7 +1381,7 @@ header .main-menu-container ul li:last-of-type a:hover:after {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-color: #C4D600;
+  background-color: #636466;
 }
 #page-volunteer .section-eight details .socials a:nth-child(2) {
   margin: 0 10px 0 20px;
@@ -1406,7 +1394,7 @@ header .main-menu-container ul li:last-of-type a:hover:after {
   margin: auto;
   width: 20px;
   height: 20px;
-  fill: #00AFD7;
+  fill: #eeeeee;
 }
 #page-volunteer .section-nine {
   padding: 100px 0;

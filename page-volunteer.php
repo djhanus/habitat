@@ -234,14 +234,9 @@
                 </div>
 
                 <div class="right">
-                  <h2>PAST PROJECTS</h2>
-                  <ul>
-                    <?php if( have_rows('volunteer_seight_expands_past_projects_list') ): ?>
-                      <?php while( have_rows('volunteer_seight_expands_past_projects_list') ): the_row(); ?>
-                        <li><?php the_sub_field('volunteer_seight_expands_past_project_item'); ?>: <?php the_sub_field('volunteer_seight_expands_past_project_text'); ?></li>
-                      <?php endwhile; ?>
-                    <?php endif; ?>
-                  </ul>
+                  <div class="text">
+                    <?php the_sub_field('volunteer_seight_expands_body_right'); ?>
+                  </div>
                 </div>
               </div>
 

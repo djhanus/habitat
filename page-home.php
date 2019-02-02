@@ -57,7 +57,7 @@
             $families_args = array(
               'post_type'       => 'Families',
               'order'           => 'DSC',
-              'posts_per_page'  => '3',
+              'posts_per_page'  => '6',
               'post_status'     => 'publish',
             );
             $families_query  = new WP_Query( $families_args );

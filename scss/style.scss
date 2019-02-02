@@ -567,6 +567,7 @@ header {
 
           .date {
             position: relative;
+            width: 120px;
             height: auto;
             padding: 0 30px;
             border-right: 3px solid $primary-gray;
@@ -804,7 +805,7 @@ header {
     .contained {
       width: 960px;
       margin: 0 auto;
-    
+
 
       h1 {
         width: 50%;
@@ -1646,40 +1647,17 @@ header {
     }
 
     details {
-      color: $primary-gray;
+      color: #636466;
       user-select: none;
       margin: 0 0 10px 0;
-
-      &:nth-child(1) {
-        background-color: $secondary-orange;
-      }
-
-      &:nth-child(2) {
-        background-color: $primary-gray;
-      }
-
-      &:nth-child(3) {
-        background-color: $secondary-purple;
-      }
-
-      &:nth-child(4) {
-        background-color: $primary-green;
-      }
-
-      &:nth-child(5) {
-        background-color: $primary-blue;
-      }
-
-      &:nth-child(6) {
-        background-color: $secondary-red;
-      }
+      background-color: #EEEEEE;
 
       &:last-child {
         margin: 0;
       }
 
       p {
-        color: $primary-gray;
+        color: #636466;
         font-size: 20px;
         line-height: 26px;
       }
@@ -1692,7 +1670,7 @@ header {
         padding: 0 30px 60px 30px;
 
         summary {
-          border-bottom: 2px solid white;
+          border-bottom: 2px solid #636466;;
           margin: 0 0 40px 0;
           padding: 30px 0;
         }
@@ -1711,7 +1689,7 @@ header {
         align-items: center;
         font-size: 28px;
         font-weight: 600;
-        color: white;
+        color: #636466;
         cursor: pointer;
         padding: 30px;
 
@@ -1752,11 +1730,16 @@ header {
           margin: 0 0 10px 0;
         }
 
+        img {
+          width: 100%;
+          height: auto;
+        }
+
         .left {
           width: calc(50% - 40px);
 
           h1, h2, h3, h5, p, ul, ol, li, a {
-            color: white;
+            color: #636466;
           }
         }
 
@@ -1765,10 +1748,10 @@ header {
           padding: 0 0 0 40px;
           margin: 0 0 0 40px;
           width: calc(50% - 40px);
-          border-left: 2px solid $primary-green;
+          border-left: 2px solid #636466;
 
           h1, h2, h3, h5, p, ul, ol, li, a {
-            color: $primary-green;
+            color: #636466;
           }
         }
       }
@@ -1787,7 +1770,7 @@ header {
           width: 40px;
           height: 40px;
           border-radius: 50%;
-          background-color: $primary-green;
+          background-color: #636466;;
 
           &:nth-child(2){
             margin: 0 10px 0 20px;
@@ -1802,7 +1785,7 @@ header {
             margin: auto;
             width: 20px;
             height: 20px;
-            fill: $primary-blue;
+            fill: #eeeeee;
           }
         }
       }
@@ -2487,7 +2470,7 @@ header {
 
 // PAGE - ReStore
 #page-restore {
-  
+
   .section-one {
     background-color: $primary-blue;
     padding: 50px 20px;
