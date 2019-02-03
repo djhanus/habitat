@@ -217,8 +217,8 @@
                           <polyline id="path-1" points="25.9003906 18.4350586 43.2832031 33.4455566 25.9003906 48.3596191"></polyline>
                       </defs>
                       <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                          <circle id="Oval" stroke="#FFFFFF" stroke-width="2" fill-rule="nonzero" cx="33.4731445" cy="33.5268555" r="32.4731445"></circle>
-                          <g id="Path-2" stroke-linecap="round" fill-rule="nonzero" stroke="#FFFFFF">
+                          <circle id="Oval" stroke="#636466" stroke-width="2" fill-rule="nonzero" cx="33.4731445" cy="33.5268555" r="32.4731445"></circle>
+                          <g id="Path-2" stroke-linecap="round" fill-rule="nonzero" stroke="#636466">
                               <use stroke-width="2" xlink:href="#path-1"></use>
                               <use stroke-width="1" xlink:href="#path-1"></use>
                           </g>

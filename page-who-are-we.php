@@ -127,6 +127,7 @@
     <div class="section-six">
       <div class="contained">
         <h1>Upcoming Events</h1>
+        <h1><?php echo wp_is_mobile() ?></h1>
 
         <div class="events-slider-wrapper">
           <div id="events-gallery" class="carousel slide" data-ride="carousel" data-interval="false">
@@ -159,7 +160,8 @@
                   while ( $who_events_query->have_posts() ) :
                     $who_events_query->the_post();
                     $event_date  = get_field('event_date');
-                    if ($count < 4){ ?>
+
+                    if ($count < 4) { ?>
                       <div class="item">
                         <h1><?php echo date("M", strtotime($event_date)); ?></h1>
                         <h2><?php echo date("d", strtotime($event_date)); ?></h2>
@@ -167,6 +169,7 @@
                         <?php the_excerpt(); ?>
                         <a href="<?php echo get_permalink(); ?>">Read More >></a>
                       </div>
+
                     <?php } else { echo '</div></div><div class="carousel-item"><div class="item-wrapper">'; ?>
                       <div class="item">
                         <h1><?php echo date("M", strtotime($event_date)); ?></h1>
@@ -175,6 +178,7 @@
                         <?php the_excerpt(); ?>
                         <a href="<?php echo get_permalink(); ?>">Read More >></a>
                       </div>
+
                   <?php $count = 0; } $count = $count + 1; endwhile; endif; ?>
                 </div>
               </div>
