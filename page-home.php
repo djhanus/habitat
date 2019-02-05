@@ -100,7 +100,7 @@
               $event_args = array(
 
                 'post_type'       => 'Events',
-                'posts_per_page'  => '6',
+                'posts_per_page'  => '4',
                 'post_status'     => 'publish',
                 'orderby'         => 'meta_value_num',
                 'order'           => 'ASC',
