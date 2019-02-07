@@ -781,16 +781,26 @@ header {
         color: white;
       }
 
+      img {
+        width: 100%;
+      }
+
+      .hide-full-width {
+        display: none;
+      }
+
       &:nth-child(1) {
         background: $primary-blue;
       }
 
       &:nth-child(2) {
+        padding: 0;
         background-size: cover;
       }
 
       &:nth-child(3) {
-        background-size: cover;
+         padding: 0;
+         background-size: cover;
       }
 
       &:nth-child(4) {
@@ -1095,8 +1105,8 @@ header {
 
       p {
         color: $primary-gray;
-        font-size: 20px;
-        line-height: 26px;
+        font-size: 16px;
+        line-height: 24px;
       }
 
       &:focus {
@@ -1325,10 +1335,6 @@ header {
     background-image: url('./images/bg-pattern.svg');
     background-size: 15px 15px;
     background-repeat: repeat;
-
-    .contained {
-      width: 100%;
-    }
 
     div {
       &:nth-child(2) {
@@ -1661,10 +1667,33 @@ header {
     }
 
     details {
-      color: #636466;
+      color: white;
       user-select: none;
       margin: 0 0 20px 0;
-      background-color: #EEEEEE;
+
+      &:nth-child(1) {
+        background-color: $secondary-orange;
+      }
+
+      &:nth-child(2) {
+        background-color: $primary-gray;
+      }
+
+      &:nth-child(3) {
+        background-color: $secondary-purple;
+      }
+
+      &:nth-child(4) {
+        background-color: $primary-green;
+      }
+
+      &:nth-child(5) {
+        background-color: $primary-blue;
+      }
+
+      &:nth-child(6) {
+        background-color: $secondary-red;
+      }
 
       &:last-child {
         margin: 0;
@@ -1681,12 +1710,12 @@ header {
       }
 
       &[open] {
-        padding: 0 30px 60px 30px;
+        padding: 0;
 
         summary {
           border-bottom: 2px solid #636466;;
-          margin: 0 0 40px 0;
-          padding: 30px 0;
+          margin: 0;
+          padding: 30px;
         }
       }
 
@@ -1703,7 +1732,6 @@ header {
         align-items: center;
         font-size: 28px;
         font-weight: 600;
-        color: #636466;
         cursor: pointer;
         padding: 30px;
 
@@ -1720,7 +1748,16 @@ header {
         display: flex;
         flex-wrap: wrap;
         margin: 0 auto;
-        width: 900px;
+        width: 100%;
+        background-color: #EEEEEE;
+        color: #636466;
+
+        .container {
+          display: flex;
+          flex-wrap: wrap;
+          width: 900px;
+          padding: 30px 0 0 0;
+        }
 
         h2 {
           text-transform: uppercase;
@@ -1771,8 +1808,7 @@ header {
       }
 
       .socials {
-        display: flex;
-        margin: 40px auto 0 auto;
+        margin: 40px auto;
 
         div {
           display: flex;
@@ -2029,6 +2065,10 @@ header {
         ul li,
         ol li {
           margin: 0 0 10px 0;
+        }
+
+        img {
+          width: 100%;
         }
 
         .left {
@@ -3096,6 +3136,29 @@ footer {
       padding: 20px;
     }
 
+    .section-four {
+      details {
+        .text-wrapper {
+
+          p {
+            &:last-child {
+              margin: 0;
+              padding-bottom: 0;
+            }
+          }
+          .left,
+          .right {
+            margin: 0 !important;
+            width: 100%;
+          }
+
+          .right {
+            padding: 20px !important;
+          }
+        }
+      }
+    }
+
     .section-five {
       padding: 20px 20px 80px 20px;
     }
@@ -3285,31 +3348,10 @@ footer {
     .section-eight {
       details {
 
-        &[open]{
-          padding: 0 0 20px 0;
-
-          summary {
-            border-bottom-width: 1px;
-            margin: 0 0 10px 0 !important;
-          }
-        }
-
         summary {
           span {
             font-size: 22px;
           }
-
-          // button {
-          //   svg {
-          //     g {
-          //       circle {
-          //         stroke {
-          //           fill: #636466;
-          //         }
-          //       }
-          //     }
-          //   }
-          // }
         }
 
         .text-wrapper {
@@ -3333,7 +3375,7 @@ footer {
         }
 
         .socials {
-          margin: 0 auto;
+          margin: 20px auto;
         }
       }
     }
@@ -3351,6 +3393,10 @@ footer {
     .section-one {
       padding: 0 !important;
 
+      .hide-full-width {
+        display: block !important;
+      }
+
       div {
         &:nth-child(1),
         &:nth-child(2),
@@ -3360,10 +3406,14 @@ footer {
           padding: 20px !important;
         }
 
+        &:nth-child(2) {
+          margin: 0 0 20px 0;
+        }
+
         &:nth-child(2),
         &:nth-child(3) {
-          background-size: contain;
-          min-height: 300px;
+          padding: 0 !important;
+          background-image: none !important;
         }
       }
     }
@@ -3447,11 +3497,13 @@ footer {
       }
 
       blockquote {
+        font-size: 18px;
+        padding: 0;
+        margin: 0;
+
         &:before,
         &:after {
-          width: 30px !important;
-          height: 30px !important;
-          background-size: cover;
+          display: none;
         }
       }
     }
@@ -3575,6 +3627,29 @@ footer {
       padding: 20px;
     }
 
+    .section-four {
+      details {
+        .text-wrapper {
+
+          p {
+            &:last-child {
+              margin: 0;
+              padding-bottom: 0;
+            }
+          }
+          .left,
+          .right {
+            margin: 0 !important;
+            width: 100%;
+          }
+
+          .right {
+            padding: 20px !important;
+          }
+        }
+      }
+    }
+
     .section-five {
       padding: 20px 20px 80px 20px;
     }
@@ -3764,31 +3839,10 @@ footer {
     .section-eight {
       details {
 
-        &[open]{
-          padding: 0 0 20px 0;
-
-          summary {
-            border-bottom-width: 1px;
-            margin: 0 0 10px 0 !important;
-          }
-        }
-
         summary {
           span {
             font-size: 22px;
           }
-
-          // button {
-          //   svg {
-          //     g {
-          //       circle {
-          //         stroke {
-          //           fill: #636466;
-          //         }
-          //       }
-          //     }
-          //   }
-          // }
         }
 
         .text-wrapper {
@@ -3812,7 +3866,7 @@ footer {
         }
 
         .socials {
-          margin: 0 auto;
+          margin: 20px auto;
         }
       }
     }
@@ -3830,6 +3884,10 @@ footer {
     .section-one {
       padding: 0 !important;
 
+      .hide-full-width {
+        display: block !important;
+      }
+
       div {
         &:nth-child(1),
         &:nth-child(2),
@@ -3839,10 +3897,14 @@ footer {
           padding: 20px !important;
         }
 
+        &:nth-child(2) {
+          margin: 0 0 20px 0;
+        }
+
         &:nth-child(2),
         &:nth-child(3) {
-          background-size: contain;
-          min-height: 300px;
+          padding: 0 !important;
+          background-image: none !important;
         }
       }
     }
@@ -3926,11 +3988,13 @@ footer {
       }
 
       blockquote {
+        font-size: 18px;
+        margin: 0;
+        padding: 0;
+
         &:before,
         &:after {
-          width: 30px !important;
-          height: 30px !important;
-          background-size: cover;
+          display: none;
         }
       }
     }
@@ -4245,31 +4309,10 @@ footer {
     .section-eight {
       details {
 
-        &[open]{
-          padding: 0 0 20px 0;
-
-          summary {
-            border-bottom-width: 1px;
-            margin: 0 0 10px 0 !important;
-          }
-        }
-
         summary {
           span {
             font-size: 22px;
           }
-
-          // button {
-          //   svg {
-          //     g {
-          //       circle {
-          //         stroke {
-          //           fill: #636466;
-          //         }
-          //       }
-          //     }
-          //   }
-          // }
         }
 
         .text-wrapper {
@@ -4293,7 +4336,7 @@ footer {
         }
 
         .socials {
-          margin: 0 auto;
+          margin: 20px auto;
         }
       }
     }
@@ -4311,6 +4354,10 @@ footer {
     .section-one {
       padding: 0 !important;
 
+      .hide-full-width {
+        display: block !important;
+      }
+
       div {
         &:nth-child(1),
         &:nth-child(2),
@@ -4320,10 +4367,14 @@ footer {
           padding: 20px !important;
         }
 
+        &:nth-child(2) {
+          margin: 0 0 20px 0;
+        }
+
         &:nth-child(2),
         &:nth-child(3) {
-          background-size: contain;
-          min-height: 300px;
+          padding: 0 !important;
+          background-image: none !important;
         }
       }
     }

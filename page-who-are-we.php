@@ -60,8 +60,8 @@
                 </button>
               </summary>
               <div class="text-wrapper">
-                <div class="left"
-                     style="background-image: url('<?php echo the_sub_field('page_who_expand_comp_image'); ?>')">
+                <div class="left">
+                  <img src="<?php echo the_sub_field('page_who_expand_comp_image'); ?>">
                 </div>
                 <div class="right">
                   <?php the_sub_field('page_who_expand_comp_body'); ?>

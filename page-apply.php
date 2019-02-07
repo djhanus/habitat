@@ -12,13 +12,17 @@
       <?php if( have_rows('apply_section_one_row_one') ): ?>
         <?php while( have_rows('apply_section_one_row_one') ): the_row(); ?>
           <div><?php the_sub_field('apply_section_one_row_one_text'); ?></div>
-          <div style="background-image: url('<?php the_sub_field('apply_section_one_row_one_image'); ?>');"></div>
+          <div style="background-image: url('<?php the_sub_field('apply_section_one_row_one_image'); ?>');">
+            <img class="hide-full-width" src="<?php the_sub_field('apply_section_one_row_one_image'); ?>">
+          </div>
         <?php endwhile; ?>
       <?php endif; ?>
 
       <?php if( have_rows('apply_section_one_row_two') ): ?>
         <?php while( have_rows('apply_section_one_row_two') ): the_row(); ?>
-          <div style="background-image: url('<?php the_sub_field('apply_section_one_row_two_image'); ?>');"></div>
+          <div style="background-image: url('<?php the_sub_field('apply_section_one_row_two_image'); ?>');">
+            <img class="hide-full-width" src="<?php the_sub_field('apply_section_one_row_two_image'); ?>">
+          </div>
           <div><?php the_sub_field('apply_section_one_row_two_text'); ?></div>
         <?php endwhile; ?>
       <?php endif; ?>

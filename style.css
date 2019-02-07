@@ -656,13 +656,21 @@ header .main-menu-container ul li:last-of-type a:hover:after {
   line-height: 26px;
   color: white;
 }
+#page-apply .section-one div img {
+  width: 100%;
+}
+#page-apply .section-one div .hide-full-width {
+  display: none;
+}
 #page-apply .section-one div:nth-child(1) {
   background: #00AFD7;
 }
 #page-apply .section-one div:nth-child(2) {
+  padding: 0;
   background-size: cover;
 }
 #page-apply .section-one div:nth-child(3) {
+  padding: 0;
   background-size: cover;
 }
 #page-apply .section-one div:nth-child(4) {
@@ -844,8 +852,8 @@ header .main-menu-container ul li:last-of-type a:hover:after {
 }
 #page-apply .section-four details p {
   color: #888B8D;
-  font-size: 20px;
-  line-height: 26px;
+  font-size: 16px;
+  line-height: 24px;
 }
 #page-apply .section-four details:focus {
   outline: none;
@@ -1025,9 +1033,6 @@ header .main-menu-container ul li:last-of-type a:hover:after {
   background-image: url("./images/bg-pattern.svg");
   background-size: 15px 15px;
   background-repeat: repeat;
-}
-#page-volunteer .section-four .contained {
-  width: 100%;
 }
 #page-volunteer .section-four div:nth-child(2) {
   padding: 50px 0 0 0;
@@ -1292,10 +1297,27 @@ header .main-menu-container ul li:last-of-type a:hover:after {
   transition: all 0.3s;
 }
 #page-volunteer .section-eight details {
-  color: #636466;
+  color: white;
   user-select: none;
   margin: 0 0 20px 0;
-  background-color: #EEEEEE;
+}
+#page-volunteer .section-eight details:nth-child(1) {
+  background-color: #FF671F;
+}
+#page-volunteer .section-eight details:nth-child(2) {
+  background-color: #888B8D;
+}
+#page-volunteer .section-eight details:nth-child(3) {
+  background-color: #375888;
+}
+#page-volunteer .section-eight details:nth-child(4) {
+  background-color: #C4D600;
+}
+#page-volunteer .section-eight details:nth-child(5) {
+  background-color: #00AFD7;
+}
+#page-volunteer .section-eight details:nth-child(6) {
+  background-color: #A4343A;
 }
 #page-volunteer .section-eight details:last-child {
   margin: 0;
@@ -1309,12 +1331,12 @@ header .main-menu-container ul li:last-of-type a:hover:after {
   outline: none;
 }
 #page-volunteer .section-eight details[open] {
-  padding: 0 30px 60px 30px;
+  padding: 0;
 }
 #page-volunteer .section-eight details[open] summary {
   border-bottom: 2px solid #636466;
-  margin: 0 0 40px 0;
-  padding: 30px 0;
+  margin: 0;
+  padding: 30px;
 }
 #page-volunteer .section-eight details[open] summary svg, #page-volunteer .section-eight details:hover summary svg {
   transform: rotate(90deg);
@@ -1325,7 +1347,6 @@ header .main-menu-container ul li:last-of-type a:hover:after {
   align-items: center;
   font-size: 28px;
   font-weight: 600;
-  color: #636466;
   cursor: pointer;
   padding: 30px;
 }
@@ -1339,7 +1360,15 @@ header .main-menu-container ul li:last-of-type a:hover:after {
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto;
+  width: 100%;
+  background-color: #EEEEEE;
+  color: #636466;
+}
+#page-volunteer .section-eight details .text-wrapper .container {
+  display: flex;
+  flex-wrap: wrap;
   width: 900px;
+  padding: 30px 0 0 0;
 }
 #page-volunteer .section-eight details .text-wrapper h2 {
   text-transform: uppercase;
@@ -1380,8 +1409,7 @@ header .main-menu-container ul li:last-of-type a:hover:after {
   color: #636466;
 }
 #page-volunteer .section-eight details .socials {
-  display: flex;
-  margin: 40px auto 0 auto;
+  margin: 40px auto;
 }
 #page-volunteer .section-eight details .socials div {
   display: flex;
@@ -1588,6 +1616,9 @@ header .main-menu-container ul li:last-of-type a:hover:after {
 #page-who-are-we .section-four details .text-wrapper ul li,
 #page-who-are-we .section-four details .text-wrapper ol li {
   margin: 0 0 10px 0;
+}
+#page-who-are-we .section-four details .text-wrapper img {
+  width: 100%;
 }
 #page-who-are-we .section-four details .text-wrapper .left {
   position: relative;
@@ -2679,6 +2710,18 @@ footer {
 #page-who-are-we .section-five {
     padding: 20px;
   }
+  #page-who-are-we .section-four details .text-wrapper p:last-child {
+    margin: 0;
+    padding-bottom: 0;
+  }
+  #page-who-are-we .section-four details .text-wrapper .left,
+#page-who-are-we .section-four details .text-wrapper .right {
+    margin: 0 !important;
+    width: 100%;
+  }
+  #page-who-are-we .section-four details .text-wrapper .right {
+    padding: 20px !important;
+  }
   #page-who-are-we .section-five {
     padding: 20px 20px 80px 20px;
   }
@@ -2810,13 +2853,6 @@ footer {
   #page-volunteer .section-seven .text:nth-child(3) {
     padding: 20px !important;
   }
-  #page-volunteer .section-eight details[open] {
-    padding: 0 0 20px 0;
-  }
-  #page-volunteer .section-eight details[open] summary {
-    border-bottom-width: 1px;
-    margin: 0 0 10px 0 !important;
-  }
   #page-volunteer .section-eight details summary span {
     font-size: 22px;
   }
@@ -2837,7 +2873,7 @@ footer {
     padding: 0;
   }
   #page-volunteer .section-eight details .socials {
-    margin: 0 auto;
+    margin: 20px auto;
   }
   #page-volunteer .section-nine {
     padding: 20px 20px 80px 20px !important;
@@ -2849,13 +2885,19 @@ footer {
   #page-apply .section-one {
     padding: 0 !important;
   }
+  #page-apply .section-one .hide-full-width {
+    display: block !important;
+  }
   #page-apply .section-one div:nth-child(1), #page-apply .section-one div:nth-child(2), #page-apply .section-one div:nth-child(3), #page-apply .section-one div:nth-child(4) {
     width: 100% !important;
     padding: 20px !important;
   }
+  #page-apply .section-one div:nth-child(2) {
+    margin: 0 0 20px 0;
+  }
   #page-apply .section-one div:nth-child(2), #page-apply .section-one div:nth-child(3) {
-    background-size: contain;
-    min-height: 300px;
+    padding: 0 !important;
+    background-image: none !important;
   }
   #page-apply .section-two {
     padding: 20px !important;
@@ -2911,10 +2953,13 @@ footer {
     margin: 0 auto;
     padding: 0 20px;
   }
+  .gallery-wrapper .carousel blockquote {
+    font-size: 18px;
+    padding: 0;
+    margin: 0;
+  }
   .gallery-wrapper .carousel blockquote:before, .gallery-wrapper .carousel blockquote:after {
-    width: 30px !important;
-    height: 30px !important;
-    background-size: cover;
+    display: none;
   }
 }
 @media (min-width: 481px) and (max-width: 767px) {
@@ -3001,6 +3046,18 @@ footer {
 #page-who-are-we .section-five {
     padding: 20px;
   }
+  #page-who-are-we .section-four details .text-wrapper p:last-child {
+    margin: 0;
+    padding-bottom: 0;
+  }
+  #page-who-are-we .section-four details .text-wrapper .left,
+#page-who-are-we .section-four details .text-wrapper .right {
+    margin: 0 !important;
+    width: 100%;
+  }
+  #page-who-are-we .section-four details .text-wrapper .right {
+    padding: 20px !important;
+  }
   #page-who-are-we .section-five {
     padding: 20px 20px 80px 20px;
   }
@@ -3132,13 +3189,6 @@ footer {
   #page-volunteer .section-seven .text:nth-child(3) {
     padding: 20px !important;
   }
-  #page-volunteer .section-eight details[open] {
-    padding: 0 0 20px 0;
-  }
-  #page-volunteer .section-eight details[open] summary {
-    border-bottom-width: 1px;
-    margin: 0 0 10px 0 !important;
-  }
   #page-volunteer .section-eight details summary span {
     font-size: 22px;
   }
@@ -3159,7 +3209,7 @@ footer {
     padding: 0;
   }
   #page-volunteer .section-eight details .socials {
-    margin: 0 auto;
+    margin: 20px auto;
   }
   #page-volunteer .section-nine {
     padding: 20px 20px 80px 20px !important;
@@ -3171,13 +3221,19 @@ footer {
   #page-apply .section-one {
     padding: 0 !important;
   }
+  #page-apply .section-one .hide-full-width {
+    display: block !important;
+  }
   #page-apply .section-one div:nth-child(1), #page-apply .section-one div:nth-child(2), #page-apply .section-one div:nth-child(3), #page-apply .section-one div:nth-child(4) {
     width: 100% !important;
     padding: 20px !important;
   }
+  #page-apply .section-one div:nth-child(2) {
+    margin: 0 0 20px 0;
+  }
   #page-apply .section-one div:nth-child(2), #page-apply .section-one div:nth-child(3) {
-    background-size: contain;
-    min-height: 300px;
+    padding: 0 !important;
+    background-image: none !important;
   }
   #page-apply .section-two {
     padding: 20px !important;
@@ -3233,10 +3289,13 @@ footer {
     margin: 0 auto;
     padding: 0 20px;
   }
+  .gallery-wrapper .carousel blockquote {
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+  }
   .gallery-wrapper .carousel blockquote:before, .gallery-wrapper .carousel blockquote:after {
-    width: 30px !important;
-    height: 30px !important;
-    background-size: cover;
+    display: none;
   }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -3457,13 +3516,6 @@ footer {
   #page-volunteer .section-seven .text:nth-child(3) {
     padding: 20px !important;
   }
-  #page-volunteer .section-eight details[open] {
-    padding: 0 0 20px 0;
-  }
-  #page-volunteer .section-eight details[open] summary {
-    border-bottom-width: 1px;
-    margin: 0 0 10px 0 !important;
-  }
   #page-volunteer .section-eight details summary span {
     font-size: 22px;
   }
@@ -3484,7 +3536,7 @@ footer {
     padding: 0;
   }
   #page-volunteer .section-eight details .socials {
-    margin: 0 auto;
+    margin: 20px auto;
   }
   #page-volunteer .section-nine {
     padding: 20px 20px 80px 20px !important;
@@ -3496,13 +3548,19 @@ footer {
   #page-apply .section-one {
     padding: 0 !important;
   }
+  #page-apply .section-one .hide-full-width {
+    display: block !important;
+  }
   #page-apply .section-one div:nth-child(1), #page-apply .section-one div:nth-child(2), #page-apply .section-one div:nth-child(3), #page-apply .section-one div:nth-child(4) {
     width: 100% !important;
     padding: 20px !important;
   }
+  #page-apply .section-one div:nth-child(2) {
+    margin: 0 0 20px 0;
+  }
   #page-apply .section-one div:nth-child(2), #page-apply .section-one div:nth-child(3) {
-    background-size: contain;
-    min-height: 300px;
+    padding: 0 !important;
+    background-image: none !important;
   }
   #page-apply .section-two {
     padding: 20px !important;
