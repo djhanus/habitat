@@ -2654,21 +2654,20 @@ header {
   }
 
   .section-four {
+    position: relative;
     background-color: $primary-green;
-    height: 500px;
+    height: 420px;
     width: 100%;
-    padding: 40px;
-    border: 2px dashed black;
+    padding: 60px;
     display: block;
-
 
     .left {
       float: left;
-      height: auto;
+      height: 300px;
       width: 50%;
       background-color: white;
       display: block;
-      padding: 15px 30px;
+      padding: 25px 50px;
 
       .title {
         font-size: 20px;
@@ -2678,7 +2677,7 @@ header {
       ul {
         column-count: 2;
         column-gap: 20px;
-          -moz-column-count: 4;
+          -moz-column-count: 2;
           -moz-column-gap: 20px;
           -webkit-column-count: 4;
           -webkit-column-gap: 20px;
@@ -2691,37 +2690,94 @@ header {
         }
       }
 
+      p {
+        text-align: center;
+        color: $primary-green;
+        font-size: 14px;
+        font-style: italic;
+      }
     }
 
     .right {
       float: right;
       height: 300px;
       width: 50%;
-      background-color: gray;
+      background-color: none;
       display: block;
-      padding: 15px 30px;
+      padding: 25px 50px;
+      color: #666666;
+
+      .title {
+        font-size: 20px;
+        color: #666666;
+      }
+
+      ul {
+        column-count: 2;
+        column-gap: 20px;
+          -moz-column-count: 2;
+          -moz-column-gap: 20px;
+          -webkit-column-count: 4;
+          -webkit-column-gap: 20px;
+        padding: 0;
+        margin: 20px 0px;
+
+        li {
+          font-size: 14px;
+          line-height: 1;
+          color: #666666;
+        }
+      }
     }
   }
 
   .section-five {
     background-color: $primary-blue;
-    height: 400px;
-    padding: 50px;
+    height: 360px;
 
-    p {
-      color: white;
+    .left {
+      width: 50%;
+      float: left;
+      padding: 120px 50px;
+
+      p {
+        color: white;
+        max-width: 400px;
+        margin: 0 auto;
+      }
+    }
+
+    .right {
+      width: 50%;
+      float: right;
     }
   }
 
-   .section-six {
+  .section-six {
     background-color: #EEEEEE;
     height: 400px;
     padding: 50px;
+    color: #636466;
 
-    p {
-      color: #6B6C6E;
-      font-size: 18px;
-      font-weight: bold;
+    .left {
+      width: 50%;
+      float: left;
+      padding: 100px 0px;
+      text-align: center;
+    }
+
+    .right {
+      width: 50%;
+      float: right;
+      padding: 100px 0px;
+
+      p {
+        color: #636466;
+        font-size: 16px;
+        font-weight: bold;
+        max-width: 350px;
+        margin: 0 auto;
+      }
     }
   }
 } // END #page-restore

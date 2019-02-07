@@ -2131,20 +2131,20 @@ header .main-menu-container ul li:last-of-type a:hover:after {
   width: 225px;
 }
 #page-restore .section-four {
+  position: relative;
   background-color: #C4D600;
-  height: 500px;
+  height: 420px;
   width: 100%;
-  padding: 40px;
-  border: 2px dashed black;
+  padding: 60px;
   display: block;
 }
 #page-restore .section-four .left {
   float: left;
-  height: auto;
+  height: 300px;
   width: 50%;
   background-color: white;
   display: block;
-  padding: 15px 30px;
+  padding: 25px 50px;
 }
 #page-restore .section-four .left .title {
   font-size: 20px;
@@ -2153,7 +2153,7 @@ header .main-menu-container ul li:last-of-type a:hover:after {
 #page-restore .section-four .left ul {
   column-count: 2;
   column-gap: 20px;
-  -moz-column-count: 4;
+  -moz-column-count: 2;
   -moz-column-gap: 20px;
   -webkit-column-count: 4;
   -webkit-column-gap: 20px;
@@ -2164,31 +2164,81 @@ header .main-menu-container ul li:last-of-type a:hover:after {
   font-size: 14px;
   line-height: 1;
 }
+#page-restore .section-four .left p {
+  text-align: center;
+  color: #C4D600;
+  font-size: 14px;
+  font-style: italic;
+}
 #page-restore .section-four .right {
   float: right;
   height: 300px;
   width: 50%;
-  background-color: gray;
+  background-color: none;
   display: block;
-  padding: 15px 30px;
+  padding: 25px 50px;
+  color: #666666;
+}
+#page-restore .section-four .right .title {
+  font-size: 20px;
+  color: #666666;
+}
+#page-restore .section-four .right ul {
+  column-count: 2;
+  column-gap: 20px;
+  -moz-column-count: 2;
+  -moz-column-gap: 20px;
+  -webkit-column-count: 4;
+  -webkit-column-gap: 20px;
+  padding: 0;
+  margin: 20px 0px;
+}
+#page-restore .section-four .right ul li {
+  font-size: 14px;
+  line-height: 1;
+  color: #666666;
 }
 #page-restore .section-five {
   background-color: #00AFD7;
-  height: 400px;
-  padding: 50px;
+  height: 360px;
 }
-#page-restore .section-five p {
+#page-restore .section-five .left {
+  width: 50%;
+  float: left;
+  padding: 120px 50px;
+}
+#page-restore .section-five .left p {
   color: white;
+  max-width: 400px;
+  margin: 0 auto;
+}
+#page-restore .section-five .right {
+  width: 50%;
+  float: right;
 }
 #page-restore .section-six {
   background-color: #EEEEEE;
   height: 400px;
   padding: 50px;
+  color: #636466;
 }
-#page-restore .section-six p {
-  color: #6B6C6E;
-  font-size: 18px;
+#page-restore .section-six .left {
+  width: 50%;
+  float: left;
+  padding: 100px 0px;
+  text-align: center;
+}
+#page-restore .section-six .right {
+  width: 50%;
+  float: right;
+  padding: 100px 0px;
+}
+#page-restore .section-six .right p {
+  color: #636466;
+  font-size: 16px;
   font-weight: bold;
+  max-width: 350px;
+  margin: 0 auto;
 }
 
 #page-news {

@@ -48,52 +48,35 @@
         <div class="title">
           Items We Love
         </div>
+        <?php echo get_field('items_we_love'); ?>
 
-        <?php if(get_field('items_we_love')): ?>
-          <ul>
-        <?php while(has_sub_field('items_we_love')): ?>
-          <li>sub_field_1 = <?php the_sub_field('item_name_1'); ?>, sub_field_2 = <?php the_sub_field('item_name_2'); ?>, etc</li>
-        <?php endwhile; ?>
-        </ul>
-      <?php endif; ?>
-
-        <ul>
-          <li>Item Name</li>
-          <li>Item Name</li>
-          <li>Item Name</li>
-          <li>Item Name</li>
-          <li>Item Name</li>
-          <li>Item Name</li>
-          <li>Item Name</li>
-          <li>Item Name</li>
-          <li>Item Name</li>
-          <li>Item Name</li>
-          <li>Item Name</li>
-          <li>Item Name</li>
-          <li>Item Name</li>
-          <li>Item Name</li>
-          <li>Item Name</li>
-          <li>Item Name</li>
-          <li>Item Name</li>
-          <li>Item Name</li>
-          <li>Item Name</li>
-          <li>Item Name</li>
-        </ul>
-
-
+        <p>Don't see your item listed? Please call us at 812-331-2660.</p>
       </div>
 
       <div class="right">
-        right
+        <div class="title">
+          Items We Cannot Accept
+        </div>
+        <?php echo get_field('items_we_cannot_love'); ?>
       </div>
     </div>
   
     <div class="section-five">
-      <?php echo get_field('video_text'); ?>
+      <div class="left">
+        <?php echo get_field('video_text'); ?>
+      </div>
+      <div class="right">
+        <iframe src="https://player.vimeo.com/video/110110184?title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+      </div>
     </div>
 
      <div class="section-six">
-      <p><?php echo get_field('facebook_text'); ?></p>
+      <div class="left">
+        FACEBOOK EMBED
+      </div>
+      <div class="right">
+        <p><?php echo get_field('facebook_text'); ?></p>
+      </div>
     </div>
 
   </div>
