@@ -713,103 +713,158 @@ header .main-menu-container ul li:last-of-type a:hover:after {
   color: #FF671F;
   font-style: italic;
 }
-#page-apply .section-three {
-  padding: 25px 40px;
+#page-apply .expanding-section {
+  padding: 50px 0;
 }
-#page-apply .section-three .contained {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-}
-#page-apply .section-three button {
+#page-apply .expanding-section button {
   margin-left: auto;
   cursor: pointer;
   border: none;
   background-color: transparent;
 }
-#page-apply .section-three button svg {
+#page-apply .expanding-section button svg {
   width: 50px;
   height: 50px;
   transition: all 0.3s;
 }
-#page-apply .section-three details {
-  height: fit-content;
-  width: calc(50% - 10px);
-  color: #888B8D;
+#page-apply .expanding-section details {
+  color: white;
   user-select: none;
-  margin: 0 10px 10px 0;
+  margin: 0 0 20px 0;
 }
-#page-apply .section-three details:nth-child(1) {
+#page-apply .expanding-section details:nth-child(1) {
   background-color: #FF671F;
 }
-#page-apply .section-three details:nth-child(2) {
-  margin: 0 0 10px 0;
+#page-apply .expanding-section details:nth-child(2) {
+  background-color: #888B8D;
+}
+#page-apply .expanding-section details:nth-child(3) {
   background-color: #375888;
 }
-#page-apply .section-three details:nth-child(3) {
-  margin: 0 10px 0 0;
+#page-apply .expanding-section details:nth-child(4) {
   background-color: #C4D600;
 }
-#page-apply .section-three details:nth-child(4) {
-  margin: 0;
+#page-apply .expanding-section details:nth-child(5) {
+  background-color: #00AFD7;
+}
+#page-apply .expanding-section details:nth-child(6) {
   background-color: #A4343A;
 }
-#page-apply .section-three details p {
-  color: white;
+#page-apply .expanding-section details:last-child {
+  margin: 0;
+}
+#page-apply .expanding-section details p {
+  color: #636466;
   font-size: 20px;
   line-height: 26px;
 }
-#page-apply .section-three details:focus {
+#page-apply .expanding-section details:focus {
   outline: none;
 }
-#page-apply .section-three details[open] {
-  padding: 0 30px 60px 30px;
+#page-apply .expanding-section details[open] {
+  padding: 0;
 }
-#page-apply .section-three details[open] summary {
-  border-bottom: 2px solid white;
-  margin: 0 0 40px 0;
-  padding: 30px 0;
+#page-apply .expanding-section details[open] summary {
+  border-bottom: 0;
+  margin: 0;
+  padding: 30px;
 }
-#page-apply .section-three details[open] summary svg, #page-apply .section-three details:hover summary svg {
+#page-apply .expanding-section details[open] summary svg, #page-apply .expanding-section details:hover summary svg {
   transform: rotate(90deg);
 }
-#page-apply .section-three details summary {
+#page-apply .expanding-section details summary {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   font-size: 28px;
   font-weight: 600;
-  color: white;
   cursor: pointer;
   padding: 30px;
 }
-#page-apply .section-three details summary:focus {
+#page-apply .expanding-section details summary:focus {
   outline: none;
 }
-#page-apply .section-three details summary::-webkit-details-marker {
+#page-apply .expanding-section details summary::-webkit-details-marker {
   display: none;
 }
-#page-apply .section-three details .text-wrapper h1, #page-apply .section-three details .text-wrapper h2, #page-apply .section-three details .text-wrapper h3, #page-apply .section-three details .text-wrapper h4, #page-apply .section-three details .text-wrapper h5, #page-apply .section-three details .text-wrapper ul, #page-apply .section-three details .text-wrapper ol, #page-apply .section-three details .text-wrapper li, #page-apply .section-three details .text-wrapper a, #page-apply .section-three details .text-wrapper p {
-  color: white;
+#page-apply .expanding-section details .text-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: 100%;
+  background-color: #EEEEEE;
+  color: #636466;
 }
-#page-apply .section-three details .text-wrapper h2 {
+#page-apply .expanding-section details .text-wrapper .container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 900px;
+  padding: 30px 0 30px 0;
+}
+#page-apply .expanding-section details .text-wrapper h2 {
   text-transform: uppercase;
   font-weight: 600;
   font-size: 18px;
   line-height: 26px;
   margin: 0 0 20px 0;
 }
-#page-apply .section-three details .text-wrapper h2:nth-child(n+2) {
+#page-apply .expanding-section details .text-wrapper h2:nth-child(n+2) {
   margin: 40px 0 0 0;
 }
-#page-apply .section-three details .text-wrapper ul, #page-apply .section-three details .text-wrapper ol, #page-apply .section-three details .text-wrapper li, #page-apply .section-three details .text-wrapper a, #page-apply .section-three details .text-wrapper p {
-  color: white;
+#page-apply .expanding-section details .text-wrapper ul, #page-apply .expanding-section details .text-wrapper ol, #page-apply .expanding-section details .text-wrapper li, #page-apply .expanding-section details .text-wrapper a, #page-apply .expanding-section details .text-wrapper p {
   font-size: 16px;
   line-height: 24px;
 }
-#page-apply .section-three details .text-wrapper ul li,
-#page-apply .section-three details .text-wrapper ol li {
+#page-apply .expanding-section details .text-wrapper ul li,
+#page-apply .expanding-section details .text-wrapper ol li {
   margin: 0 0 10px 0;
+}
+#page-apply .expanding-section details .text-wrapper img {
+  width: 100%;
+  height: auto;
+}
+#page-apply .expanding-section details .text-wrapper .left {
+  width: calc(50% - 40px);
+}
+#page-apply .expanding-section details .text-wrapper .left h1, #page-apply .expanding-section details .text-wrapper .left h2, #page-apply .expanding-section details .text-wrapper .left h3, #page-apply .expanding-section details .text-wrapper .left h5, #page-apply .expanding-section details .text-wrapper .left p, #page-apply .expanding-section details .text-wrapper .left ul, #page-apply .expanding-section details .text-wrapper .left ol, #page-apply .expanding-section details .text-wrapper .left li, #page-apply .expanding-section details .text-wrapper .left a {
+  color: #636466;
+}
+#page-apply .expanding-section details .text-wrapper .right {
+  margin-left: auto;
+  padding: 0 0 0 40px;
+  margin: 0 0 0 40px;
+  width: calc(50% - 40px);
+  border-left: 2px solid #636466;
+}
+#page-apply .expanding-section details .text-wrapper .right h1, #page-apply .expanding-section details .text-wrapper .right h2, #page-apply .expanding-section details .text-wrapper .right h3, #page-apply .expanding-section details .text-wrapper .right h5, #page-apply .expanding-section details .text-wrapper .right p, #page-apply .expanding-section details .text-wrapper .right ul, #page-apply .expanding-section details .text-wrapper .right ol, #page-apply .expanding-section details .text-wrapper .right li, #page-apply .expanding-section details .text-wrapper .right a {
+  color: #636466;
+}
+#page-apply .expanding-section details .socials {
+  display: none;
+}
+#page-apply .expanding-section details .socials div {
+  display: flex;
+  margin: 0 auto;
+}
+#page-apply .expanding-section details .socials a {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #636466;
+}
+#page-apply .expanding-section details .socials a:nth-child(2) {
+  margin: 0 10px 0 20px;
+}
+#page-apply .expanding-section details .socials a:nth-child(3) {
+  margin: 0 20px 0 10px;
+}
+#page-apply .expanding-section details .socials a svg {
+  display: block;
+  margin: auto;
+  width: 20px;
+  height: 20px;
+  fill: #eeeeee;
 }
 #page-apply .section-four {
   font-family: "Neue Haas Grotesk", Arial, sans-serif;
@@ -818,7 +873,8 @@ header .main-menu-container ul li:last-of-type a:hover:after {
   background-repeat: repeat;
 }
 #page-apply .section-four .contained {
-  width: 100%;
+  width: 1080px;
+  margin: 0 auto;
 }
 #page-apply .section-four div:nth-child(2) {
   padding: 20px;
@@ -1283,7 +1339,8 @@ header .main-menu-container ul li:last-of-type a:hover:after {
   padding: 20px;
 }
 #page-volunteer .section-eight .contained {
-  width: 100%;
+  width: 1080px;
+  margin: 0 auto;
 }
 #page-volunteer .section-eight button {
   margin-left: auto;
@@ -1334,7 +1391,7 @@ header .main-menu-container ul li:last-of-type a:hover:after {
   padding: 0;
 }
 #page-volunteer .section-eight details[open] summary {
-  border-bottom: 2px solid #636466;
+  border-bottom: 0;
   margin: 0;
   padding: 30px;
 }
@@ -1368,7 +1425,7 @@ header .main-menu-container ul li:last-of-type a:hover:after {
   display: flex;
   flex-wrap: wrap;
   width: 900px;
-  padding: 30px 0 0 0;
+  padding: 30px 0 30px 0;
 }
 #page-volunteer .section-eight details .text-wrapper h2 {
   text-transform: uppercase;
@@ -1409,7 +1466,7 @@ header .main-menu-container ul li:last-of-type a:hover:after {
   color: #636466;
 }
 #page-volunteer .section-eight details .socials {
-  margin: 40px auto;
+  display: none;
 }
 #page-volunteer .section-eight details .socials div {
   display: flex;
@@ -1857,9 +1914,9 @@ header .main-menu-container ul li:last-of-type a:hover:after {
   transition: all 0.3s;
 }
 #page-ways-to-give .expanding-section details {
-  color: #888B8D;
+  color: white;
   user-select: none;
-  margin: 0 0 10px 0;
+  margin: 0 0 20px 0;
 }
 #page-ways-to-give .expanding-section details:nth-child(1) {
   background-color: #FF671F;
@@ -1883,7 +1940,7 @@ header .main-menu-container ul li:last-of-type a:hover:after {
   margin: 0;
 }
 #page-ways-to-give .expanding-section details p {
-  color: #888B8D;
+  color: #636466;
   font-size: 20px;
   line-height: 26px;
 }
@@ -1891,12 +1948,12 @@ header .main-menu-container ul li:last-of-type a:hover:after {
   outline: none;
 }
 #page-ways-to-give .expanding-section details[open] {
-  padding: 0 30px 60px 30px;
+  padding: 0;
 }
 #page-ways-to-give .expanding-section details[open] summary {
-  border-bottom: 2px solid white;
-  margin: 0 0 40px 0;
-  padding: 30px 0;
+  border-bottom: 0;
+  margin: 0;
+  padding: 30px;
 }
 #page-ways-to-give .expanding-section details[open] summary svg, #page-ways-to-give .expanding-section details:hover summary svg {
   transform: rotate(90deg);
@@ -1907,7 +1964,6 @@ header .main-menu-container ul li:last-of-type a:hover:after {
   align-items: center;
   font-size: 28px;
   font-weight: 600;
-  color: white;
   cursor: pointer;
   padding: 30px;
 }
@@ -1921,7 +1977,15 @@ header .main-menu-container ul li:last-of-type a:hover:after {
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto;
+  width: 100%;
+  background-color: #EEEEEE;
+  color: #636466;
+}
+#page-ways-to-give .expanding-section details .text-wrapper .container {
+  display: flex;
+  flex-wrap: wrap;
   width: 900px;
+  padding: 30px 0 30px 0;
 }
 #page-ways-to-give .expanding-section details .text-wrapper h2 {
   text-transform: uppercase;
@@ -1941,25 +2005,28 @@ header .main-menu-container ul li:last-of-type a:hover:after {
 #page-ways-to-give .expanding-section details .text-wrapper ol li {
   margin: 0 0 10px 0;
 }
+#page-ways-to-give .expanding-section details .text-wrapper img {
+  width: 100%;
+  height: auto;
+}
 #page-ways-to-give .expanding-section details .text-wrapper .left {
   width: calc(50% - 40px);
 }
 #page-ways-to-give .expanding-section details .text-wrapper .left h1, #page-ways-to-give .expanding-section details .text-wrapper .left h2, #page-ways-to-give .expanding-section details .text-wrapper .left h3, #page-ways-to-give .expanding-section details .text-wrapper .left h5, #page-ways-to-give .expanding-section details .text-wrapper .left p, #page-ways-to-give .expanding-section details .text-wrapper .left ul, #page-ways-to-give .expanding-section details .text-wrapper .left ol, #page-ways-to-give .expanding-section details .text-wrapper .left li, #page-ways-to-give .expanding-section details .text-wrapper .left a {
-  color: white;
+  color: #636466;
 }
 #page-ways-to-give .expanding-section details .text-wrapper .right {
   margin-left: auto;
   padding: 0 0 0 40px;
   margin: 0 0 0 40px;
   width: calc(50% - 40px);
-  border-left: 2px solid #C4D600;
+  border-left: 2px solid #636466;
 }
 #page-ways-to-give .expanding-section details .text-wrapper .right h1, #page-ways-to-give .expanding-section details .text-wrapper .right h2, #page-ways-to-give .expanding-section details .text-wrapper .right h3, #page-ways-to-give .expanding-section details .text-wrapper .right h5, #page-ways-to-give .expanding-section details .text-wrapper .right p, #page-ways-to-give .expanding-section details .text-wrapper .right ul, #page-ways-to-give .expanding-section details .text-wrapper .right ol, #page-ways-to-give .expanding-section details .text-wrapper .right li, #page-ways-to-give .expanding-section details .text-wrapper .right a {
-  color: #C4D600;
+  color: #636466;
 }
 #page-ways-to-give .expanding-section details .socials {
-  display: flex;
-  margin: 40px auto 0 auto;
+  display: none;
 }
 #page-ways-to-give .expanding-section details .socials div {
   display: flex;
@@ -1970,7 +2037,7 @@ header .main-menu-container ul li:last-of-type a:hover:after {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-color: #C4D600;
+  background-color: #636466;
 }
 #page-ways-to-give .expanding-section details .socials a:nth-child(2) {
   margin: 0 10px 0 20px;
@@ -1983,7 +2050,7 @@ header .main-menu-container ul li:last-of-type a:hover:after {
   margin: auto;
   width: 20px;
   height: 20px;
-  fill: #00AFD7;
+  fill: #eeeeee;
 }
 #page-ways-to-give .testimonials {
   padding: 100px 0;

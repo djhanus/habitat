@@ -857,14 +857,8 @@ header {
     }
   } // END .section-two
 
-  .section-three {
-    padding: 25px 40px;
-
-    .contained {
-      width: 100%;
-      display: flex;
-      flex-wrap: wrap;
-    }
+  .expanding-section {
+    padding: 50px 0;
 
     button {
       margin-left: auto;
@@ -880,33 +874,40 @@ header {
     }
 
     details {
-      height: fit-content;
-      width: calc(50% - 10px);
-      color: $primary-gray;
+      color: white;
       user-select: none;
-      margin: 0 10px 10px 0;
+      margin: 0 0 20px 0;
 
       &:nth-child(1) {
         background-color: $secondary-orange;
       }
 
       &:nth-child(2) {
-        margin: 0 0 10px 0;
-        background-color: $secondary-purple;
+        background-color: $primary-gray;
       }
 
       &:nth-child(3) {
-        margin: 0 10px 0 0;
-        background-color: $primary-green;
+        background-color: $secondary-purple;
       }
 
       &:nth-child(4) {
-        margin: 0;
+        background-color: $primary-green;
+      }
+
+      &:nth-child(5) {
+        background-color: $primary-blue;
+      }
+
+      &:nth-child(6) {
         background-color: $secondary-red;
       }
 
+      &:last-child {
+        margin: 0;
+      }
+
       p {
-        color: white;
+        color: #636466;
         font-size: 20px;
         line-height: 26px;
       }
@@ -916,12 +917,12 @@ header {
       }
 
       &[open] {
-        padding: 0 30px 60px 30px;
+        padding: 0;
 
         summary {
-          border-bottom: 2px solid white;
-          margin: 0 0 40px 0;
-          padding: 30px 0;
+          border-bottom: 0;
+          margin: 0;
+          padding: 30px;
         }
       }
 
@@ -938,7 +939,6 @@ header {
         align-items: center;
         font-size: 28px;
         font-weight: 600;
-        color: white;
         cursor: pointer;
         padding: 30px;
 
@@ -952,9 +952,18 @@ header {
       }
 
       .text-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        width: 100%;
+        background-color: #EEEEEE;
+        color: #636466;
 
-        h1, h2, h3, h4, h5, ul, ol, li, a, p {
-          color: white;
+        .container {
+          display: flex;
+          flex-wrap: wrap;
+          width: 900px;
+          padding: 30px 0 30px 0;
         }
 
         h2 {
@@ -970,7 +979,6 @@ header {
         }
 
         ul, ol, li, a, p {
-          color: white;
           font-size: 16px;
           line-height: 24px;
         }
@@ -979,82 +987,67 @@ header {
         ol li {
           margin: 0 0 10px 0;
         }
+
+        img {
+          width: 100%;
+          height: auto;
+        }
+
+        .left {
+          width: calc(50% - 40px);
+
+          h1, h2, h3, h5, p, ul, ol, li, a {
+            color: #636466;
+          }
+        }
+
+        .right {
+          margin-left: auto;
+          padding: 0 0 0 40px;
+          margin: 0 0 0 40px;
+          width: calc(50% - 40px);
+          border-left: 2px solid #636466;
+
+          h1, h2, h3, h5, p, ul, ol, li, a {
+            color: #636466;
+          }
+        }
+      }
+
+      .socials {
+        display: none;
+
+        div {
+          display: flex;
+          margin: 0 auto;
+        }
+
+        a {
+          display: flex;
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          background-color: #636466;;
+
+          &:nth-child(2){
+            margin: 0 10px 0 20px;
+          }
+
+          &:nth-child(3) {
+            margin: 0 20px 0 10px;
+          }
+
+          svg {
+            display: block;
+            margin: auto;
+            width: 20px;
+            height: 20px;
+            fill: #eeeeee;
+          }
+        }
       }
     }
-
-    // a {
-    //   position: relative;
-    //   width: 50%;
-    //   text-align: left;
-    //   padding: 35px 25px 35px 35px;
-    //   font-family: $primary-sans;
-    //   font-size: 28px;
-    //   color: white;
-    //   text-decoration: none;
-    //   -webkit-transform: perspective(1px) translateZ(0);
-    //       transform: perspective(1px) translateZ(0);
-    //       box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-    //       -webkit-transition-duration: 0.1s;
-    //       transition-duration: 0.1s;
-
-    //   &:hover {
-    //     &:after {
-
-    //       transform: scale(1.1);
-    //     }
-    //   }
-
-    //   &:after {
-    //     position: absolute;
-    //     content: '';
-    //     top: 25px;
-    //     right: 25px;
-    //     display: block;
-    //     width: 50px;
-    //     height: 50px;
-    //     background-image: url('./images/circle-carrot.svg');
-    //     background-size: cover;
-    //   }
-
-    //   &:nth-child(1) {
-    //     width: calc(50% - 40px);
-    //     margin: 0 40px 40px 0;
-    //     background: $secondary-orange;
-
-    //     &:hover {
-    //       background: darken($secondary-orange, 5%);
-    //     }
-    //   }
-
-    //   &:nth-child(2) {
-    //     margin: 0 0 40px 0;
-    //     background: $secondary-blue;
-
-    //     &:hover {
-    //       background: darken($secondary-blue, 5%);
-    //     }
-    //   }
-
-    //   &:nth-child(3) {
-    //     width: calc(50% - 40px);
-    //     margin: 0 40px 0 0;
-    //     background: $primary-green;
-
-    //     &:hover {
-    //       background: darken($primary-green, 5%);
-    //     }
-    //   }
-
-    //   &:nth-child(4) {
-    //     margin: 0;
-    //     background: $secondary-red;
-
-    //     &:hover {
-    //       background: darken($secondary-red, 5%);
-    //     }
-    //   }
-    // }
-  } // END .section-three
+  } // END expanding section
 
   .section-four {
     font-family: $primary-sans;
@@ -1063,7 +1056,8 @@ header {
     background-repeat: repeat;
 
     .contained {
-      width: 100%;
+      width: 1080px;
+      margin: 0 auto;
     }
 
     div {
@@ -1650,7 +1644,8 @@ header {
     padding: 20px;
 
     .contained {
-      width: 100%;
+      width: 1080px;
+      margin: 0 auto;
     }
 
     button {
@@ -1713,7 +1708,7 @@ header {
         padding: 0;
 
         summary {
-          border-bottom: 2px solid #636466;;
+          border-bottom: 0;
           margin: 0;
           padding: 30px;
         }
@@ -1756,7 +1751,7 @@ header {
           display: flex;
           flex-wrap: wrap;
           width: 900px;
-          padding: 30px 0 0 0;
+          padding: 30px 0 30px 0;
         }
 
         h2 {
@@ -1808,7 +1803,7 @@ header {
       }
 
       .socials {
-        margin: 40px auto;
+        display: none;
 
         div {
           display: flex;
@@ -2367,9 +2362,9 @@ header {
     }
 
     details {
-      color: $primary-gray;
+      color: white;
       user-select: none;
-      margin: 0 0 10px 0;
+      margin: 0 0 20px 0;
 
       &:nth-child(1) {
         background-color: $secondary-orange;
@@ -2400,7 +2395,7 @@ header {
       }
 
       p {
-        color: $primary-gray;
+        color: #636466;
         font-size: 20px;
         line-height: 26px;
       }
@@ -2410,12 +2405,12 @@ header {
       }
 
       &[open] {
-        padding: 0 30px 60px 30px;
+        padding: 0;
 
         summary {
-          border-bottom: 2px solid white;
-          margin: 0 0 40px 0;
-          padding: 30px 0;
+          border-bottom: 0;
+          margin: 0;
+          padding: 30px;
         }
       }
 
@@ -2432,7 +2427,6 @@ header {
         align-items: center;
         font-size: 28px;
         font-weight: 600;
-        color: white;
         cursor: pointer;
         padding: 30px;
 
@@ -2449,7 +2443,16 @@ header {
         display: flex;
         flex-wrap: wrap;
         margin: 0 auto;
-        width: 900px;
+        width: 100%;
+        background-color: #EEEEEE;
+        color: #636466;
+
+        .container {
+          display: flex;
+          flex-wrap: wrap;
+          width: 900px;
+          padding: 30px 0 30px 0;
+        }
 
         h2 {
           text-transform: uppercase;
@@ -2473,11 +2476,16 @@ header {
           margin: 0 0 10px 0;
         }
 
+        img {
+          width: 100%;
+          height: auto;
+        }
+
         .left {
           width: calc(50% - 40px);
 
           h1, h2, h3, h5, p, ul, ol, li, a {
-            color: white;
+            color: #636466;
           }
         }
 
@@ -2486,17 +2494,16 @@ header {
           padding: 0 0 0 40px;
           margin: 0 0 0 40px;
           width: calc(50% - 40px);
-          border-left: 2px solid $primary-green;
+          border-left: 2px solid #636466;
 
           h1, h2, h3, h5, p, ul, ol, li, a {
-            color: $primary-green;
+            color: #636466;
           }
         }
       }
 
       .socials {
-        display: flex;
-        margin: 40px auto 0 auto;
+        display: none;
 
         div {
           display: flex;
@@ -2508,7 +2515,7 @@ header {
           width: 40px;
           height: 40px;
           border-radius: 50%;
-          background-color: $primary-green;
+          background-color: #636466;;
 
           &:nth-child(2){
             margin: 0 10px 0 20px;
@@ -2523,7 +2530,7 @@ header {
             margin: auto;
             width: 20px;
             height: 20px;
-            fill: $primary-blue;
+            fill: #eeeeee;
           }
         }
       }
