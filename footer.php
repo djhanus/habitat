@@ -49,8 +49,8 @@
 
   		 <div class="column-three">
   		 	<div class="button">
-  		 		<a href="#">DONATE</a>
-  		 		<a href="#">VOLUNTEER</a>
+  		 		<a href="https://www.classy.org/give/216002/#!/donation/checkout" target="_blank">DONATE</a>
+  		 		<a href="/volunteer/">VOLUNTEER</a>
   		 		<a href="#">SIGN UP FOR EMAILS</a>
 	 		</div>
 

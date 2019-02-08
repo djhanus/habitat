@@ -297,6 +297,10 @@ header .main-menu-container ul li:last-of-type a:hover:after {
   line-height: 1.5;
   letter-spacing: 1px;
 }
+.page-home .one .content-wrapper h2 a {
+  color: #FF671F;
+  text-decoration: none;
+}
 .page-home .one .content-wrapper p {
   color: #888B8D;
   font-size: 16px;
@@ -374,6 +378,7 @@ header .main-menu-container ul li:last-of-type a:hover:after {
 }
 .page-home .three .family-container {
   height: 400px;
+  margin-bottom: 15px;
 }
 .page-home .three .family-container .description {
   padding: 60px 30px;
@@ -503,7 +508,7 @@ header .main-menu-container ul li:last-of-type a:hover:after {
 }
 .page-home .four .events-container .events-wrapper .event .text h1 {
   color: white;
-  font-size: 21px;
+  font-size: 18px;
   margin: 0 0 10px 0;
   padding: 0;
 }
@@ -554,7 +559,12 @@ header .main-menu-container ul li:last-of-type a:hover:after {
   margin: 0 0 0 20px;
 }
 .page-home .four .news-container .news-wrapper .news h1 {
-  margin: 0 0 10px 20px;
+  margin: 0 0 10px 0;
+}
+.page-home .four .news-container .news-wrapper .news h1 a {
+  font-size: 18px;
+  text-decoration: none;
+  color: #FF671F;
 }
 .page-home .four .news-container .news-wrapper .news a {
   font-size: 18px;
@@ -2041,6 +2051,13 @@ header .main-menu-container ul li:last-of-type a:hover:after {
   background-repeat: repeat;
 }
 
+#page-restore .page-banner .title {
+  padding: 10px 70px;
+  max-width: 425px;
+}
+#page-restore .page-banner .title img {
+  max-width: 200px;
+}
 #page-restore .section-one {
   background-color: #00AFD7;
   padding: 50px 20px;
@@ -2071,16 +2088,49 @@ header .main-menu-container ul li:last-of-type a:hover:after {
   color: white;
 }
 #page-restore .section-two {
-  height: 300px;
-  background-color: white;
-  padding: 50px;
+  height: auto;
+  background-color: #EEEEEE;
+}
+#page-restore .section-two .column {
+  width: 33%;
+  display: inline-block;
+  padding: 50px 20px;
+  margin: 0 auto;
+}
+#page-restore .section-two .column img {
+  width: 100px;
+  margin: 0 auto;
+  padding: 0;
+  display: block;
+}
+#page-restore .section-two .column .title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #666666;
   text-align: center;
+  padding: 5px;
+}
+#page-restore .section-two .text-container {
+  background-color: #FF671F;
+  height: auto;
+}
+#page-restore .section-two .text-container:focus {
+  background-color: white;
+}
+#page-restore .section-two .text-container .text {
+  display: block;
+  padding: 30px 10px;
+  font-size: 18px;
+  color: white;
+  max-width: 750px;
+  margin: 0 auto;
+  line-height: 1.4;
 }
 #page-restore .section-three {
   height: auto;
   display: inline-block;
   margin: 0 auto;
-  padding: 20px;
+  padding: 50px 20px;
   width: 100%;
 }
 #page-restore .section-three .contained {
@@ -2241,6 +2291,83 @@ header .main-menu-container ul li:last-of-type a:hover:after {
   margin: 0 auto;
 }
 
+.page-families {
+  background-image: url("./images/bg-pattern.svg");
+  background-size: 15px 15px;
+  background-repeat: repeat;
+  padding-bottom: 0;
+}
+.page-families .intro-text {
+  background-color: #00AFD7;
+}
+.page-families .intro-text .container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 960px;
+  padding: 50px;
+}
+.page-families .intro-text .container p {
+  color: white;
+}
+.page-families .main-container {
+  margin: 75px auto;
+  width: 100%;
+  max-width: 750px;
+  background-color: none;
+  padding: 0;
+}
+.page-families .main-container .families-wrapper {
+  display: inline-block;
+  width: 100%;
+  max-width: 225px;
+  height: auto;
+  margin: 10px;
+}
+.page-families .main-container .families-wrapper .photo {
+  display: block;
+  width: 225px;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+}
+.page-families .main-container .families-wrapper .name {
+  background-color: white;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+}
+.page-families .main-container .families-wrapper .name a {
+  display: block;
+  padding: 5px 10px;
+  color: #666666;
+  text-decoration: none;
+}
+.page-families .main-container .families-wrapper .name a:hover {
+  background-color: #FF671F;
+  color: #FFFFFF;
+}
+.page-families .families-btn {
+  background-color: #FF671F;
+  padding: 50px;
+  margin: 100px auto 0px;
+  text-align: center;
+}
+.page-families .families-btn a {
+  font-family: "Neue Haas Grotesk", Arial, sans-serif;
+  color: white;
+  padding: 15px 25px;
+  text-decoration: none;
+  font-size: 16px;
+  border: 1px solid white;
+  letter-spacing: 2px;
+  text-align: center;
+  background-color: none;
+}
+.page-families .families-btn a:hover {
+  background-color: white;
+  color: #FF671F;
+}
+
 #page-news {
   background-image: url("./images/bg-pattern.svg");
   background-size: 15px 15px;
@@ -2315,7 +2442,12 @@ header .main-menu-container ul li:last-of-type a:hover:after {
   margin: 0 0 0 20px;
 }
 #page-news .news-container .news-wrapper .news h1 {
-  margin: 0 0 10px 20px;
+  margin: 0 0 10px 0;
+}
+#page-news .news-container .news-wrapper .news h1 a {
+  font-size: 18px;
+  text-decoration: none;
+  color: #FF671F;
 }
 #page-news .news-container .news-wrapper .news a {
   font-size: 18px;

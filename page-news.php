@@ -42,7 +42,7 @@
             ?>
             <div class="grid-item news">
               <h2><?php echo get_the_date(); ?></h2>
-              <h1><?php the_title(); ?></h1>
+              <h1><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></h1>
               <?php the_excerpt(); ?>
               <a href="<?php echo get_permalink(); ?>">Read More >></a>
             </div>

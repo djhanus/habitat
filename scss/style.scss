@@ -347,6 +347,11 @@ header {
         font-weight: bold;
         line-height: 1.5;
         letter-spacing: 1px;
+
+        a {
+          color: $secondary-orange;
+          text-decoration: none;
+        }
       }
 
       p {
@@ -441,6 +446,7 @@ header {
 
     .family-container {
       height: 400px;
+      margin-bottom: 15px;
 
       .description {
         padding: 60px 30px;
@@ -595,7 +601,7 @@ header {
 
             h1 {
               color: white;
-              font-size: 21px;
+              font-size: 18px;
               margin: 0 0 10px 0;
               padding: 0;
             }
@@ -655,7 +661,13 @@ header {
           }
 
           h1 {
-            margin: 0 0 10px 20px;
+            margin: 0 0 10px 0;
+
+            a {
+              font-size: 18px;
+              text-decoration: none;
+              color: $secondary-orange;
+            }
           }
 
           a {
@@ -2550,6 +2562,16 @@ header {
 // PAGE - ReStore
 #page-restore {
 
+  .page-banner {
+    .title {
+      padding: 10px 70px;
+      max-width: 425px;
+      img {
+        max-width: 200px;
+      }
+    }
+  }
+
   .section-one {
     background-color: $primary-blue;
     padding: 50px 20px;
@@ -2586,17 +2608,56 @@ header {
   } // .section-one
 
   .section-two {
-    height: 300px;
-    background-color: white;
-    padding: 50px;
-    text-align: center;
+    height: auto;
+    background-color: #EEEEEE;
+
+    .column {
+      width: 33%;
+      display: inline-block;
+      padding: 50px 20px;
+      margin: 0 auto;
+
+      img {
+        width: 100px;
+        margin: 0 auto;
+        padding: 0;
+        display: block;
+      }
+
+      .title {
+        font-size: 18px;
+        font-weight: bold;
+        color: #666666;
+        text-align: center;
+        padding: 5px;
+      }
+    }
+
+    .text-container {
+      background-color: $secondary-orange;
+      height: auto;
+
+      &:focus {
+        background-color: white;
+      }
+
+      .text {
+        display: block;
+        padding: 30px 10px;
+        font-size: 18px;
+        color: white;
+        max-width: 750px;
+        margin: 0 auto;
+        line-height: 1.4;
+      }
+    }
   }
 
   .section-three {
     height: auto;
     display: inline-block;
     margin: 0 auto;
-    padding: 20px;
+    padding: 50px 20px;
     width: 100%;
 
     .contained {
@@ -2782,6 +2843,96 @@ header {
   }
 } // END #page-restore
 
+// PAGE - FAMILIES
+.page-families {
+  background-image: url('./images/bg-pattern.svg');
+  background-size: 15px 15px;
+  background-repeat: repeat;
+  padding-bottom: 0;
+
+  .intro-text{
+    background-color: $primary-blue;
+    .container {
+      margin: 0 auto;
+      width: 100%;
+      max-width: 960px;
+      
+      padding: 50px;
+
+      p {
+        color: white;
+      }
+    }
+  }
+
+  .main-container {
+    margin: 75px auto;
+    width: 100%;
+    max-width: 750px;
+    background-color: none;
+    padding: 0;
+
+    .families-wrapper {
+      display: inline-block;
+      width: 100%;
+      max-width: 225px;
+      height: auto;
+      margin: 10px;
+
+      .photo {
+        display: block;
+        width: 225px;
+        height: 200px;
+        background-size: cover;
+        background-position: center;
+      }
+
+      .name {
+        background-color: white;
+        text-align: center;
+        font-size: 16px;
+        font-weight: bold;
+
+        a {
+          display: block;
+          padding: 5px 10px;
+          color: #666666;
+          text-decoration: none;
+
+          &:hover {
+            background-color: $secondary-orange;
+            color: #FFFFFF;
+          }
+        }
+
+      }
+    }
+  }
+
+  .families-btn {
+    background-color: $secondary-orange;
+    padding: 50px;
+    margin: 100px auto 0px;
+    text-align: center;
+
+    a {
+      font-family: $primary-sans;
+      color: white;
+      padding: 15px 25px;
+      text-decoration: none;
+      font-size: 16px;
+      border: 1px solid white;
+      letter-spacing: 2px;
+      text-align: center;
+      background-color: none;
+
+      &:hover {
+        background-color: white;
+        color: $secondary-orange;
+      }
+    }
+  }
+}
 
 
 // PAGE - NEWS
@@ -2866,7 +3017,12 @@ header {
         }
 
         h1 {
-          margin: 0 0 10px 20px;
+          margin: 0 0 10px 0;
+          a {
+            font-size: 18px;
+            text-decoration: none;
+            color: $secondary-orange;
+          }
         }
 
         a {

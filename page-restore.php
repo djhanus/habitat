@@ -4,7 +4,7 @@
 
     <div class="page-banner"
       style="background-image: url('<?php echo get_field('image_hero_banner')?>">
-      <div class="title"><?php the_title(); ?></div>
+      <div class="title"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo-restore-small.png"></div>
     </div><!-- /.page-banner -->
      
     <div class="section-one">
@@ -18,7 +18,30 @@
     </div>
 
     <div class="section-two">
-      shop donate volunteer
+      <div class="column">
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/icon-mail.png" />
+        <div class="title">
+          Shop
+        </div>
+      </div>
+
+      <div class="column">
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/icon-mail.png" />
+        <div class="title">
+          Donate
+        </div>
+      </div>
+
+      <div class="column">
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/icon-mail.png" />
+        <div class="title">
+          Volunteer
+        </div>
+      </div>
+
+      <div class="text-container">
+        <div class="text">Habitat ReStore accepts donations of appliances, furniture, cabinets, building supplies and more. Your donations are tax-deductible and help Habitat for Humanity of Monroe County build more homes for hardworking, low-income families in need.</div>
+      </div>
     </div>
 
     <div class="section-three">

@@ -10,22 +10,22 @@
   		<div class="row one">
 
         <div class="content-wrapper">
-          <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/home-module-key.png" />
-          <h2>Become a Homeowner</h2>
+          <a href="/apply/"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/home-module-key.png" /></a>
+          <h2><a href="/apply/">Become a Homeowner</a></h2>
           <p><?php echo get_field('homeowner_text')?></p>
           <div class="orange-line"></div>
         </div>
 
         <div class="content-wrapper">
-          <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/home-module-hammer.png" />
-          <h2>Volunteer</h2>
+          <a href="/volunteer/"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/home-module-hammer.png" /></a>
+          <h2><a href="/volunteer/">Volunteer</a></h2>
           <p><?php echo get_field('volunteer_text')?></p>
           <div class="orange-line"></div>
         </div>
 
         <div class="content-wrapper">
-          <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/home-module-restore.png" />
-          <h2>ReStore</h2>
+          <a href="/restore/"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/home-module-restore.png" /></a>
+          <h2><a href="/restore/">ReStore</a></h2>
           <p><?php echo get_field('restore_text')?></p>
           <div class="orange-line"></div>
         </div>
@@ -57,7 +57,7 @@
             $families_args = array(
               'post_type'       => 'Families',
               'order'           => 'DSC',
-              'posts_per_page'  => '6',
+              'posts_per_page'  => '3',
               'post_status'     => 'publish',
             );
             $families_query  = new WP_Query( $families_args );
@@ -155,7 +155,7 @@
             ?>
               <div class="grid-item news">
                 <h2><?php echo get_the_date(); ?></h2>
-                <h1><?php the_title(); ?></h1>
+                <h1><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></h1>
                 <?php the_excerpt(); ?>
                 <a href="<?php echo get_permalink(); ?>">Read More >></a>
               </div>
