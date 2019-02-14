@@ -135,7 +135,7 @@
         <div>
           <h2>I am a first time volunteer.</h2>
           <ol>
-            <li>Please submit a <a href="#" title=""><strong>Volunteer Information Form</strong></a></li>
+            <li>Please submit a <a href="<?php echo get_field('volunteer_information_form_url'); ?>" target="blank" title=""><strong>Volunteer Information Form</strong></a></li>
             <li>Register for your shift below!</li>
           </ol>
         </div>
@@ -153,7 +153,7 @@
           <?php if( have_rows('volunteer_ss_helpful_links') ): ?>
             <?php while( have_rows('volunteer_ss_helpful_links') ): the_row(); ?>
               <li>
-                <a href="<?php echo the_sub_field('volunteer_ss_hl_link_url'); ?>" title="<?php echo the_sub_field('volunteer_ss_hl_link_text'); ?>"><?php echo the_sub_field('volunteer_ss_hl_link_text'); ?></a>
+                <a href="<?php echo the_sub_field('volunteer_ss_hl_link_url'); ?>" target="_blank" title="<?php echo the_sub_field('volunteer_ss_hl_link_text'); ?>"><?php echo the_sub_field('volunteer_ss_hl_link_text'); ?></a>
                 <?php if( !empty(get_sub_field('volunteer_ss_hl_below_text')) ): ?>
                   <br>
                   <i><?php the_sub_field('volunteer_ss_hl_below_text'); ?></i>
@@ -166,7 +166,7 @@
     </div><!-- /.section-five -->
 
     <div class="section-six">
-      <a href="#" title="Volunteer Registration Form">Volunteer Registration Form</a>
+      <a href="<?php echo get_field('volunteer_registration_form_url'); ?>" target="_blank" title="Volunteer Registration Form">Volunteer Registration Form</a>
     </div><!-- /.section-six -->
 
     <div class="section-seven" style="background-image: url('<?php echo $volunteer_sseven_bg; ?>');">

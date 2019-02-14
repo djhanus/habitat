@@ -51,7 +51,7 @@
   		 	<div class="button">
   		 		<a href="https://www.classy.org/give/216002/#!/donation/checkout" target="_blank">DONATE</a>
   		 		<a href="/volunteer/">VOLUNTEER</a>
-  		 		<a href="#">SIGN UP FOR EMAILS</a>
+  		 		<a href="/contact/">CONTACT US</a>
 	 		</div>
 
  			<div class="social">
