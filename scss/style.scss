@@ -2319,9 +2319,26 @@ header {
     }
   } // end section one
 
+  .section-two-preface {
+    background-color: #EEEEEE;
+    padding: 30px 0 0 0;
+
+    .contained {
+      display: flex;
+      max-width: 1080px;
+      
+      p {
+        color: $secondary-orange;
+        font-size: 22px;
+        font-weight: bold;
+        line-height: 1.3;
+      }
+    }
+  }
+
   .section-two {
     background-color: #EEEEEE;
-    padding: 30px 0;
+    padding: 0 0 30px 0;
 
     .contained {
       display: flex;
@@ -2360,7 +2377,7 @@ header {
             color: $primary-blue;
             text-decoration: none;
             font-weight: bold;
-            line-height: 2;
+            line-height: 1.4;
           }
         }
       }
@@ -2620,25 +2637,39 @@ header {
     height: auto;
     background-color: #EEEEEE;
 
-    .column {
-      width: 33%;
-      display: inline-block;
-      padding: 50px 20px;
+    .container {
+      max-width: 1080px;
       margin: 0 auto;
 
-      img {
-        width: 100px;
+      .column {
+        width: 33%;
+        display: inline-block;
+        padding: 50px 20px;
         margin: 0 auto;
-        padding: 0;
-        display: block;
-      }
-
-      .title {
-        font-size: 18px;
-        font-weight: bold;
-        color: #666666;
         text-align: center;
-        padding: 5px;
+
+        img {
+          width: 100px;
+          margin: 0 auto;
+          padding: 0;
+          display: block;
+        }
+
+        i {
+          font-size: 48px;
+          color: white;
+          background-color: $primary-blue;
+          border-radius: 50%;
+          padding: 20px;
+        }
+
+        .title {
+          font-size: 18px;
+          font-weight: bold;
+          color: #666666;
+          text-align: center;
+          padding: 5px;
+        }
       }
     }
 
@@ -2961,10 +2992,24 @@ header {
     color: white;
     border-bottom: 25px solid $primary-blue;
 
+    &:before {
+      position: absolute;
+      content: '';
+      z-index: 1;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      height: 100%;
+      width: 100%;
+      background-color: rgba(0,0,0,.3);
+    }
+
     .container {
       position: absolute;
       bottom: 0;
       left: 0;
+      z-index: 100;
 
       .date{
       color: white;
@@ -3157,7 +3202,7 @@ header {
     margin: 0 auto;
     width: 100%;
     max-width: 800px;
-    padding: 100px 20px 50px;
+    padding: 50px 20px 50px;
 
     p {
      color: white;
@@ -3194,7 +3239,7 @@ header {
 // FOOTER
 footer {
   position: relative;
-  background: $primary-gray;
+  background: #636466;
   padding: 20px 0 0 0;
   margin: 0;
   border-top: 15px solid $primary-green;
@@ -3232,6 +3277,13 @@ footer {
       padding: 20px;
       float: left;
       border-right: 2px solid $primary-green;
+
+      p {
+        color: white;
+        font-family: $primary-sans;
+        font-size: 14px;
+        line-height: 1.2;
+      }
 
       img {
         width: 100px;

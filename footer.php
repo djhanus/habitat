@@ -8,13 +8,7 @@
 
 	  		<div class="title">Habitat Office</div>
 
-			213 E. Kirkwood Avenue<br />
-			Bloomington, IN 47408<br />
-			<br />
-			Call: (812) 331-4069<br />
-			Fax: (812) 336-6022<br />
-			<br />
-			Monday-Friday: 8am-Noon, 1pm-5pm
+			<?php echo get_field('habitat_info', 'option'); ?>
 
 			<div class="horizontal-line"></div>
 
@@ -22,13 +16,7 @@
 
 			<div class="title">ReStore</div>
 
-			850 S. Auto Mall Road<br />
-			Bloomington, IN 47401<br />
-			<br />
-			Call: (812) 331-2660<br />
-			<br />
-			Tuesday-Friday: 10:30am-5:30pm<br />
-			Saturday: 9:30am-4:30pm<br />
+			<?php echo get_field('restore_info', 'option'); ?>
   		</div> <!-- END column -->
 
   		<div class="column-two">
@@ -49,17 +37,17 @@
 
   		 <div class="column-three">
   		 	<div class="button">
-  		 		<a href="https://www.classy.org/give/216002/#!/donation/checkout" target="_blank">DONATE</a>
+  		 		<a href="<?php echo get_field('donate_url', 'option'); ?>" target="_blank">DONATE</a>
   		 		<a href="/volunteer/">VOLUNTEER</a>
   		 		<a href="/contact/">CONTACT US</a>
 	 		</div>
 
  			<div class="social">
  				<ul>
- 					<li><a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-		 			<li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
-		 			<li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
-		 			<li><a href="#" target="_blank"><i class="fab fa-youtube"></i></a></li>
+ 					<li><a href="<?php echo get_field('facebook_url', 'option'); ?>" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+		 			<li><a href="<?php echo get_field('twitter_url', 'option'); ?>" target="_blank"><i class="fab fa-twitter"></i></a></li>
+		 			<li><a href="<?php echo get_field('instagram_url', 'option'); ?>" target="_blank"><i class="fab fa-instagram"></i></a></li>
+		 			<li><a href="<?php echo get_field('facebook_url', 'option'); ?>" target="_blank"><i class="fab fa-youtube"></i></a></li>
 	 			</ul>
  			</div>
 

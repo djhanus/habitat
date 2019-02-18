@@ -18,24 +18,26 @@
     </div>
 
     <div class="section-two">
-      <div class="column">
-        <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/icon-mail.png" />
-        <div class="title">
-          Shop
+      <div class="container">
+        <div class="column">
+          <i class="fas fa-shopping-cart"></i>
+          <div class="title">
+            Shop
+          </div>
         </div>
-      </div>
 
-      <div class="column">
-        <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/icon-mail.png" />
-        <div class="title">
-          Donate
+        <div class="column">
+          <i class="fas fa-gift"></i>
+          <div class="title">
+            Donate
+          </div>
         </div>
-      </div>
 
-      <div class="column">
-        <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/icon-mail.png" />
-        <div class="title">
-          Volunteer
+        <div class="column">
+          <i class="far fa-envelope"></i>
+          <div class="title">
+            Volunteer
+          </div>
         </div>
       </div>
 
@@ -69,7 +71,7 @@
     <div class="section-four">
       <div class="left">
         <div class="title">
-          Items We Love
+          <i class="far fa-heart"></i> Items We Love
         </div>
         <?php echo get_field('items_we_love'); ?>
 
@@ -78,7 +80,7 @@
 
       <div class="right">
         <div class="title">
-          Items We Cannot Accept
+         <i class="far fa-times-circle"></i> Items We Cannot Accept
         </div>
         <?php echo get_field('items_we_cannot_love'); ?>
       </div>

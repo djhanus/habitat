@@ -15,7 +15,7 @@
     </div> <!-- END main container -->
 
     <div class="families-button">
-          <a href="#" target="_blank">MEET ALL OF OUR FAMILIES</a>
+          <a href="/our-families/">MEET ALL OF OUR FAMILIES</a>
     </div>
   
   </div>

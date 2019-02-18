@@ -40,6 +40,19 @@ function register_menus() {
 }
 add_action('init', 'register_menus');
 
+// add acf options page
+if( function_exists('acf_add_options_page') ) {
+  
+  acf_add_options_page(array(
+    'page_title'  => 'Theme Settings',
+    'menu_title'  => 'Theme Settings',
+    'menu_slug'   => 'theme-settings',
+    'capability'  => 'edit_posts',
+    'redirect'    => false
+  ));
+}
+
+
 function create_posttypes() {
   register_post_type( 'families',
   // CPT Options

@@ -27,6 +27,11 @@
       </div>
     </div>
 
+    <div class="section-two-preface">
+      <div class="contained">
+        <?php echo get_field('intro_text'); ?>
+      </div>
+    </div>
     <div class="section-two">      
 
       <div class="contained">
@@ -38,7 +43,8 @@
         </div>
 
         <div class="content-wrapper">
-          <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/icon-computer.png" />
+          <a target="_blank" href="<?php echo get_field('donate_url'); ?>">
+          <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/icon-computer.png" /></a>
           <h2><?php echo $option_2_title; ?></h2>
           <p><?php echo $option_2_text; ?></p>
         </div>
