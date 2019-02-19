@@ -61,11 +61,10 @@
               'post_status'     => 'publish',
             );
             $families_query  = new WP_Query( $families_args );
-            if($families_query->have_posts() ) : while ( $families_query->have_posts() ) : $families_query->the_post();
-          ?>
+            if($families_query->have_posts() ) : while ( $families_query->have_posts() ) : $families_query->the_post(); $i++; if(($i % 2) == 0) : ?>
 
           <!-- OUTPUT CONTAINER -->
-          <div class="family-container">
+          <div class="family-container-A">
             <div class="description">
               <div class="title"><?php the_title(); ?></div>
               <p><?php the_excerpt(); ?></p>
@@ -78,7 +77,22 @@
             </div>
           </div>
 
-          <?php endwhile; endif; wp_reset_query(); ?>
+          <?php else : ?>
+
+          <div class="family-container-B">
+            <div class="description">
+              <div class="title"><?php the_title(); ?></div>
+              <p><?php the_excerpt(); ?></p>
+              <div class="button">
+                <a href="<?php echo get_permalink(); ?>">READ MORE</a>
+              </div>
+            </div>
+
+            <div class="photo" style="background-image: url('<?php echo get_field('family_photo')?>">
+            </div>
+          </div>
+
+          <?php endif; endwhile; endif; wp_reset_query(); ?>
       </div> <!-- END FAMILIES ROW -->
 
 

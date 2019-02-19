@@ -5,19 +5,17 @@
     <div class="banner">
       <div class="container">
         <div class="date">
-          November 31, 2019
+          <?php echo get_the_date(); ?>
         </div>
 
         <div class="title">
-          Lorem ipsum dolor sit amet
+          <?php the_title(); ?>
         </div>
       
         <div class="social">
           <ul>
-            <li><a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-            <li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
-            <li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
-            <li><a href="#" target="_blank"><i class="fab fa-youtube"></i></a></li>
+            <li><a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo get_permalink(); ?>" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="https://twitter.com/home?status=<?php echo get_permalink(); ?>" target="_blank"><i class="fab fa-twitter"></i></a></li>
           </ul>
         </div>
       </div> <!-- END conatiner -->

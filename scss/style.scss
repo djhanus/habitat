@@ -453,12 +453,11 @@ header {
     margin: 0 auto;
     text-align: center;
 
-    .family-container {
+    .family-container-A {
       height: 400px;
-      margin-bottom: 15px;
 
       .description {
-        padding: 60px 30px;
+        padding: 60px 50px;
         float: left;
         width: 40%;
         height: auto;
@@ -476,11 +475,9 @@ header {
           color: $primary-gray;
           line-height: 1.3;
           padding-bottom: 25px;
-
         }
 
         .button {
-
           a {
             color: white;
             background-color: $secondary-orange;
@@ -497,7 +494,51 @@ header {
         background-position: center;
         height: 100%;
       }
-    }
+    } // END family-container-A
+
+    .family-container-B {
+      height: 400px;
+
+
+      .description {
+        padding: 60px 50px;
+        float: right;
+        width: 40%;
+        height: auto;
+        text-align: left;
+
+        .title {
+          color: #000;
+          font-size: 16px;
+          font-weight: 700;
+          margin: 15px 0px;
+        }
+
+        p {
+          font-size: 14px;
+          color: $primary-gray;
+          line-height: 1.3;
+          padding-bottom: 25px;
+        }
+
+        .button {
+          a {
+            color: white;
+            background-color: $secondary-orange;
+            padding: 5px 15px;
+            text-decoration: none;
+          }
+        }
+      }
+
+      .photo {
+        width: 60%;
+        float: left;
+        background-size: cover;
+        background-position: center;
+        height: 100%;
+      }
+    } // END family-container-B
   } // END families section
 
 
@@ -1248,14 +1289,31 @@ header {
   } // END .section-one
 
   .section-two {
+    position: relative;
     padding: 50px 20px;
     background-attachment: fixed;
     background-position: center center;
     background-size: cover;
+    
+    &:before {
+      position: absolute;
+      content: '';
+      z-index: 1;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      height: 100%;
+      width: 100%;
+      background-color: rgba(0,0,0,0.3);
+    }
 
     .contained {
       width: 100%;
       max-width: 600px;
+      z-index: 999;
+      position: relative;
+      z-index: 10;
     }
 
     h1 {
@@ -3377,7 +3435,7 @@ footer {
             text-align: center;
 
             a {
-              color: #888B8D;
+              color: #636466;
               font-size: 16px;
             }
           }

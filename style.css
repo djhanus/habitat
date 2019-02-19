@@ -385,38 +385,72 @@ header .main-menu-container ul li:last-of-type a:hover:after {
   margin: 0 auto;
   text-align: center;
 }
-.page-home .three .family-container {
+.page-home .three .family-container-A {
   height: 400px;
-  margin-bottom: 15px;
 }
-.page-home .three .family-container .description {
-  padding: 60px 30px;
+.page-home .three .family-container-A .description {
+  padding: 60px 50px;
   float: left;
   width: 40%;
   height: auto;
   text-align: left;
 }
-.page-home .three .family-container .description .title {
+.page-home .three .family-container-A .description .title {
   color: #000;
   font-size: 16px;
   font-weight: 700;
   margin: 15px 0px;
 }
-.page-home .three .family-container .description p {
+.page-home .three .family-container-A .description p {
   font-size: 14px;
   color: #888B8D;
   line-height: 1.3;
   padding-bottom: 25px;
 }
-.page-home .three .family-container .description .button a {
+.page-home .three .family-container-A .description .button a {
   color: white;
   background-color: #FF671F;
   padding: 5px 15px;
   text-decoration: none;
 }
-.page-home .three .family-container .photo {
+.page-home .three .family-container-A .photo {
   width: 60%;
   float: right;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+}
+.page-home .three .family-container-B {
+  height: 400px;
+}
+.page-home .three .family-container-B .description {
+  padding: 60px 50px;
+  float: right;
+  width: 40%;
+  height: auto;
+  text-align: left;
+}
+.page-home .three .family-container-B .description .title {
+  color: #000;
+  font-size: 16px;
+  font-weight: 700;
+  margin: 15px 0px;
+}
+.page-home .three .family-container-B .description p {
+  font-size: 14px;
+  color: #888B8D;
+  line-height: 1.3;
+  padding-bottom: 25px;
+}
+.page-home .three .family-container-B .description .button a {
+  color: white;
+  background-color: #FF671F;
+  padding: 5px 15px;
+  text-decoration: none;
+}
+.page-home .three .family-container-B .photo {
+  width: 60%;
+  float: left;
   background-size: cover;
   background-position: center;
   height: 100%;
@@ -1016,14 +1050,30 @@ header .main-menu-container ul li:last-of-type a:hover:after {
   font-size: 35px;
 }
 #page-volunteer .section-two {
+  position: relative;
   padding: 50px 20px;
   background-attachment: fixed;
   background-position: center center;
   background-size: cover;
 }
+#page-volunteer .section-two:before {
+  position: absolute;
+  content: "";
+  z-index: 1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
 #page-volunteer .section-two .contained {
   width: 100%;
   max-width: 600px;
+  z-index: 999;
+  position: relative;
+  z-index: 10;
 }
 #page-volunteer .section-two h1 {
   text-align: center;
@@ -2747,7 +2797,7 @@ footer .footer-container .column-three .social ul li {
   text-align: center;
 }
 footer .footer-container .column-three .social ul li a {
-  color: #888B8D;
+  color: #636466;
   font-size: 16px;
 }
 footer .copyright {
