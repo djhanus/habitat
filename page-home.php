@@ -146,11 +146,7 @@
                 </div>
               </div>
             <?php endwhile; endif; wp_reset_query(); ?>
-
-
           </div>
-
-          <a href="#" class="see-all">See All Events</a>
         </div>
 
         <div class="news-container">
@@ -182,20 +178,9 @@
 
         <p>Thank you sponsors & supporters </p>
 
-        <ul>
-          <li><img src="https://placeholder.pics/svg/125x125/DEDEDE/555555/LOGO"></li>
-          <li><img src="https://placeholder.pics/svg/125x125/DEDEDE/555555/LOGO"></li>
-          <li><img src="https://placeholder.pics/svg/125x125/DEDEDE/555555/LOGO"></li>
-          <li><img src="https://placeholder.pics/svg/125x125/DEDEDE/555555/LOGO"></li>
-          <li><img src="https://placeholder.pics/svg/125x125/DEDEDE/555555/LOGO"></li>
-          <li><img src="https://placeholder.pics/svg/125x125/DEDEDE/555555/LOGO"></li>
-          <li><img src="https://placeholder.pics/svg/125x125/DEDEDE/555555/LOGO"></li>
-          <li><img src="https://placeholder.pics/svg/125x125/DEDEDE/555555/LOGO"></li>
-          <li><img src="https://placeholder.pics/svg/125x125/DEDEDE/555555/LOGO"></li>
-          <li><img src="https://placeholder.pics/svg/125x125/DEDEDE/555555/LOGO"></li>
-          <li><img src="https://placeholder.pics/svg/125x125/DEDEDE/555555/LOGO"></li>
-          <li><img src="https://placeholder.pics/svg/125x125/DEDEDE/555555/LOGO"></li>
-        </ul>
+        <div class="sponsors-list">
+          <?php echo get_field('sponsors'); ?>
+        </div>
 
       </div>
 

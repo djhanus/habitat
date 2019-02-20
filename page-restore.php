@@ -42,7 +42,7 @@
       </div>
 
       <div class="text-container">
-        <div class="text">Habitat ReStore accepts donations of appliances, furniture, cabinets, building supplies and more. Your donations are tax-deductible and help Habitat for Humanity of Monroe County build more homes for hardworking, low-income families in need.</div>
+        <div class="text"><?php echo get_field('donations_introduction'); ?></div>
       </div>
     </div>
 
@@ -75,7 +75,7 @@
         </div>
         <?php echo get_field('items_we_love'); ?>
 
-        <p>Don't see your item listed? Please call us at 812-331-2660.</p>
+        <p>Don't see your item listed? Please call us at <?php echo get_field('section_three_phone')?>.</p>
       </div>
 
       <div class="right">
@@ -91,16 +91,19 @@
         <?php echo get_field('video_text'); ?>
       </div>
       <div class="right">
-        <iframe src="https://player.vimeo.com/video/110110184?title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        <p><iframe src="https://player.vimeo.com/video/138076543?title=0&amp;byline=0&amp;portrait=0" width="640" height="320" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
       </div>
     </div>
 
      <div class="section-six">
       <div class="left">
-        FACEBOOK EMBED
+        <img src="<?php echo get_field('facebook_image'); ?>">
       </div>
       <div class="right">
-        <p><?php echo get_field('facebook_text'); ?></p>
+
+        <p>
+          <a href="<?php echo get_field('facebook_url', 'option'); ?>" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <?php echo get_field('facebook_text'); ?></p>
       </div>
     </div>
 

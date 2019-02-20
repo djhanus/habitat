@@ -16,6 +16,7 @@
 
       $volunteer_sseven_title     = get_field('volunteer_sseven_title');
       $volunteer_sseven_body     = get_field('volunteer_sseven_body');
+      $volunteer_sseven_body_right     = get_field('volunteer_sseven_body_right');
       $volunteer_sseven_bg       = get_field('volunteer_sseven_bg');
 
 
@@ -175,27 +176,10 @@
         <div class="text-wrapper">
           <div class="text">
             <?php echo $volunteer_sseven_body; ?>
-
-            <h2><?php echo $volunteer_sseven_certified_crew_lead_list_heading; ?></h2>
-            <ol>
-              <?php if( have_rows('volunteer_sseven_certified_crew_lead_list') ): ?>
-                <?php while( have_rows('volunteer_sseven_certified_crew_lead_list') ): the_row(); ?>
-                  <li><?php the_sub_field('volunteer_sseven_ccl_list_item'); ?></li>
-                <?php endwhile; ?>
-              <?php endif; ?>
-            </ol>
           </div>
 
           <div class="text">
-            <h2><?php echo $volunteer_sseven_crew_lead_list_heading; ?></h2>
-
-            <ol>
-              <?php if( have_rows('volunteer_sseven_crew_lead_list') ): ?>
-                <?php while( have_rows('volunteer_sseven_crew_lead_list') ): the_row(); ?>
-                  <li><?php the_sub_field('volunteer_sseven_cl_list_item'); ?></li>
-                <?php endwhile; ?>
-              <?php endif; ?>
-            </ol>
+            <?php echo $volunteer_sseven_body_right; ?>
           </div>
 
           <div class="text">

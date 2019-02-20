@@ -35,10 +35,6 @@
         <div>
           <?php the_field('apply_stwo_body'); ?>
         </div>
-
-        <div>
-          <?php the_field('apply_stwo_footer_tagline'); ?>
-        </div>
       </div>
     </div><!-- /.section-two -->
 
@@ -142,5 +138,9 @@
       </div>
     </div><!-- /.section-four -->
     <?php endwhile; ?>
+
+    <div class="legal-statement">
+          <?php the_field('apply_stwo_footer_tagline'); ?>
+    </div>
   </div><!-- /#page-apply -->
 <?php get_footer(); ?>

@@ -60,12 +60,14 @@
                 </button>
               </summary>
               <div class="text-wrapper">
-                <div class="left">
-                  <img src="<?php echo the_sub_field('page_who_expand_comp_image'); ?>">
-                </div>
-                <div class="right">
-                  <?php the_sub_field('page_who_expand_comp_body'); ?>
-                </div>
+                <div class="container">
+                  <div class="left">
+                    <?php the_sub_field('page_who_expand_comp_body'); ?>
+                  </div>
+                  <div class="right">
+                    <?php the_sub_field('page_who_expand_comp_body_right'); ?>
+                  </div>
+              </div>
               </div>
             </details>
           <?php endwhile; ?>
