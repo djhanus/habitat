@@ -4,7 +4,7 @@
 
     <div class="page-banner"
       style="background-image: url('<?php echo get_field('family_photo')?>">
-      <div class="title"><?php echo get_field('family_name')?></div>
+      <div class="title"><?php the_title(); ?></div>
     </div><!-- /.page-banner -->
      
     <div class="main-container">

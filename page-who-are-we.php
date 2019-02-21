@@ -15,7 +15,7 @@
       <div class="title"><?php the_title(); ?></div>
     </div><!-- /.page-banner -->
 
-    <div class="section-one" style="background-image: url('<?php echo $page_who_mission_bg; ?>');">
+    <div id="mission" class="section-one" style="background-image: url('<?php echo $page_who_mission_bg; ?>');">
       <div class="contained">
         <h1><?php echo $page_who_mission_title; ?></h1>
         <div class="text">
@@ -24,7 +24,7 @@
       </div>
     </div><!-- /.section-one -->
 
-    <div class="section-two">
+    <div id="history" class="section-two">
       <div class="contained">
         <h1><?php echo $page_who_history_title; ?></h1>
         <div class="text">
@@ -38,7 +38,7 @@
       <h1><?php echo $page_who_divider_text; ?></h1>
     </div><!-- /.section-three -->
 
-    <div class="section-four">
+    <div id="info" class="section-four">
       <div class="contained">
         <?php if( have_rows('page_who_exapand_component') ): ?>
           <?php while( have_rows('page_who_exapand_component') ): the_row(); ?>
@@ -126,7 +126,7 @@
       </div>
     </div><!-- /.section-five -->
 
-    <div class="section-six">
+    <div id="events" class="section-six">
       <div class="contained">
         <h1>Upcoming Events</h1>
         <h1><?php echo wp_is_mobile() ?></h1>

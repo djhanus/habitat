@@ -19,7 +19,6 @@
       $volunteer_sseven_body_right     = get_field('volunteer_sseven_body_right');
       $volunteer_sseven_bg       = get_field('volunteer_sseven_bg');
 
-
       $volunteer_sseven_certified_crew_lead_list_heading = get_field('volunteer_sseven_certified_crew_lead_list_heading');
       $volunteer_sseven_crew_lead_list_heading = get_field('volunteer_sseven_crew_lead_list_heading');
 
@@ -189,12 +188,13 @@
       </div>
     </div><!-- /.section-seven -->
 
-    <div class="section-eight">
+    <div class="section-eight" id="anchor">
       <div class="contained">
         <?php if( have_rows('volunteer_seight_expands') ): ?>
           <?php while( have_rows('volunteer_seight_expands') ): the_row(); ?>
             <details>
-              <summary><span><?php the_sub_field('volunteer_seight_expands_title'); ?></span>
+              <summary>
+                <span><?php the_sub_field('volunteer_seight_expands_title'); ?></span>
                 <button>
                   <svg width="67px" height="67px" viewBox="0 0 67 67" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                       <defs>

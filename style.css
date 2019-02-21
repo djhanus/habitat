@@ -608,6 +608,7 @@ header .main-menu-container ul li:last-of-type a:hover:after {
   font-size: 18px;
   text-decoration: none;
   color: #FF671F;
+  display: block;
 }
 .page-home .four .news-container .news-wrapper .news a {
   font-size: 18px;
