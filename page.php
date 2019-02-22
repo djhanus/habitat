@@ -1,4 +1,4 @@
-<?php get_header(); /* Template Name: Standard Page */ ?>
+<?php get_header(); /* Standard Page */ ?>
 
   <div class="page-standard">
 

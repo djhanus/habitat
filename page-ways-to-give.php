@@ -17,7 +17,7 @@
       <div class="title"><?php the_title(); ?></div>
     </div><!-- /.page-banner -->
 
-    <div class="section-one">
+    <div id="overview" class="section-one">
       <div class="left">
         <p><?php echo $section_one_paragraph; ?></p>
       </div>
@@ -27,7 +27,7 @@
       </div>
     </div>
 
-    <div class="section-two-preface">
+    <div id="donate" class="section-two-preface">
       <div class="contained">
         <?php echo get_field('intro_text'); ?>
       </div>
@@ -58,7 +58,7 @@
     </div> <!-- end section two -->
 
     <!-- expanding sections -->
-    <div class="expanding-section">
+    <div id="info" class="expanding-section">
       <div class="contained">
         <?php if( have_rows('waystogive_expands') ): ?>
           <?php while( have_rows('waystogive_expands') ): the_row(); ?>

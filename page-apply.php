@@ -28,7 +28,7 @@
       <?php endif; ?>
     </div><!-- /.section-one -->
 
-    <div class="section-two">
+    <div id="overview" class="section-two">
       <div class="contained">
         <h1><?php the_field('apply_stwo_title'); ?></h1>
 
@@ -39,7 +39,7 @@
     </div><!-- /.section-two -->
 
     <!-- expanding sections -->
-    <div class="expanding-section">
+    <div id="info" class="expanding-section">
       <div class="contained">
         <?php if( have_rows('apply_sthree_expands') ): ?>
           <?php while( have_rows('apply_sthree_expands') ): the_row(); ?>
@@ -106,7 +106,7 @@
       </div>
     </div><!-- /.expanding-section -->
 
-    <div class="section-four">
+    <div id="faqs" class="section-four">
       <h1>
         <div class="contained">FAQ</div>
       </h1>

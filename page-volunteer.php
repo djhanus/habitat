@@ -128,7 +128,7 @@
       </div>
     </div><!-- /.section-four -->
 
-    <div class="section-five">
+    <div id="volunteer" class="section-five">
       <div class="left">
         <h1>Sign up to volunteer here!</h1>
 
@@ -169,7 +169,7 @@
       <a href="<?php echo get_field('volunteer_registration_form_url'); ?>" target="_blank" title="Volunteer Registration Form">Volunteer Registration Form</a>
     </div><!-- /.section-six -->
 
-    <div class="section-seven" style="background-image: url('<?php echo $volunteer_sseven_bg; ?>');">
+    <div id="main" class="section-seven" style="background-image: url('<?php echo $volunteer_sseven_bg; ?>');">
       <div class="contained">
         <h1><?php echo $volunteer_sseven_title; ?></h1>
         <div class="text-wrapper">
@@ -188,7 +188,7 @@
       </div>
     </div><!-- /.section-seven -->
 
-    <div class="section-eight" id="anchor">
+    <div id="info" class="section-eight" id="anchor">
       <div class="contained">
         <?php if( have_rows('volunteer_seight_expands') ): ?>
           <?php while( have_rows('volunteer_seight_expands') ): the_row(); ?>
