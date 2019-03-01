@@ -139,6 +139,10 @@
                   <h2><?php echo date("d", strtotime($event_date)); ?></h2>
                 </div>
 
+                <div class="time">
+                  <?php echo get_field('event_time'); ?>
+                </div>
+
                 <div class="text">
                   <h1><?php the_title(); ?></h1>
                   <?php the_excerpt(); ?>
