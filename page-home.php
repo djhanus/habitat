@@ -1,10 +1,10 @@
 <?php get_header(); /* Template Name: Home Page */ ?>
   	<div class="page-home">
 
-      <div class="page-banner"
+      <a href="<?php echo get_field('featured_banner_url'); ?>"><div class="page-banner"
          style="background-image: url('<?php echo get_field('featured_banner')?>">
       <div class="title"><?php echo get_field('featured_banner_text')?></div>
-      </div><!-- /.page-banner -->
+      </div></a><!-- /.page-banner -->
 
 
   		<div class="row one">
