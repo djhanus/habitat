@@ -91,7 +91,9 @@
         <?php echo get_field('video_text'); ?>
       </div>
       <div class="right">
-        <p><iframe src="https://player.vimeo.com/video/138076543?title=0&amp;byline=0&amp;portrait=0" width="640" height="320" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+        <div class="embed-container">
+          <?php the_field('video'); ?>
+        </div>
       </div>
     </div>
 
