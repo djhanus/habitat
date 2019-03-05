@@ -1,6 +1,6 @@
 <?php get_header(); /* Template Name: Our Families */ ?>
 
-  <div class="page-families">
+  <div id="page-families">
 
     <div class="page-banner"
       style="background-image: url('<?php echo get_field('image_hero_banner')?>">

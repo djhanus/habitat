@@ -2950,7 +2950,7 @@ header {
 } // END restore
 
 // PAGE - FAMILIES
-.page-families {
+#page-families {
   background-image: url('./images/bg-pattern.svg');
   background-size: 15px 15px;
   background-repeat: repeat;
@@ -5106,6 +5106,34 @@ footer {
     }
   } // END restore
 
+  #page-families {
+    .intro-text{
+      .container {
+        padding: 25px;
+      }
+    }
+
+    .main-container {
+      margin: 50px auto;
+      max-width: 450px;
+
+      .families-wrapper {
+        display: inline-block;
+        width: 100%;
+        max-width: 200px;
+        height: auto;
+        margin: 10px;
+
+        .photo {
+          display: block;
+          width: 200px;
+          height: 200px;
+        }
+      }
+    }
+  } // END families
+
+
   // Carousel
   .gallery-wrapper {
     .carousel {
@@ -5972,6 +6000,52 @@ footer {
       }
     }
   } // END restore
+
+  #page-families {
+    .intro-text{
+      .container {
+        padding: 25px;
+      }
+    }
+
+    .intro-text {
+      .container {
+        p {
+          font-size: 14px;
+          line-height: 1.4;
+        }
+      }
+    }
+
+    .main-container {
+      margin: 50px auto;
+      max-width: 300px;
+
+      .families-wrapper {
+        display: inline-block;
+        width: 100%;
+        max-width: 275px;
+        height: auto;
+        margin: 10px;
+
+        .photo {
+          display: block;
+          width: 275px;
+          height: 200px;
+        }
+      }
+    }
+
+    .families-btn {
+      a {
+        padding: 5px 15px;
+        font-size: 16px;
+        display: inline-block;
+        letter-spacing: 1px;
+        line-height: 1.6;
+      }
+    }
+  } // END families
 
   // Carousel
   .gallery-wrapper {

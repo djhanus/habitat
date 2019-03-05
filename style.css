@@ -2385,68 +2385,68 @@ header .main-menu-container ul li:last-of-type a:hover:after {
   background-color: #00AFD7;
 }
 
-.page-families {
+#page-families {
   background-image: url("./images/bg-pattern.svg");
   background-size: 15px 15px;
   background-repeat: repeat;
   padding-bottom: 0;
 }
-.page-families .intro-text {
+#page-families .intro-text {
   background-color: #00AFD7;
 }
-.page-families .intro-text .container {
+#page-families .intro-text .container {
   margin: 0 auto;
   width: 100%;
   max-width: 960px;
   padding: 50px;
 }
-.page-families .intro-text .container p {
+#page-families .intro-text .container p {
   color: white;
 }
-.page-families .main-container {
+#page-families .main-container {
   margin: 75px auto;
   width: 100%;
   max-width: 750px;
   background-color: none;
   padding: 0;
 }
-.page-families .main-container .families-wrapper {
+#page-families .main-container .families-wrapper {
   display: inline-block;
   width: 100%;
   max-width: 225px;
   height: auto;
   margin: 10px;
 }
-.page-families .main-container .families-wrapper .photo {
+#page-families .main-container .families-wrapper .photo {
   display: block;
   width: 225px;
   height: 200px;
   background-size: cover;
   background-position: center;
 }
-.page-families .main-container .families-wrapper .name {
+#page-families .main-container .families-wrapper .name {
   background-color: white;
   text-align: center;
   font-size: 16px;
   font-weight: bold;
 }
-.page-families .main-container .families-wrapper .name a {
+#page-families .main-container .families-wrapper .name a {
   display: block;
   padding: 5px 10px;
   color: #666666;
   text-decoration: none;
 }
-.page-families .main-container .families-wrapper .name a:hover {
+#page-families .main-container .families-wrapper .name a:hover {
   background-color: #FF671F;
   color: #FFFFFF;
 }
-.page-families .families-btn {
+#page-families .families-btn {
   background-color: #FF671F;
   padding: 50px;
   margin: 100px auto 0px;
   text-align: center;
 }
-.page-families .families-btn a {
+#page-families .families-btn a {
   font-family: "Neue Haas Grotesk", Arial, sans-serif;
   color: white;
   padding: 15px 25px;
@@ -2457,7 +2457,7 @@ header .main-menu-container ul li:last-of-type a:hover:after {
   text-align: center;
   background-color: none;
 }
-.page-families .families-btn a:hover {
+#page-families .families-btn a:hover {
   background-color: white;
   color: #FF671F;
 }
@@ -4224,6 +4224,26 @@ footer {
     background-color: #00AFD7;
   }
 
+  #page-families .intro-text .container {
+    padding: 25px;
+  }
+  #page-families .main-container {
+    margin: 50px auto;
+    max-width: 450px;
+  }
+  #page-families .main-container .families-wrapper {
+    display: inline-block;
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    margin: 10px;
+  }
+  #page-families .main-container .families-wrapper .photo {
+    display: block;
+    width: 200px;
+    height: 200px;
+  }
+
   .gallery-wrapper .carousel .contained {
     width: 100%;
     margin: 0 auto;
@@ -4836,6 +4856,37 @@ footer {
   }
   #page-restore .section-six .right a:hover {
     background-color: #00AFD7;
+  }
+
+  #page-families .intro-text .container {
+    padding: 25px;
+  }
+  #page-families .intro-text .container p {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+  #page-families .main-container {
+    margin: 50px auto;
+    max-width: 300px;
+  }
+  #page-families .main-container .families-wrapper {
+    display: inline-block;
+    width: 100%;
+    max-width: 275px;
+    height: auto;
+    margin: 10px;
+  }
+  #page-families .main-container .families-wrapper .photo {
+    display: block;
+    width: 275px;
+    height: 200px;
+  }
+  #page-families .families-btn a {
+    padding: 5px 15px;
+    font-size: 16px;
+    display: inline-block;
+    letter-spacing: 1px;
+    line-height: 1.6;
   }
 
   .gallery-wrapper .carousel .contained {
