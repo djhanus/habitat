@@ -3054,14 +3054,54 @@ footer .copyright {
   text-align: center;
 }
 
-@media (min-width: 320px) and (max-width: 480px) {
-  header,
-footer {
-    display: none;
+@media (min-width: 768px) and (max-width: 1024px) {
+  header {
+    height: 100px;
+  }
+  header img {
+    width: 180px;
+    padding: 0px;
+    margin: 0 0 0 25px;
+  }
+  header .top-menu {
+    height: 35px;
+    padding: 10px;
+    width: 100%;
+  }
+  header .top-menu ul {
+    position: absolute;
+    margin: 0 110px 0 0;
+  }
+  header .top-menu ul li a {
+    font-size: 14px;
+    padding: 0px 10px;
+  }
+  header .top-menu ul li a:hover {
+    text-decoration: underline;
+  }
+  header .main-menu-container {
+    margin-left: auto;
+  }
+  header .main-menu-container ul {
+    display: inline-flex;
+    margin: 0 5px 0 0;
+  }
+  header .main-menu-container ul li a {
+    position: relative;
+    font-size: 14px;
+    letter-spacing: 0px;
+    padding: 0px;
+    margin: 0px 10px;
+  }
+  header .main-menu-container ul li:last-of-type a {
+    color: white;
+    background: #C4D600;
+    padding: 100px 10px 7px 10px;
   }
 
   .contained {
     width: 100%;
+    max-width: 1080px;
   }
 
   .page-banner {
@@ -3096,14 +3136,17 @@ footer {
   .page-home .row.four {
     flex-wrap: wrap;
   }
-  .page-home .row.four .events-container,
-.page-home .row.four .news-container {
+  .page-home .row.four .events-container {
+    width: 100%;
+    padding: 20px 0;
+  }
+  .page-home .row.four .news-container {
     width: 100%;
     padding: 20px 0;
   }
   .page-home .row.four .news-container .news-wrapper {
-    column-count: 1;
-    column-gap: 0;
+    column-count: 2;
+    column-gap: 20px;
     padding: 20px 20px 0 20px;
   }
   .page-home .row.four .news-container .news-wrapper .news h1 {
@@ -3137,19 +3180,6 @@ footer {
 #page-who-are-we .section-four,
 #page-who-are-we .section-five {
     padding: 20px;
-  }
-  #page-who-are-we .section-four details .text-wrapper p:last-child {
-    margin: 0;
-    padding-bottom: 0;
-  }
-  #page-who-are-we .section-four details .text-wrapper .left,
-#page-who-are-we .section-four details .text-wrapper .right {
-    margin: 0 !important;
-    width: 100%;
-  }
-  #page-who-are-we .section-four details .text-wrapper .right {
-    padding: 20px 0px !important;
-    border-left: none;
   }
   #page-who-are-we .section-five {
     padding: 20px 20px 80px 20px;
@@ -3310,6 +3340,7 @@ footer {
 
   #page-apply .contained {
     width: 100% !important;
+    padding: 20px;
   }
   #page-apply .section-one {
     padding: 0 !important;
@@ -3377,54 +3408,26 @@ footer {
     padding: 10px 0 !important;
   }
 
-  #page-ways-to-give h1 {
-    margin: 0 0 20px 0;
-  }
-  #page-ways-to-give .text {
-    column-count: 1;
-  }
-  #page-ways-to-give details summary span {
-    font-size: 22px !important;
-  }
-  #page-ways-to-give details summary .text-wrapper .left {
-    display: block !important;
-    width: 100% !important;
-    height: 250px !important;
-  }
-  #page-ways-to-give details summary .text-wrapper .right {
-    width: 100% !important;
-    margin: 0 !important;
-    padding: 20px !important;
-  }
-  #page-ways-to-give .section-one .left {
-    width: 100%;
-  }
   #page-ways-to-give .section-one .left p {
-    padding: 35px;
+    padding: 35pxpx;
     font-size: 18px;
-  }
-  #page-ways-to-give .section-one .right {
-    width: 100%;
   }
   #page-ways-to-give .section-two-preface .contained {
-    max-width: 640px;
+    max-width: 720px;
   }
   #page-ways-to-give .section-two-preface .contained p {
-    font-size: 18px;
-    padding: 20px;
-    text-align: center;
+    font-size: 20px;
   }
   #page-ways-to-give .section-two {
     padding: 0px 20px 30px;
   }
   #page-ways-to-give .section-two .contained {
     max-width: 1080px;
-    display: block;
   }
   #page-ways-to-give .section-two .contained .content-wrapper {
     width: 300px;
     min-height: 120px;
-    margin: 20px 10px;
+    margin: 0px 10px;
   }
   #page-ways-to-give .section-two .contained .content-wrapper p {
     font-size: 14px;
@@ -3432,21 +3435,193 @@ footer {
   #page-ways-to-give .expanding-section {
     padding: 50px 20px;
   }
-  #page-ways-to-give .expanding-section details .text-wrapper p:last-child {
-    margin: 0;
-    padding-bottom: 0;
+  #page-ways-to-give .expanding-section details summary span {
+    font-size: 22px !important;
   }
-  #page-ways-to-give .expanding-section details .text-wrapper .left,
-#page-ways-to-give .expanding-section details .text-wrapper .right {
+  #page-ways-to-give .expanding-section details summary .text-wrapper .left {
+    display: block !important;
+    width: 100% !important;
+    height: 250px !important;
+  }
+  #page-ways-to-give .expanding-section details summary .text-wrapper .right {
+    width: 100% !important;
     margin: 0 !important;
-    width: 100%;
-  }
-  #page-ways-to-give .expanding-section details .text-wrapper .right {
-    padding: 20px 0px !important;
-    border-left: none;
+    padding: 20px !important;
   }
   #page-ways-to-give .testimonials {
     padding: 20px 20px 80px 20px;
+  }
+
+  #page-restore .page-banner .title img {
+    max-width: 150px;
+  }
+  #page-restore .section-one {
+    padding: 30px 20px;
+  }
+  #page-restore .section-one .left {
+    padding: 0px 30px;
+  }
+  #page-restore .section-one .left p {
+    display: block;
+    font-size: 16px;
+  }
+  #page-restore .section-two .container {
+    max-width: 768px;
+    margin: 0 auto;
+  }
+  #page-restore .section-two .container .column {
+    width: 32%;
+    padding: 20px 10px;
+  }
+  #page-restore .section-three {
+    height: auto;
+    display: inline-block;
+    margin: 0 auto;
+    padding: 50px 20px;
+    width: 100%;
+  }
+  #page-restore .section-three .contained {
+    margin: 0 auto;
+    width: 700px;
+    height: auto;
+  }
+  #page-restore .section-three .contained .left {
+    width: 325px;
+    float: left;
+    display: block;
+    height: 250px;
+    padding: 0 20px;
+  }
+  #page-restore .section-three .contained .left .title {
+    color: #FF671F;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+    font-weight: bold;
+  }
+  #page-restore .section-three .contained .right {
+    float: right;
+    width: 350px;
+    display: block;
+    height: 250px;
+    padding-left: 40px;
+    border-left: 1px solid #888B8D;
+  }
+  #page-restore .section-three .contained .right .title {
+    color: #FF671F;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+    font-weight: bold;
+  }
+  #page-restore .section-three .contained .right a {
+    color: white;
+    background-color: #FF671F;
+    padding: 10px 5px;
+    text-align: center;
+    line-height: 1.2;
+    text-decoration: none;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 12px;
+    display: block;
+    width: 225px;
+  }
+  #page-restore .section-four {
+    height: 420px;
+    padding: 20px;
+  }
+  #page-restore .section-four .left {
+    height: 380px;
+    padding: 25px 50px;
+  }
+  #page-restore .section-four .left ul li {
+    font-size: 14px;
+    line-height: 1.1;
+  }
+  #page-restore .section-four .right ul li {
+    font-size: 14px;
+    line-height: 1.1;
+    color: #666666;
+  }
+  #page-restore .section-five {
+    background-color: #00AFD7;
+    min-height: 400px;
+    height: auto;
+  }
+  #page-restore .section-five .left {
+    width: 50%;
+    float: left;
+    padding: 120px 50px;
+  }
+  #page-restore .section-five .left p {
+    color: white;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  #page-restore .section-five .right {
+    width: 50%;
+    float: right;
+  }
+  #page-restore .section-five .right .embed-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    overflow: hidden;
+    max-width: 100%;
+    height: auto;
+  }
+  #page-restore .section-five .right .embed-container iframe,
+#page-restore .section-five .right .embed-container object,
+#page-restore .section-five .right .embed-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  #page-restore .section-six {
+    background-color: #EEEEEE;
+    height: 400px;
+    padding: 50px;
+    color: #636466;
+  }
+  #page-restore .section-six .left {
+    width: 50%;
+    float: left;
+    padding: 0px;
+    text-align: center;
+  }
+  #page-restore .section-six .left img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+  }
+  #page-restore .section-six .right {
+    width: 50%;
+    float: right;
+    padding: 50px 0px;
+    margin: 0 auto;
+  }
+  #page-restore .section-six .right p {
+    color: #636466;
+    font-size: 18px;
+    font-weight: bold;
+    max-width: 350px;
+    margin: 0 auto;
+  }
+  #page-restore .section-six .right a {
+    font-size: 36px;
+    text-align: center;
+    color: #EEEEEE;
+    border-radius: 50%;
+    padding: 10px;
+    background-color: #DCDCDD;
+    display: block;
+    max-width: 75px;
+    margin-bottom: 15px;
+  }
+  #page-restore .section-six .right a:hover {
+    background-color: #00AFD7;
   }
 
   .gallery-wrapper .carousel .contained {
@@ -3454,13 +3629,42 @@ footer {
     margin: 0 auto;
     padding: 0 20px;
   }
-  .gallery-wrapper .carousel blockquote {
-    font-size: 18px;
-    padding: 0;
-    margin: 0;
-  }
   .gallery-wrapper .carousel blockquote:before, .gallery-wrapper .carousel blockquote:after {
-    display: none;
+    width: 30px !important;
+    height: 30px !important;
+    background-size: cover;
+  }
+
+  footer .footer-container {
+    margin: 0 auto;
+    max-width: 768px;
+    height: 680px;
+  }
+  footer .footer-container .column-one {
+    width: 380px;
+  }
+  footer .footer-container .column-two {
+    width: 360px;
+    border-right: none;
+  }
+  footer .footer-container .column-three {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding-top: 30px;
+  }
+  footer .footer-container .column-three .social {
+    margin: 20px auto;
+    width: 200px;
+    text-align: center;
+  }
+  footer .copyright {
+    text-align: center;
+    font-size: 12px;
+    background-color: #3D3E40;
+    margin: 0;
+    padding: 15px 5px;
+    color: #FFFFFF˜;
   }
 }
 @media (min-width: 481px) and (max-width: 767px) {
@@ -3829,6 +4033,197 @@ footer {
     padding: 20px 20px 80px 20px;
   }
 
+  #page-restore .page-banner .title {
+    padding: 10px 20px;
+    max-width: 200px;
+  }
+  #page-restore .page-banner .title img {
+    max-width: 120px;
+  }
+  #page-restore .section-one {
+    padding: 30px 20px;
+    width: 100%;
+  }
+  #page-restore .section-one .left {
+    padding: 0px 15px;
+    width: 100%;
+    border-right: none;
+  }
+  #page-restore .section-one .left p {
+    display: block;
+    font-size: 16px;
+  }
+  #page-restore .section-one .right {
+    width: 100%;
+    padding: 0 15px;
+  }
+  #page-restore .section-two .container {
+    max-width: 768px;
+    margin: 0 auto;
+  }
+  #page-restore .section-two .container .column {
+    width: 32%;
+    padding: 20px 10px;
+  }
+  #page-restore .section-two .text-container .text {
+    text-align: center;
+  }
+  #page-restore .section-three {
+    height: auto;
+    display: inline-block;
+    margin: 0 auto;
+    padding: 50px 20px;
+    width: 100%;
+  }
+  #page-restore .section-three .contained {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+  }
+  #page-restore .section-three .contained .left {
+    width: 100%;
+    float: left;
+    display: block;
+    height: 250px;
+    padding: 0;
+  }
+  #page-restore .section-three .contained .left .title {
+    color: #FF671F;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+    font-weight: bold;
+  }
+  #page-restore .section-three .contained .right {
+    float: right;
+    width: 100%;
+    display: block;
+    height: 250px;
+    padding-left: 0;
+    border-left: none;
+  }
+  #page-restore .section-three .contained .right .title {
+    color: #FF671F;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+    font-weight: bold;
+  }
+  #page-restore .section-three .contained .right a {
+    color: white;
+    background-color: #FF671F;
+    padding: 10px 5px;
+    text-align: center;
+    line-height: 1.2;
+    text-decoration: none;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 12px;
+    display: block;
+    width: 225px;
+  }
+  #page-restore .section-four {
+    height: 760px;
+    padding: 20px;
+  }
+  #page-restore .section-four .left {
+    width: 100%;
+    height: 380px;
+    padding: 25px 50px;
+  }
+  #page-restore .section-four .left ul li {
+    font-size: 14px;
+    line-height: 1.1;
+  }
+  #page-restore .section-four .right {
+    width: 100%;
+  }
+  #page-restore .section-four .right ul li {
+    font-size: 14px;
+    line-height: 1.1;
+    color: #666666;
+  }
+  #page-restore .section-five {
+    background-color: #00AFD7;
+    min-height: 400px;
+    height: auto;
+  }
+  #page-restore .section-five .left {
+    width: 50%;
+    float: left;
+    padding: 120px 50px;
+  }
+  #page-restore .section-five .left p {
+    color: white;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  #page-restore .section-five .right {
+    width: 50%;
+    float: right;
+  }
+  #page-restore .section-five .right .embed-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    overflow: hidden;
+    max-width: 100%;
+    height: auto;
+  }
+  #page-restore .section-five .right .embed-container iframe,
+#page-restore .section-five .right .embed-container object,
+#page-restore .section-five .right .embed-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  #page-restore .section-six {
+    background-color: #EEEEEE;
+    height: 400px;
+    padding: 50px;
+    color: #636466;
+  }
+  #page-restore .section-six .left {
+    width: 50%;
+    float: left;
+    padding: 0px;
+    text-align: center;
+  }
+  #page-restore .section-six .left img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+  }
+  #page-restore .section-six .right {
+    width: 50%;
+    float: right;
+    padding: 50px 0px;
+    margin: 0 auto;
+  }
+  #page-restore .section-six .right p {
+    color: #636466;
+    font-size: 18px;
+    font-weight: bold;
+    max-width: 350px;
+    margin: 0 auto;
+  }
+  #page-restore .section-six .right a {
+    font-size: 36px;
+    text-align: center;
+    color: #EEEEEE;
+    border-radius: 50%;
+    padding: 10px;
+    background-color: #DCDCDD;
+    display: block;
+    max-width: 75px;
+    margin-bottom: 15px;
+  }
+  #page-restore .section-six .right a:hover {
+    background-color: #00AFD7;
+  }
+
   .gallery-wrapper .carousel .contained {
     width: 100%;
     margin: 0 auto;
@@ -3843,7 +4238,7 @@ footer {
     display: none;
   }
 }
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 320px) and (max-width: 480px) {
   header,
 footer {
     display: none;
@@ -3851,7 +4246,6 @@ footer {
 
   .contained {
     width: 100%;
-    max-width: 1080px;
   }
 
   .page-banner {
@@ -3886,17 +4280,14 @@ footer {
   .page-home .row.four {
     flex-wrap: wrap;
   }
-  .page-home .row.four .events-container {
-    width: 100%;
-    padding: 20px 0;
-  }
-  .page-home .row.four .news-container {
+  .page-home .row.four .events-container,
+.page-home .row.four .news-container {
     width: 100%;
     padding: 20px 0;
   }
   .page-home .row.four .news-container .news-wrapper {
-    column-count: 2;
-    column-gap: 20px;
+    column-count: 1;
+    column-gap: 0;
     padding: 20px 20px 0 20px;
   }
   .page-home .row.four .news-container .news-wrapper .news h1 {
@@ -3930,6 +4321,19 @@ footer {
 #page-who-are-we .section-four,
 #page-who-are-we .section-five {
     padding: 20px;
+  }
+  #page-who-are-we .section-four details .text-wrapper p:last-child {
+    margin: 0;
+    padding-bottom: 0;
+  }
+  #page-who-are-we .section-four details .text-wrapper .left,
+#page-who-are-we .section-four details .text-wrapper .right {
+    margin: 0 !important;
+    width: 100%;
+  }
+  #page-who-are-we .section-four details .text-wrapper .right {
+    padding: 20px 0px !important;
+    border-left: none;
   }
   #page-who-are-we .section-five {
     padding: 20px 20px 80px 20px;
@@ -4091,6 +4495,19 @@ footer {
   #page-apply .contained {
     width: 100% !important;
   }
+  #page-apply details summary span {
+    font-size: 22px !important;
+  }
+  #page-apply details summary .text-wrapper .left {
+    display: block !important;
+    width: 100% !important;
+    height: 250px !important;
+  }
+  #page-apply details summary .text-wrapper .right {
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 20px !important;
+  }
   #page-apply .section-one {
     padding: 0 !important;
   }
@@ -4111,6 +4528,9 @@ footer {
   #page-apply .section-two {
     padding: 20px !important;
   }
+  #page-apply .section-two iframe {
+    max-width: 350px;
+  }
   #page-apply .section-two h1 {
     width: 100% !important;
     font-size: 22px !important;
@@ -4119,25 +4539,21 @@ footer {
   #page-apply .section-two div:nth-child(2) {
     column-count: 1 !important;
   }
-  #page-apply .section-three {
-    padding: 20px;
+  #page-apply .expanding-section {
+    padding: 50px 20px;
   }
-  #page-apply .section-three details {
+  #page-apply .expanding-section details .text-wrapper p:last-child {
+    margin: 0;
+    padding-bottom: 0;
+  }
+  #page-apply .expanding-section details .text-wrapper .left,
+#page-apply .expanding-section details .text-wrapper .right {
+    margin: 0 !important;
     width: 100%;
-    margin: 0 0 10px 0 !important;
   }
-  #page-apply .section-three details[open] {
-    padding: 0 0 20px 0;
-  }
-  #page-apply .section-three details[open] summary {
-    border-bottom-width: 1px;
-    margin: 0 0 10px 0 !important;
-  }
-  #page-apply .section-three details summary span {
-    font-size: 22px !important;
-  }
-  #page-apply .section-three details .text-wrapper {
-    padding: 0 20px;
+  #page-apply .expanding-section details .text-wrapper .right {
+    padding: 20px 0px !important;
+    border-left: none;
   }
   #page-apply .section-four {
     padding: 0 0 20px 0;
@@ -4157,26 +4573,54 @@ footer {
     padding: 10px 0 !important;
   }
 
+  #page-ways-to-give h1 {
+    margin: 0 0 20px 0;
+  }
+  #page-ways-to-give .text {
+    column-count: 1;
+  }
+  #page-ways-to-give details summary span {
+    font-size: 22px !important;
+  }
+  #page-ways-to-give details summary .text-wrapper .left {
+    display: block !important;
+    width: 100% !important;
+    height: 250px !important;
+  }
+  #page-ways-to-give details summary .text-wrapper .right {
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 20px !important;
+  }
+  #page-ways-to-give .section-one .left {
+    width: 100%;
+  }
   #page-ways-to-give .section-one .left p {
-    padding: 35pxpx;
+    padding: 35px;
     font-size: 18px;
   }
+  #page-ways-to-give .section-one .right {
+    width: 100%;
+  }
   #page-ways-to-give .section-two-preface .contained {
-    max-width: 720px;
+    max-width: 640px;
   }
   #page-ways-to-give .section-two-preface .contained p {
-    font-size: 20px;
+    font-size: 18px;
+    padding: 20px;
+    text-align: center;
   }
   #page-ways-to-give .section-two {
     padding: 0px 20px 30px;
   }
   #page-ways-to-give .section-two .contained {
     max-width: 1080px;
+    display: block;
   }
   #page-ways-to-give .section-two .contained .content-wrapper {
     width: 300px;
     min-height: 120px;
-    margin: 0px 10px;
+    margin: 20px 10px;
   }
   #page-ways-to-give .section-two .contained .content-wrapper p {
     font-size: 14px;
@@ -4184,21 +4628,214 @@ footer {
   #page-ways-to-give .expanding-section {
     padding: 50px 20px;
   }
-  #page-ways-to-give .expanding-section details summary span {
-    font-size: 22px !important;
+  #page-ways-to-give .expanding-section details .text-wrapper p:last-child {
+    margin: 0;
+    padding-bottom: 0;
   }
-  #page-ways-to-give .expanding-section details summary .text-wrapper .left {
-    display: block !important;
-    width: 100% !important;
-    height: 250px !important;
-  }
-  #page-ways-to-give .expanding-section details summary .text-wrapper .right {
-    width: 100% !important;
+  #page-ways-to-give .expanding-section details .text-wrapper .left,
+#page-ways-to-give .expanding-section details .text-wrapper .right {
     margin: 0 !important;
-    padding: 20px !important;
+    width: 100%;
+  }
+  #page-ways-to-give .expanding-section details .text-wrapper .right {
+    padding: 20px 0px !important;
+    border-left: none;
   }
   #page-ways-to-give .testimonials {
     padding: 20px 20px 80px 20px;
+  }
+
+  #page-restore .page-banner .title {
+    padding: 10px 20px;
+    max-width: 200px;
+  }
+  #page-restore .page-banner .title img {
+    max-width: 120px;
+  }
+  #page-restore .section-one {
+    padding: 20px 10px;
+    width: 100%;
+  }
+  #page-restore .section-one .left {
+    padding: 0px 15px;
+    width: 100%;
+    border-right: none;
+  }
+  #page-restore .section-one .left p {
+    display: block;
+    font-size: 16px;
+  }
+  #page-restore .section-one .right {
+    width: 100%;
+    padding: 0 15px;
+  }
+  #page-restore .section-two .container {
+    max-width: 768px;
+    margin: 0 auto;
+  }
+  #page-restore .section-two .container .column {
+    width: 32%;
+    padding: 20px 10px;
+  }
+  #page-restore .section-two .container .column i {
+    font-size: 28px;
+    padding: 16px;
+  }
+  #page-restore .section-two .text-container .text {
+    text-align: center;
+    font-size: 16px;
+  }
+  #page-restore .section-three {
+    padding: 20px;
+  }
+  #page-restore .section-three .contained {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+  }
+  #page-restore .section-three .contained .left {
+    width: 100%;
+    float: left;
+    display: block;
+    height: 250px;
+    padding: 0;
+  }
+  #page-restore .section-three .contained .left .title {
+    color: #FF671F;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+    font-weight: bold;
+  }
+  #page-restore .section-three .contained .right {
+    float: right;
+    width: 100%;
+    display: block;
+    height: 250px;
+    padding-left: 0;
+    border-left: none;
+  }
+  #page-restore .section-three .contained .right .title {
+    color: #FF671F;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+    font-weight: bold;
+  }
+  #page-restore .section-three .contained .right a {
+    color: white;
+    background-color: #FF671F;
+    padding: 10px 5px;
+    text-align: center;
+    line-height: 1.2;
+    text-decoration: none;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 12px;
+    display: block;
+    width: 225px;
+  }
+  #page-restore .section-four {
+    height: 800px;
+    padding: 10px;
+  }
+  #page-restore .section-four .left {
+    width: 100%;
+    height: 380px;
+    padding: 25px;
+  }
+  #page-restore .section-four .left ul li {
+    font-size: 14px;
+    line-height: 1.1;
+  }
+  #page-restore .section-four .right {
+    width: 100%;
+    padding: 25px;
+  }
+  #page-restore .section-four .right ul li {
+    font-size: 14px;
+    line-height: 1.1;
+    color: #666666;
+  }
+  #page-restore .section-five {
+    background-color: #00AFD7;
+    min-height: 400px;
+    height: auto;
+  }
+  #page-restore .section-five .left {
+    width: 100%;
+    float: left;
+    padding: 120px 50px;
+  }
+  #page-restore .section-five .left p {
+    color: white;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  #page-restore .section-five .right {
+    width: 100%;
+    float: right;
+  }
+  #page-restore .section-five .right .embed-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    overflow: hidden;
+    max-width: 100%;
+    height: auto;
+  }
+  #page-restore .section-five .right .embed-container iframe,
+#page-restore .section-five .right .embed-container object,
+#page-restore .section-five .right .embed-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  #page-restore .section-six {
+    background-color: #EEEEEE;
+    height: 400px;
+    padding: 50px;
+    color: #636466;
+  }
+  #page-restore .section-six .left {
+    width: 100%;
+    float: left;
+    padding: 0px;
+    text-align: center;
+  }
+  #page-restore .section-six .left img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+  }
+  #page-restore .section-six .right {
+    width: 100%;
+    float: right;
+    padding: 50px 0px;
+    margin: 0 auto;
+  }
+  #page-restore .section-six .right p {
+    color: #636466;
+    font-size: 18px;
+    font-weight: bold;
+    max-width: 350px;
+    margin: 0 auto;
+  }
+  #page-restore .section-six .right a {
+    font-size: 36px;
+    text-align: center;
+    color: #EEEEEE;
+    border-radius: 50%;
+    padding: 10px;
+    background-color: #DCDCDD;
+    display: block;
+    max-width: 75px;
+    margin-bottom: 15px;
+  }
+  #page-restore .section-six .right a:hover {
+    background-color: #00AFD7;
   }
 
   .gallery-wrapper .carousel .contained {
@@ -4206,10 +4843,13 @@ footer {
     margin: 0 auto;
     padding: 0 20px;
   }
+  .gallery-wrapper .carousel blockquote {
+    font-size: 18px;
+    padding: 0;
+    margin: 0;
+  }
   .gallery-wrapper .carousel blockquote:before, .gallery-wrapper .carousel blockquote:after {
-    width: 30px !important;
-    height: 30px !important;
-    background-size: cover;
+    display: none;
   }
 }
 
