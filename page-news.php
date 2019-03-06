@@ -33,7 +33,7 @@
             $news_args = array(
               'post_type'       => 'post',
               'order'           => 'DSC',
-              'posts_per_page'  => '6',
+              'posts_per_page'  => '12',
               'post_status'     => 'publish',
               'category_slug'   => 'news',
             );

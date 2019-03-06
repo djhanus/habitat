@@ -2555,6 +2555,7 @@ header .main-menu-container ul li:last-of-type a:hover:after {
   font-size: 18px;
   text-decoration: none;
   color: #FF671F;
+  display: block;
 }
 #page-news .news-container .news-wrapper .news a {
   font-size: 18px;
@@ -3624,6 +3625,10 @@ footer .copyright {
     background-color: #00AFD7;
   }
 
+  #page-news .news-container {
+    width: 760px;
+  }
+
   .gallery-wrapper .carousel .contained {
     width: 100%;
     margin: 0 auto;
@@ -3668,8 +3673,7 @@ footer .copyright {
   }
 }
 @media (min-width: 481px) and (max-width: 767px) {
-  header,
-footer {
+  header {
     display: none;
   }
 
@@ -4244,6 +4248,13 @@ footer {
     height: 200px;
   }
 
+  #page-news .news-container {
+    width: 480px;
+  }
+  #page-news .news-container .news-wrapper {
+    column-count: 1;
+  }
+
   .gallery-wrapper .carousel .contained {
     width: 100%;
     margin: 0 auto;
@@ -4257,10 +4268,46 @@ footer {
   .gallery-wrapper .carousel blockquote:before, .gallery-wrapper .carousel blockquote:after {
     display: none;
   }
+
+  footer .footer-container {
+    margin: 0 auto;
+    max-width: 480px;
+    height: 780px;
+  }
+  footer .footer-container .column-one {
+    width: 200px;
+    height: 600px;
+  }
+  footer .footer-container .horizontal-line {
+    margin: 10px 0px;
+  }
+  footer .footer-container .column-two {
+    width: 280px;
+    border-right: none;
+    height: 600px;
+  }
+  footer .footer-container .column-three {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding-top: 10px;
+  }
+  footer .footer-container .column-three .social {
+    margin: 20px auto;
+    width: 200px;
+    text-align: center;
+  }
+  footer .copyright {
+    text-align: center;
+    font-size: 12px;
+    background-color: #3D3E40;
+    margin: 0;
+    padding: 15px 5px;
+    color: #FFFFFF˜;
+  }
 }
 @media (min-width: 320px) and (max-width: 480px) {
-  header,
-footer {
+  header {
     display: none;
   }
 
@@ -4889,6 +4936,75 @@ footer {
     line-height: 1.6;
   }
 
+  .post-families .families-button a {
+    padding: 5px 15px;
+    font-size: 16px;
+    display: inline-block;
+    letter-spacing: 1px;
+    line-height: 1.6;
+  }
+
+  #page-news .featured-post {
+    position: relative;
+    width: 100%;
+    height: 350px;
+    max-height: 450px;
+    margin: 0 0 20px 0;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    border-bottom: 25px solid #00AFD7;
+  }
+  #page-news .featured-post:before {
+    position: absolute;
+    content: "";
+    z-index: 1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  #page-news .featured-post .container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+  }
+  #page-news .featured-post .container .date {
+    color: white;
+    font-size: 12px;
+    text-transform: uppercase;
+    background-color: #00AFD7;
+    display: inline-block;
+    padding: 3px 15px 3px 15px;
+  }
+  #page-news .featured-post .container p {
+    padding: 5px 15px;
+    width: 320px;
+  }
+  #page-news .featured-post .container .title {
+    font-size: 16px;
+    font-weight: bold;
+    padding-left: 15px;
+    margin-top: 15px;
+  }
+  #page-news .news-container {
+    width: 320px;
+    padding: 15px 0;
+    margin: 0 auto;
+  }
+  #page-news .news-container .news-wrapper {
+    column-count: 1;
+    column-gap: 10px;
+    padding: 10px;
+  }
+  #page-news .news-container .news-wrapper .news p {
+    font-size: 14px;
+  }
+
   .gallery-wrapper .carousel .contained {
     width: 100%;
     margin: 0 auto;
@@ -4901,6 +5017,45 @@ footer {
   }
   .gallery-wrapper .carousel blockquote:before, .gallery-wrapper .carousel blockquote:after {
     display: none;
+  }
+
+  footer {
+    padding: 10px 0 0 0;
+  }
+  footer .footer-container {
+    margin: 0 auto;
+    max-width: 300px;
+    height: 730px;
+  }
+  footer .footer-container .column-one {
+    width: 300px;
+    height: 520px;
+    border-right: none;
+  }
+  footer .footer-container .horizontal-line {
+    margin: 10px 0px;
+  }
+  footer .footer-container .column-two {
+    display: none;
+  }
+  footer .footer-container .column-three {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding-top: 10px;
+  }
+  footer .footer-container .column-three .social {
+    margin: 20px auto;
+    width: 200px;
+    text-align: center;
+  }
+  footer .copyright {
+    text-align: center;
+    font-size: 12px;
+    background-color: #3D3E40;
+    margin: 0;
+    padding: 15px 5px;
+    color: #FFFFFF˜;
   }
 }
 
