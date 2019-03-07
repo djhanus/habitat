@@ -65,30 +65,30 @@
 
           <!-- OUTPUT CONTAINER -->
           <div class="family-container-A">
+
+            <div class="photo" style="background-image: url('<?php echo get_field('family_photo')?>"></div>
+
             <div class="description">
               <div class="title"><?php the_title(); ?></div>
-              <p><?php the_excerpt(); ?></p>
+              <?php the_excerpt(); ?>
               <div class="button">
                 <a href="<?php echo get_permalink(); ?>">READ MORE</a>
               </div>
-            </div>
-
-            <div class="photo" style="background-image: url('<?php echo get_field('family_photo')?>">
             </div>
           </div>
 
           <?php else : ?>
 
           <div class="family-container-B">
+
+            <div class="photo" style="background-image: url('<?php echo get_field('family_photo')?>"></div>
+
             <div class="description">
               <div class="title"><?php the_title(); ?></div>
-              <p><?php the_excerpt(); ?></p>
+              <?php the_excerpt(); ?>
               <div class="button">
                 <a href="<?php echo get_permalink(); ?>">READ MORE</a>
               </div>
-            </div>
-
-            <div class="photo" style="background-image: url('<?php echo get_field('family_photo')?>">
             </div>
           </div>
 
