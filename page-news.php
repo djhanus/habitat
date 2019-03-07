@@ -18,7 +18,7 @@
       style="background-image: url('<?php echo get_field('featured_image')?>">
       <div class="container">
         <div class="date"><?php echo get_the_date(); ?></div>
-        <div class="title"><?php the_title(); ?></div>
+        <div class="title"><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></div>
         <p><?php the_excerpt(); ?></p>
       </div>
     </div><!-- /.featured-post -->

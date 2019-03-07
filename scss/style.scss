@@ -3091,6 +3091,10 @@ header {
         font-weight: bold;
         padding-left: 50px;
         margin-top: 15px;
+
+        a {
+          color: #FFFFFF !important;
+        }
       }
 
       p {
@@ -4291,6 +4295,47 @@ footer {
     }
   }
 
+  // Single Post - Standard
+  .post-standard {
+    padding-bottom: 0px;
+
+    .banner {
+      .container {
+        max-width: 767px;
+
+        .title {
+          font-size: 24px;
+          font-weight: normal;
+          line-height: 1.5;
+          margin: 10px 0px;
+        }
+      }
+    }
+
+    .main-container {
+      margin: 0 auto;
+      width: 100%;
+      max-width: 760px;
+      background-color: #FFFFFF;
+      padding: 50px;
+
+      img {
+        max-width: 650px;
+        height: auto;
+        vertical-align: middle;
+      }
+
+      .wp-caption-text {
+        font-size: 14px;
+        font-weight: bold;
+        background-color: $primary-green;
+        padding: 5px 15px;
+        margin: 0 0 40px 0;
+        max-width: 650px;
+      }
+    }
+  }
+
   // FOOTER
   footer {
 
@@ -5145,6 +5190,47 @@ footer {
 
       .news-wrapper {
         column-count: 1;
+      }
+    }
+  }
+
+  // Single Post - Standard
+  .post-standard {
+    padding-bottom: 0px;
+
+    .banner {
+      .container {
+        max-width: 480px;
+
+        .title {
+          font-size: 22px;
+          font-weight: normal;
+          line-height: 1.2;
+          margin: 10px 0px;
+        }
+      }
+    }
+
+    .main-container {
+      margin: 0 auto;
+      width: 100%;
+      max-width: 480px;
+      background-color: #FFFFFF;
+      padding: 25px;
+
+      img {
+        max-width: 400px;
+        height: auto;
+        vertical-align: middle;
+      }
+
+      .wp-caption-text {
+        font-size: 14px;
+        font-weight: bold;
+        background-color: $primary-green;
+        padding: 5px 15px;
+        margin: 0 0 40px 0;
+        max-width: 400px;
       }
     }
   }
@@ -6193,6 +6279,47 @@ footer {
             font-size: 14px;
           }
         }
+      }
+    }
+  }
+
+  // Single Post - Standard
+  .post-standard {
+    padding-bottom: 0px;
+
+    .banner {
+      .container {
+        max-width: 320px;
+
+        .title {
+          font-size: 20px;
+          font-weight: normal;
+          line-height: 1.4;
+          margin: 10px 0px;
+        }
+      }
+    }
+
+    .main-container {
+      margin: 0 auto;
+      width: 100%;
+      max-width: 320px;
+      background-color: #FFFFFF;
+      padding: 25px;
+
+      img {
+        max-width: 270px;
+        height: auto;
+        vertical-align: middle;
+      }
+
+      .wp-caption-text {
+        font-size: 14px;
+        font-weight: bold;
+        background-color: $primary-green;
+        padding: 5px 15px;
+        margin: 0 0 40px 0;
+        max-width: 270px;
       }
     }
   }
