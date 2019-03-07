@@ -3058,6 +3058,15 @@ footer .copyright {
   text-align: center;
 }
 
+@media (max-width: 1194px) {
+  header .main-menu-container ul li a {
+    position: relative;
+    font-size: 16px;
+    letter-spacing: 0px;
+    padding: 0px;
+    margin: 0px 10px;
+  }
+}
 @media (min-width: 768px) and (max-width: 1024px) {
   header {
     height: 100px;

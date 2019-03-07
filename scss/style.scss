@@ -3470,6 +3470,30 @@ footer {
 @import 'carousel';
 
 
+// fix for menu breakpoint just before tablet
+@media (max-width: 1194px) {
+
+// HEADER
+  header {
+
+  .main-menu-container {
+    ul {
+      li {
+        a {
+          position: relative;
+          font-size: 16px;
+          letter-spacing: 0px;
+          padding: 0px;
+          margin: 0px 10px;
+        }
+      }
+    }
+  }
+  } // END header
+
+
+}
+
 // ----------------------------------------------- //
 //                     TABLET                      //
 // ----------------------------------------------- //

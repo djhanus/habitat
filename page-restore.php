@@ -92,7 +92,7 @@
       </div>
       <div class="right">
         <div class="embed-container">
-          <?php the_field('video'); ?>
+          <?php the_field('video_url'); ?>
         </div>
       </div>
     </div>
