@@ -4234,7 +4234,7 @@ header .main-menu-container {
   .page-home .families-btn {
     background-color: #FF671F;
     padding: 50px;
-    margin: 0 auto;
+    margin: 50px auto 0 auto;
     text-align: center;
   }
   .page-home .families-btn a {
@@ -4294,10 +4294,14 @@ header .main-menu-container {
     margin: 20px auto 0 auto;
   }
   .page-home .row.four .events-wrapper .event {
+    border: 2px solid white;
     display: block;
     width: 100%;
-    margin: 0 0 20px 0;
+    margin: 0 0 25px 0;
     padding: 25px;
+  }
+  .page-home .row.four .events-wrapper .event:last-child {
+    margin: 0;
   }
   .page-home .row.four .events-wrapper .event .date {
     text-align: center;
@@ -4879,7 +4883,7 @@ header .main-menu-container {
   #page-restore .section-seven {
     width: calc(100% - 50px);
     margin: 0 auto;
-    padding: 25px 0;
+    padding: 25px 0 0 0;
   }
   #page-restore .section-seven .ig-imgs-wrapper {
     width: 420px;
@@ -5172,7 +5176,7 @@ header .main-menu-container {
   .page-home .families-btn {
     background-color: #FF671F;
     padding: 20px;
-    margin: 0 auto;
+    margin: 25px auto 0 auto;
     text-align: center;
   }
   .page-home .families-btn a {
@@ -5227,12 +5231,17 @@ header .main-menu-container {
     justify-content: center;
     width: calc(100% - 50px);
     margin: 20px auto 0 auto;
+    padding: 0;
   }
   .page-home .row.four .events-wrapper .event {
+    border: 2px solid white;
     display: block;
     width: 100%;
-    margin: 0 0 20px 0;
+    margin: 0 0 25px 0;
     padding: 25px;
+  }
+  .page-home .row.four .events-wrapper .event:last-child {
+    margin: 0;
   }
   .page-home .row.four .events-wrapper .event .date {
     text-align: center;
