@@ -109,30 +109,71 @@
         <div class="events-container">
           <div class="title">Events</div>
           <div class="events-wrapper">
-
-            <?php
-              $event_args = array(
-
-                'post_type'       => 'Events',
-                'posts_per_page'  => '4',
-                'post_status'     => 'publish',
-                'orderby'         => 'meta_value_num',
-                'order'           => 'ASC',
-                'meta_key'        => 'event_date',
-                'meta_query'  => array(
-                  'relation'    => 'OR',
-                  array(
-                    'key'     => 'event_date',
-                    'value'   => date("Ymd"),
-                    'compare' => '>='
+            <span class="desktop">
+              <?php
+                $event_args = array(
+                  'post_type'       => 'Events',
+                  'posts_per_page'  => '4',
+                  'post_status'     => 'publish',
+                  'orderby'         => 'meta_value_num',
+                  'order'           => 'ASC',
+                  'meta_key'        => 'event_date',
+                  'meta_query'  => array(
+                    'relation'    => 'OR',
+                    array(
+                      'key'     => 'event_date',
+                      'value'   => date("Ymd"),
+                      'compare' => '>='
+                    )
                   )
-                )
 
-              );
-              $events_query  = new WP_Query( $event_args );
-              if($events_query->have_posts() ) : while ( $events_query->have_posts() ) : $events_query->the_post();
-              $event_date  = get_field('event_date');
-            ?>
+                );
+                $events_query  = new WP_Query( $event_args );
+                if($events_query->have_posts() ) : while ( $events_query->have_posts() ) : $events_query->the_post();
+                $event_date  = get_field('event_date');
+              ?>
+                <div class="event">
+                  <div class="date">
+                    <h1><?php echo date("M", strtotime($event_date)); ?></h1>
+                    <h2><?php echo date("d", strtotime($event_date)); ?></h2>
+                  </div>
+
+                  <div class="time">
+                    <?php echo get_field('event_time'); ?>
+                  </div>
+
+                  <div class="text">
+                    <h1><?php the_title(); ?></h1>
+                    <?php the_excerpt(); ?>
+                    <a href="<?php echo get_permalink(); ?>">Read More >></a>
+                  </div>
+                </div>
+              <?php endwhile; endif; wp_reset_query(); ?>
+            </span>
+
+            <span class="responsive">
+              <?php
+                $event_args = array(
+                  'post_type'       => 'Events',
+                  'posts_per_page'  => '2',
+                  'post_status'     => 'publish',
+                  'orderby'         => 'meta_value_num',
+                  'order'           => 'ASC',
+                  'meta_key'        => 'event_date',
+                  'meta_query'  => array(
+                    'relation'    => 'OR',
+                    array(
+                      'key'     => 'event_date',
+                      'value'   => date("Ymd"),
+                      'compare' => '>='
+                    )
+                  )
+
+                );
+                $events_query  = new WP_Query( $event_args );
+                if($events_query->have_posts() ) : while ( $events_query->have_posts() ) : $events_query->the_post();
+                $event_date  = get_field('event_date');
+              ?>
               <div class="event">
                 <div class="date">
                   <h1><?php echo date("M", strtotime($event_date)); ?></h1>
@@ -150,30 +191,54 @@
                 </div>
               </div>
             <?php endwhile; endif; wp_reset_query(); ?>
+            </span>
           </div>
         </div>
 
         <div class="news-container">
           <div class="title">News</div>
           <div class="grid news-wrapper">
-            <?php
-              $news_args = array(
-                'post_type'       => 'post',
-                'order'           => 'DSC',
-                'posts_per_page'  => '6',
-                'post_status'     => 'publish',
-                'category_slug'   => 'news',
-              );
-              $news_query  = new WP_Query( $news_args );
-              if($news_query->have_posts() ) : while ( $news_query->have_posts() ) : $news_query->the_post();
-            ?>
-              <div class="grid-item news">
-                <h2><?php echo get_the_date(); ?></h2>
-                <h1><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></h1>
-                <?php the_excerpt(); ?>
-                <a href="<?php echo get_permalink(); ?>">Read More >></a>
-              </div>
-            <?php endwhile; endif; wp_reset_query(); ?>
+            <span class="desktop">
+              <?php
+                $news_args = array(
+                  'post_type'       => 'post',
+                  'order'           => 'DSC',
+                  'posts_per_page'  => '6',
+                  'post_status'     => 'publish',
+                  'category_slug'   => 'news',
+                );
+                $news_query  = new WP_Query( $news_args );
+                if($news_query->have_posts() ) : while ( $news_query->have_posts() ) : $news_query->the_post();
+              ?>
+                <div class="grid-item news">
+                  <h2><?php echo get_the_date(); ?></h2>
+                  <h1><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></h1>
+                  <?php the_excerpt(); ?>
+                  <a href="<?php echo get_permalink(); ?>">Read More >></a>
+                </div>
+              <?php endwhile; endif; wp_reset_query(); ?>
+            </span>
+
+            <span class="responsive">
+              <?php
+                $news_args = array(
+                  'post_type'       => 'post',
+                  'order'           => 'DSC',
+                  'posts_per_page'  => '3',
+                  'post_status'     => 'publish',
+                  'category_slug'   => 'news',
+                );
+                $news_query  = new WP_Query( $news_args );
+                if($news_query->have_posts() ) : while ( $news_query->have_posts() ) : $news_query->the_post();
+              ?>
+                <div class="grid-item news">
+                  <h2><?php echo get_the_date(); ?></h2>
+                  <h1><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></h1>
+                  <?php the_excerpt(); ?>
+                  <a href="<?php echo get_permalink(); ?>">Read More >></a>
+                </div>
+              <?php endwhile; endif; wp_reset_query(); ?>
+            </span>
           </div>
         </div>
       </div>
