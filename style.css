@@ -4091,6 +4091,10 @@ header .main-menu-container {
     display: none;
   }
 
+  main {
+    padding: 60px 0 0 0;
+  }
+
   .contained {
     width: 100%;
   }
@@ -5024,6 +5028,10 @@ header .main-menu-container {
   header .top-menu,
 header .main-menu-container {
     display: none;
+  }
+
+  main {
+    padding: 60px 0 0 0;
   }
 
   .contained {
