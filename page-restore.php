@@ -97,7 +97,7 @@
       </div>
     </div>
 
-     <div class="section-six">
+    <div class="section-six">
       <div class="left">
         <img src="<?php echo get_field('facebook_image'); ?>">
       </div>
@@ -108,6 +108,26 @@
             <span><?php echo get_field('facebook_text'); ?></span>
           </a>
         </p>
+      </div>
+    </div>
+
+    <div class="section-seven">
+      <div class="ig-imgs-wrapper">
+        <script>
+          const url = 'https://api.instagram.com/v1/users/self/media/recent/?access_token=219096477.99c55f5.6ea4575980ad4cf1afcded9bbe764dbe';
+          fetch(url)
+          .then(data => { return data.json() })
+          .then(res => {
+            imgUrls = res.data
+            let igWrapper = document.querySelector('.ig-imgs-wrapper');
+            for (var i = 0; i <= 7; i++) {
+              var imgUrls = res.data[i];
+              let imgURL = `<a href="${imgUrls.link}"><img src="${imgUrls.images.low_resolution.url}"></a>`;
+              igWrapper.innerHTML += imgURL;
+            }
+          })
+          .catch(err => { console.log(err) });
+        </script>
       </div>
     </div>
 

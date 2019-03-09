@@ -3100,6 +3100,35 @@ header {
       }
     }
   }
+
+  .section-seven {
+    width: calc(100% - 50px);
+    padding: 130px 0;
+
+    .ig-imgs-wrapper {
+      width: 860px;
+      margin: 0 auto;
+
+      a {
+        display: inline-block;
+        margin: 0 20px 20px 0;
+
+        &:nth-child(5),
+        &:last-of-type {
+          margin: 0 0 20px 0;
+        }
+      }
+
+      img {
+        min-width: 200px;
+        min-height: 200px;
+        max-width: 200px;
+        max-height: 200px;
+        object-fit: cover;
+        overflow: hidden;
+      }
+    }
+  }
 } // END restore
 
 // PAGE - FAMILIES
