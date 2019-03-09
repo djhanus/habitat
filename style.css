@@ -197,7 +197,7 @@ main {
 
 header {
   z-index: 1000;
-  position: relative;
+  position: fixed;
   display: flex;
   flex-wrap: wrap;
   background: white;
@@ -209,7 +209,7 @@ header .container {
   display: flex;
   align-items: center;
 }
-header img {
+header .container a img {
   width: 300px;
   height: auto;
   padding: 15px 10px;
@@ -270,6 +270,131 @@ header .main-menu-container ul li:last-of-type a:hover {
 }
 header .main-menu-container ul li:last-of-type a:hover:after {
   display: none;
+}
+header .mobile-menu-wrapper {
+  z-index: 10000;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 20px 0;
+  width: 100%;
+  height: 100%;
+  background: #00AFD7;
+  text-align: center;
+  transform: translate(-100%, 0);
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+header .mobile-menu-wrapper ul li {
+  margin: 15px 0 10px 0;
+}
+header .mobile-menu-wrapper ul li a {
+  text-transform: uppercase;
+  color: white;
+  font-size: 22px;
+  font-weight: 800;
+}
+header .mobile-menu-wrapper ul li a:hover {
+  color: #C4D600;
+}
+header .mobile-menu-wrapper .socials {
+  width: 100%;
+  padding: 20px 0;
+}
+header .mobile-menu-wrapper .socials i,
+header .mobile-menu-wrapper .socials svg {
+  color: white;
+  font-size: 40px;
+}
+header .mobile-menu-wrapper .socials i:first-of-type,
+header .mobile-menu-wrapper .socials svg:first-of-type {
+  margin: 0 10px 0 0;
+}
+header .mobile-menu-wrapper .socials i:hover,
+header .mobile-menu-wrapper .socials svg:hover {
+  color: #C4D600;
+}
+header .hamburger-wrapper {
+  z-index: 100000;
+  position: fixed;
+  top: 16px;
+  right: 16px;
+  margin: auto;
+  width: 40px;
+  height: 26px;
+  cursor: pointer;
+}
+@media (min-width: 767px) {
+  header .hamburger-wrapper {
+    display: none;
+  }
+}
+header .hamburger-menu,
+header .hamburger-menu,
+header .hamburger-menu {
+  width: 40px;
+  height: 4px;
+  position: relative;
+  transform: translateY(11px);
+  background: white;
+  transition: all 0ms 300ms;
+}
+header .hamburger-menu:after, header .hamburger-menu:before,
+header .hamburger-menu:after,
+header .hamburger-menu:before,
+header .hamburger-menu:after,
+header .hamburger-menu:before {
+  width: 40px;
+  height: 4px;
+}
+header .hamburger-menu.animate,
+header .hamburger-menu.animate,
+header .hamburger-menu.animate {
+  background: rgba(255, 255, 255, 0);
+}
+header .hamburger-menu.animate:after, header .hamburger-menu.animate:before,
+header .hamburger-menu.animate:after,
+header .hamburger-menu.animate:before,
+header .hamburger-menu.animate:after,
+header .hamburger-menu.animate:before {
+  transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+header .hamburger-menu.animate:after,
+header .hamburger-menu.animate:after,
+header .hamburger-menu.animate:after {
+  top: 0;
+  transform: rotate(45deg);
+}
+header .hamburger-menu.animate:before,
+header .hamburger-menu.animate:before,
+header .hamburger-menu.animate:before {
+  bottom: 0;
+  transform: rotate(-45deg);
+}
+header .hamburger-menu:before, header .hamburger-menu:after,
+header .hamburger-menu:before,
+header .hamburger-menu:after,
+header .hamburger-menu:before,
+header .hamburger-menu:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  background: white;
+}
+header .hamburger-menu:before,
+header .hamburger-menu:before,
+header .hamburger-menu:before {
+  bottom: 11px;
+  transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+header .hamburger-menu:after,
+header .hamburger-menu:after,
+header .hamburger-menu:after {
+  top: 11px;
+  transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
 }
 
 .page-home {
@@ -3911,6 +4036,16 @@ footer .copyright {
 }
 @media (min-width: 481px) and (max-width: 767px) {
   header {
+    background-color: #00AFD7;
+    height: 60px;
+  }
+  header .container a img {
+    width: 210px;
+    padding: 0;
+    margin: 5px 0 0 25px;
+  }
+  header .top-menu,
+header .main-menu-container {
     display: none;
   }
 
@@ -4736,6 +4871,16 @@ footer .copyright {
 }
 @media (min-width: 320px) and (max-width: 480px) {
   header {
+    background-color: #00AFD7;
+    height: 60px;
+  }
+  header .container a img {
+    width: 210px;
+    padding: 0;
+    margin: 5px 0 0 25px;
+  }
+  header .top-menu,
+header .main-menu-container {
     display: none;
   }
 

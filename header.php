@@ -18,14 +18,34 @@
 
 <body <?php body_class(); ?>>
   <header>
+    <div class="hamburger-wrapper">
+      <div class="hamburger-menu"></div>
+    </div>
 
-      <div class="top-menu">
-        <?php wp_nav_menu( array( 'theme_location' => 'top-menu' ) ); ?>
+    <div class="mobile-menu-wrapper">
+      <div class="menu-mobile-menu-container">
+        <?php wp_nav_menu( array( 'theme_location' => 'mobile-menu' ) ); ?>
       </div>
 
-    <div class="container">
+      <div class="socials">
+        <a href="" alt="Share on Facebook" title="Share on Facebook" target="_blank">
+          <i class="fab fa-facebook-square"></i>
+        </a>
 
-      <a href="<?php echo get_home_url(); ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo-horizontal-black.png"></a>
+        <a href="" alt="Share on Twitter" title="Share on Twitter" target="_blank">
+          <i class="fab fa-twitter-square"></i>
+        </a>
+      </div>
+    </div>
+
+    <div class="top-menu">
+      <?php wp_nav_menu( array( 'theme_location' => 'top-menu' ) ); ?>
+    </div>
+
+    <div class="container">
+      <a href="<?php echo get_home_url(); ?>">
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo-horizontal-black.png"></a>
+
         <div class="main-menu-container">
           <?php wp_nav_menu( array( 'theme_location' => 'primary-menu' ) ); ?>
         </div>
