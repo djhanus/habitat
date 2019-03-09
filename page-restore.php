@@ -6,7 +6,7 @@
       style="background-image: url('<?php echo get_field('image_hero_banner')?>">
       <div class="title"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo-restore-small.png"></div>
     </div><!-- /.page-banner -->
-     
+
     <div class="section-one">
       <div class="left">
         <p><?php echo get_field('section_one_text')?></p>
@@ -85,7 +85,7 @@
         <?php echo get_field('items_we_cannot_love'); ?>
       </div>
     </div>
-  
+
     <div class="section-five">
       <div class="left">
         <?php echo get_field('video_text'); ?>
@@ -102,10 +102,12 @@
         <img src="<?php echo get_field('facebook_image'); ?>">
       </div>
       <div class="right">
-
         <p>
-          <a href="<?php echo get_field('facebook_url', 'option'); ?>" target="_blank"><i class="fab fa-facebook-f"></i></a>
-          <?php echo get_field('facebook_text'); ?></p>
+          <a href="<?php echo get_field('facebook_url', 'option'); ?>" target="_blank">
+            <i class="fab fa-facebook-f"></i>
+            <span><?php echo get_field('facebook_text'); ?></span>
+          </a>
+        </p>
       </div>
     </div>
 

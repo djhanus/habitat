@@ -2980,13 +2980,13 @@ header {
   }
 
   .section-five {
+    display: flex;
     background-color: $primary-blue;
     min-height: 400px;
     height: auto;
 
     .left {
-      width: 50%;
-      float: left;
+      flex: 1;
       padding: 120px 50px;
 
       p {
@@ -2997,15 +2997,15 @@ header {
     }
 
     .right {
-      width: 50%;
-      float: right;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex: 1;
 
       .embed-container {
         position: relative;
         padding-bottom: 56.25%;
-        overflow: hidden;
-        max-width: 100%;
-        height: auto;
+        width: 100%;
       }
 
       .embed-container iframe,
@@ -3054,21 +3054,40 @@ header {
       }
 
       a {
-        font-size: 36px;
-        text-align: center;
-        color: #EEEEEE;
-        border-radius: 50%;
-        padding: 10px;
-        background-color: #DCDCDD;
-        display: block;
-        max-width: 75px;
-        margin-bottom: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        i {
+          font-size: 36px;
+          text-align: center;
+          color: #EEEEEE;
+          border-radius: 50%;
+          padding: 10px;
+          background-color: #DCDCDD;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 190px;
+          height: 75px;
+          margin: 0 25px 0 0;
+        }
+
+        span {
+          color: #636466;
+        }
 
         &:hover {
-          background-color: $primary-blue;
+
+          span {
+            color: $primary-blue;
+          }
+
+          i {
+            background-color: $primary-blue;
+          }
         }
       }
-
     }
   }
 } // END restore
@@ -4555,13 +4574,12 @@ footer {
     }
 
     .section-five {
+      display: flex;
+      flex-wrap: wrap;
       background-color: $primary-blue;
-      min-height: 400px;
-      height: auto;
 
       .left {
-        width: 50%;
-        float: left;
+        flex:0 0 100%;
         padding: 120px 50px;
 
         p {
@@ -4572,15 +4590,15 @@ footer {
       }
 
       .right {
-        width: 50%;
-        float: right;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex: 0 0 100%;
 
         .embed-container {
           position: relative;
           padding-bottom: 56.25%;
-          overflow: hidden;
-          max-width: 100%;
-          height: auto;
+          width: calc(100% - 50px);
         }
 
         .embed-container iframe,
@@ -4597,28 +4615,28 @@ footer {
 
     .section-six {
       background-color: #EEEEEE;
-      height: 400px;
-      padding: 50px;
+      display: flex;
+      flex-wrap: wrap;
+      padding: 25px;
+      height: auto;
       color: #636466;
 
       .left {
-        width: 50%;
-        float: left;
-        padding: 0px;
-        text-align: center;
+        flex: 0 0 100%;
+        padding: 0 0 25px 0;
 
         img {
           width: 100%;
-          max-width: 400px;
-          height: auto;
+          max-width: 100%;
         }
       }
 
       .right {
-        width: 50%;
-        float: right;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex: 0 0 100%;
         padding: 50px 0px;
-        margin: 0 auto;
 
         p {
           color: #636466;
@@ -4629,21 +4647,7 @@ footer {
         }
 
         a {
-          font-size: 36px;
-          text-align: center;
-          color: #EEEEEE;
-          border-radius: 50%;
-          padding: 10px;
-          background-color: #DCDCDD;
-          display: block;
-          max-width: 75px;
-          margin-bottom: 15px;
-
-          &:hover {
-            background-color: $primary-blue;
-          }
         }
-
       }
     }
   } // END restore
@@ -5650,14 +5654,13 @@ footer {
     }
 
     .section-five {
+      display: flex;
+      flex-wrap: wrap;
       background-color: $primary-blue;
-      min-height: 400px;
-      height: auto;
 
       .left {
-        width: 50%;
-        float: left;
-        padding: 120px 50px;
+        flex:0 0 100%;
+        padding: 25px;
 
         p {
           color: white;
@@ -5667,15 +5670,15 @@ footer {
       }
 
       .right {
-        width: 50%;
-        float: right;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex: 0 0 100%;
 
         .embed-container {
           position: relative;
           padding-bottom: 56.25%;
-          overflow: hidden;
-          max-width: 100%;
-          height: auto;
+          width: calc(100% - 50px);
         }
 
         .embed-container iframe,
@@ -5692,28 +5695,28 @@ footer {
 
     .section-six {
       background-color: #EEEEEE;
-      height: 400px;
-      padding: 50px;
+      display: flex;
+      flex-wrap: wrap;
+      padding: 25px;
+      height: auto;
       color: #636466;
 
       .left {
-        width: 50%;
-        float: left;
-        padding: 0px;
-        text-align: center;
+        flex: 0 0 100%;
+        padding: 0 0 25px 0;
 
         img {
           width: 100%;
-          max-width: 400px;
-          height: auto;
+          max-width: 100%;
         }
       }
 
       .right {
-        width: 50%;
-        float: right;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex: 0 0 100%;
         padding: 50px 0px;
-        margin: 0 auto;
 
         p {
           color: #636466;
@@ -5724,23 +5727,10 @@ footer {
         }
 
         a {
-          font-size: 36px;
-          text-align: center;
-          color: #EEEEEE;
-          border-radius: 50%;
-          padding: 10px;
-          background-color: #DCDCDD;
-          display: block;
-          max-width: 75px;
-          margin-bottom: 15px;
-
-          &:hover {
-            background-color: $primary-blue;
-          }
         }
-
       }
     }
+
   } // END restore
 
   #page-families {
@@ -6865,7 +6855,7 @@ footer {
       .left {
         width: 100%;
         float: left;
-        padding: 120px 50px;
+        padding: 25px !important;
 
         p {
           color: white;
@@ -6898,30 +6888,70 @@ footer {
       }
     }
 
-    .section-six {
-      background-color: #EEEEEE;
-      height: 400px;
-      padding: 50px;
-      color: #636466;
+    .section-five {
+      display: flex;
+      flex-wrap: wrap;
+      background-color: $primary-blue;
 
       .left {
-        width: 100%;
-        float: left;
-        padding: 0px;
-        text-align: center;
+        flex:0 0 100%;
+        padding: 120px 50px;
 
-        img {
-          width: 100%;
+        p {
+          color: white;
           max-width: 400px;
-          height: auto;
+          margin: 0 auto;
         }
       }
 
       .right {
-        width: 100%;
-        float: right;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex: 0 0 100%;
+
+        .embed-container {
+          position: relative;
+          padding-bottom: 56.25%;
+          width: calc(100% - 50px);
+        }
+
+        .embed-container iframe,
+        .embed-container object,
+        .embed-container embed {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+
+    .section-six {
+      background-color: #EEEEEE;
+      display: flex;
+      flex-wrap: wrap;
+      padding: 25px;
+      height: auto;
+      color: #636466;
+
+      .left {
+        flex: 0 0 100%;
+        padding: 0 0 25px 0;
+
+        img {
+          width: 100%;
+          max-width: 100%;
+        }
+      }
+
+      .right {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex: 0 0 100%;
         padding: 50px 0px;
-        margin: 0 auto;
 
         p {
           color: #636466;
@@ -6932,21 +6962,7 @@ footer {
         }
 
         a {
-          font-size: 36px;
-          text-align: center;
-          color: #EEEEEE;
-          border-radius: 50%;
-          padding: 10px;
-          background-color: #DCDCDD;
-          display: block;
-          max-width: 75px;
-          margin-bottom: 15px;
-
-          &:hover {
-            background-color: $primary-blue;
-          }
         }
-
       }
     }
   } // END restore
