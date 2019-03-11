@@ -239,6 +239,14 @@ header {
         height: auto;
         padding: 15px 10px;
         margin: 0 0 0 25px;
+
+        .desktop {
+          display: block;
+        }
+
+        .responsive {
+          display: none;
+        }
       }
     }
   }
@@ -333,10 +341,11 @@ header {
     -webkit-transition: all .2s ease-in-out;
     -o-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
+    margin-top: 60px;
 
     ul {
       li {
-        margin: 15px 0 10px 0;
+        margin: 10px 0 10px 0;
 
         a {
           text-transform: uppercase;
@@ -3688,6 +3697,14 @@ footer {
       width: 180px;
       padding: 0px;
       margin: 0 0 0 25px;
+
+      .desktop {
+        display: block;
+      }
+
+      .responsive {
+        display: none;
+      }
     }
 
     .top-menu {
@@ -4838,6 +4855,14 @@ footer {
           width: 210px;
           padding: 0;
           margin: 5px 0 0 25px;
+
+        .desktop {
+          display: none !important;
+        }
+
+        .responsive {
+          display: block;
+        }
         }
       }
     }
@@ -6099,6 +6124,15 @@ footer {
           width: 210px;
           padding: 0;
           margin: 5px 0 0 25px;
+
+        .desktop {
+          display: none !important;
+        }
+
+        .responsive {
+          display: block;
+          border: 1px dashed red;
+        }
         }
       }
     }

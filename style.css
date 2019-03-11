@@ -215,6 +215,12 @@ header .container a img {
   padding: 15px 10px;
   margin: 0 0 0 25px;
 }
+header .container a img .desktop {
+  display: block;
+}
+header .container a img .responsive {
+  display: none;
+}
 header .top-menu {
   background-color: #00AFD7;
   height: 35px;
@@ -287,9 +293,10 @@ header .mobile-menu-wrapper {
   -webkit-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
+  margin-top: 60px;
 }
 header .mobile-menu-wrapper ul li {
-  margin: 15px 0 10px 0;
+  margin: 10px 0 10px 0;
 }
 header .mobile-menu-wrapper ul li a {
   text-transform: uppercase;
@@ -3244,6 +3251,12 @@ footer .copyright {
     padding: 0px;
     margin: 0 0 0 25px;
   }
+  header img .desktop {
+    display: block;
+  }
+  header img .responsive {
+    display: none;
+  }
   header .top-menu {
     height: 35px;
     padding: 10px;
@@ -4085,6 +4098,12 @@ footer .copyright {
     width: 210px;
     padding: 0;
     margin: 5px 0 0 25px;
+  }
+  header .container a img .desktop {
+    display: none !important;
+  }
+  header .container a img .responsive {
+    display: block;
   }
   header .top-menu,
 header .main-menu-container {
@@ -5024,6 +5043,13 @@ header .main-menu-container {
     width: 210px;
     padding: 0;
     margin: 5px 0 0 25px;
+  }
+  header .container a img .desktop {
+    display: none !important;
+  }
+  header .container a img .responsive {
+    display: block;
+    border: 1px dashed red;
   }
   header .top-menu,
 header .main-menu-container {
