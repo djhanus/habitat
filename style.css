@@ -215,10 +215,10 @@ header .container a img {
   padding: 15px 10px;
   margin: 0 0 0 25px;
 }
-header .container a img .desktop {
+header .container a img.desktop {
   display: block;
 }
-header .container a img .responsive {
+header .container a img.responsive {
   display: none;
 }
 header .top-menu {
@@ -4099,10 +4099,10 @@ footer .copyright {
     padding: 0;
     margin: 5px 0 0 25px;
   }
-  header .container a img .desktop {
-    display: none !important;
+  header .container a img.desktop {
+    display: none;
   }
-  header .container a img .responsive {
+  header .container a img.responsive {
     display: block;
   }
   header .top-menu,
@@ -5044,12 +5044,11 @@ header .main-menu-container {
     padding: 0;
     margin: 5px 0 0 25px;
   }
-  header .container a img .desktop {
-    display: none !important;
+  header .container a img.desktop {
+    display: none;
   }
-  header .container a img .responsive {
+  header .container a img.responsive {
     display: block;
-    border: 1px dashed red;
   }
   header .top-menu,
 header .main-menu-container {

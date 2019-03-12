@@ -240,11 +240,11 @@ header {
         padding: 15px 10px;
         margin: 0 0 0 25px;
 
-        .desktop {
+        &.desktop {
           display: block;
         }
 
-        .responsive {
+        &.responsive {
           display: none;
         }
       }
@@ -4856,13 +4856,13 @@ footer {
           padding: 0;
           margin: 5px 0 0 25px;
 
-        .desktop {
-          display: none !important;
-        }
+          &.desktop {
+            display: none;
+          }
 
-        .responsive {
-          display: block;
-        }
+          &.responsive {
+            display: block;
+          }
         }
       }
     }
@@ -6125,14 +6125,13 @@ footer {
           padding: 0;
           margin: 5px 0 0 25px;
 
-        .desktop {
-          display: none !important;
-        }
+          &.desktop {
+            display: none;
+          }
 
-        .responsive {
-          display: block;
-          border: 1px dashed red;
-        }
+          &.responsive {
+            display: block;
+          }
         }
       }
     }
