@@ -390,7 +390,7 @@ header {
     height: 26px;
     cursor: pointer;
 
-    @media(min-width:767px) {
+    @media(min-width:768px) {
       display: none;
     }
   }
@@ -585,6 +585,16 @@ header {
     padding: 0;
     margin: 0 auto;
     text-align: center;
+
+    span {
+      &.desktop {
+        display: block;
+      }
+
+      &.responsive {
+        display: none;
+      }
+    }
 
     .family-container-A {
       height: 400px;
@@ -3112,7 +3122,21 @@ header {
 
   .section-seven {
     width: calc(100% - 50px);
-    padding: 130px 0;
+    padding: 100px 0;
+
+    .title {
+      text-align: center;
+      color: $primary-gray;
+      margin: 0 auto;
+      padding-bottom: 50px;
+
+      i {
+        text-align: center;
+        font-size: 60px;
+        color: $primary-gray;
+        margin: 0 auto;
+        }
+      }
 
     .ig-imgs-wrapper {
       width: 860px;
@@ -3683,6 +3707,24 @@ footer {
   } // END header
 }
 
+
+// fix for menu breakpoint just before tablet
+@media (max-width: 900px) {
+
+// HEADER
+  header {
+
+  .container {
+    a {
+      img {
+        width: 190px;
+      }
+    }
+  }
+  } // END header
+}
+
+
 // ----------------------------------------------- //
 //                     TABLET                      //
 // ----------------------------------------------- //
@@ -3886,6 +3928,16 @@ footer {
       padding: 0;
       margin: 0 auto;
       text-align: center;
+
+      span {
+        &.desktop {
+          display: block;
+        }
+
+        &.responsive {
+          display: none;
+        }
+      }
 
       .family-container-A {
         height: 400px;
@@ -5004,6 +5056,16 @@ footer {
       margin: 0 auto;
       text-align: center;
       height: 550px;
+
+      span {
+        &.desktop {
+          display: none;
+        }
+
+        &.responsive {
+          display: block;
+        }
+      }
 
       .family-container-A {
         height: 400px;
@@ -6284,6 +6346,16 @@ footer {
       text-align: center;
       height: 500px;
 
+      span {
+        &.desktop {
+          display: none;
+        }
+
+        &.responsive {
+          display: block;
+        }
+      }
+
       .family-container-A {
         height: 400px;
 
@@ -7305,13 +7377,13 @@ footer {
         align-items: center;
         justify-content: center;
         flex: 0 0 100%;
-        padding: 50px 0px;
+        padding: 30px 0px;
 
         p {
           color: #636466;
-          font-size: 18px;
+          font-size: 14px;
           font-weight: bold;
-          max-width: 350px;
+          max-width: 280px;
           margin: 0 auto;
         }
 

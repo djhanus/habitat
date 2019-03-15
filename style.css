@@ -334,7 +334,7 @@ header .hamburger-wrapper {
   height: 26px;
   cursor: pointer;
 }
-@media (min-width: 767px) {
+@media (min-width: 768px) {
   header .hamburger-wrapper {
     display: none;
   }
@@ -516,6 +516,12 @@ header .hamburger-menu:after {
   padding: 0;
   margin: 0 auto;
   text-align: center;
+}
+.page-home .three span.desktop {
+  display: block;
+}
+.page-home .three span.responsive {
+  display: none;
 }
 .page-home .three .family-container-A {
   height: 400px;
@@ -2538,7 +2544,19 @@ header .hamburger-menu:after {
 }
 #page-restore .section-seven {
   width: calc(100% - 50px);
-  padding: 130px 0;
+  padding: 100px 0;
+}
+#page-restore .section-seven .title {
+  text-align: center;
+  color: #888B8D;
+  margin: 0 auto;
+  padding-bottom: 50px;
+}
+#page-restore .section-seven .title i {
+  text-align: center;
+  font-size: 60px;
+  color: #888B8D;
+  margin: 0 auto;
 }
 #page-restore .section-seven .ig-imgs-wrapper {
   width: 860px;
@@ -3242,6 +3260,11 @@ footer .copyright {
     margin: 0px 10px;
   }
 }
+@media (max-width: 900px) {
+  header .container a img {
+    width: 190px;
+  }
+}
 @media (min-width: 768px) and (max-width: 1024px) {
   header {
     height: 100px;
@@ -3397,6 +3420,12 @@ footer .copyright {
     padding: 0;
     margin: 0 auto;
     text-align: center;
+  }
+  .page-home .three span.desktop {
+    display: block;
+  }
+  .page-home .three span.responsive {
+    display: none;
   }
   .page-home .three .family-container-A {
     height: 400px;
@@ -4218,6 +4247,12 @@ header .main-menu-container {
     margin: 0 auto;
     text-align: center;
     height: 550px;
+  }
+  .page-home .three span.desktop {
+    display: none;
+  }
+  .page-home .three span.responsive {
+    display: block;
   }
   .page-home .three .family-container-A {
     height: 400px;
@@ -5171,6 +5206,12 @@ header .main-menu-container {
     text-align: center;
     height: 500px;
   }
+  .page-home .three span.desktop {
+    display: none;
+  }
+  .page-home .three span.responsive {
+    display: block;
+  }
   .page-home .three .family-container-A {
     height: 400px;
   }
@@ -5925,13 +5966,13 @@ header .main-menu-container {
     align-items: center;
     justify-content: center;
     flex: 0 0 100%;
-    padding: 50px 0px;
+    padding: 30px 0px;
   }
   #page-restore .section-six .right p {
     color: #636466;
-    font-size: 18px;
+    font-size: 14px;
     font-weight: bold;
-    max-width: 350px;
+    max-width: 280px;
     margin: 0 auto;
   }
   #page-restore .section-seven {
