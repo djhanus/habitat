@@ -112,6 +112,10 @@
     </div>
 
     <div class="section-seven">
+      <div class="title">
+        <i class="fab fa-instagram"></i>
+      </div>
+      
       <div class="ig-imgs-wrapper">
         <script>
           const url = 'https://api.instagram.com/v1/users/self/media/recent/?access_token=219096477.99c55f5.6ea4575980ad4cf1afcded9bbe764dbe';
