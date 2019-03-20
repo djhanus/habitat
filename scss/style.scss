@@ -825,6 +825,10 @@ header {
         column-gap: 20px;
         padding: 20px 35px;
 
+        .responsive {
+          display: none;
+        }
+
         .news {
           background-color: white;
           width: 100%;
@@ -4002,15 +4006,23 @@ footer {
     .row.four {
       flex-wrap: wrap;
 
-      .events-container {
-        width: 100%;
-        padding: 20px 0;
-      }
-
+      .events-container,
       .news-container {
         width: 100%;
         padding: 20px 0;
 
+        span {
+          &.desktop {
+            display: none;
+          }
+
+          &.responsive {
+            display: block;
+          }
+        }
+      }
+
+      .news-container {
         .news-wrapper {
           column-count: 2;
           column-gap: 20px;
@@ -4063,6 +4075,8 @@ footer {
         }
       }
     } // end sponsors
+
+
   } // END HOME
 
   // Who Are We
