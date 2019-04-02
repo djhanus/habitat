@@ -118,7 +118,7 @@
       
       <div class="ig-imgs-wrapper">
         <script>
-          const url = 'https://api.instagram.com/v1/users/self/media/recent/?access_token=219096477.99c55f5.6ea4575980ad4cf1afcded9bbe764dbe';
+          const url = 'https://api.instagram.com/v1/users/self/media/recent/?access_token=1591902149.18d0d5d.a480da932eca4f04b778fae1e63f716a';
           fetch(url)
           .then(data => { return data.json() })
           .then(res => {
