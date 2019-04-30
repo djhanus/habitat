@@ -4,7 +4,7 @@
 
     <div class="page-banner"
       style="background-image: url('<?php echo get_field('featured_banner')?>">
-      <div class="title"><?php echo get_field('featured_banner_text')?></div>
+      <div class="title"><?php echo the_title('')?></div>
     </div><!-- /.page-banner -->
      
     <div class="main-container">

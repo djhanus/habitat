@@ -3694,6 +3694,13 @@ footer {
         }
       } // end social icons
     }
+
+    img {
+      width: 100px;
+      height: auto;
+      padding: 5px;
+      display: block;
+    }
   } // END footer container
 
   .copyright {
@@ -4887,7 +4894,7 @@ footer {
     .footer-container {
       margin: 0 auto;
       max-width: 768px;
-      height: 680px;
+      height: 768px;
 
       .column-one {
         width: 380px;
@@ -4909,6 +4916,10 @@ footer {
           margin: 20px auto;
           width: 200px;
           text-align: center;
+        }
+        img {
+          height: 90px;
+          margin: 0 auto;
         }
       }
     } // END footer container
@@ -6161,7 +6172,7 @@ footer {
     .footer-container {
       margin: 0 auto;
       max-width: 480px;
-      height: 780px;
+      height: 880px;
 
       .column-one {
         width: 200px;
@@ -6189,6 +6200,11 @@ footer {
           margin: 20px auto;
           width: 200px;
           text-align: center;
+        }
+
+        img {
+          height: 90px;
+          margin: 0 auto;
         }
       }
     } // END footer container
@@ -7654,7 +7670,7 @@ footer {
     .footer-container {
       margin: 0 auto;
       max-width: 300px;
-      height: 730px;
+      height: 830px;
 
       .column-one {
         width: 300px;
@@ -7681,6 +7697,10 @@ footer {
           margin: 20px auto;
           width: 200px;
           text-align: center;
+        }
+        img {
+          width: 80px;
+          margin: 0 auto;
         }
       }
     } // END footer container

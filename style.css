@@ -3025,6 +3025,12 @@ footer .footer-container .column-three .social ul li a {
   color: #636466;
   font-size: 16px;
 }
+footer .footer-container img {
+  width: 100px;
+  height: auto;
+  padding: 5px;
+  display: block;
+}
 footer .copyright {
   text-align: center;
   font-size: 12px;
@@ -4113,7 +4119,7 @@ footer .copyright {
   footer .footer-container {
     margin: 0 auto;
     max-width: 768px;
-    height: 680px;
+    height: 768px;
   }
   footer .footer-container .column-one {
     width: 380px;
@@ -4132,6 +4138,10 @@ footer .copyright {
     margin: 20px auto;
     width: 200px;
     text-align: center;
+  }
+  footer .footer-container .column-three img {
+    height: 90px;
+    margin: 0 auto;
   }
   footer .copyright {
     text-align: center;
@@ -5059,7 +5069,7 @@ header .main-menu-container {
   footer .footer-container {
     margin: 0 auto;
     max-width: 480px;
-    height: 780px;
+    height: 880px;
   }
   footer .footer-container .column-one {
     width: 200px;
@@ -5083,6 +5093,10 @@ header .main-menu-container {
     margin: 20px auto;
     width: 200px;
     text-align: center;
+  }
+  footer .footer-container .column-three img {
+    height: 90px;
+    margin: 0 auto;
   }
   footer .copyright {
     text-align: center;
@@ -6172,7 +6186,7 @@ header .main-menu-container {
   footer .footer-container {
     margin: 0 auto;
     max-width: 300px;
-    height: 730px;
+    height: 830px;
   }
   footer .footer-container .column-one {
     width: 300px;
@@ -6195,6 +6209,10 @@ header .main-menu-container {
     margin: 20px auto;
     width: 200px;
     text-align: center;
+  }
+  footer .footer-container .column-three img {
+    width: 80px;
+    margin: 0 auto;
   }
   footer .copyright {
     text-align: center;

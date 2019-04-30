@@ -20,24 +20,30 @@
     <div class="section-two">
       <div class="container">
         <div class="column">
-          <i class="fas fa-shopping-cart"></i>
-          <div class="title">
-            Shop
-          </div>
+          <a href="https://www.facebook.com/monroecountyhabitat" target="_blank">
+            <i class="fas fa-shopping-cart"></i>
+            <div class="title">
+              Shop
+            </div>
+          </a>
         </div>
 
         <div class="column">
-          <i class="fas fa-gift"></i>
-          <div class="title">
-            Donate
-          </div>
+          <a href="https://monroecountyhabitat.vonigo.com/external/#0.36312839549887665" target="_blank">
+            <i class="fas fa-gift"></i>
+            <div class="title">
+              Donate
+            </div>
+          </a>
         </div>
 
         <div class="column">
-          <i class="far fa-envelope"></i>
-          <div class="title">
-            Volunteer
-          </div>
+          <a href="https://mcrestore.appointy.com/" target="_blank">
+            <i class="far fa-envelope"></i>
+            <div class="title">
+              Volunteer
+            </div>
+          </a>
         </div>
       </div>
 
