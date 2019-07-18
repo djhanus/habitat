@@ -3502,11 +3502,65 @@ header {
 // Single Post - Families
 .post-families {
   background-color: $primary-blue;
+  padding-top: 130px;
 
-  .page-banner {
-    border-bottom: 15px solid #FFFFFF;
-    margin: 0;
+  .photo-container {
+    img {
+      position: relative;
+      margin: 0 auto;
+      height: 100%;
+      max-height: 700px;
+      width: auto;
+      margin: 0 auto;
+      padding: 0;
+      display: block;
+      z-index: 1;
+    }
+
+    .title {
+      position: relative;
+      margin: 25px auto 0;
+      padding: 20px 40px;
+      background-color: rgba(196,214,0,0.9);
+      color: white;
+      font-family: $primary-sans;
+      font-weight: 600;
+      font-size: 30px;
+      letter-spacing: 1px;
+      line-height: 1.2;
+      width: 600px;
+      text-align: center;
+      z-index: 100;
+    }
   }
+
+  //  .page-banner {
+  //    position: relative;
+  //    width: 100%;
+  //    height: 600px;
+  //    margin: 0 auto;
+  //    background-size: contain;
+  //    background-position: center;
+  //    background-repeat: no-repeat;
+  //    border: 2px dashed white;
+  //    display: block;
+  //    vertical-align: top;  //
+
+  //    .title {
+  //      position: absolute;
+  //      left: 0;
+  //      bottom: 75px;
+  //      padding: 30px 50px;
+  //      background-color: rgba(196,214,0,0.9);
+  //      color: white;
+  //      font-family: $primary-sans;
+  //      font-weight: 600;
+  //      font-size: 32px;
+  //      letter-spacing: 1px;
+  //      line-height: 1.2;
+  //      max-width: 425px;
+  //    }
+  // }
 
   .main-container {
     margin: 0 auto;
@@ -4856,6 +4910,25 @@ footer {
     }
   }
 
+  // SINGLE FAMILIES (max @1024
+  .post-families {
+    background-color: $primary-blue;
+    padding-top: 100px;
+
+    .photo-container {
+      img {
+        max-height: 600px;
+      }
+
+      .title {
+        margin: 25px auto 0;
+        padding: 20px 30px;
+        font-size: 28px;
+        width: 500px;
+      }
+    }
+  }
+
   // Single Post - Standard
   .post-standard {
     padding-bottom: 0px;
@@ -5010,6 +5083,25 @@ footer {
           width: 30px !important;
           height: 30px !important;
         }
+      }
+    }
+  }
+
+  // SINGLE FAMILIES (max @767)
+  .post-families {
+    background-color: $primary-blue;
+    padding-top: 0px;
+
+    .photo-container {
+      img {
+        max-height: 420px;
+      }
+
+      .title {
+        margin: 25px auto 0;
+        padding: 20px 30px;
+        font-size: 24px;
+        width: 420px;
       }
     }
   }
@@ -7523,6 +7615,21 @@ footer {
   } // END families
 
   .post-families {
+  padding-top: 0px;
+
+    .photo-container {
+      img {
+        max-height: 400px;
+      }
+
+      .title {
+        margin: 10px auto 0;
+        padding: 10px 20px;
+        font-size: 22px;
+        width: 400px;
+      }
+    }
+
     .families-button {
       a {
         padding: 5px 15px;

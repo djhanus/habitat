@@ -2864,10 +2864,33 @@ header .hamburger-menu:after {
 
 .post-families {
   background-color: #00AFD7;
+  padding-top: 130px;
 }
-.post-families .page-banner {
-  border-bottom: 15px solid #FFFFFF;
-  margin: 0;
+.post-families .photo-container img {
+  position: relative;
+  margin: 0 auto;
+  height: 100%;
+  max-height: 700px;
+  width: auto;
+  margin: 0 auto;
+  padding: 0;
+  display: block;
+  z-index: 1;
+}
+.post-families .photo-container .title {
+  position: relative;
+  margin: 25px auto 0;
+  padding: 20px 40px;
+  background-color: rgba(196, 214, 0, 0.9);
+  color: white;
+  font-family: "Neue Haas Grotesk", Arial, sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+  letter-spacing: 1px;
+  line-height: 1.2;
+  width: 600px;
+  text-align: center;
+  z-index: 100;
 }
 .post-families .main-container {
   margin: 0 auto;
@@ -4090,6 +4113,20 @@ footer .copyright {
     background-size: cover;
   }
 
+  .post-families {
+    background-color: #00AFD7;
+    padding-top: 100px;
+  }
+  .post-families .photo-container img {
+    max-height: 600px;
+  }
+  .post-families .photo-container .title {
+    margin: 25px auto 0;
+    padding: 20px 30px;
+    font-size: 28px;
+    width: 500px;
+  }
+
   .post-standard {
     padding-bottom: 0px;
   }
@@ -4207,6 +4244,20 @@ header .main-menu-container {
   details summary button svg {
     width: 30px !important;
     height: 30px !important;
+  }
+
+  .post-families {
+    background-color: #00AFD7;
+    padding-top: 0px;
+  }
+  .post-families .photo-container img {
+    max-height: 420px;
+  }
+  .post-families .photo-container .title {
+    margin: 25px auto 0;
+    padding: 20px 30px;
+    font-size: 24px;
+    width: 420px;
   }
 
   .page-home .one {
@@ -6071,6 +6122,18 @@ header .main-menu-container {
     line-height: 1.6;
   }
 
+  .post-families {
+    padding-top: 0px;
+  }
+  .post-families .photo-container img {
+    max-height: 400px;
+  }
+  .post-families .photo-container .title {
+    margin: 10px auto 0;
+    padding: 10px 20px;
+    font-size: 22px;
+    width: 400px;
+  }
   .post-families .families-button a {
     padding: 5px 15px;
     font-size: 16px;
