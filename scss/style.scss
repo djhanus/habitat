@@ -3517,6 +3517,15 @@ header {
     p {
      color: white;
     }
+
+    a {
+      color: white;
+      text-decoration: underline;
+
+      &:hover {
+        color: $primary-green;
+      }
+    }
   }
 
   .families-button {

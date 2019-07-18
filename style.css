@@ -2878,6 +2878,13 @@ header .hamburger-menu:after {
 .post-families .main-container p {
   color: white;
 }
+.post-families .main-container a {
+  color: white;
+  text-decoration: underline;
+}
+.post-families .main-container a:hover {
+  color: #C4D600;
+}
 .post-families .families-button {
   background-color: #FFFFFF;
   padding: 50px;
