@@ -2869,13 +2869,14 @@ header .hamburger-menu:after {
 .post-families .photo-container img {
   position: relative;
   margin: 0 auto;
-  height: 100%;
-  max-height: 700px;
-  width: auto;
+  width: 100%;
+  max-width: 700px;
+  height: auto;
   margin: 0 auto;
   padding: 0;
   display: block;
   z-index: 1;
+  border: 5px dotted white;
 }
 .post-families .photo-container .title {
   position: relative;
@@ -4118,7 +4119,7 @@ footer .copyright {
     padding-top: 100px;
   }
   .post-families .photo-container img {
-    max-height: 600px;
+    max-width: 650px;
   }
   .post-families .photo-container .title {
     margin: 25px auto 0;
@@ -4251,7 +4252,7 @@ header .main-menu-container {
     padding-top: 0px;
   }
   .post-families .photo-container img {
-    max-height: 420px;
+    max-width: 450px;
   }
   .post-families .photo-container .title {
     margin: 25px auto 0;
@@ -6126,13 +6127,13 @@ header .main-menu-container {
     padding-top: 0px;
   }
   .post-families .photo-container img {
-    max-height: 400px;
+    max-width: 350px;
   }
   .post-families .photo-container .title {
     margin: 10px auto 0;
     padding: 10px 20px;
     font-size: 22px;
-    width: 400px;
+    width: 350px;
   }
   .post-families .families-button a {
     padding: 5px 15px;

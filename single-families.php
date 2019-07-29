@@ -2,13 +2,6 @@
 
   <div class="post-families">
 
-    <!--
-    <div class="page-banner"
-      style="background-image: url('<?php echo get_field('family_photo')?>">
-      <div class="title"><?php the_title(); ?></div>
-    </div> 
-    -->
-
     <div class="photo-container">
       <img src="<?php echo get_field('family_photo')?>" />
       <div class="title"><?php the_title(); ?></div>
