@@ -2830,7 +2830,6 @@ header .hamburger-menu:after {
   padding: 0;
   display: block;
   z-index: 1;
-  border: 5px dotted white;
 }
 .post-families .photo-container .title {
   position: relative;
