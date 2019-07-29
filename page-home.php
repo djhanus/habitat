@@ -52,79 +52,30 @@
 
       <div class="row three">
 
-        <span class="desktop">
-          <!-- CALL FUNCTION -->
-          <?php
-            $families_args = array(
-              'post_type'       => 'Families',
-              'order'           => 'DSC',
-              'posts_per_page'  => '3',
-              'post_status'     => 'publish',
-            );
-            $families_query  = new WP_Query( $families_args );
-            if($families_query->have_posts() ) : while ( $families_query->have_posts() ) : $families_query->the_post(); $i++; if(($i % 2) == 0) : ?>
+        <!-- CALL FUNCTION -->
+        <?php
+          $families_args = array(
+            'post_type'       => 'Families',
+            'order'           => 'DSC',
+            'posts_per_page'  => '6',
+            'post_status'     => 'publish',
+          );
+          $families_query  = new WP_Query( $families_args );
+          if($families_query->have_posts() ) : while ( $families_query->have_posts() ) : $families_query->the_post();
+        ?>
 
-          <!-- OUTPUT CONTAINER -->
-          <div class="family-container-A">
-
-            <div class="photo" style="background-image: url('<?php echo get_field('family_photo')?>"></div>
-
-            <div class="description">
-              <div class="title"><?php the_title(); ?></div>
-              <?php the_excerpt(); ?>
-              <div class="button">
-                <a href="<?php echo get_permalink(); ?>">READ MORE</a>
-              </div>
-            </div>
+        <!-- OUTPUT CONTAINER -->
+        
+        <div class="families-wrapper">
+          <a href="<?php echo get_permalink(); ?>"><div class="photo" style="background-image: url('<?php echo get_field('family_photo')?>">
+          </div></a>
+          <div class="name">
+            <a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a>
           </div>
+        </div>
 
-          <?php else : ?>
+        <?php endwhile; endif; wp_reset_query(); ?>
 
-          <div class="family-container-B">
-
-            <div class="photo" style="background-image: url('<?php echo get_field('family_photo')?>"></div>
-
-            <div class="description">
-              <div class="title"><?php the_title(); ?></div>
-              <?php the_excerpt(); ?>
-              <div class="button">
-                <a href="<?php echo get_permalink(); ?>">READ MORE</a>
-              </div>
-            </div>
-          </div>
-
-          <?php endif; endwhile; endif; wp_reset_query(); ?>
-        </span>
-
-        <span class="responsive">
-          <!-- CALL FUNCTION -->
-          <?php
-            $families_args = array(
-              'post_type'       => 'Families',
-              'order'           => 'DSC',
-              'posts_per_page'  => '1',
-              'post_status'     => 'publish',
-            );
-            $families_query  = new WP_Query( $families_args );
-            if($families_query->have_posts() ) : while ( $families_query->have_posts() ) : $families_query->the_post();
-          ?>
-
-          <!-- OUTPUT CONTAINER -->
-          <div class="family-container-A">
-
-            <div class="photo" style="background-image: url('<?php echo get_field('family_photo')?>"></div>
-
-            <div class="description">
-              <div class="title"><?php the_title(); ?></div>
-              <?php the_excerpt(); ?>
-              <div class="button">
-                <a href="<?php echo get_permalink(); ?>">READ MORE</a>
-              </div>
-            </div>
-          </div>
-
-          <?php endwhile; endif; wp_reset_query(); ?>
-        </span>
       </div> <!-- END FAMILIES ROW -->
 
 
