@@ -18,8 +18,6 @@
      
     <div class="main-container">
         
-        
-
         <!-- CALL FUNCTION -->
           <?php
             $families_args = array(
