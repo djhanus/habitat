@@ -4064,6 +4064,7 @@ footer .copyright {
   footer .footer-container .column-three img {
     height: 90px;
     margin: 0 auto;
+    display: inline-block;
   }
   footer .copyright {
     text-align: center;
@@ -4991,6 +4992,7 @@ header .main-menu-container {
   footer .footer-container .column-three img {
     height: 90px;
     margin: 0 auto;
+    display: inline-block;
   }
   footer .copyright {
     text-align: center;
@@ -6077,6 +6079,7 @@ header .main-menu-container {
   footer .footer-container .column-three img {
     width: 80px;
     margin: 0 auto;
+    display: inline-block;
   }
   footer .copyright {
     text-align: center;

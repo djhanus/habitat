@@ -53,6 +53,8 @@
 
       <img src="https://monroecountyhabitat.org/wp-content/uploads/2019/04/Equal_Housing_Opportunity-300x287.png" />
 
+      <img src="https://monroecountyhabitat.org/wp-content/uploads/2019/09/habitat-charity-logo.png" />
+
   		</div> <!-- END column -->
 
 	</div> <!-- END footer container -->
