@@ -130,20 +130,23 @@
 
     <div id="volunteer" class="section-five">
       <div class="left">
-        <h1>Sign up to volunteer here!</h1>
-
         <div>
-          <h2>I am a first time volunteer.</h2>
-          <ol>
-            <li>Please submit a <a href="<?php echo get_field('volunteer_information_form_url'); ?>" target="blank" title=""><strong>Volunteer Information Form</strong></a></li>
-            <li>Register for your shift below!</li>
-          </ol>
-        </div>
+          <h1>Sign up to volunteer here!</h1>
 
-        <div>
-          <h2>I am a returning volunteer.</h2>
-          <p>Skip the Volunteer Information Form and register for your shift below!</p>
-        </div>
+          <?php echo get_field('volunteer_registration_info_block'); ?>
+
+          <?php 
+          $link = get_field('volunteer_registration_button');
+
+          if( $link ): 
+            $link_url = $link['url'];
+            $link_title = $link['title'];
+            $link_target = $link['target'] ? $link['target'] : '_blank';
+            ?>
+            <div class="button"><a href="<?php echo esc_url($link_url); ?>" target="<?php echo esc_attr($link_target); ?>"><?php echo esc_html($link_title); ?></a></div>
+          <?php endif; ?>
+          
+        </div>  
       </div>
 
       <div class="right">
@@ -164,10 +167,6 @@
         </ul>
       </div>
     </div><!-- /.section-five -->
-
-    <div class="section-six">
-      <a href="<?php echo get_field('volunteer_registration_form_url'); ?>" target="_blank" title="Volunteer Registration Form">Volunteer Registration Form</a>
-    </div><!-- /.section-six -->
 
     <div id="main" class="section-seven" style="background-image: url('<?php echo $volunteer_sseven_bg; ?>');">
       <div class="contained">

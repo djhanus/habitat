@@ -1621,10 +1621,33 @@ header {
         }
 
         div {
-          padding: 25px 50px;
-          width: 45%;
-          border: 2px solid white;
+          padding: 25px;
+          width: 100%;
 
+          .button {
+            padding: 0 !important;
+            margin: 0;
+
+            a {
+              display: inline-block;
+              width: auto;
+              margin: 0;
+              padding: 10px 15px;
+              background-color: transparent;
+              color: white;
+              text-transform: uppercase;
+              text-decoration: none;
+              font-size: 18px;
+              letter-spacing: 1px;
+              border: 1px solid white;
+
+              &:hover {
+                color: $secondary-orange;
+                background-color: white;
+              }
+            }
+          }
+        
           ol, ul, a, p {
             color: white;
             font-size: 16px;
@@ -1646,7 +1669,7 @@ header {
           }
 
           a {
-            text-decoration: none;
+            text-decoration: underline;
           }
 
           strong {
@@ -4229,9 +4252,37 @@ footer {
         padding: 20px !important;
       }
 
+      .button { padding: 0; margin: 0; }
+
       .left,
       .right {
         div {
+
+          .button {
+            padding: 0 !important;
+            margin: 0;
+
+            a {
+              display: inline-block;
+              width: auto;
+              margin: 0;
+              padding: 10px 15px;
+              background-color: transparent;
+              color: white;
+              text-transform: uppercase;
+              text-decoration: none;
+              font-size: 18px;
+              letter-spacing: 1px;
+              border: 1px solid white;
+
+              &:hover {
+                color: $secondary-orange;
+                background-color: white;
+              }
+            }
+          }
+
+
           &:nth-child(2) {
             margin: 0 0 20px 0 !important;
           }
@@ -6663,6 +6714,12 @@ footer {
       .left,
       .right {
         div {
+
+          .button {
+            padding: 0px !important;
+            margin: 0px;
+          }
+
           &:nth-child(2) {
             margin: 0 0 20px 0 !important;
           }

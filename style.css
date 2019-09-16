@@ -1336,9 +1336,29 @@ header .hamburger-menu:after {
   margin: 0 0 25px 0;
 }
 #page-volunteer .section-five div.left div {
-  padding: 25px 50px;
-  width: 45%;
-  border: 2px solid white;
+  padding: 25px;
+  width: 100%;
+}
+#page-volunteer .section-five div.left div .button {
+  padding: 0 !important;
+  margin: 0;
+}
+#page-volunteer .section-five div.left div .button a {
+  display: inline-block;
+  width: auto;
+  margin: 0;
+  padding: 10px 15px;
+  background-color: transparent;
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 18px;
+  letter-spacing: 1px;
+  border: 1px solid white;
+}
+#page-volunteer .section-five div.left div .button a:hover {
+  color: #FF671F;
+  background-color: white;
 }
 #page-volunteer .section-five div.left div ol, #page-volunteer .section-five div.left div ul, #page-volunteer .section-five div.left div a, #page-volunteer .section-five div.left div p {
   color: white;
@@ -1357,7 +1377,7 @@ header .hamburger-menu:after {
   margin: 0;
 }
 #page-volunteer .section-five div.left div a {
-  text-decoration: none;
+  text-decoration: underline;
 }
 #page-volunteer .section-five div.left div strong {
   font-weight: 600;
@@ -3644,6 +3664,34 @@ footer .copyright {
     width: 100% !important;
     padding: 20px !important;
   }
+  #page-volunteer .section-five .button {
+    padding: 0;
+    margin: 0;
+  }
+  #page-volunteer .section-five .left div .button,
+#page-volunteer .section-five .right div .button {
+    padding: 0 !important;
+    margin: 0;
+  }
+  #page-volunteer .section-five .left div .button a,
+#page-volunteer .section-five .right div .button a {
+    display: inline-block;
+    width: auto;
+    margin: 0;
+    padding: 10px 15px;
+    background-color: transparent;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 18px;
+    letter-spacing: 1px;
+    border: 1px solid white;
+  }
+  #page-volunteer .section-five .left div .button a:hover,
+#page-volunteer .section-five .right div .button a:hover {
+    color: #FF671F;
+    background-color: white;
+  }
   #page-volunteer .section-five .left div:nth-child(2),
 #page-volunteer .section-five .right div:nth-child(2) {
     margin: 0 0 20px 0 !important;
@@ -5439,6 +5487,11 @@ header .main-menu-container {
   #page-volunteer .section-five div {
     width: 100% !important;
     padding: 20px !important;
+  }
+  #page-volunteer .section-five .left div .button,
+#page-volunteer .section-five .right div .button {
+    padding: 0px !important;
+    margin: 0px;
   }
   #page-volunteer .section-five .left div:nth-child(2),
 #page-volunteer .section-five .right div:nth-child(2) {
