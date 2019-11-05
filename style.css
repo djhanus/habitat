@@ -2917,6 +2917,14 @@ footer {
   font-size: 14px;
   line-height: 1.2;
 }
+footer .disclaimer {
+  margin: 20px auto;
+  padding: 0px 20px;
+  font-size: 11px;
+  color: white;
+  width: 100%;
+  max-width: 960px;
+}
 footer .footer-container {
   margin: 0 auto;
   max-width: 960px;

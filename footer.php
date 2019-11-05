@@ -59,6 +59,10 @@
 
 	</div> <!-- END footer container -->
 
+  <div class="disclaimer">
+    The federal Equal Credit Opportunity Act prohibits creditors from discriminating against credit applicants on the basis of race, color, religion, national origin, sex, marital status, age (provided the applicant has the capacity to enter into a binding contract); because all or part of the applicant’s income derives from any public assistance program; or because the applicant has in good faith exercised any right under the Consumer Credit Protection Act. The federal agency that administers compliance with this law concerning this creditor is the Federal Trade Commission, Washington, DC 20580.
+  </div>
+
 
   	<div class="copyright">
     	&copy; <?php echo date("Y"); ?> Habitat for Humanity of Monroe County

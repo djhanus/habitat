@@ -3555,6 +3555,15 @@ footer {
   font-size: 14px;
   line-height: 1.2;
 
+  .disclaimer {
+    margin: 20px auto;
+    padding: 0px 20px;
+    font-size: 11px;
+    color: white;
+    width: 100%;
+    max-width: 960px;
+  }
+
   .footer-container {
     margin: 0 auto;
     max-width: 960px;

@@ -38,7 +38,7 @@
         </div>
 
         <div class="column">
-          <a href="https://mcrestore.appointy.com/" target="_blank">
+          <a href="https://habitatforhumanityofmonroecounty.volunteerlocal.com/volunteer/" target="_blank">
             <i class="far fa-envelope"></i>
             <div class="title">
               Volunteer
